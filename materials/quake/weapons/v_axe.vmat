@@ -1,0 +1,13 @@
+"Layer0"
+{
+	"shader"	"generic.vfx"
+	"F_RENDER_BACKFACES"	"1"
+	"F_UNLIT"	"1"
+	"g_bFogEnabled"	"0"
+	"g_vColorTint"	"[1.000000 1.000000 1.000000 0.000000]"
+	"TextureColor"	"materials/quake/weapons/v_axe_flipv.png"
+	"Compiled Textures"
+	{
+		"g_tColor"	"materials/quake/weapons/v_axe_flipv_png_bb6136a3.vtex"
+	}
+}

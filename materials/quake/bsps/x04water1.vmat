@@ -1,0 +1,45 @@
+"Layer0"
+{
+	"shader"	"csgo_lightmappedgeneric.vfx"
+	"F_RENDER_BACKFACES"	"1"
+	"F_TEXTURETRANSFORMS"	"1"
+	"F_TRANSLUCENT"	"1"
+	"g_bFogEnabled"	"1"
+	"g_nTextureAddressModeU"	"0"
+	"g_nTextureAddressModeV"	"0"
+	"g_flLayer1NormalTexCoordRotation"	"0"
+	"g_flLayer1TexCoordRotation"	"0"
+	"g_flMetalness"	"0"
+	"g_flModelTintAmount"	"1"
+	"g_flOpacityScale"	"0.805"
+	"g_flVertexColorOpacityScale"	"1"
+	"g_vColorTint"	"[1.000000 1.000000 1.000000 0.000000]"
+	"g_vLayer1NormalTexCoordCenter"	"[0.500000 0.500000 0.000000 0.000000]"
+	"g_vLayer1NormalTexCoordOffset"	"[0.000000 0.000000 0.000000 0.000000]"
+	"g_vLayer1NormalTexCoordScale"	"[1.000000 1.000000 0.000000 0.000000]"
+	"g_vLayer1TexCoordCenter"	"[0.500000 0.500000 0.000000 0.000000]"
+	"g_vLayer1TexCoordOffset"	"[0.000000 0.000000 0.000000 0.000000]"
+	"g_vLayer1TexCoordScale"	"[1.000000 1.000000 0.000000 0.000000]"
+	"g_vLayer1Tint"	"[1.000000 1.000000 1.000000 0.000000]"
+	"TextureLayer1Translucency"	"[0.804000 0.804000 0.804000 0.000000]"
+	"TextureLayer1Color"	"materials/quake/bsps/x04water1.png"
+	"TextureLayer1AmbientOcclusion"	"materials/default/default_ao.tga"
+	"TextureLayer1Normal"	"materials/default/default_normal.tga"
+	"TextureLayer1Roughness"	"materials/default/default_7be61377_rough.png"
+	"Compiled Textures"
+	{
+		"g_tColor"	"materials/quake/bsps/x04water1_png_8ce85565.vtex"
+		"g_tLayer1AmbientOcclusion"	"materials/default/default_ao_tga_559f1ac6.vtex"
+		"g_tLayer1NormalRoughness"	"materials/default/default_normal_tga_7be61377.vtex"
+	}
+	"DynamicParams"
+	{
+		"g_vLayer1TexCoordOffset"	"return float2(time()*.1,time()*.1);"
+	}
+	"Attributes"
+	{
+		"texturescrollangle"	"0"
+		"texturescrollrate"	"150"
+		"texturescrollvar"	"$baseTextureTransform"
+	}
+}

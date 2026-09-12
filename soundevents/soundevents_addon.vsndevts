@@ -1,0 +1,2184 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:generic:version{7412167c-06e9-4698-aff2-e63eb59037e7} -->
+{
+	ambient_example.outdoors = 
+	{
+		base = "amb.soundscapeParent.base"
+		enable_child_events = true
+		soundevent_01 = 
+		[
+			"ambient_example.outdoors.birds",
+			"ambient_example.outdoors.airplanes",
+			"ambient_example.outdoors.wind",
+		]
+	}
+	ambient_example.outdoors.wind = 
+	{
+		base = "amb.looping.stereo.base"
+		volume = 0.7
+		pitch = 0.8
+		vsnd_files_track_01 = "sounds/ambient/dust2/wind_sand_01.vsnd"
+	}
+	ambient_example.outdoors.airplanes = 
+	{
+		base = "amb.intermittent.randomAroundPlayer.base"
+		volume = 0.7
+		randomize_position_min_radius = 2000.0
+		randomize_position_max_radius = 3000.0
+		retrigger_interval_min = 11.0
+		retrigger_interval_max = 30.0
+		vsnd_files_track_01 = 
+		[
+			"sounds/ambient/dust2/airplane_01.vsnd",
+			"sounds/ambient/dust2/airplane_02.vsnd",
+			"sounds/ambient/dust2/airplane_03.vsnd",
+		]
+	}
+	ambient_example.outdoors.birds = 
+	{
+		base = "amb.intermittent.atXYZ.base"
+		volume = 0.5
+		retrigger_interval_min = 1.0
+		retrigger_interval_max = 6.0
+		position = [ 1264.0, -491.0, 64.0 ]
+		vsnd_files_track_01 = 
+		[
+			"sounds/bird_01.vsnd",
+			"sounds/bird_02.vsnd",
+			"sounds/bird_03.vsnd",
+			"sounds/bird_04.vsnd",
+			"sounds/bird_05.vsnd",
+			"sounds/bird_06.vsnd",
+		]
+	}
+	ambient_example.indoors = 
+	{
+		base = "amb.soundscapeParent.base"
+		enable_child_events = true
+		dsp_preset = "reverb_9_mediumChamber"
+		soundevent_01 = 
+		[
+			"ambient_example.indoors.background",
+			"ambient_example.indoors.rockfalls",
+			"ambient_example.indoors.vent",
+		]
+	}
+	ambient_example.indoors.background = 
+	{
+		base = "amb.looping.stereo.base"
+		volume = 0.1
+		vsnd_files_track_01 = "sounds/interior_01.vsnd"
+	}
+	ambient_example.indoors.rockfalls = 
+	{
+		base = "amb.intermittent.randomAroundPlayer.base"
+		volume = 0.7
+		randomize_position_min_radius = 500.0
+		randomize_position_max_radius = 1000.0
+		randomize_position_hemisphere = false
+		retrigger_interval_min = 5.0
+		retrigger_interval_max = 15.0
+		retrigger_radius = 1000.0
+		vsnd_files_track_01 = 
+		[
+			"sounds/ambient/dust2/rockfall_01.vsnd",
+			"sounds/ambient/dust2/rockfall_02.vsnd",
+			"sounds/ambient/dust2/rockfall_03.vsnd",
+			"sounds/ambient/dust2/rockfall_04.vsnd",
+			"sounds/ambient/dust2/rockfall_05.vsnd",
+			"sounds/ambient/dust2/rockfall_06.vsnd",
+			"sounds/ambient/dust2/rockfall_07.vsnd",
+			"sounds/ambient/dust2/rockfall_08.vsnd",
+		]
+	}
+	ambient_example.indoors.vent = 
+	{
+		base = "amb.looping.atXYZ.base"
+		volume = 0.2
+		position = [ 1136.0, 1392.0, 64.0 ]
+		vsnd_files_track_01 = "sounds/vent_01.vsnd"
+		distance_volume_mapping_curve = 
+		[
+			[
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				500.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+	}
+	amb.base = 
+	{
+		type = "csgo_mega"
+		mixgroup = "Amb_Common"
+		occlusion_intensity = 0.0
+		distance_effect_mix = 0.0
+		restrict_source_reverb = true
+		use_distance_unfiltered_stereo_mapping_curve = true
+		use_time_volume_mapping_curve = true
+		distance_volume_mapping_curve = 
+		[
+			[
+				0.0, 1.0, -0.00394, -0.00394,
+				2.0, 3.0,
+			],
+			[
+				300.0, 0.0, -0.002991, -0.002991,
+				2.0, 3.0,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			[
+				0.0, 1.0, -1.223776, -1.223776,
+				2.0, 3.0,
+			],
+			[
+				0.208571, 0.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+		distance_unfiltered_stereo_mapping_curve = 
+		[
+			[
+				0.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				300.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			[
+				0.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				0.297143, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+	}
+	amb.intermittent.randomAroundPlayer.base = 
+	{
+		base = "amb.base"
+		delay = 5.0
+		volume = 1.0
+		randomize_position_min_radius = 4000.0
+		randomize_position_max_radius = 4000.0
+		randomize_position_hemisphere = true
+		volume_random_min = -0.5
+		pitch_random_min = -0.6
+		enable_retrigger = true
+		retrigger_interval_min = 13.0
+		retrigger_interval_max = 35.0
+		retrigger_radius = 10000.0
+		position_relative_to_player = true
+		reverb_wet = 1.0
+		distance_volume_mapping_curve = 
+		[
+			[
+				0.0, 1.0, 0.0, 0.0,
+				0.0, 0.0,
+			],
+			[
+				300.0, 1.0, 0.0, 0.0,
+				0.0, 0.0,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			[
+				0.0, 1.0, -1.223776, -1.223776,
+				2.0, 3.0,
+			],
+			[
+				0.691429, 0.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			[
+				0.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				1.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+	}
+	amb.intermittent.atXYZ.base = 
+	{
+		base = "amb.base"
+		position = [ 0, 0, 0 ]
+		volume = 1.0
+		volume_random_min = -0.3
+		volume_random_max = 0.1
+		pitch_random_min = -0.03
+		pitch_random_max = 0.03
+		reverb_wet = 1.0
+		enable_retrigger = true
+		retrigger_interval_min = 1.0
+		retrigger_interval_max = 10.0
+		use_world_position = false
+		position_relative_to_player = false
+		distance_unfiltered_stereo_mapping_curve = 
+		[
+			[
+				0.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				300.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+		distance_volume_mapping_curve = 
+		[
+			[
+				97.14286, 1.0, -0.001763, -0.001763,
+				2.0, 3.0,
+			],
+			[
+				2000.0, 0.0, -0.000526, -0.000526,
+				1.0, 1.0,
+			],
+		]
+	}
+	amb.looping.stereo.base = 
+	{
+		base = "amb.base"
+		volume = 1.0
+		pitch = 1.0
+		distance_volume_mapping_curve = 
+		[
+			[
+				0.0, 1.0, 0.0, 0.0,
+				0.0, 0.0,
+			],
+			[
+				300.0, 1.0, 0.0, 0.0,
+				0.0, 0.0,
+			],
+		]
+		fadetime_volume_mapping_curve = 
+		[
+			[
+				0.0, 1.0, -1.223776, -1.223776,
+				2.0, 3.0,
+			],
+			[
+				1.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+		time_volume_mapping_curve = 
+		[
+			[
+				0.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				1.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+		distance_unfiltered_stereo_mapping_curve = 
+		[
+			[
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				300.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+	}
+	amb.looping.atXYZ.base = 
+	{
+		base = "amb.base"
+		volume = 1.0
+		position = [ 1135.96875, 1391.918457, 64.03125 ]
+		use_world_position = true
+		position_relative_to_player = false
+		reverb_wet = 1.0
+		distance_volume_mapping_curve = 
+		[
+			[
+				0.0, 1.0, -0.001763, -0.001763,
+				2.0, 3.0,
+			],
+			[
+				1500.0, 0.0, -0.000667, -0.000667,
+				1.0, 1.0,
+			],
+		]
+	}
+	amb.soundscapeParent.base = 
+	{
+		base = "amb.base"
+		override_dsp_preset = true
+		dsp_preset = "reverb_22_outsideOpen"
+		enable_child_events = false
+		set_child_position = false
+		soundevent_01 = ""
+	}
+	Quake.base = 
+	{
+		type = "csgo_mega"
+		volume = 1.0
+		pitch = 1.0
+		mixgroup = "Weapons"
+		use_distance_volume_mapping_curve = true
+		distance_volume_mapping_curve = 
+		[
+			[
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				1600.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+	}
+	Quake.idle = 
+	{
+		type = "csgo_mega"
+		volume = 0.7
+		pitch = 1.0
+		mixgroup = "Weapons"
+		enable_occlusion = true
+		occlusion_intensity = 1.0
+		use_distance_volume_mapping_curve = true
+		distance_volume_mapping_curve = 
+		[
+			[
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				800.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+	}
+	Quake.ambient = 
+	{
+		type = "csgo_mega"
+		volume = 3.0
+		pitch = 1.0
+		looping = true
+		enable_occlusion = true
+		occlusion_intensity = 1.0
+		use_distance_volume_mapping_curve = true
+		distance_volume_mapping_curve = 
+		[
+			[
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				800.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+	}
+	Quake.ambient_wind = 
+	{
+		type = "csgo_mega"
+		volume = 0.3
+		pitch = 1.0
+		looping = true
+		vsnd_files_track_01 = "sounds/quake/ambience/wind2.vsnd"
+		distance_volume_mapping_curve = 
+		[
+			[
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				200.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				650.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+		vsnd_duration = 32.00272
+	}
+	Quake.ambient_water = 
+	{
+		type = "csgo_mega"
+		volume = 0.45
+		pitch = 1.0
+		looping = true
+		enable_occlusion = true
+		occlusion_intensity = 0.6
+		vsnd_files_track_01 = "sounds/quake/ambience/water1.vsnd"
+		use_distance_volume_mapping_curve = true
+		distance_volume_mapping_curve = 
+		[
+			[
+				0.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				200.0, 1.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+			[
+				650.0, 0.0, 0.0, 0.0,
+				2.0, 3.0,
+			],
+		]
+		vsnd_duration = 6.421859
+	}
+	Quake.hitmarker = 
+	{
+		base = "Quake.player"
+		mixgroup = "UI"
+		volume = 0.55
+		vsnd_files_track_01 = 
+		[
+			"sounds/quake/ui/hit_0.vsnd",
+			"sounds/quake/ui/hit_1.vsnd",
+			"sounds/quake/ui/hit_2.vsnd",
+			"sounds/quake/ui/hit_3.vsnd",
+			"sounds/quake/ui/hit_4.vsnd",
+		]
+		vsnd_duration = 0.173265
+	}
+	Quake.ambience_buzz1 = 
+	{
+		base = "Quake.ambient"
+		vsnd_files_track_01 = "sounds/quake/ambience/buzz1.vsnd"
+		volume = 1.0
+		vsnd_duration = 5.347574
+	}
+	Quake.ambience_comp1 = 
+	{
+		base = "Quake.ambient"
+		vsnd_files_track_01 = "sounds/quake/ambience/comp1.vsnd"
+		volume = 1.0
+		vsnd_duration = 5.66712
+	}
+	Quake.ambience_drip1 = 
+	{
+		base = "Quake.ambient"
+		vsnd_files_track_01 = "sounds/quake/ambience/drip1.vsnd"
+		volume = 0.7
+		vsnd_duration = 12.156463
+	}
+	Quake.ambience_drone6 = 
+	{
+		base = "Quake.ambient"
+		vsnd_files_track_01 = "sounds/quake/ambience/drone6.vsnd"
+		volume = 0.7
+		vsnd_duration = 1.690068
+	}
+	Quake.ambience_fire1 = 
+	{
+		base = "Quake.ambient"
+		vsnd_files_track_01 = "sounds/quake/ambience/fire1.vsnd"
+		vsnd_duration = 4.284717
+	}
+	Quake.ambience_fl_hum1 = 
+	{
+		base = "Quake.ambient"
+		vsnd_files_track_01 = "sounds/quake/ambience/fl_hum1.vsnd"
+		volume = 0.7
+		vsnd_duration = 6.76
+	}
+	Quake.ambience_hum1 = 
+	{
+		base = "Quake.ambient"
+		vsnd_files_track_01 = "sounds/quake/ambience/hum1.vsnd"
+		vsnd_duration = 11.035646
+	}
+	Quake.ambience_suck1 = 
+	{
+		base = "Quake.ambient"
+		vsnd_files_track_01 = "sounds/quake/ambience/suck1.vsnd"
+		volume = 1.0
+		vsnd_duration = 4.539955
+	}
+	Quake.ambience_swamp1 = 
+	{
+		base = "Quake.ambient"
+		vsnd_files_track_01 = "sounds/quake/ambience/swamp1.vsnd"
+		volume = 0.7
+		vsnd_duration = 6.776961
+	}
+	Quake.ambience_swamp2 = 
+	{
+		base = "Quake.ambient"
+		vsnd_files_track_01 = "sounds/quake/ambience/swamp2.vsnd"
+		volume = 0.7
+		vsnd_duration = 8.844263
+	}
+	Quake.ambience_thunder1 = 
+	{
+		base = "Quake.ambient"
+		vsnd_files_track_01 = "sounds/quake/ambience/thunder1.vsnd"
+		volume = 0.7
+		vsnd_duration = 6.873787
+	}
+	Quake.ambience_water1 = 
+	{
+		base = "Quake.ambient"
+		vsnd_files_track_01 = "sounds/quake/ambience/water1.vsnd"
+		vsnd_duration = 6.421859
+	}
+	Quake.ambience_wind2 = 
+	{
+		base = "Quake.ambient"
+		vsnd_files_track_01 = "sounds/quake/ambience/wind2.vsnd"
+		vsnd_duration = 32.00272
+	}
+	Quake.ambience_windfly = 
+	{
+		base = "Quake.ambient"
+		vsnd_files_track_01 = "sounds/quake/ambience/windfly.vsnd"
+		vsnd_duration = 1.995646
+	}
+	Quake.blob_death1 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/blob/death1.vsnd"
+		vsnd_duration = 2.719456
+	}
+	Quake.blob_hit1 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/blob/hit1.vsnd"
+		vsnd_duration = 1.280454
+	}
+	Quake.blob_land1 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/blob/land1.vsnd"
+		vsnd_duration = 0.421542
+	}
+	Quake.blob_sight1 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/blob/sight1.vsnd"
+		vsnd_duration = 2.57415
+	}
+	Quake.boss1_death = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/boss1/death.vsnd"
+		vsnd_duration = 2.52712
+	}
+	Quake.boss1_out1 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/boss1/out1.vsnd"
+		vsnd_duration = 1.020635
+	}
+	Quake.boss1_pain = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/boss1/pain.vsnd"
+		vsnd_duration = 1.380771
+	}
+	Quake.boss1_sight1 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/boss1/sight1.vsnd"
+		vsnd_duration = 4.702041
+	}
+	Quake.boss1_throw = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/boss1/throw.vsnd"
+		vsnd_duration = 0.430023
+	}
+	Quake.boss2_death = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/boss2/death.vsnd"
+		vsnd_duration = 4.0
+	}
+	Quake.boss2_idle = 
+	{
+		base = "Quake.idle"
+		vsnd_files_track_01 = "sounds/quake/boss2/idle.vsnd"
+		vsnd_duration = 4.389524
+	}
+	Quake.boss2_pop2 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/boss2/pop2.vsnd"
+		vsnd_duration = 3.547891
+	}
+	Quake.boss2_sight = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/boss2/sight.vsnd"
+		vsnd_duration = 1.352834
+	}
+	Quake.buttons_airbut1 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/buttons/airbut1.vsnd"
+		vsnd_duration = 1.301769
+	}
+	Quake.buttons_switch02 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/buttons/switch02.vsnd"
+		vsnd_duration = 0.950113
+	}
+	Quake.buttons_switch04 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/buttons/switch04.vsnd"
+		vsnd_duration = 0.591293
+	}
+	Quake.buttons_switch21 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/buttons/switch21.vsnd"
+		vsnd_duration = 0.707211
+	}
+	Quake.demon_ddeath = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/demon/ddeath.vsnd"
+		vsnd_duration = 0.931655
+	}
+	Quake.demon_dhit2 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/demon/dhit2.vsnd"
+		vsnd_duration = 0.682698
+	}
+	Quake.demon_djump = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/demon/djump.vsnd"
+		vsnd_duration = 0.579116
+	}
+	Quake.demon_dland2 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/demon/dland2.vsnd"
+		vsnd_duration = 0.317052
+	}
+	Quake.demon_dpain1 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/demon/dpain1.vsnd"
+		vsnd_duration = 0.476825
+	}
+	Quake.demon_dsight = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/demon/dsight.vsnd"
+		vsnd_duration = 0.791383
+	}
+	Quake.demon_idle1 = 
+	{
+		base = "Quake.idle"
+		vsnd_files_track_01 = "sounds/quake/demon/idle1.vsnd"
+		vsnd_duration = 0.50161
+	}
+	Quake.demon_idle2 = 
+	{
+		base = "Quake.idle"
+		vsnd_files_track_01 = "sounds/quake/demon/idle2.vsnd"
+		vsnd_duration = 1.255329
+	}
+	Quake.demon_sight1 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/demon/sight1.vsnd"
+		vsnd_duration = 0.791383
+	}
+	Quake.demon_sight2 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/demon/sight2.vsnd"
+		vsnd_duration = 0.616009
+	}
+	Quake.dog_dattack1 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/dog/dattack1.vsnd"
+		vsnd_duration = 1.616304
+	}
+	Quake.dog_ddeath = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/dog/ddeath.vsnd"
+		vsnd_duration = 1.442653
+	}
+	Quake.dog_dpain1 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/dog/dpain1.vsnd"
+		vsnd_duration = 1.285828
+	}
+	Quake.dog_dsight = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/dog/dsight.vsnd"
+		vsnd_duration = 1.281338
+	}
+	Quake.dog_idle = 
+	{
+		base = "Quake.idle"
+		vsnd_files_track_01 = "sounds/quake/dog/idle.vsnd"
+		vsnd_duration = 1.616599
+	}
+	Quake.doors_airdoor1 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/doors/airdoor1.vsnd"
+		vsnd_duration = 4.746848
+	}
+	Quake.doors_airdoor2 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/doors/airdoor2.vsnd"
+		vsnd_duration = 3.550295
+	}
+	Quake.doors_basesec1 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/doors/basesec1.vsnd"
+		vsnd_duration = 0.840272
+	}
+	Quake.doors_basesec2 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/doors/basesec2.vsnd"
+		vsnd_duration = 0.731429
+	}
+	Quake.doors_basetry = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/doors/basetry.vsnd"
+		vsnd_duration = 0.835918
+	}
+	Quake.doors_baseuse = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/doors/baseuse.vsnd"
+		vsnd_duration = 0.664943
+	}
+	Quake.doors_ddoor1 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/doors/ddoor1.vsnd"
+		vsnd_duration = 0.65805
+	}
+	Quake.doors_ddoor2 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/doors/ddoor2.vsnd"
+		vsnd_duration = 0.347029
+	}
+	Quake.doors_doormv1 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/doors/doormv1.vsnd"
+		vsnd_duration = 2.860862
+	}
+	Quake.doors_drclos4 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/doors/drclos4.vsnd"
+		vsnd_duration = 2.3639
+	}
+	Quake.doors_hydro1 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/doors/hydro1.vsnd"
+		vsnd_duration = 1.215283
+	}
+	Quake.doors_hydro2 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/doors/hydro2.vsnd"
+		vsnd_duration = 0.78059
+	}
+	Quake.doors_latch2 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/doors/latch2.vsnd"
+		vsnd_duration = 0.953197
+	}
+	Quake.doors_medtry = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/doors/medtry.vsnd"
+		vsnd_duration = 1.530794
+	}
+	Quake.doors_meduse = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/doors/meduse.vsnd"
+		vsnd_duration = 1.76771
+	}
+	Quake.doors_runetry = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/doors/runetry.vsnd"
+		vsnd_duration = 2.596009
+	}
+	Quake.doors_runeuse = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/doors/runeuse.vsnd"
+		vsnd_duration = 1.31093
+	}
+	Quake.doors_stndr1 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/doors/stndr1.vsnd"
+		vsnd_duration = 3.869932
+	}
+	Quake.doors_stndr2 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/doors/stndr2.vsnd"
+		vsnd_duration = 2.633379
+	}
+	Quake.doors_winch2 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/doors/winch2.vsnd"
+		vsnd_duration = 1.187483
+	}
+	Quake.enforcer_death1 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/enforcer/death1.vsnd"
+		vsnd_duration = 2.814059
+	}
+	Quake.enforcer_enfire = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/enforcer/enfire.vsnd"
+		vsnd_duration = 1.846145
+	}
+	Quake.enforcer_enfstop = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/enforcer/enfstop.vsnd"
+		vsnd_duration = 1.846145
+	}
+	Quake.enforcer_idle1 = 
+	{
+		base = "Quake.idle"
+		vsnd_files_track_01 = "sounds/quake/enforcer/idle1.vsnd"
+		vsnd_duration = 2.720726
+	}
+	Quake.enforcer_pain1 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/enforcer/pain1.vsnd"
+		vsnd_duration = 1.846145
+	}
+	Quake.enforcer_pain2 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/enforcer/pain2.vsnd"
+		vsnd_duration = 1.846145
+	}
+	Quake.enforcer_sight1 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/enforcer/sight1.vsnd"
+		vsnd_duration = 2.769229
+	}
+	Quake.enforcer_sight2 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/enforcer/sight2.vsnd"
+		vsnd_duration = 2.769229
+	}
+	Quake.enforcer_sight3 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/enforcer/sight3.vsnd"
+		vsnd_duration = 2.572109
+	}
+	Quake.enforcer_sight4 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/enforcer/sight4.vsnd"
+		vsnd_duration = 2.110567
+	}
+	Quake.fish_bite = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/fish/bite.vsnd"
+		vsnd_duration = 1.730794
+	}
+	Quake.fish_death = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/fish/death.vsnd"
+		vsnd_duration = 1.038458
+	}
+	Quake.fish_idle = 
+	{
+		base = "Quake.idle"
+		vsnd_files_track_01 = "sounds/quake/fish/idle.vsnd"
+		vsnd_duration = 1.096145
+	}
+	Quake.hknight_attack1 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/hknight/attack1.vsnd"
+		vsnd_duration = 0.903401
+	}
+	Quake.hknight_death1 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/hknight/death1.vsnd"
+		vsnd_duration = 1.643039
+	}
+	Quake.hknight_grunt = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/hknight/grunt.vsnd"
+		vsnd_duration = 0.394195
+	}
+	Quake.hknight_hit = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/hknight/hit.vsnd"
+		vsnd_duration = 0.560726
+	}
+	Quake.hknight_idle = 
+	{
+		base = "Quake.idle"
+		vsnd_files_track_01 = "sounds/quake/hknight/idle.vsnd"
+		vsnd_duration = 2.016689
+	}
+	Quake.hknight_pain1 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/hknight/pain1.vsnd"
+		vsnd_duration = 1.086984
+	}
+	Quake.hknight_sight1 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/hknight/sight1.vsnd"
+		vsnd_duration = 3.041814
+	}
+	Quake.hknight_slash1 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/hknight/slash1.vsnd"
+		vsnd_duration = 0.191338
+	}
+	Quake.items_armor1 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/items/armor1.vsnd"
+		vsnd_duration = 1.0
+	}
+	Quake.items_damage = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/items/damage.vsnd"
+		vsnd_duration = 2.124989
+	}
+	Quake.items_damage2 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/items/damage2.vsnd"
+		vsnd_duration = 3.0
+	}
+	Quake.items_damage3 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/items/damage3.vsnd"
+		vsnd_duration = 1.162177
+	}
+	Quake.items_health1 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/items/health1.vsnd"
+		vsnd_duration = 0.749932
+	}
+	Quake.items_inv1 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/items/inv1.vsnd"
+		vsnd_duration = 1.499955
+	}
+	Quake.items_inv2 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/items/inv2.vsnd"
+		vsnd_duration = 3.0
+	}
+	Quake.items_inv3 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/items/inv3.vsnd"
+		vsnd_duration = 3.0
+	}
+	Quake.items_itembk2 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/items/itembk2.vsnd"
+		vsnd_duration = 0.874921
+	}
+	Quake.items_protect = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/items/protect.vsnd"
+		vsnd_duration = 2.0
+	}
+	Quake.items_protect2 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/items/protect2.vsnd"
+		vsnd_duration = 3.0
+	}
+	Quake.items_protect3 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/items/protect3.vsnd"
+		vsnd_duration = 2.124989
+	}
+	Quake.items_r_item1 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/items/r_item1.vsnd"
+		vsnd_duration = 0.601723
+	}
+	Quake.items_r_item2 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/items/r_item2.vsnd"
+		vsnd_duration = 0.874921
+	}
+	Quake.items_suit = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/items/suit.vsnd"
+		vsnd_duration = 2.499955
+	}
+	Quake.items_suit2 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/items/suit2.vsnd"
+		vsnd_duration = 3.499955
+	}
+	Quake.knight_idle = 
+	{
+		base = "Quake.idle"
+		vsnd_files_track_01 = "sounds/quake/knight/idle.vsnd"
+		vsnd_duration = 0.995193
+	}
+	Quake.knight_kdeath = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/knight/kdeath.vsnd"
+		vsnd_duration = 0.961542
+	}
+	Quake.knight_khurt = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/knight/khurt.vsnd"
+		vsnd_duration = 0.500045
+	}
+	Quake.knight_ksight = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/knight/ksight.vsnd"
+		vsnd_duration = 1.218594
+	}
+	Quake.knight_sword1 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/knight/sword1.vsnd"
+		vsnd_duration = 0.201905
+	}
+	Quake.knight_sword2 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/knight/sword2.vsnd"
+		vsnd_duration = 0.24517
+	}
+	Quake.misc_basekey = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/misc/basekey.vsnd"
+		vsnd_duration = 0.557279
+	}
+	Quake.misc_h2ohit1 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/misc/h2ohit1.vsnd"
+		vsnd_duration = 1.00644
+	}
+	Quake.misc_medkey = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/misc/medkey.vsnd"
+		vsnd_duration = 1.690884
+	}
+	Quake.misc_menu1 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/misc/menu1.vsnd"
+		vsnd_duration = 1.0445
+	}
+	Quake.misc_menu2 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/misc/menu2.vsnd"
+		vsnd_duration = 1.056916
+	}
+	Quake.misc_menu3 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/misc/menu3.vsnd"
+		vsnd_duration = 1.081088
+	}
+	Quake.misc_null = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/misc/null.vsnd"
+		vsnd_duration = 0.08127
+	}
+	Quake.misc_outwater = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/misc/outwater.vsnd"
+		vsnd_duration = 0.448027
+	}
+	Quake.misc_power = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/misc/power.vsnd"
+		vsnd_duration = 2.24771
+	}
+	Quake.misc_r_tele1 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/misc/r_tele1.vsnd"
+		vsnd_duration = 1.169161
+	}
+	Quake.misc_r_tele2 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/misc/r_tele2.vsnd"
+		vsnd_duration = 1.560181
+	}
+	Quake.misc_r_tele3 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/misc/r_tele3.vsnd"
+		vsnd_duration = 1.62288
+	}
+	Quake.misc_r_tele4 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/misc/r_tele4.vsnd"
+		vsnd_duration = 1.664354
+	}
+	Quake.misc_r_tele5 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/misc/r_tele5.vsnd"
+		vsnd_duration = 1.801157
+	}
+	Quake.misc_runekey = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/misc/runekey.vsnd"
+		vsnd_duration = 1.275374
+	}
+	Quake.misc_secret = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/misc/secret.vsnd"
+		vsnd_duration = 2.0
+	}
+	Quake.misc_talk = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/misc/talk.vsnd"
+		vsnd_duration = 0.433923
+	}
+	Quake.misc_trigger1 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/misc/trigger1.vsnd"
+		vsnd_duration = 1.640363
+	}
+	Quake.misc_water1 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/misc/water1.vsnd"
+		vsnd_duration = 0.510113
+	}
+	Quake.misc_water2 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/misc/water2.vsnd"
+		vsnd_duration = 0.291837
+	}
+	Quake.nav_editor_action_fail = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/nav_editor/action_fail.vsnd"
+		vsnd_duration = 0.946848
+	}
+	Quake.nav_editor_add_node = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/nav_editor/add_node.vsnd"
+		vsnd_duration = 0.507846
+	}
+	Quake.nav_editor_change_node_height = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/nav_editor/change_node_height.vsnd"
+		vsnd_duration = 0.260408
+	}
+	Quake.nav_editor_change_node_radius = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/nav_editor/change_node_radius.vsnd"
+		vsnd_duration = 0.260408
+	}
+	Quake.nav_editor_changed_edict = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/nav_editor/changed_edict.vsnd"
+		vsnd_duration = 0.525351
+	}
+	Quake.nav_editor_clear_test_node = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/nav_editor/clear_test_node.vsnd"
+		vsnd_duration = 1.155193
+	}
+	Quake.nav_editor_connect_node = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/nav_editor/connect_node.vsnd"
+		vsnd_duration = 0.338776
+	}
+	Quake.nav_editor_delete_node = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/nav_editor/delete_node.vsnd"
+		vsnd_duration = 1.135238
+	}
+	Quake.nav_editor_deselect_node = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/nav_editor/deselect_node.vsnd"
+		vsnd_duration = 1.219592
+	}
+	Quake.nav_editor_disconnect_node = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/nav_editor/disconnect_node.vsnd"
+		vsnd_duration = 0.292834
+	}
+	Quake.nav_editor_draw_traversals = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/nav_editor/draw_traversals.vsnd"
+		vsnd_duration = 0.359909
+	}
+	Quake.nav_editor_edit_edict = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/nav_editor/edit_edict.vsnd"
+		vsnd_duration = 0.365624
+	}
+	Quake.nav_editor_finish_node_move = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/nav_editor/finish_node_move.vsnd"
+		vsnd_duration = 0.9
+	}
+	Quake.nav_editor_menu_select = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/nav_editor/menu_select.vsnd"
+		vsnd_duration = 0.157098
+	}
+	Quake.nav_editor_menu_toggle = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/nav_editor/menu_toggle.vsnd"
+		vsnd_duration = 0.565986
+	}
+	Quake.nav_editor_mode_toggle = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/nav_editor/mode_toggle.vsnd"
+		vsnd_duration = 0.332698
+	}
+	Quake.nav_editor_move_node = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/nav_editor/move_node.vsnd"
+		vsnd_duration = 0.702857
+	}
+	Quake.nav_editor_place_test_node = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/nav_editor/place_test_node.vsnd"
+		vsnd_duration = 0.960408
+	}
+	Quake.nav_editor_return_to_select_state = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/nav_editor/return_to_select_state.vsnd"
+		vsnd_duration = 0.359909
+	}
+	Quake.nav_editor_select_link = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/nav_editor/select_link.vsnd"
+		vsnd_duration = 0.218413
+	}
+	Quake.nav_editor_select_node = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/nav_editor/select_node.vsnd"
+		vsnd_duration = 1.567891
+	}
+	Quake.nav_editor_toggle_global_state = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/nav_editor/toggle_global_state.vsnd"
+		vsnd_duration = 0.332698
+	}
+	Quake.ogre_ogdrag = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/ogre/ogdrag.vsnd"
+		vsnd_duration = 0.955828
+	}
+	Quake.ogre_ogdth = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/ogre/ogdth.vsnd"
+		vsnd_duration = 2.132063
+	}
+	Quake.ogre_ogidle = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/ogre/ogidle.vsnd"
+		vsnd_duration = 1.550204
+	}
+	Quake.ogre_ogidle2 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/ogre/ogidle2.vsnd"
+		vsnd_duration = 1.40771
+	}
+	Quake.ogre_ogpain1 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/ogre/ogpain1.vsnd"
+		vsnd_duration = 1.246803
+	}
+	Quake.ogre_ogsawatk = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/ogre/ogsawatk.vsnd"
+		vsnd_duration = 1.458141
+	}
+	Quake.ogre_ogwake = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/ogre/ogwake.vsnd"
+		vsnd_duration = 1.156281
+	}
+	Quake.plats_medplat1 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/plats/medplat1.vsnd"
+		vsnd_duration = 0.564444
+	}
+	Quake.plats_medplat2 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/plats/medplat2.vsnd"
+		vsnd_duration = 0.817324
+	}
+	Quake.plats_plat1 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/plats/plat1.vsnd"
+		vsnd_duration = 1.215283
+	}
+	Quake.plats_plat2 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/plats/plat2.vsnd"
+		vsnd_duration = 0.78059
+	}
+	Quake.plats_train1 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/plats/train1.vsnd"
+		vsnd_duration = 1.187483
+	}
+	Quake.plats_train2 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/plats/train2.vsnd"
+		vsnd_duration = 0.863401
+	}
+	Quake.player_axhit1 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/player_m/axhit1.vsnd"
+		vsnd_duration = 0.535833
+	}
+	Quake.player_axhit2 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/player_m/axhit2.vsnd"
+		vsnd_duration = 0.392925
+	}
+	Quake.player_death1 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/player_m/death1.vsnd"
+		vsnd_duration = 2.498367
+	}
+	Quake.player_death2 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/player_m/death2.vsnd"
+		vsnd_duration = 2.083356
+	}
+	Quake.player_death3 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/player_m/death3.vsnd"
+		vsnd_duration = 1.431701
+	}
+	Quake.player_drown1 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = 
+		[
+			"sounds/quake/player_m/gurp1.vsnd",
+			"sounds/quake/player_m/gurp2.vsnd",
+		]
+		vsnd_duration = 0.415828
+	}
+	Quake.player_drown2 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = 
+		[
+			"sounds/quake/player_m/gurp1.vsnd",
+			"sounds/quake/player_m/gurp2.vsnd",
+		]
+		vsnd_duration = 0.415828
+	}
+	Quake.player_gasp1 = 
+	{
+		base = "Quake.player"
+		vsnd_files_track_01 = "sounds/quake/player_m/gasp.vsnd"
+		vsnd_duration = 0.999592
+	}
+	Quake.player_gasp2 = 
+	{
+		base = "Quake.player"
+		vsnd_files_track_01 = "sounds/quake/player_m/gasp.vsnd"
+		vsnd_duration = 0.999592
+	}
+	Quake.player_gib = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/player_m/gib.vsnd"
+		vsnd_duration = 1.67288
+	}
+	Quake.player_h2odeath = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/player_m/drown.vsnd"
+		vsnd_duration = 2.500363
+	}
+	Quake.player_h2ojump = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/player_m/watr_out.vsnd"
+		vsnd_duration = 0.559728
+	}
+	Quake.player_inh2o = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/player_m/watr_un.vsnd"
+		vsnd_duration = 0.354104
+	}
+	Quake.player_inlava = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/player_m/fry.vsnd"
+		vsnd_duration = 1.708027
+	}
+	Quake.player_land = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/player_m/land1.vsnd"
+		vsnd_duration = 0.238231
+	}
+	Quake.player_land2 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/player_m/fall1.vsnd"
+		vsnd_duration = 0.671746
+	}
+	Quake.player_lburn1 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/player_m/fry.vsnd"
+		vsnd_duration = 1.708027
+	}
+	Quake.player_lburn2 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/player_m/fry.vsnd"
+		vsnd_duration = 1.708027
+	}
+	Quake.player_pain1 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/player_m/pain1.vsnd"
+		vsnd_duration = 0.991633
+	}
+	Quake.player_pain2 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/player_m/pain2.vsnd"
+		vsnd_duration = 0.790499
+	}
+	Quake.player_pain3 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/player_m/pain3.vsnd"
+		vsnd_duration = 0.759637
+	}
+	Quake.player_pain4 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/player_m/pain4.vsnd"
+		vsnd_duration = 0.593854
+	}
+	Quake.player_pain5 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/player_m/pain5.vsnd"
+		vsnd_duration = 0.505437
+	}
+	Quake.player_pain6 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/player_m/pain6.vsnd"
+		vsnd_duration = 0.488345
+	}
+	Quake.player_plyrjmp8 = 
+	{
+		base = "Quake.player"
+		vsnd_files_track_01 = "sounds/quake/player_m/jump1.vsnd"
+		vsnd_duration = 0.373651
+	}
+	Quake.player_slimbrn2 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/player_m/fry.vsnd"
+		vsnd_duration = 1.708027
+	}
+	Quake.player_teledth1 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = 
+		[
+			"sounds/quake/player_m/death1.vsnd",
+			"sounds/quake/player_m/death2.vsnd",
+			"sounds/quake/player_m/death3.vsnd",
+		]
+		vsnd_duration = 2.498367
+	}
+	Quake.player_tornoff2 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = 
+		[
+			"sounds/quake/player_m/death1.vsnd",
+			"sounds/quake/player_m/death3.vsnd",
+		]
+		vsnd_duration = 2.498367
+	}
+	Quake.player_udeath = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = 
+		[
+			"sounds/quake/player_m/death1.vsnd",
+			"sounds/quake/player_m/death3.vsnd",
+		]
+		vsnd_duration = 2.498367
+	}
+	Quake.player_pain = 
+	{
+		base = "Quake.player"
+		vsnd_files_track_01 = 
+		[
+			"sounds/quake/player_m/pain25_1.vsnd",
+			"sounds/quake/player_m/pain50_1.vsnd",
+			"sounds/quake/player_m/pain75_1.vsnd",
+			"sounds/quake/player_m/pain100_1.vsnd",
+		]
+		vsnd_duration = 0.97542
+	}
+	Quake.player_death = 
+	{
+		base = "Quake.player"
+		vsnd_files_track_01 = 
+		[
+			"sounds/quake/player_m/death1.vsnd",
+			"sounds/quake/player_m/death2.vsnd",
+			"sounds/quake/player_m/death3.vsnd",
+		]
+		vsnd_duration = 2.498367
+	}
+	Quake.shalrath_attack = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/shalrath/attack.vsnd"
+		vsnd_duration = 1.370159
+	}
+	Quake.shalrath_attack2 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/shalrath/attack2.vsnd"
+		vsnd_duration = 0.664399
+	}
+	Quake.shalrath_death = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/shalrath/death.vsnd"
+		vsnd_duration = 1.61932
+	}
+	Quake.shalrath_idle = 
+	{
+		base = "Quake.idle"
+		vsnd_files_track_01 = "sounds/quake/shalrath/idle.vsnd"
+		vsnd_duration = 1.204082
+	}
+	Quake.shalrath_pain = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/shalrath/pain.vsnd"
+		vsnd_duration = 1.650431
+	}
+	Quake.shalrath_sight = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/shalrath/sight.vsnd"
+		vsnd_duration = 1.785397
+	}
+	Quake.shambler_melee1 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/shambler/melee1.vsnd"
+		vsnd_duration = 0.331068
+	}
+	Quake.shambler_melee2 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/shambler/melee2.vsnd"
+		vsnd_duration = 0.372977
+	}
+	Quake.shambler_sattck1 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/shambler/sattck1.vsnd"
+		vsnd_duration = 1.295601
+	}
+	Quake.shambler_sboom = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/shambler/sboom.vsnd"
+		vsnd_duration = 1.020635
+	}
+	Quake.shambler_sdeath = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/shambler/sdeath.vsnd"
+		vsnd_duration = 1.812523
+	}
+	Quake.shambler_shurt2 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/shambler/shurt2.vsnd"
+		vsnd_duration = 0.589409
+	}
+	Quake.shambler_sidle = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/shambler/sidle.vsnd"
+		vsnd_duration = 0.753545
+	}
+	Quake.shambler_smack = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/shambler/smack.vsnd"
+		vsnd_duration = 1.0839
+	}
+	Quake.shambler_ssight = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/shambler/ssight.vsnd"
+		vsnd_duration = 1.661886
+	}
+	Quake.soldier_death1 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/soldier/death1.vsnd"
+		vsnd_duration = 1.683265
+	}
+	Quake.soldier_idle = 
+	{
+		base = "Quake.idle"
+		vsnd_files_track_01 = "sounds/quake/soldier/idle.vsnd"
+		vsnd_duration = 1.393197
+	}
+	Quake.soldier_pain1 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/soldier/pain1.vsnd"
+		vsnd_duration = 1.278458
+	}
+	Quake.soldier_pain2 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/soldier/pain2.vsnd"
+		vsnd_duration = 0.767234
+	}
+	Quake.soldier_sattck1 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/soldier/sattck1.vsnd"
+		vsnd_duration = 1.296599
+	}
+	Quake.soldier_sight1 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/soldier/sight1.vsnd"
+		vsnd_duration = 0.557279
+	}
+	Quake.weapons_ax1 = 
+	{
+		base = "Quake.player"
+		vsnd_files_track_01 = "sounds/quake/weapons/ax1.vsnd"
+		vsnd_duration = 0.215782
+	}
+	Quake.weapons_bounce = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/weapons/bounce.vsnd"
+		vsnd_duration = 0.521361
+	}
+	Quake.weapons_grenade = 
+	{
+		base = "Quake.player"
+		vsnd_files_track_01 = "sounds/quake/weapons/grenade.vsnd"
+		vsnd_duration = 0.677279
+	}
+	Quake.weapons_guncock = 
+	{
+		base = "Quake.player"
+		vsnd_files_track_01 = "sounds/quake/weapons/guncock.vsnd"
+		vsnd_duration = 1.296599
+	}
+	Quake.weapons_lhit = 
+	{
+		base = "Quake.player"
+		vsnd_files_track_01 = "sounds/quake/weapons/lhit.vsnd"
+		vsnd_duration = 0.598503
+	}
+	Quake.weapons_lock4 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/weapons/lock4.vsnd"
+		vsnd_duration = 0.355737
+	}
+	Quake.weapons_lstart = 
+	{
+		base = "Quake.player"
+		vsnd_files_track_01 = "sounds/quake/weapons/lstart.vsnd"
+		vsnd_duration = 1.253605
+	}
+	Quake.weapons_pkup = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/weapons/pkup.vsnd"
+		vsnd_duration = 0.45678
+	}
+	Quake.weapons_r_exp3 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/weapons/r_exp3.vsnd"
+		vsnd_duration = 0.989252
+	}
+	Quake.weapons_ric1 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/weapons/ric1.vsnd"
+		vsnd_duration = 0.444444
+	}
+	Quake.weapons_ric2 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/weapons/ric2.vsnd"
+		vsnd_duration = 0.969705
+	}
+	Quake.weapons_ric3 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/weapons/ric3.vsnd"
+		vsnd_duration = 0.950658
+	}
+	Quake.weapons_rocket1i = 
+	{
+		base = "Quake.player"
+		vsnd_files_track_01 = "sounds/quake/weapons/rocket1i.vsnd"
+		vsnd_duration = 0.660453
+	}
+	Quake.weapons_sgun1 = 
+	{
+		base = "Quake.player"
+		vsnd_files_track_01 = "sounds/quake/weapons/sgun1.vsnd"
+		vsnd_duration = 1.345669
+	}
+	Quake.weapons_shotgn2 = 
+	{
+		base = "Quake.player"
+		vsnd_files_track_01 = "sounds/quake/weapons/shotgn2.vsnd"
+		vsnd_duration = 0.775782
+	}
+	Quake.weapons_spike2 = 
+	{
+		base = "Quake.player"
+		vsnd_files_track_01 = "sounds/quake/weapons/spike2.vsnd"
+		vsnd_duration = 0.743039
+	}
+	Quake.weapons_tink1 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/weapons/tink1.vsnd"
+		vsnd_duration = 0.124989
+	}
+	Quake.wizard_hit = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/wizard/hit.vsnd"
+		vsnd_duration = 0.790567
+	}
+	Quake.wizard_wattack = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/wizard/wattack.vsnd"
+		vsnd_duration = 2.011791
+	}
+	Quake.wizard_wdeath = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/wizard/wdeath.vsnd"
+		vsnd_duration = 1.362993
+	}
+	Quake.wizard_widle1 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/wizard/widle1.vsnd"
+		vsnd_duration = 3.632018
+	}
+	Quake.wizard_widle2 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/wizard/widle2.vsnd"
+		vsnd_duration = 1.605805
+	}
+	Quake.wizard_wpain = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/wizard/wpain.vsnd"
+		vsnd_duration = 0.732063
+	}
+	Quake.wizard_wsight = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/wizard/wsight.vsnd"
+		vsnd_duration = 0.897506
+	}
+	Quake.zombie_idle_w2 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/zombie/idle_w2.vsnd"
+		vsnd_duration = 1.343742
+	}
+	Quake.zombie_z_fall = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/zombie/z_fall.vsnd"
+		vsnd_duration = 0.357143
+	}
+	Quake.zombie_z_gib = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/zombie/z_gib.vsnd"
+		vsnd_duration = 1.318004
+	}
+	Quake.zombie_z_hit = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/zombie/z_hit.vsnd"
+		vsnd_duration = 0.41678
+	}
+	Quake.zombie_z_idle = 
+	{
+		base = "Quake.idle"
+		vsnd_files_track_01 = "sounds/quake/zombie/z_idle.vsnd"
+		vsnd_duration = 1.25
+	}
+	Quake.zombie_z_idle1 = 
+	{
+		base = "Quake.idle"
+		vsnd_files_track_01 = "sounds/quake/zombie/z_idle1.vsnd"
+		vsnd_duration = 2.712199
+	}
+	Quake.zombie_z_miss = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/zombie/z_miss.vsnd"
+		vsnd_duration = 0.529887
+	}
+	Quake.zombie_z_pain = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/zombie/z_pain.vsnd"
+		vsnd_duration = 0.801088
+	}
+	Quake.zombie_z_pain1 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/zombie/z_pain1.vsnd"
+		vsnd_duration = 1.40771
+	}
+	Quake.zombie_z_shot1 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/zombie/z_shot1.vsnd"
+		vsnd_duration = 0.330884
+	}
+	Quake.player_f_pain = 
+	{
+		base = "Quake.player"
+		vsnd_files_track_01 = 
+		[
+			"sounds/quake/player_f/pain25_1.vsnd",
+			"sounds/quake/player_f/pain50_1.vsnd",
+			"sounds/quake/player_f/pain75_1.vsnd",
+			"sounds/quake/player_f/pain100_1.vsnd",
+		]
+		vsnd_duration = 0.788163
+	}
+	Quake.player_f_death = 
+	{
+		base = "Quake.player"
+		vsnd_files_track_01 = 
+		[
+			"sounds/quake/player_f/death1.vsnd",
+			"sounds/quake/player_f/death2.vsnd",
+			"sounds/quake/player_f/death3.vsnd",
+		]
+		vsnd_duration = 1.468571
+	}
+	Quake.player_f_teledth1 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = 
+		[
+			"sounds/quake/player_f/death1.vsnd",
+			"sounds/quake/player_f/death2.vsnd",
+			"sounds/quake/player_f/death3.vsnd",
+		]
+		vsnd_duration = 1.468571
+	}
+	Quake.player_f_udeath = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = 
+		[
+			"sounds/quake/player_f/death1.vsnd",
+			"sounds/quake/player_f/death3.vsnd",
+		]
+		vsnd_duration = 1.468571
+	}
+	Quake.player_f_tornoff2 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = 
+		[
+			"sounds/quake/player_f/death1.vsnd",
+			"sounds/quake/player_f/death3.vsnd",
+		]
+		vsnd_duration = 1.468571
+	}
+	Quake.player_f_plyrjmp8 = 
+	{
+		base = "Quake.player"
+		vsnd_files_track_01 = "sounds/quake/player_f/jump1.vsnd"
+		vsnd_duration = 0.384218
+	}
+	Quake.player_f_land = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/player_f/land1.vsnd"
+		vsnd_duration = 0.238231
+	}
+	Quake.player_f_land2 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/player_f/fall1.vsnd"
+		vsnd_duration = 0.529116
+	}
+	Quake.player_f_gasp1 = 
+	{
+		base = "Quake.player"
+		vsnd_files_track_01 = "sounds/quake/player_f/gasp.vsnd"
+		vsnd_duration = 1.000816
+	}
+	Quake.player_f_gasp2 = 
+	{
+		base = "Quake.player"
+		vsnd_files_track_01 = "sounds/quake/player_f/gasp.vsnd"
+		vsnd_duration = 1.000816
+	}
+	Quake.player_f_drown1 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = 
+		[
+			"sounds/quake/player_f/gurp1.vsnd",
+			"sounds/quake/player_f/gurp2.vsnd",
+		]
+		vsnd_duration = 0.415828
+	}
+	Quake.player_f_drown2 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = 
+		[
+			"sounds/quake/player_f/gurp1.vsnd",
+			"sounds/quake/player_f/gurp2.vsnd",
+		]
+		vsnd_duration = 0.415828
+	}
+	Quake.player_f_h2odeath = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/player_f/drown.vsnd"
+		vsnd_duration = 2.484626
+	}
+	Quake.player_f_inh2o = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/player_f/watr_un.vsnd"
+		vsnd_duration = 0.354104
+	}
+	Quake.player_f_h2ojump = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/player_f/watr_out.vsnd"
+		vsnd_duration = 0.559728
+	}
+	Quake.player_f_inlava = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/player_f/fry.vsnd"
+		vsnd_duration = 1.708027
+	}
+	Quake.player_f_lburn1 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/player_f/fry.vsnd"
+		vsnd_duration = 1.708027
+	}
+	Quake.player_f_lburn2 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/player_f/fry.vsnd"
+		vsnd_duration = 1.708027
+	}
+	Quake.player_f_slimbrn2 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/player_f/fry.vsnd"
+		vsnd_duration = 1.708027
+	}
+	Quake.player_f_axhit1 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/player_f/axhit1.vsnd"
+		vsnd_duration = 0.535833
+	}
+	Quake.player_f_axhit2 = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/player_f/axhit2.vsnd"
+		vsnd_duration = 0.392925
+	}
+	Quake.player_f_gib = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/player_f/gib.vsnd"
+		vsnd_duration = 1.67288
+	}
+	Quake.player = 
+	{
+		type = "csgo_mega"
+		volume = 1.0
+		pitch = 1.0
+		mixgroup = "Weapons"
+		position_relative_to_player = true
+	}
+	Quake.weapons_grenade_enemy = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/weapons/grenade.vsnd"
+		vsnd_duration = 0.677279
+	}
+	Quake.gib_udeath = 
+	{
+		base = "Quake.base"
+		vsnd_files_track_01 = "sounds/quake/player_m/udeath.vsnd"
+		vsnd_duration = 1.10771
+	}
+}

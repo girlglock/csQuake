@@ -1,0 +1,22 @@
+"Layer0"
+{
+	"shader"	"generic.vfx"
+	"F_RENDER_BACKFACES"	"1"
+	"F_SELF_ILLUM"	"1"
+	"g_bFogEnabled"	"1"
+	"g_nTextureAddressModeU"	"0"
+	"g_nTextureAddressModeV"	"0"
+	"g_flBumpStrength"	"1"
+	"g_flSelfIllumScale"	"1"
+	"g_vColorTint"	"[1.000000 1.000000 1.000000 0.000000]"
+	"g_vSelfIllumTint"	"[1.000000 1.000000 1.000000 0.000000]"
+	"TextureColor"	"materials/quake/bsps/metal6_3.png"
+	"TextureNormal"	"materials/default/default_normal.tga"
+	"TextureSelfIllumMask"	"materials/quake/bsps/metal6_3_ilim.png"
+	"Compiled Textures"
+	{
+		"g_tColor"	"materials/quake/bsps/metal6_3_png_30bb965e.vtex"
+		"g_tNormal"	"materials/default/default_normal_tga_f93ac262.vtex"
+		"g_tSelfIllumMask"	"materials/quake/bsps/metal6_3_ilim_png_aa14fba1.vtex"
+	}
+}

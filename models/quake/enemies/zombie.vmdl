@@ -1,0 +1,483 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:modeldoc28:version{fb63b6ca-f435-4aa0-a2c7-c66ddc651dca} -->
+{
+	rootNode = 
+	{
+		_class = "RootNode"
+		children = 
+		[
+			{
+				_class = "BoneMarkupList"
+				children = [  ]
+				bone_cull_type = "None"
+			},
+			{
+				_class = "RenderMeshList"
+				children = 
+				[
+					{
+						_class = "RenderMeshFile"
+						name = "zombie"
+						filename = "models/quake/enemies/zombie_zombie.dmx"
+					},
+				]
+			},
+			{
+				_class = "AnimationList"
+				children = 
+				[
+					{
+						_class = "AnimFile"
+						name = "zombie_atta"
+						source_filename = "models/quake/enemies/zombie_zombie_atta.dmx"
+						fade_in_time = 0.0
+						fade_out_time = 0.0
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+					},
+					{
+						_class = "AnimFile"
+						name = "zombie_attb"
+						source_filename = "models/quake/enemies/zombie_zombie_attb.dmx"
+						fade_in_time = 0.0
+						fade_out_time = 0.0
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+					},
+					{
+						_class = "AnimFile"
+						name = "zombie_attc"
+						source_filename = "models/quake/enemies/zombie_zombie_attc.dmx"
+						fade_in_time = 0.0
+						fade_out_time = 0.0
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+					},
+					{
+						_class = "AnimFile"
+						name = "zombie_cruc"
+						source_filename = "models/quake/enemies/zombie_zombie_cruc.dmx"
+						fade_in_time = 0.0
+						fade_out_time = 0.0
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+					},
+					{
+						_class = "AnimFile"
+						name = "zombie_paina"
+						source_filename = "models/quake/enemies/zombie_zombie_paina.dmx"
+						fade_in_time = 0.0
+						fade_out_time = 0.0
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+					},
+					{
+						_class = "AnimFile"
+						name = "zombie_painb"
+						source_filename = "models/quake/enemies/zombie_zombie_painb.dmx"
+						fade_in_time = 0.0
+						fade_out_time = 0.0
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+					},
+					{
+						_class = "AnimFile"
+						name = "zombie_painc"
+						source_filename = "models/quake/enemies/zombie_zombie_painc.dmx"
+						fade_in_time = 0.0
+						fade_out_time = 0.0
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+					},
+					{
+						_class = "AnimFile"
+						name = "zombie_paind"
+						source_filename = "models/quake/enemies/zombie_zombie_paind.dmx"
+						fade_in_time = 0.0
+						fade_out_time = 0.0
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+					},
+					{
+						_class = "AnimFile"
+						name = "zombie_paine"
+						source_filename = "models/quake/enemies/zombie_zombie_paine.dmx"
+						fade_in_time = 0.0
+						fade_out_time = 0.0
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+					},
+					{
+						_class = "AnimFile"
+						name = "zombie_run"
+						source_filename = "models/quake/enemies/zombie_zombie_run.dmx"
+						fade_in_time = 0.0
+						fade_out_time = 0.0
+						looping = true
+						delta = false
+						worldSpace = false
+						hidden = false
+						children = 
+						[
+							{
+								_class = "ExtractMotion"
+								extract_tx = true
+								extract_ty = true
+								extract_tz = false
+								extract_rz = false
+								linear = false
+								quadratic = false
+								motion_type = "uniform"
+							},
+						]
+					},
+					{
+						_class = "AnimFile"
+						name = "zombie_stand"
+						source_filename = "models/quake/enemies/zombie_zombie_stand.dmx"
+						fade_in_time = 0.0
+						fade_out_time = 0.0
+						looping = true
+						delta = false
+						worldSpace = false
+						hidden = false
+					},
+					{
+						_class = "AnimFile"
+						name = "zombie_walk"
+						source_filename = "models/quake/enemies/zombie_zombie_walk.dmx"
+						fade_in_time = 0.0
+						fade_out_time = 0.0
+						looping = true
+						delta = false
+						worldSpace = false
+						hidden = false
+						children = 
+						[
+							{
+								_class = "ExtractMotion"
+								extract_tx = true
+								extract_ty = true
+								extract_tz = false
+								extract_rz = false
+								linear = false
+								quadratic = false
+								motion_type = "uniform"
+							},
+						]
+					},
+					{
+						_class = "AnimFile"
+						name = "zombie_painedown"
+						source_filename = "models/quake/enemies/zombie_zombie_painedown.dmx"
+						fade_in_time = 0.0
+						fade_out_time = 0.0
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+					},
+					{
+						_class = "AnimFile"
+						name = "zombie_paineup"
+						source_filename = "models/quake/enemies/zombie_zombie_paineup.dmx"
+						fade_in_time = 0.0
+						fade_out_time = 0.0
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+					},
+				]
+			},
+			{
+				_class = "Skeleton"
+				children = 
+				[
+					{
+						_class = "Bone"
+						name = "r_hip"
+						origin = [ -0.000003, 0.704077, 5.001068 ]
+						angles = [ 81.014023, 4.32974, -89.999825 ]
+						do_not_discard = true
+						children = 
+						[
+							{
+								_class = "Bone"
+								name = "r_thigh"
+								origin = [ -0.0, 3.83336, 0.000001 ]
+								angles = [ 4.329607, -81.014008, -3.695178 ]
+								do_not_discard = true
+								children = 
+								[
+									{
+										_class = "Bone"
+										name = "r_calve"
+										origin = [ -0.000001, 13.500045, -0.000004 ]
+										angles = [ -0.14954, 2.661907, 13.468113 ]
+										do_not_discard = true
+										children = 
+										[
+											{
+												_class = "Bone"
+												name = "r_foot"
+												origin = [ 0.112284, 14.76179, 2.117097 ]
+												angles = [ 2.946145, -3.018938, -96.598343 ]
+												do_not_discard = true
+											},
+										]
+									},
+									{
+										_class = "Bone"
+										name = "r_thigh_001"
+										origin = [ 0.0, 13.500041, -0.000005 ]
+										angles = [ 0.00006, 0.000001, 93.695206 ]
+										do_not_discard = true
+									},
+								]
+							},
+						]
+					},
+					{
+						_class = "Bone"
+						name = "torso_bot"
+						origin = [ -0.000003, 0.704077, 5.001067 ]
+						angles = [ -0.000001, 179.999939, 89.999962 ]
+						do_not_discard = true
+						children = 
+						[
+							{
+								_class = "Bone"
+								name = "torso_top"
+								origin = [ -0.000001, 4.967565, 0.000002 ]
+								angles = [ -0.0, 0.0, 0.000003 ]
+								do_not_discard = true
+								children = 
+								[
+									{
+										_class = "Bone"
+										name = "r_shoulder"
+										origin = [ -0.0, 10.424903, 0.000005 ]
+										angles = [ 0.000001, -103.080597, -0.000009 ]
+										do_not_discard = true
+										children = 
+										[
+											{
+												_class = "Bone"
+												name = "r_bicep"
+												origin = [ 0.000004, 5.721367, 0.000002 ]
+												angles = [ -0.000002, -54.52861, -0.000004 ]
+												do_not_discard = true
+												children = 
+												[
+													{
+														_class = "Bone"
+														name = "r_forearm"
+														origin = [ 0.000005, 8.563451, 0.0 ]
+														angles = [ 0.275022, 2.529439, -16.783482 ]
+														do_not_discard = true
+														children = 
+														[
+															{
+																_class = "Bone"
+																name = "r_hand"
+																origin = [ 0.0, 7.483445, -0.000003 ]
+																angles = [ -0.505578, -0.864417, 1.922954 ]
+																do_not_discard = true
+															},
+														]
+													},
+												]
+											},
+										]
+									},
+									{
+										_class = "Bone"
+										name = "neck"
+										origin = [ -0.000001, 10.424899, 0.000006 ]
+										angles = [ -0.0, 0.0, -9.834242 ]
+										do_not_discard = true
+										children = 
+										[
+											{
+												_class = "Bone"
+												name = "head"
+												origin = [ -0.0, 3.096216, 0.000002 ]
+												angles = [ -0.0, 0.0, -9.814936 ]
+												do_not_discard = true
+											},
+										]
+									},
+									{
+										_class = "Bone"
+										name = "l_shoulder"
+										origin = [ -0.000001, 10.424907, 0.000005 ]
+										angles = [ -0.000001, 103.080666, -0.000009 ]
+										do_not_discard = true
+										children = 
+										[
+											{
+												_class = "Bone"
+												name = "l_bicep"
+												origin = [ 0.0, 5.721372, 0.000002 ]
+												angles = [ 0.000002, 54.528606, -0.000004 ]
+												do_not_discard = true
+												children = 
+												[
+													{
+														_class = "Bone"
+														name = "l_forearm"
+														origin = [ -0.000002, 8.563455, 0.0 ]
+														angles = [ -0.275021, -2.529386, -16.783482 ]
+														do_not_discard = true
+														children = 
+														[
+															{
+																_class = "Bone"
+																name = "l_hand"
+																origin = [ 0.0, 7.483445, -0.000002 ]
+																angles = [ 0.505578, 0.864417, 1.922956 ]
+																do_not_discard = true
+															},
+														]
+													},
+												]
+											},
+										]
+									},
+								]
+							},
+							{
+								_class = "Bone"
+								name = "torso_bot_001"
+								origin = [ -19.30933, -3.710343, -0.01581 ]
+								angles = [ 0.0, 0.0, -89.999962 ]
+								do_not_discard = true
+								children = 
+								[
+									{
+										_class = "Bone"
+										name = "torso_bot_002"
+										origin = [ -0.44121, 2.076141, -0.519084 ]
+										angles = [ -0.0, -0.0, -0.000003 ]
+										do_not_discard = true
+									},
+									{
+										_class = "Bone"
+										name = "torso_bot_003"
+										origin = [ 1.559179, -0.882149, -1.028713 ]
+										angles = [ -89.999962, 179.999939, 0.0 ]
+										do_not_discard = true
+									},
+								]
+							},
+						]
+					},
+					{
+						_class = "Bone"
+						name = "l_hip"
+						origin = [ -0.000003, 0.704077, 5.001068 ]
+						angles = [ -81.014023, -4.329842, -89.999825 ]
+						do_not_discard = true
+						children = 
+						[
+							{
+								_class = "Bone"
+								name = "l_thigh"
+								origin = [ 0.000001, 3.833362, 0.000001 ]
+								angles = [ -4.329548, 81.014008, -3.695178 ]
+								do_not_discard = true
+								children = 
+								[
+									{
+										_class = "Bone"
+										name = "l_calve"
+										origin = [ 0.000001, 13.500051, -0.000002 ]
+										angles = [ 0.149542, -2.661905, 13.468114 ]
+										do_not_discard = true
+										children = 
+										[
+											{
+												_class = "Bone"
+												name = "l_foot"
+												origin = [ -0.112287, 14.761763, 2.11709 ]
+												angles = [ -2.946143, 3.018939, -96.598343 ]
+												do_not_discard = true
+											},
+										]
+									},
+									{
+										_class = "Bone"
+										name = "l_thigh_001"
+										origin = [ 0.0, 13.500048, -0.000003 ]
+										angles = [ -0.000057, 0.000002, 93.695206 ]
+										do_not_discard = true
+									},
+								]
+							},
+						]
+					},
+					{
+						_class = "Bone"
+						name = "base_001"
+						origin = [ -0.000003, 0.704077, 5.001067 ]
+						angles = [ -0.000001, 179.999939, -60.579037 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "r_armik_000"
+						origin = [ -11.863183, -1.456767, 4.687599 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "l_armik_000"
+						origin = [ 11.863183, -1.45677, 4.687599 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "upperarmik_l"
+						origin = [ 8.834911, 9.525341, 11.180841 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "upperarmik_r"
+						origin = [ -8.834909, 9.525343, 11.180841 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "kneeik_l"
+						origin = [ 3.775504, -4.407471, -9.069633 ]
+						angles = [ -0.0, 179.999924, 0.0 ]
+						do_not_discard = true
+					},
+				]
+			},
+		]
+	}
+}

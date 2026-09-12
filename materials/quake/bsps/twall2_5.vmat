@@ -1,0 +1,23 @@
+"Layer0"
+{
+	"shader"	"csgo_lightmappedgeneric.vfx"
+	"F_RENDER_BACKFACES"	"1"
+	"g_bFogEnabled"	"1"
+	"g_nTextureAddressModeU"	"0"
+	"g_nTextureAddressModeV"	"0"
+	"g_flMetalness"	"0"
+	"g_flModelTintAmount"	"1"
+	"g_flVertexColorOpacityScale"	"1"
+	"g_vColorTint"	"[1.000000 1.000000 1.000000 0.000000]"
+	"g_vLayer1Tint"	"[1.000000 1.000000 1.000000 0.000000]"
+	"TextureLayer1Color"	"materials/quake/bsps/twall2_5.png"
+	"TextureLayer1AmbientOcclusion"	"materials/default/default_ao.tga"
+	"TextureLayer1Normal"	"materials/default/default_normal.tga"
+	"TextureLayer1Roughness"	"materials/default/default_7be61377_rough.png"
+	"Compiled Textures"
+	{
+		"g_tColor"	"materials/quake/bsps/twall2_5_png_8b0fa9b7.vtex"
+		"g_tLayer1AmbientOcclusion"	"materials/default/default_ao_tga_559f1ac6.vtex"
+		"g_tLayer1NormalRoughness"	"materials/default/default_normal_tga_7be61377.vtex"
+	}
+}

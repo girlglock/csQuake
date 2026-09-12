@@ -1,0 +1,296 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:modeldoc41:version{12fc9d44-453a-4ae4-b4d9-7e2ac0bbd4e0} -->
+{
+	rootNode =
+	{
+		_class = "RootNode"
+		children =
+		[
+			{
+				_class = "RenderMeshList"
+				children =
+				[
+					{
+						_class = "RenderMeshFile"
+						name = "model_0"
+						children =
+						[
+							{
+								_class = "ReplaceMeshMaterials"
+								remaps =
+								[
+									{
+										from = "slipbotsd.vmat"
+										to = "materials/quake/bsps/slipbotsd.vmat"
+									},
+									{
+										from = "p0slipbot.vmat"
+										to = "materials/quake/bsps/p0slipbot.vmat"
+									},
+									{
+										from = "slipside.vmat"
+										to = "materials/quake/bsps/slipside.vmat"
+									},
+									{
+										from = "sliplite.vmat"
+										to = "materials/quake/bsps/sliplite.vmat"
+									},
+									{
+										from = "sfloor4_2.vmat"
+										to = "materials/quake/bsps/sfloor4_2.vmat"
+									},
+									{
+										from = "tech08_1.vmat"
+										to = "materials/quake/bsps/tech08_1.vmat"
+									},
+									{
+										from = "tech04_3.vmat"
+										to = "materials/quake/bsps/tech04_3.vmat"
+									},
+									{
+										from = "tech04_1.vmat"
+										to = "materials/quake/bsps/tech04_1.vmat"
+									},
+									{
+										from = "tech01_7.vmat"
+										to = "materials/quake/bsps/tech01_7.vmat"
+									},
+									{
+										from = "tlight02.vmat"
+										to = "materials/quake/bsps/tlight02.vmat"
+									},
+									{
+										from = "tech09_3.vmat"
+										to = "materials/quake/bsps/tech09_3.vmat"
+									},
+									{
+										from = "comp1_3.vmat"
+										to = "materials/quake/bsps/comp1_3.vmat"
+									},
+									{
+										from = "comp1_1.vmat"
+										to = "materials/quake/bsps/comp1_1.vmat"
+									},
+									{
+										from = "comp1_4.vmat"
+										to = "materials/quake/bsps/comp1_4.vmat"
+									},
+									{
+										from = "comp1_2.vmat"
+										to = "materials/quake/bsps/comp1_2.vmat"
+									},
+									{
+										from = "comp1_6.vmat"
+										to = "materials/quake/bsps/comp1_6.vmat"
+									},
+									{
+										from = "tlight10.vmat"
+										to = "materials/quake/bsps/tlight10.vmat"
+									},
+									{
+										from = "tech01_1.vmat"
+										to = "materials/quake/bsps/tech01_1.vmat"
+									},
+									{
+										from = "tech10_3.vmat"
+										to = "materials/quake/bsps/tech10_3.vmat"
+									},
+									{
+										from = "tlight08.vmat"
+										to = "materials/quake/bsps/tlight08.vmat"
+									},
+									{
+										from = "tlight07.vmat"
+										to = "materials/quake/bsps/tlight07.vmat"
+									},
+									{
+										from = "tech01_6.vmat"
+										to = "materials/quake/bsps/tech01_6.vmat"
+									},
+									{
+										from = "tech07_2.vmat"
+										to = "materials/quake/bsps/tech07_2.vmat"
+									},
+									{
+										from = "tlight11.vmat"
+										to = "materials/quake/bsps/tlight11.vmat"
+									},
+									{
+										from = "ground1_6.vmat"
+										to = "materials/quake/bsps/ground1_6.vmat"
+									},
+									{
+										from = "uwall1_2.vmat"
+										to = "materials/quake/bsps/uwall1_2.vmat"
+									},
+									{
+										from = "sky4.vmat"
+										to = "materials/quake/bsps/sky4.vmat"
+									},
+									{
+										from = "tech04_2.vmat"
+										to = "materials/quake/bsps/tech04_2.vmat"
+									},
+									{
+										from = "ground1_2.vmat"
+										to = "materials/quake/bsps/ground1_2.vmat"
+									},
+									{
+										from = "ecop1_6.vmat"
+										to = "materials/quake/bsps/ecop1_6.vmat"
+									},
+									{
+										from = "twall5_3.vmat"
+										to = "materials/quake/bsps/twall5_3.vmat"
+									},
+									{
+										from = "twall1_1.vmat"
+										to = "materials/quake/bsps/twall1_1.vmat"
+									},
+									{
+										from = "twall2_2.vmat"
+										to = "materials/quake/bsps/twall2_2.vmat"
+									},
+									{
+										from = "twall2_5.vmat"
+										to = "materials/quake/bsps/twall2_5.vmat"
+									},
+									{
+										from = "twall2_6.vmat"
+										to = "materials/quake/bsps/twall2_6.vmat"
+									},
+									{
+										from = "comp1_5.vmat"
+										to = "materials/quake/bsps/comp1_5.vmat"
+									},
+									{
+										from = "twall5_1.vmat"
+										to = "materials/quake/bsps/twall5_1.vmat"
+									},
+									{
+										from = "twall2_1.vmat"
+										to = "materials/quake/bsps/twall2_1.vmat"
+									},
+									{
+										from = "tech11_2.vmat"
+										to = "materials/quake/bsps/tech11_2.vmat"
+									},
+									{
+										from = "sfloor4_5.vmat"
+										to = "materials/quake/bsps/sfloor4_5.vmat"
+									},
+									{
+										from = "tech01_9.vmat"
+										to = "materials/quake/bsps/tech01_9.vmat"
+									},
+									{
+										from = "tech10_1.vmat"
+										to = "materials/quake/bsps/tech10_1.vmat"
+									},
+									{
+										from = "twall3_1.vmat"
+										to = "materials/quake/bsps/twall3_1.vmat"
+									},
+									{
+										from = "twall2_3.vmat"
+										to = "materials/quake/bsps/twall2_3.vmat"
+									},
+									{
+										from = "ecop1_4.vmat"
+										to = "materials/quake/bsps/ecop1_4.vmat"
+									},
+									{
+										from = "tlight01.vmat"
+										to = "materials/quake/bsps/tlight01.vmat"
+									},
+									{
+										from = "xteleport.vmat"
+										to = "materials/quake/bsps/xteleport.vmat"
+									},
+									{
+										from = "ecop1_1.vmat"
+										to = "materials/quake/bsps/ecop1_1.vmat"
+									},
+									{
+										from = "basebutn3.vmat"
+										to = "materials/quake/bsps/basebutn3.vmat"
+									},
+									{
+										from = "switch_1.vmat"
+										to = "materials/quake/bsps/switch_1.vmat"
+									},
+									{
+										from = "z_exit.vmat"
+										to = "materials/quake/bsps/z_exit.vmat"
+									},
+									{
+										from = "p0planet.vmat"
+										to = "materials/quake/bsps/p0planet.vmat"
+									},
+									{
+										from = "p0slip.vmat"
+										to = "materials/quake/bsps/p0slip.vmat"
+									},
+									{
+										from = "slip1.vmat"
+										to = "materials/quake/bsps/slip1.vmat"
+									},
+									{
+										from = "sliptopsd.vmat"
+										to = "materials/quake/bsps/sliptopsd.vmat"
+									},
+									{
+										from = "p0sliptop.vmat"
+										to = "materials/quake/bsps/p0sliptop.vmat"
+									},
+									{
+										from = "crate0_side.vmat"
+										to = "materials/quake/bsps/crate0_side.vmat"
+									},
+									{
+										from = "crate0_top.vmat"
+										to = "materials/quake/bsps/crate0_top.vmat"
+									},
+								]
+								use_single_material = false
+								single_override_material = ""
+							},
+						]
+						filename = "maps/e1m1/bsps/model_0.smd"
+						import_scale = 1.0
+						import_filter =
+						{
+							exclude_by_default = false
+							exception_list = [  ]
+						}
+					},
+				]
+			},
+			{
+				_class = "PhysicsShapeList"
+				children =
+				[
+					{
+						_class = "PhysicsMeshFromRender"
+						parent_bone = "root"
+						surface_prop = "default"
+						collision_prop = "default"
+						tool_material = ""
+						renderMeshList = [  ]
+						simplification_params =
+						{
+							qemError = 0.0
+							maxMeshVertices = 0
+							small_element_threshold = 0.0
+							thin_element_threshold = 0.0
+						}
+					},
+				]
+				leave_body_collision_unmodified = false
+				body_order = "bone_depth"
+			},
+		]
+		model_archetype = ""
+		primary_associated_entity = ""
+		document_sub_type = "ModelDocSubType_None"
+	}
+}

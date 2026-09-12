@@ -1,0 +1,2492 @@
+<!-- xml reconstructed by Source 2 Viewer 19.2.0.0 - https://valveresourceformat.github.io -->
+<root>
+	<styles>
+		<include src="s2r://panorama/styles/custom_game/quake_glyphs.vcss_c" />
+		<include src="s2r://panorama/styles/custom_game/quake_menufont.vcss_c" />
+		<include src="s2r://panorama/styles/custom_game/quake_hud.vcss_c" />
+		<include src="s2r://panorama/styles/custom_game/quake_menu.vcss_c" />
+	</styles>
+	<Panel class="Root">
+		<Panel id="q_hud" class="QHud QHidden">
+			<Panel id="q_qw" class="QStyle">
+				<Panel id="qw_cluster" class="QCluster">
+					<Panel id="q_key0" class="QItem" />
+					<Panel id="q_key1" class="QItem" />
+					<Panel id="q_pow0" class="QItem" />
+					<Panel id="q_pow1" class="QItem" />
+					<Panel id="q_pow2" class="QItem" />
+					<Panel id="q_pow3" class="QItem" />
+					<Panel id="q_armor_icon" class="QIcon QArmorIcon" />
+					<Panel id="q_armor_d0" class="QDig" />
+					<Panel id="q_armor_d1" class="QDig" />
+					<Panel id="q_armor_d2" class="QDig" />
+					<Panel id="q_face" class="QFace" />
+					<Panel id="q_hp_d0" class="QDig" />
+					<Panel id="q_hp_d1" class="QDig" />
+					<Panel id="q_hp_d2" class="QDig" />
+					<Panel id="q_ammo_icon" class="QIcon QAmmoIcon" />
+					<Panel id="q_ammo_d0" class="QDig" />
+					<Panel id="q_ammo_d1" class="QDig" />
+					<Panel id="q_ammo_d2" class="QDig" />
+				</Panel>
+				<Panel id="qw_inv" class="QwInv">
+					<Panel id="q_wrow" class="QWRow QWRowV">
+						<Panel id="q_ws0" class="QWSlot">
+							<Panel id="q_wpn0" class="QWpn">
+								<Panel class="Gl QWKey g49" />
+							</Panel>
+						</Panel>
+						<Panel id="q_ws1" class="QWSlot">
+							<Panel id="q_wpn1" class="QWpn">
+								<Panel class="Gl QWKey g50" />
+							</Panel>
+						</Panel>
+						<Panel id="q_ws2" class="QWSlot">
+							<Panel id="q_wpn2" class="QWpn">
+								<Panel class="Gl QWKey g51" />
+							</Panel>
+						</Panel>
+						<Panel id="q_ws3" class="QWSlot">
+							<Panel id="q_wpn3" class="QWpn">
+								<Panel class="Gl QWKey g52" />
+							</Panel>
+						</Panel>
+						<Panel id="q_ws4" class="QWSlot">
+							<Panel id="q_wpn4" class="QWpn">
+								<Panel class="Gl QWKey g52" />
+							</Panel>
+						</Panel>
+						<Panel id="q_ws5" class="QWSlot">
+							<Panel id="q_wpn5" class="QWpn">
+								<Panel class="Gl QWKey g52" />
+							</Panel>
+						</Panel>
+						<Panel id="q_ws6" class="QWSlot">
+							<Panel id="q_wpn6" class="QWpn">
+								<Panel class="Gl QWKey g52" />
+							</Panel>
+						</Panel>
+					</Panel>
+					<Panel id="qw_ambg0" class="QwAmBg" />
+					<Panel id="qw_ambg1" class="QwAmBg" />
+					<Panel id="qw_ambg2" class="QwAmBg" />
+					<Panel id="qw_ambg3" class="QwAmBg" />
+					<Panel id="q_sm00" class="QSm" />
+					<Panel id="q_sm01" class="QSm" />
+					<Panel id="q_sm02" class="QSm" />
+					<Panel id="q_sm10" class="QSm" />
+					<Panel id="q_sm11" class="QSm" />
+					<Panel id="q_sm12" class="QSm" />
+					<Panel id="q_sm20" class="QSm" />
+					<Panel id="q_sm21" class="QSm" />
+					<Panel id="q_sm22" class="QSm" />
+					<Panel id="q_sm30" class="QSm" />
+					<Panel id="q_sm31" class="QSm" />
+					<Panel id="q_sm32" class="QSm" />
+					<Panel id="qw_sigbg" class="QwSigBg" />
+					<Panel id="q_sig0" class="QSig" />
+					<Panel id="q_sig1" class="QSig" />
+					<Panel id="q_sig2" class="QSig" />
+					<Panel id="q_sig3" class="QSig" />
+				</Panel>
+			</Panel>
+			<Panel id="q_xhair" class="QXhair Gl g43" hittest="false" />
+			<Panel id="q_speed" class="QSpeed">
+				<Panel id="q_spd0" class="QSm QSpd" />
+				<Panel id="q_spd1" class="QSm QSpd" />
+				<Panel id="q_spd2" class="QSm QSpd" />
+				<Panel id="q_spd3" class="QSm QSpd" />
+			</Panel>
+			<Panel id="q_log" class="QLog" hittest="false">
+				<Panel id="q_log0" class="Gl" hittest="false" />
+				<Panel id="q_log1" class="Gl" hittest="false" />
+				<Panel id="q_log2" class="Gl" hittest="false" />
+				<Panel id="q_log3" class="Gl" hittest="false" />
+				<Panel id="q_log4" class="Gl" hittest="false" />
+				<Panel id="q_log5" class="Gl" hittest="false" />
+				<Panel id="q_log6" class="Gl" hittest="false" />
+				<Panel id="q_log7" class="Gl" hittest="false" />
+				<Panel id="q_log8" class="Gl" hittest="false" />
+				<Panel id="q_log9" class="Gl" hittest="false" />
+				<Panel id="q_log10" class="Gl" hittest="false" />
+				<Panel id="q_log11" class="Gl" hittest="false" />
+				<Panel id="q_log12" class="Gl" hittest="false" />
+				<Panel id="q_log13" class="Gl" hittest="false" />
+				<Panel id="q_log14" class="Gl" hittest="false" />
+				<Panel id="q_log15" class="Gl" hittest="false" />
+				<Panel id="q_log16" class="Gl" hittest="false" />
+				<Panel id="q_log17" class="Gl" hittest="false" />
+				<Panel id="q_log18" class="Gl" hittest="false" />
+				<Panel id="q_log19" class="Gl" hittest="false" />
+				<Panel id="q_log20" class="Gl" hittest="false" />
+				<Panel id="q_log21" class="Gl" hittest="false" />
+				<Panel id="q_log22" class="Gl" hittest="false" />
+				<Panel id="q_log23" class="Gl" hittest="false" />
+				<Panel id="q_log24" class="Gl" hittest="false" />
+				<Panel id="q_log25" class="Gl" hittest="false" />
+				<Panel id="q_log26" class="Gl" hittest="false" />
+				<Panel id="q_log27" class="Gl" hittest="false" />
+				<Panel id="q_log28" class="Gl" hittest="false" />
+				<Panel id="q_log29" class="Gl" hittest="false" />
+				<Panel id="q_log30" class="Gl" hittest="false" />
+				<Panel id="q_log31" class="Gl" hittest="false" />
+				<Panel id="q_log32" class="Gl" hittest="false" />
+				<Panel id="q_log33" class="Gl" hittest="false" />
+				<Panel id="q_log34" class="Gl" hittest="false" />
+				<Panel id="q_log35" class="Gl" hittest="false" />
+				<Panel id="q_log36" class="Gl" hittest="false" />
+				<Panel id="q_log37" class="Gl" hittest="false" />
+				<Panel id="q_log38" class="Gl" hittest="false" />
+				<Panel id="q_log39" class="Gl" hittest="false" />
+				<Panel id="q_log40" class="Gl" hittest="false" />
+				<Panel id="q_log41" class="Gl" hittest="false" />
+				<Panel id="q_log42" class="Gl" hittest="false" />
+				<Panel id="q_log43" class="Gl" hittest="false" />
+				<Panel id="q_log44" class="Gl" hittest="false" />
+				<Panel id="q_log45" class="Gl" hittest="false" />
+				<Panel id="q_log46" class="Gl" hittest="false" />
+				<Panel id="q_log47" class="Gl" hittest="false" />
+				<Panel id="q_log48" class="Gl" hittest="false" />
+				<Panel id="q_log49" class="Gl" hittest="false" />
+				<Panel id="q_log50" class="Gl" hittest="false" />
+				<Panel id="q_log51" class="Gl" hittest="false" />
+				<Panel id="q_log52" class="Gl" hittest="false" />
+				<Panel id="q_log53" class="Gl" hittest="false" />
+				<Panel id="q_log54" class="Gl" hittest="false" />
+				<Panel id="q_log55" class="Gl" hittest="false" />
+				<Panel id="q_log56" class="Gl" hittest="false" />
+				<Panel id="q_log57" class="Gl" hittest="false" />
+				<Panel id="q_log58" class="Gl" hittest="false" />
+				<Panel id="q_log59" class="Gl" hittest="false" />
+				<Panel id="q_log60" class="Gl" hittest="false" />
+				<Panel id="q_log61" class="Gl" hittest="false" />
+				<Panel id="q_log62" class="Gl" hittest="false" />
+				<Panel id="q_log63" class="Gl" hittest="false" />
+				<Panel id="q_log64" class="Gl" hittest="false" />
+				<Panel id="q_log65" class="Gl" hittest="false" />
+				<Panel id="q_log66" class="Gl" hittest="false" />
+				<Panel id="q_log67" class="Gl" hittest="false" />
+				<Panel id="q_log68" class="Gl" hittest="false" />
+				<Panel id="q_log69" class="Gl" hittest="false" />
+				<Panel id="q_log70" class="Gl" hittest="false" />
+				<Panel id="q_log71" class="Gl" hittest="false" />
+				<Panel id="q_log72" class="Gl" hittest="false" />
+				<Panel id="q_log73" class="Gl" hittest="false" />
+				<Panel id="q_log74" class="Gl" hittest="false" />
+				<Panel id="q_log75" class="Gl" hittest="false" />
+				<Panel id="q_log76" class="Gl" hittest="false" />
+				<Panel id="q_log77" class="Gl" hittest="false" />
+				<Panel id="q_log78" class="Gl" hittest="false" />
+				<Panel id="q_log79" class="Gl" hittest="false" />
+				<Panel id="q_log80" class="Gl" hittest="false" />
+				<Panel id="q_log81" class="Gl" hittest="false" />
+				<Panel id="q_log82" class="Gl" hittest="false" />
+				<Panel id="q_log83" class="Gl" hittest="false" />
+				<Panel id="q_log84" class="Gl" hittest="false" />
+				<Panel id="q_log85" class="Gl" hittest="false" />
+				<Panel id="q_log86" class="Gl" hittest="false" />
+				<Panel id="q_log87" class="Gl" hittest="false" />
+				<Panel id="q_log88" class="Gl" hittest="false" />
+				<Panel id="q_log89" class="Gl" hittest="false" />
+				<Panel id="q_log90" class="Gl" hittest="false" />
+				<Panel id="q_log91" class="Gl" hittest="false" />
+				<Panel id="q_log92" class="Gl" hittest="false" />
+				<Panel id="q_log93" class="Gl" hittest="false" />
+				<Panel id="q_log94" class="Gl" hittest="false" />
+				<Panel id="q_log95" class="Gl" hittest="false" />
+				<Panel id="q_log96" class="Gl" hittest="false" />
+				<Panel id="q_log97" class="Gl" hittest="false" />
+				<Panel id="q_log98" class="Gl" hittest="false" />
+				<Panel id="q_log99" class="Gl" hittest="false" />
+				<Panel id="q_log100" class="Gl" hittest="false" />
+				<Panel id="q_log101" class="Gl" hittest="false" />
+				<Panel id="q_log102" class="Gl" hittest="false" />
+				<Panel id="q_log103" class="Gl" hittest="false" />
+				<Panel id="q_log104" class="Gl" hittest="false" />
+				<Panel id="q_log105" class="Gl" hittest="false" />
+				<Panel id="q_log106" class="Gl" hittest="false" />
+				<Panel id="q_log107" class="Gl" hittest="false" />
+				<Panel id="q_log108" class="Gl" hittest="false" />
+				<Panel id="q_log109" class="Gl" hittest="false" />
+				<Panel id="q_log110" class="Gl" hittest="false" />
+				<Panel id="q_log111" class="Gl" hittest="false" />
+				<Panel id="q_log112" class="Gl" hittest="false" />
+				<Panel id="q_log113" class="Gl" hittest="false" />
+				<Panel id="q_log114" class="Gl" hittest="false" />
+				<Panel id="q_log115" class="Gl" hittest="false" />
+				<Panel id="q_log116" class="Gl" hittest="false" />
+				<Panel id="q_log117" class="Gl" hittest="false" />
+				<Panel id="q_log118" class="Gl" hittest="false" />
+				<Panel id="q_log119" class="Gl" hittest="false" />
+				<Panel id="q_log120" class="Gl" hittest="false" />
+				<Panel id="q_log121" class="Gl" hittest="false" />
+				<Panel id="q_log122" class="Gl" hittest="false" />
+				<Panel id="q_log123" class="Gl" hittest="false" />
+				<Panel id="q_log124" class="Gl" hittest="false" />
+				<Panel id="q_log125" class="Gl" hittest="false" />
+				<Panel id="q_log126" class="Gl" hittest="false" />
+				<Panel id="q_log127" class="Gl" hittest="false" />
+			</Panel>
+			<Panel id="q_stats" class="QStats">
+				<Panel class="QStatRow">
+					<Panel id="q_lt0" class="Gl" hittest="false" />
+					<Panel id="q_lt1" class="Gl" hittest="false" />
+					<Panel id="q_lt2" class="Gl" hittest="false" />
+					<Panel id="q_lt3" class="Gl" hittest="false" />
+					<Panel id="q_lt4" class="Gl" hittest="false" />
+					<Panel id="q_lt5" class="Gl" hittest="false" />
+					<Panel id="q_lt6" class="Gl" hittest="false" />
+					<Panel id="q_lt7" class="Gl" hittest="false" />
+					<Panel id="q_lt8" class="Gl" hittest="false" />
+					<Panel id="q_lt9" class="Gl" hittest="false" />
+					<Panel id="q_lt10" class="Gl" hittest="false" />
+					<Panel id="q_lt11" class="Gl" hittest="false" />
+					<Panel id="q_lt12" class="Gl" hittest="false" />
+					<Panel id="q_lt13" class="Gl" hittest="false" />
+					<Panel id="q_lt14" class="Gl" hittest="false" />
+					<Panel id="q_lt15" class="Gl" hittest="false" />
+				</Panel>
+				<Panel class="QStatRow">
+					<Panel id="q_ks0" class="Gl" hittest="false" />
+					<Panel id="q_ks1" class="Gl" hittest="false" />
+					<Panel id="q_ks2" class="Gl" hittest="false" />
+					<Panel id="q_ks3" class="Gl" hittest="false" />
+					<Panel id="q_ks4" class="Gl" hittest="false" />
+					<Panel id="q_ks5" class="Gl" hittest="false" />
+					<Panel id="q_ks6" class="Gl" hittest="false" />
+					<Panel id="q_ks7" class="Gl" hittest="false" />
+					<Panel id="q_ks8" class="Gl" hittest="false" />
+					<Panel id="q_ks9" class="Gl" hittest="false" />
+					<Panel id="q_ks10" class="Gl" hittest="false" />
+					<Panel id="q_ks11" class="Gl" hittest="false" />
+					<Panel id="q_ks12" class="Gl" hittest="false" />
+					<Panel id="q_ks13" class="Gl" hittest="false" />
+					<Panel id="q_ks14" class="Gl" hittest="false" />
+					<Panel id="q_ks15" class="Gl" hittest="false" />
+				</Panel>
+				<Panel class="QStatRow">
+					<Panel id="q_scs0" class="Gl" hittest="false" />
+					<Panel id="q_scs1" class="Gl" hittest="false" />
+					<Panel id="q_scs2" class="Gl" hittest="false" />
+					<Panel id="q_scs3" class="Gl" hittest="false" />
+					<Panel id="q_scs4" class="Gl" hittest="false" />
+					<Panel id="q_scs5" class="Gl" hittest="false" />
+					<Panel id="q_scs6" class="Gl" hittest="false" />
+					<Panel id="q_scs7" class="Gl" hittest="false" />
+					<Panel id="q_scs8" class="Gl" hittest="false" />
+					<Panel id="q_scs9" class="Gl" hittest="false" />
+					<Panel id="q_scs10" class="Gl" hittest="false" />
+					<Panel id="q_scs11" class="Gl" hittest="false" />
+					<Panel id="q_scs12" class="Gl" hittest="false" />
+					<Panel id="q_scs13" class="Gl" hittest="false" />
+					<Panel id="q_scs14" class="Gl" hittest="false" />
+					<Panel id="q_scs15" class="Gl" hittest="false" />
+				</Panel>
+			</Panel>
+			<Panel id="q_hints" class="QHints">
+				<Panel class="QHintRow">
+					<Panel id="q_hint0_0" class="Gl" hittest="false" />
+					<Panel id="q_hint0_1" class="Gl" hittest="false" />
+					<Panel id="q_hint0_2" class="Gl" hittest="false" />
+					<Panel id="q_hint0_3" class="Gl" hittest="false" />
+					<Panel id="q_hint0_4" class="Gl" hittest="false" />
+					<Panel id="q_hint0_5" class="Gl" hittest="false" />
+					<Panel id="q_hint0_6" class="Gl" hittest="false" />
+					<Panel id="q_hint0_7" class="Gl" hittest="false" />
+					<Panel id="q_hint0_8" class="Gl" hittest="false" />
+					<Panel id="q_hint0_9" class="Gl" hittest="false" />
+					<Panel id="q_hint0_10" class="Gl" hittest="false" />
+					<Panel id="q_hint0_11" class="Gl" hittest="false" />
+					<Panel id="q_hint0_12" class="Gl" hittest="false" />
+					<Panel id="q_hint0_13" class="Gl" hittest="false" />
+					<Panel id="q_hint0_14" class="Gl" hittest="false" />
+					<Panel id="q_hint0_15" class="Gl" hittest="false" />
+					<Panel id="q_hint0_16" class="Gl" hittest="false" />
+					<Panel id="q_hint0_17" class="Gl" hittest="false" />
+					<Panel id="q_hint0_18" class="Gl" hittest="false" />
+				</Panel>
+				<Panel class="QHintRow">
+					<Panel id="q_hint1_0" class="Gl" hittest="false" />
+					<Panel id="q_hint1_1" class="Gl" hittest="false" />
+					<Panel id="q_hint1_2" class="Gl" hittest="false" />
+					<Panel id="q_hint1_3" class="Gl" hittest="false" />
+					<Panel id="q_hint1_4" class="Gl" hittest="false" />
+					<Panel id="q_hint1_5" class="Gl" hittest="false" />
+					<Panel id="q_hint1_6" class="Gl" hittest="false" />
+					<Panel id="q_hint1_7" class="Gl" hittest="false" />
+					<Panel id="q_hint1_8" class="Gl" hittest="false" />
+					<Panel id="q_hint1_9" class="Gl" hittest="false" />
+					<Panel id="q_hint1_10" class="Gl" hittest="false" />
+					<Panel id="q_hint1_11" class="Gl" hittest="false" />
+					<Panel id="q_hint1_12" class="Gl" hittest="false" />
+					<Panel id="q_hint1_13" class="Gl" hittest="false" />
+					<Panel id="q_hint1_14" class="Gl" hittest="false" />
+					<Panel id="q_hint1_15" class="Gl" hittest="false" />
+					<Panel id="q_hint1_16" class="Gl" hittest="false" />
+					<Panel id="q_hint1_17" class="Gl" hittest="false" />
+					<Panel id="q_hint1_18" class="Gl" hittest="false" />
+				</Panel>
+			</Panel>
+			<Panel id="q_wheel" class="QWheel QWheelHidden">
+				<Panel class="QWwBlur" hittest="false" />
+				<Panel class="QWwRing" hittest="false" />
+				<Panel class="QWwSlot" hittest="false">
+					<Button id="q_ww_s0" class="QWwCell QWwC0">
+						<Panel id="q_ww_i0" class="QWwIcon" hittest="false" />
+					</Button>
+					<Panel id="q_ww_hov0" class="QWwHov" hittest="false">
+						<Panel class="QWwName GlRow" hittest="false">
+							<Panel id="q_wh0_n0" class="Gl" hittest="false" />
+							<Panel id="q_wh0_n1" class="Gl" hittest="false" />
+							<Panel id="q_wh0_n2" class="Gl" hittest="false" />
+							<Panel id="q_wh0_n3" class="Gl" hittest="false" />
+							<Panel id="q_wh0_n4" class="Gl" hittest="false" />
+							<Panel id="q_wh0_n5" class="Gl" hittest="false" />
+							<Panel id="q_wh0_n6" class="Gl" hittest="false" />
+							<Panel id="q_wh0_n7" class="Gl" hittest="false" />
+							<Panel id="q_wh0_n8" class="Gl" hittest="false" />
+							<Panel id="q_wh0_n9" class="Gl" hittest="false" />
+							<Panel id="q_wh0_n10" class="Gl" hittest="false" />
+							<Panel id="q_wh0_n11" class="Gl" hittest="false" />
+							<Panel id="q_wh0_n12" class="Gl" hittest="false" />
+							<Panel id="q_wh0_n13" class="Gl" hittest="false" />
+							<Panel id="q_wh0_n14" class="Gl" hittest="false" />
+							<Panel id="q_wh0_n15" class="Gl" hittest="false" />
+							<Panel id="q_wh0_n16" class="Gl" hittest="false" />
+							<Panel id="q_wh0_n17" class="Gl" hittest="false" />
+						</Panel>
+						<Panel id="q_wh0_ai" class="QWwAmmoIcon" hittest="false" />
+						<Panel class="QWwAmmoNum GlRow" hittest="false">
+							<Panel id="q_wh0_a0" class="Gl" hittest="false" />
+							<Panel id="q_wh0_a1" class="Gl" hittest="false" />
+							<Panel id="q_wh0_a2" class="Gl" hittest="false" />
+							<Panel id="q_wh0_a3" class="Gl" hittest="false" />
+						</Panel>
+					</Panel>
+				</Panel>
+				<Panel class="QWwSlot" hittest="false">
+					<Button id="q_ww_s1" class="QWwCell QWwC1">
+						<Panel id="q_ww_i1" class="QWwIcon" hittest="false" />
+					</Button>
+					<Panel id="q_ww_hov1" class="QWwHov" hittest="false">
+						<Panel class="QWwName GlRow" hittest="false">
+							<Panel id="q_wh1_n0" class="Gl" hittest="false" />
+							<Panel id="q_wh1_n1" class="Gl" hittest="false" />
+							<Panel id="q_wh1_n2" class="Gl" hittest="false" />
+							<Panel id="q_wh1_n3" class="Gl" hittest="false" />
+							<Panel id="q_wh1_n4" class="Gl" hittest="false" />
+							<Panel id="q_wh1_n5" class="Gl" hittest="false" />
+							<Panel id="q_wh1_n6" class="Gl" hittest="false" />
+							<Panel id="q_wh1_n7" class="Gl" hittest="false" />
+							<Panel id="q_wh1_n8" class="Gl" hittest="false" />
+							<Panel id="q_wh1_n9" class="Gl" hittest="false" />
+							<Panel id="q_wh1_n10" class="Gl" hittest="false" />
+							<Panel id="q_wh1_n11" class="Gl" hittest="false" />
+							<Panel id="q_wh1_n12" class="Gl" hittest="false" />
+							<Panel id="q_wh1_n13" class="Gl" hittest="false" />
+							<Panel id="q_wh1_n14" class="Gl" hittest="false" />
+							<Panel id="q_wh1_n15" class="Gl" hittest="false" />
+							<Panel id="q_wh1_n16" class="Gl" hittest="false" />
+							<Panel id="q_wh1_n17" class="Gl" hittest="false" />
+						</Panel>
+						<Panel id="q_wh1_ai" class="QWwAmmoIcon" hittest="false" />
+						<Panel class="QWwAmmoNum GlRow" hittest="false">
+							<Panel id="q_wh1_a0" class="Gl" hittest="false" />
+							<Panel id="q_wh1_a1" class="Gl" hittest="false" />
+							<Panel id="q_wh1_a2" class="Gl" hittest="false" />
+							<Panel id="q_wh1_a3" class="Gl" hittest="false" />
+						</Panel>
+					</Panel>
+				</Panel>
+				<Panel class="QWwSlot" hittest="false">
+					<Button id="q_ww_s2" class="QWwCell QWwC2">
+						<Panel id="q_ww_i2" class="QWwIcon" hittest="false" />
+					</Button>
+					<Panel id="q_ww_hov2" class="QWwHov" hittest="false">
+						<Panel class="QWwName GlRow" hittest="false">
+							<Panel id="q_wh2_n0" class="Gl" hittest="false" />
+							<Panel id="q_wh2_n1" class="Gl" hittest="false" />
+							<Panel id="q_wh2_n2" class="Gl" hittest="false" />
+							<Panel id="q_wh2_n3" class="Gl" hittest="false" />
+							<Panel id="q_wh2_n4" class="Gl" hittest="false" />
+							<Panel id="q_wh2_n5" class="Gl" hittest="false" />
+							<Panel id="q_wh2_n6" class="Gl" hittest="false" />
+							<Panel id="q_wh2_n7" class="Gl" hittest="false" />
+							<Panel id="q_wh2_n8" class="Gl" hittest="false" />
+							<Panel id="q_wh2_n9" class="Gl" hittest="false" />
+							<Panel id="q_wh2_n10" class="Gl" hittest="false" />
+							<Panel id="q_wh2_n11" class="Gl" hittest="false" />
+							<Panel id="q_wh2_n12" class="Gl" hittest="false" />
+							<Panel id="q_wh2_n13" class="Gl" hittest="false" />
+							<Panel id="q_wh2_n14" class="Gl" hittest="false" />
+							<Panel id="q_wh2_n15" class="Gl" hittest="false" />
+							<Panel id="q_wh2_n16" class="Gl" hittest="false" />
+							<Panel id="q_wh2_n17" class="Gl" hittest="false" />
+						</Panel>
+						<Panel id="q_wh2_ai" class="QWwAmmoIcon" hittest="false" />
+						<Panel class="QWwAmmoNum GlRow" hittest="false">
+							<Panel id="q_wh2_a0" class="Gl" hittest="false" />
+							<Panel id="q_wh2_a1" class="Gl" hittest="false" />
+							<Panel id="q_wh2_a2" class="Gl" hittest="false" />
+							<Panel id="q_wh2_a3" class="Gl" hittest="false" />
+						</Panel>
+					</Panel>
+				</Panel>
+				<Panel class="QWwSlot" hittest="false">
+					<Button id="q_ww_s3" class="QWwCell QWwC3">
+						<Panel id="q_ww_i3" class="QWwIcon" hittest="false" />
+					</Button>
+					<Panel id="q_ww_hov3" class="QWwHov" hittest="false">
+						<Panel class="QWwName GlRow" hittest="false">
+							<Panel id="q_wh3_n0" class="Gl" hittest="false" />
+							<Panel id="q_wh3_n1" class="Gl" hittest="false" />
+							<Panel id="q_wh3_n2" class="Gl" hittest="false" />
+							<Panel id="q_wh3_n3" class="Gl" hittest="false" />
+							<Panel id="q_wh3_n4" class="Gl" hittest="false" />
+							<Panel id="q_wh3_n5" class="Gl" hittest="false" />
+							<Panel id="q_wh3_n6" class="Gl" hittest="false" />
+							<Panel id="q_wh3_n7" class="Gl" hittest="false" />
+							<Panel id="q_wh3_n8" class="Gl" hittest="false" />
+							<Panel id="q_wh3_n9" class="Gl" hittest="false" />
+							<Panel id="q_wh3_n10" class="Gl" hittest="false" />
+							<Panel id="q_wh3_n11" class="Gl" hittest="false" />
+							<Panel id="q_wh3_n12" class="Gl" hittest="false" />
+							<Panel id="q_wh3_n13" class="Gl" hittest="false" />
+							<Panel id="q_wh3_n14" class="Gl" hittest="false" />
+							<Panel id="q_wh3_n15" class="Gl" hittest="false" />
+							<Panel id="q_wh3_n16" class="Gl" hittest="false" />
+							<Panel id="q_wh3_n17" class="Gl" hittest="false" />
+						</Panel>
+						<Panel id="q_wh3_ai" class="QWwAmmoIcon" hittest="false" />
+						<Panel class="QWwAmmoNum GlRow" hittest="false">
+							<Panel id="q_wh3_a0" class="Gl" hittest="false" />
+							<Panel id="q_wh3_a1" class="Gl" hittest="false" />
+							<Panel id="q_wh3_a2" class="Gl" hittest="false" />
+							<Panel id="q_wh3_a3" class="Gl" hittest="false" />
+						</Panel>
+					</Panel>
+				</Panel>
+				<Panel class="QWwSlot" hittest="false">
+					<Button id="q_ww_s4" class="QWwCell QWwC4">
+						<Panel id="q_ww_i4" class="QWwIcon" hittest="false" />
+					</Button>
+					<Panel id="q_ww_hov4" class="QWwHov" hittest="false">
+						<Panel class="QWwName GlRow" hittest="false">
+							<Panel id="q_wh4_n0" class="Gl" hittest="false" />
+							<Panel id="q_wh4_n1" class="Gl" hittest="false" />
+							<Panel id="q_wh4_n2" class="Gl" hittest="false" />
+							<Panel id="q_wh4_n3" class="Gl" hittest="false" />
+							<Panel id="q_wh4_n4" class="Gl" hittest="false" />
+							<Panel id="q_wh4_n5" class="Gl" hittest="false" />
+							<Panel id="q_wh4_n6" class="Gl" hittest="false" />
+							<Panel id="q_wh4_n7" class="Gl" hittest="false" />
+							<Panel id="q_wh4_n8" class="Gl" hittest="false" />
+							<Panel id="q_wh4_n9" class="Gl" hittest="false" />
+							<Panel id="q_wh4_n10" class="Gl" hittest="false" />
+							<Panel id="q_wh4_n11" class="Gl" hittest="false" />
+							<Panel id="q_wh4_n12" class="Gl" hittest="false" />
+							<Panel id="q_wh4_n13" class="Gl" hittest="false" />
+							<Panel id="q_wh4_n14" class="Gl" hittest="false" />
+							<Panel id="q_wh4_n15" class="Gl" hittest="false" />
+							<Panel id="q_wh4_n16" class="Gl" hittest="false" />
+							<Panel id="q_wh4_n17" class="Gl" hittest="false" />
+						</Panel>
+						<Panel id="q_wh4_ai" class="QWwAmmoIcon" hittest="false" />
+						<Panel class="QWwAmmoNum GlRow" hittest="false">
+							<Panel id="q_wh4_a0" class="Gl" hittest="false" />
+							<Panel id="q_wh4_a1" class="Gl" hittest="false" />
+							<Panel id="q_wh4_a2" class="Gl" hittest="false" />
+							<Panel id="q_wh4_a3" class="Gl" hittest="false" />
+						</Panel>
+					</Panel>
+				</Panel>
+				<Panel class="QWwSlot" hittest="false">
+					<Button id="q_ww_s5" class="QWwCell QWwC5">
+						<Panel id="q_ww_i5" class="QWwIcon" hittest="false" />
+					</Button>
+					<Panel id="q_ww_hov5" class="QWwHov" hittest="false">
+						<Panel class="QWwName GlRow" hittest="false">
+							<Panel id="q_wh5_n0" class="Gl" hittest="false" />
+							<Panel id="q_wh5_n1" class="Gl" hittest="false" />
+							<Panel id="q_wh5_n2" class="Gl" hittest="false" />
+							<Panel id="q_wh5_n3" class="Gl" hittest="false" />
+							<Panel id="q_wh5_n4" class="Gl" hittest="false" />
+							<Panel id="q_wh5_n5" class="Gl" hittest="false" />
+							<Panel id="q_wh5_n6" class="Gl" hittest="false" />
+							<Panel id="q_wh5_n7" class="Gl" hittest="false" />
+							<Panel id="q_wh5_n8" class="Gl" hittest="false" />
+							<Panel id="q_wh5_n9" class="Gl" hittest="false" />
+							<Panel id="q_wh5_n10" class="Gl" hittest="false" />
+							<Panel id="q_wh5_n11" class="Gl" hittest="false" />
+							<Panel id="q_wh5_n12" class="Gl" hittest="false" />
+							<Panel id="q_wh5_n13" class="Gl" hittest="false" />
+							<Panel id="q_wh5_n14" class="Gl" hittest="false" />
+							<Panel id="q_wh5_n15" class="Gl" hittest="false" />
+							<Panel id="q_wh5_n16" class="Gl" hittest="false" />
+							<Panel id="q_wh5_n17" class="Gl" hittest="false" />
+						</Panel>
+						<Panel id="q_wh5_ai" class="QWwAmmoIcon" hittest="false" />
+						<Panel class="QWwAmmoNum GlRow" hittest="false">
+							<Panel id="q_wh5_a0" class="Gl" hittest="false" />
+							<Panel id="q_wh5_a1" class="Gl" hittest="false" />
+							<Panel id="q_wh5_a2" class="Gl" hittest="false" />
+							<Panel id="q_wh5_a3" class="Gl" hittest="false" />
+						</Panel>
+					</Panel>
+				</Panel>
+				<Panel class="QWwSlot" hittest="false">
+					<Button id="q_ww_s6" class="QWwCell QWwC6">
+						<Panel id="q_ww_i6" class="QWwIcon" hittest="false" />
+					</Button>
+					<Panel id="q_ww_hov6" class="QWwHov" hittest="false">
+						<Panel class="QWwName GlRow" hittest="false">
+							<Panel id="q_wh6_n0" class="Gl" hittest="false" />
+							<Panel id="q_wh6_n1" class="Gl" hittest="false" />
+							<Panel id="q_wh6_n2" class="Gl" hittest="false" />
+							<Panel id="q_wh6_n3" class="Gl" hittest="false" />
+							<Panel id="q_wh6_n4" class="Gl" hittest="false" />
+							<Panel id="q_wh6_n5" class="Gl" hittest="false" />
+							<Panel id="q_wh6_n6" class="Gl" hittest="false" />
+							<Panel id="q_wh6_n7" class="Gl" hittest="false" />
+							<Panel id="q_wh6_n8" class="Gl" hittest="false" />
+							<Panel id="q_wh6_n9" class="Gl" hittest="false" />
+							<Panel id="q_wh6_n10" class="Gl" hittest="false" />
+							<Panel id="q_wh6_n11" class="Gl" hittest="false" />
+							<Panel id="q_wh6_n12" class="Gl" hittest="false" />
+							<Panel id="q_wh6_n13" class="Gl" hittest="false" />
+							<Panel id="q_wh6_n14" class="Gl" hittest="false" />
+							<Panel id="q_wh6_n15" class="Gl" hittest="false" />
+							<Panel id="q_wh6_n16" class="Gl" hittest="false" />
+							<Panel id="q_wh6_n17" class="Gl" hittest="false" />
+						</Panel>
+						<Panel id="q_wh6_ai" class="QWwAmmoIcon" hittest="false" />
+						<Panel class="QWwAmmoNum GlRow" hittest="false">
+							<Panel id="q_wh6_a0" class="Gl" hittest="false" />
+							<Panel id="q_wh6_a1" class="Gl" hittest="false" />
+							<Panel id="q_wh6_a2" class="Gl" hittest="false" />
+							<Panel id="q_wh6_a3" class="Gl" hittest="false" />
+						</Panel>
+					</Panel>
+				</Panel>
+				<Panel class="QWwSlot" hittest="false">
+					<Button id="q_ww_s7" class="QWwCell QWwC7">
+						<Panel id="q_ww_i7" class="QWwIcon" hittest="false" />
+					</Button>
+					<Panel id="q_ww_hov7" class="QWwHov" hittest="false">
+						<Panel class="QWwName GlRow" hittest="false">
+							<Panel id="q_wh7_n0" class="Gl" hittest="false" />
+							<Panel id="q_wh7_n1" class="Gl" hittest="false" />
+							<Panel id="q_wh7_n2" class="Gl" hittest="false" />
+							<Panel id="q_wh7_n3" class="Gl" hittest="false" />
+							<Panel id="q_wh7_n4" class="Gl" hittest="false" />
+							<Panel id="q_wh7_n5" class="Gl" hittest="false" />
+							<Panel id="q_wh7_n6" class="Gl" hittest="false" />
+							<Panel id="q_wh7_n7" class="Gl" hittest="false" />
+							<Panel id="q_wh7_n8" class="Gl" hittest="false" />
+							<Panel id="q_wh7_n9" class="Gl" hittest="false" />
+							<Panel id="q_wh7_n10" class="Gl" hittest="false" />
+							<Panel id="q_wh7_n11" class="Gl" hittest="false" />
+							<Panel id="q_wh7_n12" class="Gl" hittest="false" />
+							<Panel id="q_wh7_n13" class="Gl" hittest="false" />
+							<Panel id="q_wh7_n14" class="Gl" hittest="false" />
+							<Panel id="q_wh7_n15" class="Gl" hittest="false" />
+							<Panel id="q_wh7_n16" class="Gl" hittest="false" />
+							<Panel id="q_wh7_n17" class="Gl" hittest="false" />
+						</Panel>
+						<Panel id="q_wh7_ai" class="QWwAmmoIcon" hittest="false" />
+						<Panel class="QWwAmmoNum GlRow" hittest="false">
+							<Panel id="q_wh7_a0" class="Gl" hittest="false" />
+							<Panel id="q_wh7_a1" class="Gl" hittest="false" />
+							<Panel id="q_wh7_a2" class="Gl" hittest="false" />
+							<Panel id="q_wh7_a3" class="Gl" hittest="false" />
+						</Panel>
+					</Panel>
+				</Panel>
+			</Panel>
+		</Panel>
+		<Panel id="q_bossbar" class="QBoss">
+			<Panel class="QBossName GlRow">
+				<Panel class="Gl g67" />
+				<Panel class="Gl g72" />
+				<Panel class="Gl g84" />
+				<Panel class="Gl g72" />
+				<Panel class="Gl g79" />
+				<Panel class="Gl g78" />
+			</Panel>
+			<Panel class="QBossTrack">
+				<Panel id="q_bseg0" class="Gl g29 QbGl QBossSeg" />
+				<Panel id="q_bseg1" class="Gl g30 QbGl QBossSeg" />
+				<Panel id="q_bseg2" class="Gl g30 QbGl QBossSeg" />
+				<Panel id="q_bseg3" class="Gl g30 QbGl QBossSeg" />
+				<Panel id="q_bseg4" class="Gl g30 QbGl QBossSeg" />
+				<Panel id="q_bseg5" class="Gl g30 QbGl QBossSeg" />
+				<Panel id="q_bseg6" class="Gl g30 QbGl QBossSeg" />
+				<Panel id="q_bseg7" class="Gl g30 QbGl QBossSeg" />
+				<Panel id="q_bseg8" class="Gl g30 QbGl QBossSeg" />
+				<Panel id="q_bseg9" class="Gl g30 QbGl QBossSeg" />
+				<Panel id="q_bseg10" class="Gl g30 QbGl QBossSeg" />
+				<Panel id="q_bseg11" class="Gl g30 QbGl QBossSeg" />
+				<Panel id="q_bseg12" class="Gl g30 QbGl QBossSeg" />
+				<Panel id="q_bseg13" class="Gl g30 QbGl QBossSeg" />
+				<Panel id="q_bseg14" class="Gl g30 QbGl QBossSeg" />
+				<Panel id="q_bseg15" class="Gl g30 QbGl QBossSeg" />
+				<Panel id="q_bseg16" class="Gl g30 QbGl QBossSeg" />
+				<Panel id="q_bseg17" class="Gl g30 QbGl QBossSeg" />
+				<Panel id="q_bseg18" class="Gl g30 QbGl QBossSeg" />
+				<Panel id="q_bseg19" class="Gl g30 QbGl QBossSeg" />
+				<Panel id="q_bseg20" class="Gl g30 QbGl QBossSeg" />
+				<Panel id="q_bseg21" class="Gl g30 QbGl QBossSeg" />
+				<Panel id="q_bseg22" class="Gl g30 QbGl QBossSeg" />
+				<Panel id="q_bseg23" class="Gl g30 QbGl QBossSeg" />
+				<Panel id="q_bseg24" class="Gl g30 QbGl QBossSeg" />
+				<Panel id="q_bseg25" class="Gl g30 QbGl QBossSeg" />
+				<Panel id="q_bseg26" class="Gl g30 QbGl QBossSeg" />
+				<Panel id="q_bseg27" class="Gl g30 QbGl QBossSeg" />
+				<Panel id="q_bseg28" class="Gl g30 QbGl QBossSeg" />
+				<Panel id="q_bseg29" class="Gl g31 QbGl QBossSeg" />
+			</Panel>
+		</Panel>
+		<Panel id="q_deathpop" class="QPop QPopHidden">
+			<Panel class="QPopCard">
+				<Panel class="GlRow">
+					<Panel class="Gl g75" />
+					<Panel class="Gl g73" />
+					<Panel class="Gl g76" />
+					<Panel class="Gl g76" />
+					<Panel class="Gl g83" />
+					<Panel class="GlGap" />
+					<Panel class="GlGap" />
+					<Panel class="GlGap" />
+					<Panel id="q_dk0" class="Gl" />
+					<Panel id="q_dk1" class="Gl" />
+					<Panel id="q_dk2" class="Gl" />
+					<Panel class="Gl g47" />
+					<Panel id="q_dt0" class="Gl" />
+					<Panel id="q_dt1" class="Gl" />
+					<Panel id="q_dt2" class="Gl" />
+				</Panel>
+				<Panel class="GlRow">
+					<Panel class="Gl g83" />
+					<Panel class="Gl g69" />
+					<Panel class="Gl g67" />
+					<Panel class="Gl g82" />
+					<Panel class="Gl g69" />
+					<Panel class="Gl g84" />
+					<Panel class="Gl g83" />
+					<Panel class="GlGap" />
+					<Panel id="q_dsc0" class="Gl" />
+					<Panel id="q_dsc1" class="Gl" />
+					<Panel id="q_dsc2" class="Gl" />
+					<Panel class="Gl g47" />
+					<Panel id="q_dst0" class="Gl" />
+					<Panel id="q_dst1" class="Gl" />
+					<Panel id="q_dst2" class="Gl" />
+				</Panel>
+				<Panel class="QPopHint GlRow">
+					<Panel id="q_dh0" class="Gl" />
+					<Panel id="q_dh1" class="Gl" />
+					<Panel id="q_dh2" class="Gl" />
+					<Panel id="q_dh3" class="Gl" />
+					<Panel id="q_dh4" class="Gl" />
+					<Panel id="q_dh5" class="Gl" />
+					<Panel id="q_dh6" class="Gl" />
+					<Panel id="q_dh7" class="Gl" />
+					<Panel id="q_dh8" class="Gl" />
+					<Panel id="q_dh9" class="Gl" />
+					<Panel id="q_dh10" class="Gl" />
+				</Panel>
+			</Panel>
+		</Panel>
+		<Panel id="q_inter" class="QPop QPopHidden">
+			<Panel class="QPopCard">
+				<Panel class="QInterTitle" />
+				<Panel id="q_inter_stats" class="QInterStats">
+					<Panel class="QInterRow">
+						<Panel class="QInterLabel">
+							<Panel class="Gl g84" />
+							<Panel class="Gl g73" />
+							<Panel class="Gl g77" />
+							<Panel class="Gl g69" />
+							<Panel class="Gl g58" />
+						</Panel>
+						<Panel class="QInterVal">
+							<Panel id="q_tm0" class="Gl" />
+							<Panel id="q_tm1" class="Gl" />
+							<Panel id="q_tm2" class="Gl" />
+							<Panel id="q_tm3" class="Gl" />
+							<Panel id="q_tm4" class="Gl" />
+						</Panel>
+					</Panel>
+					<Panel class="QInterRow">
+						<Panel class="QInterLabel">
+							<Panel class="Gl g75" />
+							<Panel class="Gl g73" />
+							<Panel class="Gl g76" />
+							<Panel class="Gl g76" />
+							<Panel class="Gl g83" />
+							<Panel class="Gl g58" />
+						</Panel>
+						<Panel class="QInterVal">
+							<Panel id="q_kc0" class="Gl" />
+							<Panel id="q_kc1" class="Gl" />
+							<Panel id="q_kc2" class="Gl" />
+							<Panel class="Gl g47" />
+							<Panel id="q_tc0" class="Gl" />
+							<Panel id="q_tc1" class="Gl" />
+							<Panel id="q_tc2" class="Gl" />
+						</Panel>
+					</Panel>
+					<Panel class="QInterRow">
+						<Panel class="QInterLabel">
+							<Panel class="Gl g83" />
+							<Panel class="Gl g69" />
+							<Panel class="Gl g67" />
+							<Panel class="Gl g82" />
+							<Panel class="Gl g69" />
+							<Panel class="Gl g84" />
+							<Panel class="Gl g83" />
+							<Panel class="Gl g58" />
+						</Panel>
+						<Panel class="QInterVal">
+							<Panel id="q_sc0" class="Gl" />
+							<Panel id="q_sc1" class="Gl" />
+							<Panel id="q_sc2" class="Gl" />
+							<Panel class="Gl g47" />
+							<Panel id="q_stc0" class="Gl" />
+							<Panel id="q_stc1" class="Gl" />
+							<Panel id="q_stc2" class="Gl" />
+						</Panel>
+					</Panel>
+				</Panel>
+				<Panel class="QPopHint GlRow">
+					<Panel id="q_ih0" class="Gl" />
+					<Panel id="q_ih1" class="Gl" />
+					<Panel id="q_ih2" class="Gl" />
+					<Panel id="q_ih3" class="Gl" />
+					<Panel id="q_ih4" class="Gl" />
+					<Panel id="q_ih5" class="Gl" />
+					<Panel id="q_ih6" class="Gl" />
+					<Panel id="q_ih7" class="Gl" />
+					<Panel id="q_ih8" class="Gl" />
+					<Panel id="q_ih9" class="Gl" />
+					<Panel id="q_ih10" class="Gl" />
+				</Panel>
+			</Panel>
+		</Panel>
+		<Panel id="q_finale" class="QPop QPopHidden">
+			<Panel class="QFinaleCard">
+				<Panel class="QFinaleSigil" />
+				<Panel class="QFinaleBody">
+					<Panel class="GlRow QFinRow">
+						<Panel id="q_fl0_0" class="Gl QFinGl" />
+						<Panel id="q_fl0_1" class="Gl QFinGl" />
+						<Panel id="q_fl0_2" class="Gl QFinGl" />
+						<Panel id="q_fl0_3" class="Gl QFinGl" />
+						<Panel id="q_fl0_4" class="Gl QFinGl" />
+						<Panel id="q_fl0_5" class="Gl QFinGl" />
+						<Panel id="q_fl0_6" class="Gl QFinGl" />
+						<Panel id="q_fl0_7" class="Gl QFinGl" />
+						<Panel id="q_fl0_8" class="Gl QFinGl" />
+						<Panel id="q_fl0_9" class="Gl QFinGl" />
+						<Panel id="q_fl0_10" class="Gl QFinGl" />
+						<Panel id="q_fl0_11" class="Gl QFinGl" />
+						<Panel id="q_fl0_12" class="Gl QFinGl" />
+						<Panel id="q_fl0_13" class="Gl QFinGl" />
+						<Panel id="q_fl0_14" class="Gl QFinGl" />
+						<Panel id="q_fl0_15" class="Gl QFinGl" />
+						<Panel id="q_fl0_16" class="Gl QFinGl" />
+						<Panel id="q_fl0_17" class="Gl QFinGl" />
+						<Panel id="q_fl0_18" class="Gl QFinGl" />
+						<Panel id="q_fl0_19" class="Gl QFinGl" />
+						<Panel id="q_fl0_20" class="Gl QFinGl" />
+						<Panel id="q_fl0_21" class="Gl QFinGl" />
+						<Panel id="q_fl0_22" class="Gl QFinGl" />
+						<Panel id="q_fl0_23" class="Gl QFinGl" />
+						<Panel id="q_fl0_24" class="Gl QFinGl" />
+						<Panel id="q_fl0_25" class="Gl QFinGl" />
+						<Panel id="q_fl0_26" class="Gl QFinGl" />
+						<Panel id="q_fl0_27" class="Gl QFinGl" />
+						<Panel id="q_fl0_28" class="Gl QFinGl" />
+						<Panel id="q_fl0_29" class="Gl QFinGl" />
+						<Panel id="q_fl0_30" class="Gl QFinGl" />
+						<Panel id="q_fl0_31" class="Gl QFinGl" />
+						<Panel id="q_fl0_32" class="Gl QFinGl" />
+						<Panel id="q_fl0_33" class="Gl QFinGl" />
+					</Panel>
+					<Panel class="GlRow QFinRow">
+						<Panel id="q_fl1_0" class="Gl QFinGl" />
+						<Panel id="q_fl1_1" class="Gl QFinGl" />
+						<Panel id="q_fl1_2" class="Gl QFinGl" />
+						<Panel id="q_fl1_3" class="Gl QFinGl" />
+						<Panel id="q_fl1_4" class="Gl QFinGl" />
+						<Panel id="q_fl1_5" class="Gl QFinGl" />
+						<Panel id="q_fl1_6" class="Gl QFinGl" />
+						<Panel id="q_fl1_7" class="Gl QFinGl" />
+						<Panel id="q_fl1_8" class="Gl QFinGl" />
+						<Panel id="q_fl1_9" class="Gl QFinGl" />
+						<Panel id="q_fl1_10" class="Gl QFinGl" />
+						<Panel id="q_fl1_11" class="Gl QFinGl" />
+						<Panel id="q_fl1_12" class="Gl QFinGl" />
+						<Panel id="q_fl1_13" class="Gl QFinGl" />
+						<Panel id="q_fl1_14" class="Gl QFinGl" />
+						<Panel id="q_fl1_15" class="Gl QFinGl" />
+						<Panel id="q_fl1_16" class="Gl QFinGl" />
+						<Panel id="q_fl1_17" class="Gl QFinGl" />
+						<Panel id="q_fl1_18" class="Gl QFinGl" />
+						<Panel id="q_fl1_19" class="Gl QFinGl" />
+						<Panel id="q_fl1_20" class="Gl QFinGl" />
+						<Panel id="q_fl1_21" class="Gl QFinGl" />
+						<Panel id="q_fl1_22" class="Gl QFinGl" />
+						<Panel id="q_fl1_23" class="Gl QFinGl" />
+						<Panel id="q_fl1_24" class="Gl QFinGl" />
+						<Panel id="q_fl1_25" class="Gl QFinGl" />
+						<Panel id="q_fl1_26" class="Gl QFinGl" />
+						<Panel id="q_fl1_27" class="Gl QFinGl" />
+						<Panel id="q_fl1_28" class="Gl QFinGl" />
+						<Panel id="q_fl1_29" class="Gl QFinGl" />
+						<Panel id="q_fl1_30" class="Gl QFinGl" />
+						<Panel id="q_fl1_31" class="Gl QFinGl" />
+						<Panel id="q_fl1_32" class="Gl QFinGl" />
+						<Panel id="q_fl1_33" class="Gl QFinGl" />
+					</Panel>
+					<Panel class="GlRow QFinRow">
+						<Panel id="q_fl2_0" class="Gl QFinGl" />
+						<Panel id="q_fl2_1" class="Gl QFinGl" />
+						<Panel id="q_fl2_2" class="Gl QFinGl" />
+						<Panel id="q_fl2_3" class="Gl QFinGl" />
+						<Panel id="q_fl2_4" class="Gl QFinGl" />
+						<Panel id="q_fl2_5" class="Gl QFinGl" />
+						<Panel id="q_fl2_6" class="Gl QFinGl" />
+						<Panel id="q_fl2_7" class="Gl QFinGl" />
+						<Panel id="q_fl2_8" class="Gl QFinGl" />
+						<Panel id="q_fl2_9" class="Gl QFinGl" />
+						<Panel id="q_fl2_10" class="Gl QFinGl" />
+						<Panel id="q_fl2_11" class="Gl QFinGl" />
+						<Panel id="q_fl2_12" class="Gl QFinGl" />
+						<Panel id="q_fl2_13" class="Gl QFinGl" />
+						<Panel id="q_fl2_14" class="Gl QFinGl" />
+						<Panel id="q_fl2_15" class="Gl QFinGl" />
+						<Panel id="q_fl2_16" class="Gl QFinGl" />
+						<Panel id="q_fl2_17" class="Gl QFinGl" />
+						<Panel id="q_fl2_18" class="Gl QFinGl" />
+						<Panel id="q_fl2_19" class="Gl QFinGl" />
+						<Panel id="q_fl2_20" class="Gl QFinGl" />
+						<Panel id="q_fl2_21" class="Gl QFinGl" />
+						<Panel id="q_fl2_22" class="Gl QFinGl" />
+						<Panel id="q_fl2_23" class="Gl QFinGl" />
+						<Panel id="q_fl2_24" class="Gl QFinGl" />
+						<Panel id="q_fl2_25" class="Gl QFinGl" />
+						<Panel id="q_fl2_26" class="Gl QFinGl" />
+						<Panel id="q_fl2_27" class="Gl QFinGl" />
+						<Panel id="q_fl2_28" class="Gl QFinGl" />
+						<Panel id="q_fl2_29" class="Gl QFinGl" />
+						<Panel id="q_fl2_30" class="Gl QFinGl" />
+						<Panel id="q_fl2_31" class="Gl QFinGl" />
+						<Panel id="q_fl2_32" class="Gl QFinGl" />
+						<Panel id="q_fl2_33" class="Gl QFinGl" />
+					</Panel>
+					<Panel class="GlRow QFinRow">
+						<Panel id="q_fl3_0" class="Gl QFinGl" />
+						<Panel id="q_fl3_1" class="Gl QFinGl" />
+						<Panel id="q_fl3_2" class="Gl QFinGl" />
+						<Panel id="q_fl3_3" class="Gl QFinGl" />
+						<Panel id="q_fl3_4" class="Gl QFinGl" />
+						<Panel id="q_fl3_5" class="Gl QFinGl" />
+						<Panel id="q_fl3_6" class="Gl QFinGl" />
+						<Panel id="q_fl3_7" class="Gl QFinGl" />
+						<Panel id="q_fl3_8" class="Gl QFinGl" />
+						<Panel id="q_fl3_9" class="Gl QFinGl" />
+						<Panel id="q_fl3_10" class="Gl QFinGl" />
+						<Panel id="q_fl3_11" class="Gl QFinGl" />
+						<Panel id="q_fl3_12" class="Gl QFinGl" />
+						<Panel id="q_fl3_13" class="Gl QFinGl" />
+						<Panel id="q_fl3_14" class="Gl QFinGl" />
+						<Panel id="q_fl3_15" class="Gl QFinGl" />
+						<Panel id="q_fl3_16" class="Gl QFinGl" />
+						<Panel id="q_fl3_17" class="Gl QFinGl" />
+						<Panel id="q_fl3_18" class="Gl QFinGl" />
+						<Panel id="q_fl3_19" class="Gl QFinGl" />
+						<Panel id="q_fl3_20" class="Gl QFinGl" />
+						<Panel id="q_fl3_21" class="Gl QFinGl" />
+						<Panel id="q_fl3_22" class="Gl QFinGl" />
+						<Panel id="q_fl3_23" class="Gl QFinGl" />
+						<Panel id="q_fl3_24" class="Gl QFinGl" />
+						<Panel id="q_fl3_25" class="Gl QFinGl" />
+						<Panel id="q_fl3_26" class="Gl QFinGl" />
+						<Panel id="q_fl3_27" class="Gl QFinGl" />
+						<Panel id="q_fl3_28" class="Gl QFinGl" />
+						<Panel id="q_fl3_29" class="Gl QFinGl" />
+						<Panel id="q_fl3_30" class="Gl QFinGl" />
+						<Panel id="q_fl3_31" class="Gl QFinGl" />
+						<Panel id="q_fl3_32" class="Gl QFinGl" />
+						<Panel id="q_fl3_33" class="Gl QFinGl" />
+					</Panel>
+					<Panel class="GlRow QFinRow">
+						<Panel id="q_fl4_0" class="Gl QFinGl" />
+						<Panel id="q_fl4_1" class="Gl QFinGl" />
+						<Panel id="q_fl4_2" class="Gl QFinGl" />
+						<Panel id="q_fl4_3" class="Gl QFinGl" />
+						<Panel id="q_fl4_4" class="Gl QFinGl" />
+						<Panel id="q_fl4_5" class="Gl QFinGl" />
+						<Panel id="q_fl4_6" class="Gl QFinGl" />
+						<Panel id="q_fl4_7" class="Gl QFinGl" />
+						<Panel id="q_fl4_8" class="Gl QFinGl" />
+						<Panel id="q_fl4_9" class="Gl QFinGl" />
+						<Panel id="q_fl4_10" class="Gl QFinGl" />
+						<Panel id="q_fl4_11" class="Gl QFinGl" />
+						<Panel id="q_fl4_12" class="Gl QFinGl" />
+						<Panel id="q_fl4_13" class="Gl QFinGl" />
+						<Panel id="q_fl4_14" class="Gl QFinGl" />
+						<Panel id="q_fl4_15" class="Gl QFinGl" />
+						<Panel id="q_fl4_16" class="Gl QFinGl" />
+						<Panel id="q_fl4_17" class="Gl QFinGl" />
+						<Panel id="q_fl4_18" class="Gl QFinGl" />
+						<Panel id="q_fl4_19" class="Gl QFinGl" />
+						<Panel id="q_fl4_20" class="Gl QFinGl" />
+						<Panel id="q_fl4_21" class="Gl QFinGl" />
+						<Panel id="q_fl4_22" class="Gl QFinGl" />
+						<Panel id="q_fl4_23" class="Gl QFinGl" />
+						<Panel id="q_fl4_24" class="Gl QFinGl" />
+						<Panel id="q_fl4_25" class="Gl QFinGl" />
+						<Panel id="q_fl4_26" class="Gl QFinGl" />
+						<Panel id="q_fl4_27" class="Gl QFinGl" />
+						<Panel id="q_fl4_28" class="Gl QFinGl" />
+						<Panel id="q_fl4_29" class="Gl QFinGl" />
+						<Panel id="q_fl4_30" class="Gl QFinGl" />
+						<Panel id="q_fl4_31" class="Gl QFinGl" />
+						<Panel id="q_fl4_32" class="Gl QFinGl" />
+						<Panel id="q_fl4_33" class="Gl QFinGl" />
+					</Panel>
+					<Panel class="GlRow QFinRow">
+						<Panel id="q_fl5_0" class="Gl QFinGl" />
+						<Panel id="q_fl5_1" class="Gl QFinGl" />
+						<Panel id="q_fl5_2" class="Gl QFinGl" />
+						<Panel id="q_fl5_3" class="Gl QFinGl" />
+						<Panel id="q_fl5_4" class="Gl QFinGl" />
+						<Panel id="q_fl5_5" class="Gl QFinGl" />
+						<Panel id="q_fl5_6" class="Gl QFinGl" />
+						<Panel id="q_fl5_7" class="Gl QFinGl" />
+						<Panel id="q_fl5_8" class="Gl QFinGl" />
+						<Panel id="q_fl5_9" class="Gl QFinGl" />
+						<Panel id="q_fl5_10" class="Gl QFinGl" />
+						<Panel id="q_fl5_11" class="Gl QFinGl" />
+						<Panel id="q_fl5_12" class="Gl QFinGl" />
+						<Panel id="q_fl5_13" class="Gl QFinGl" />
+						<Panel id="q_fl5_14" class="Gl QFinGl" />
+						<Panel id="q_fl5_15" class="Gl QFinGl" />
+						<Panel id="q_fl5_16" class="Gl QFinGl" />
+						<Panel id="q_fl5_17" class="Gl QFinGl" />
+						<Panel id="q_fl5_18" class="Gl QFinGl" />
+						<Panel id="q_fl5_19" class="Gl QFinGl" />
+						<Panel id="q_fl5_20" class="Gl QFinGl" />
+						<Panel id="q_fl5_21" class="Gl QFinGl" />
+						<Panel id="q_fl5_22" class="Gl QFinGl" />
+						<Panel id="q_fl5_23" class="Gl QFinGl" />
+						<Panel id="q_fl5_24" class="Gl QFinGl" />
+						<Panel id="q_fl5_25" class="Gl QFinGl" />
+						<Panel id="q_fl5_26" class="Gl QFinGl" />
+						<Panel id="q_fl5_27" class="Gl QFinGl" />
+						<Panel id="q_fl5_28" class="Gl QFinGl" />
+						<Panel id="q_fl5_29" class="Gl QFinGl" />
+						<Panel id="q_fl5_30" class="Gl QFinGl" />
+						<Panel id="q_fl5_31" class="Gl QFinGl" />
+						<Panel id="q_fl5_32" class="Gl QFinGl" />
+						<Panel id="q_fl5_33" class="Gl QFinGl" />
+					</Panel>
+				</Panel>
+				<Panel class="QPopHint GlRow">
+					<Panel id="q_fh0" class="Gl" />
+					<Panel id="q_fh1" class="Gl" />
+					<Panel id="q_fh2" class="Gl" />
+					<Panel id="q_fh3" class="Gl" />
+					<Panel id="q_fh4" class="Gl" />
+					<Panel id="q_fh5" class="Gl" />
+					<Panel id="q_fh6" class="Gl" />
+					<Panel id="q_fh7" class="Gl" />
+					<Panel id="q_fh8" class="Gl" />
+					<Panel id="q_fh9" class="Gl" />
+					<Panel id="q_fh10" class="Gl" />
+				</Panel>
+			</Panel>
+		</Panel>
+		<Panel id="q_noammo" class="QPop QPopHidden">
+			<Panel class="QNoAmmoCard">
+				<Panel class="GlRow">
+					<Panel id="q_na0" class="Gl" />
+					<Panel id="q_na1" class="Gl" />
+					<Panel id="q_na2" class="Gl" />
+					<Panel id="q_na3" class="Gl" />
+					<Panel id="q_na4" class="Gl" />
+					<Panel id="q_na5" class="Gl" />
+					<Panel id="q_na6" class="Gl" />
+					<Panel id="q_na7" class="Gl" />
+					<Panel id="q_na8" class="Gl" />
+					<Panel id="q_na9" class="Gl" />
+					<Panel id="q_na10" class="Gl" />
+					<Panel id="q_na11" class="Gl" />
+					<Panel id="q_na12" class="Gl" />
+					<Panel id="q_na13" class="Gl" />
+					<Panel id="q_na14" class="Gl" />
+					<Panel id="q_na15" class="Gl" />
+				</Panel>
+			</Panel>
+		</Panel>
+		<Panel id="q_center" class="QPop QPopHidden">
+			<Panel class="QCenterCard">
+				<Panel class="GlRow">
+					<Panel id="q_ce0" class="Gl" />
+					<Panel id="q_ce1" class="Gl" />
+					<Panel id="q_ce2" class="Gl" />
+					<Panel id="q_ce3" class="Gl" />
+					<Panel id="q_ce4" class="Gl" />
+					<Panel id="q_ce5" class="Gl" />
+					<Panel id="q_ce6" class="Gl" />
+					<Panel id="q_ce7" class="Gl" />
+					<Panel id="q_ce8" class="Gl" />
+					<Panel id="q_ce9" class="Gl" />
+					<Panel id="q_ce10" class="Gl" />
+					<Panel id="q_ce11" class="Gl" />
+					<Panel id="q_ce12" class="Gl" />
+					<Panel id="q_ce13" class="Gl" />
+					<Panel id="q_ce14" class="Gl" />
+					<Panel id="q_ce15" class="Gl" />
+					<Panel id="q_ce16" class="Gl" />
+					<Panel id="q_ce17" class="Gl" />
+					<Panel id="q_ce18" class="Gl" />
+					<Panel id="q_ce19" class="Gl" />
+					<Panel id="q_ce20" class="Gl" />
+					<Panel id="q_ce21" class="Gl" />
+					<Panel id="q_ce22" class="Gl" />
+					<Panel id="q_ce23" class="Gl" />
+					<Panel id="q_ce24" class="Gl" />
+					<Panel id="q_ce25" class="Gl" />
+					<Panel id="q_ce26" class="Gl" />
+					<Panel id="q_ce27" class="Gl" />
+					<Panel id="q_ce28" class="Gl" />
+					<Panel id="q_ce29" class="Gl" />
+					<Panel id="q_ce30" class="Gl" />
+					<Panel id="q_ce31" class="Gl" />
+				</Panel>
+			</Panel>
+		</Panel>
+		<Panel id="q_loading" class="QPop QPopHidden">
+			<Panel class="QLoadingFill" />
+			<Panel class="QLoadingCard">
+				<Panel class="QLoadingImg" hittest="false" />
+				<Panel class="GlRow QLoadingText">
+					<Panel class="Gl g76" />
+					<Panel class="Gl g79" />
+					<Panel class="Gl g65" />
+					<Panel class="Gl g68" />
+					<Panel class="Gl g73" />
+					<Panel class="Gl g78" />
+					<Panel class="Gl g71" />
+					<Panel class="Gl g46 QLd QLd1" />
+					<Panel class="Gl g46 QLd QLd2" />
+					<Panel class="Gl g46 QLd QLd3" />
+				</Panel>
+				<Panel class="GlRow QLoadingStatus" hittest="false">
+					<Panel id="q_lstat_0" class="Gl" />
+					<Panel id="q_lstat_1" class="Gl" />
+					<Panel id="q_lstat_2" class="Gl" />
+					<Panel id="q_lstat_3" class="Gl" />
+					<Panel id="q_lstat_4" class="Gl" />
+					<Panel id="q_lstat_5" class="Gl" />
+					<Panel id="q_lstat_6" class="Gl" />
+					<Panel id="q_lstat_7" class="Gl" />
+					<Panel id="q_lstat_8" class="Gl" />
+					<Panel id="q_lstat_9" class="Gl" />
+					<Panel id="q_lstat_10" class="Gl" />
+					<Panel id="q_lstat_11" class="Gl" />
+					<Panel id="q_lstat_12" class="Gl" />
+					<Panel id="q_lstat_13" class="Gl" />
+					<Panel id="q_lstat_14" class="Gl" />
+					<Panel id="q_lstat_15" class="Gl" />
+					<Panel id="q_lstat_16" class="Gl" />
+					<Panel id="q_lstat_17" class="Gl" />
+					<Panel id="q_lstat_18" class="Gl" />
+					<Panel id="q_lstat_19" class="Gl" />
+					<Panel id="q_lstat_20" class="Gl" />
+					<Panel id="q_lstat_21" class="Gl" />
+					<Panel id="q_lstat_22" class="Gl" />
+					<Panel id="q_lstat_23" class="Gl" />
+					<Panel id="q_lstat_24" class="Gl" />
+					<Panel id="q_lstat_25" class="Gl" />
+				</Panel>
+			</Panel>
+		</Panel>
+		<Panel id="qm_root" class="QmRoot QmHidden">
+			<Panel class="QmDim" hittest="false" />
+			<Panel class="QmWrap" hittest="false">
+				<Panel class="QmPlaqueSlot" hittest="false">
+					<Panel id="qm_plaque" class="QmPlaque" hittest="false" />
+				</Panel>
+				<Panel class="QmCol">
+					<Panel id="qm_main" class="QmScreen">
+						<Panel class="QmTitle" hittest="false" />
+						<Button id="qm_newgame" class="QmRow">
+							<Panel class="QmCursor" hittest="false">
+								<Panel class="QmDot QmDot1" />
+								<Panel class="QmDot QmDot2" />
+								<Panel class="QmDot QmDot3" />
+								<Panel class="QmDot QmDot4" />
+								<Panel class="QmDot QmDot5" />
+								<Panel class="QmDot QmDot6" />
+							</Panel>
+							<Panel class="QmText QmMainOnly" hittest="false">
+								<Panel class="Mf m78" />
+								<Panel class="Mf m69" />
+								<Panel class="Mf m87" />
+								<Panel class="Mf m32" />
+								<Panel class="Mf m71" />
+								<Panel class="Mf m65" />
+								<Panel class="Mf m77" />
+								<Panel class="Mf m69" />
+							</Panel>
+							<Panel class="QmText QmPauseOnly" hittest="false">
+								<Panel class="Mf m67" />
+								<Panel class="Mf m79" />
+								<Panel class="Mf m78" />
+								<Panel class="Mf m84" />
+								<Panel class="Mf m73" />
+								<Panel class="Mf m78" />
+								<Panel class="Mf m85" />
+								<Panel class="Mf m69" />
+							</Panel>
+						</Button>
+						<Button id="qm_continue" class="QmRow">
+							<Panel class="QmCursor" hittest="false">
+								<Panel class="QmDot QmDot1" />
+								<Panel class="QmDot QmDot2" />
+								<Panel class="QmDot QmDot3" />
+								<Panel class="QmDot QmDot4" />
+								<Panel class="QmDot QmDot5" />
+								<Panel class="QmDot QmDot6" />
+							</Panel>
+							<Panel class="QmText" hittest="false">
+								<Panel class="Mf m76" />
+								<Panel class="Mf m79" />
+								<Panel class="Mf m65" />
+								<Panel class="Mf m68" />
+								<Panel class="Mf m32" />
+								<Panel class="Mf m71" />
+								<Panel class="Mf m65" />
+								<Panel class="Mf m77" />
+								<Panel class="Mf m69" />
+							</Panel>
+						</Button>
+						<Button id="qm_options" class="QmRow">
+							<Panel class="QmCursor" hittest="false">
+								<Panel class="QmDot QmDot1" />
+								<Panel class="QmDot QmDot2" />
+								<Panel class="QmDot QmDot3" />
+								<Panel class="QmDot QmDot4" />
+								<Panel class="QmDot QmDot5" />
+								<Panel class="QmDot QmDot6" />
+							</Panel>
+							<Panel class="QmText" hittest="false">
+								<Panel class="Mf m79" />
+								<Panel class="Mf m80" />
+								<Panel class="Mf m84" />
+								<Panel class="Mf m73" />
+								<Panel class="Mf m79" />
+								<Panel class="Mf m78" />
+								<Panel class="Mf m83" />
+							</Panel>
+						</Button>
+						<Button id="qm_help" class="QmRow">
+							<Panel class="QmCursor" hittest="false">
+								<Panel class="QmDot QmDot1" />
+								<Panel class="QmDot QmDot2" />
+								<Panel class="QmDot QmDot3" />
+								<Panel class="QmDot QmDot4" />
+								<Panel class="QmDot QmDot5" />
+								<Panel class="QmDot QmDot6" />
+							</Panel>
+							<Panel class="QmText" hittest="false">
+								<Panel class="Mf m67" />
+								<Panel class="Mf m79" />
+								<Panel class="Mf m78" />
+								<Panel class="Mf m84" />
+								<Panel class="Mf m82" />
+								<Panel class="Mf m79" />
+								<Panel class="Mf m76" />
+								<Panel class="Mf m83" />
+							</Panel>
+						</Button>
+						<Button id="qm_quit" class="QmRow QmMainOnly">
+							<Panel class="QmCursor" hittest="false">
+								<Panel class="QmDot QmDot1" />
+								<Panel class="QmDot QmDot2" />
+								<Panel class="QmDot QmDot3" />
+								<Panel class="QmDot QmDot4" />
+								<Panel class="QmDot QmDot5" />
+								<Panel class="QmDot QmDot6" />
+							</Panel>
+							<Panel class="QmText" hittest="false">
+								<Panel class="Mf m81" />
+								<Panel class="Mf m85" />
+								<Panel class="Mf m73" />
+								<Panel class="Mf m84" />
+							</Panel>
+						</Button>
+						<Button id="qm_exit" class="QmRow QmPauseOnly">
+							<Panel class="QmCursor" hittest="false">
+								<Panel class="QmDot QmDot1" />
+								<Panel class="QmDot QmDot2" />
+								<Panel class="QmDot QmDot3" />
+								<Panel class="QmDot QmDot4" />
+								<Panel class="QmDot QmDot5" />
+								<Panel class="QmDot QmDot6" />
+							</Panel>
+							<Panel class="QmText" hittest="false">
+								<Panel class="Mf m69" />
+								<Panel class="Mf m88" />
+								<Panel class="Mf m73" />
+								<Panel class="Mf m84" />
+							</Panel>
+						</Button>
+					</Panel>
+					<Panel id="qm_opts" class="QmScreen QmScreenHidden QmSub">
+						<Panel class="QmTitle QmTitleOpt" hittest="false" />
+						<Button id="qm_opt_bob" class="QmRow QmOptRow">
+							<Panel class="QmCursor" hittest="false">
+								<Panel class="QmDot QmDot1" />
+								<Panel class="QmDot QmDot2" />
+								<Panel class="QmDot QmDot3" />
+								<Panel class="QmDot QmDot4" />
+								<Panel class="QmDot QmDot5" />
+								<Panel class="QmDot QmDot6" />
+							</Panel>
+							<Panel class="QmText" hittest="false">
+								<Panel class="Gl g86" />
+								<Panel class="Gl g73" />
+								<Panel class="Gl g69" />
+								<Panel class="Gl g87" />
+								<Panel class="Gl g32" />
+								<Panel class="Gl g66" />
+								<Panel class="Gl g79" />
+								<Panel class="Gl g66" />
+							</Panel>
+							<Panel class="QmVal" hittest="false">
+								<Panel id="qm_bob_v0" class="Gl" />
+								<Panel id="qm_bob_v1" class="Gl" />
+								<Panel id="qm_bob_v2" class="Gl" />
+							</Panel>
+						</Button>
+						<Button id="qm_opt_hit" class="QmRow QmOptRow">
+							<Panel class="QmCursor" hittest="false">
+								<Panel class="QmDot QmDot1" />
+								<Panel class="QmDot QmDot2" />
+								<Panel class="QmDot QmDot3" />
+								<Panel class="QmDot QmDot4" />
+								<Panel class="QmDot QmDot5" />
+								<Panel class="QmDot QmDot6" />
+							</Panel>
+							<Panel class="QmText" hittest="false">
+								<Panel class="Gl g72" />
+								<Panel class="Gl g73" />
+								<Panel class="Gl g84" />
+								<Panel class="Gl g77" />
+								<Panel class="Gl g65" />
+								<Panel class="Gl g82" />
+								<Panel class="Gl g75" />
+								<Panel class="Gl g69" />
+								<Panel class="Gl g82" />
+							</Panel>
+							<Panel class="QmVal" hittest="false">
+								<Panel id="qm_hit_v0" class="Gl" />
+								<Panel id="qm_hit_v1" class="Gl" />
+								<Panel id="qm_hit_v2" class="Gl" />
+							</Panel>
+						</Button>
+						<Button id="qm_opt_crt" class="QmRow QmOptRow">
+							<Panel class="QmCursor" hittest="false">
+								<Panel class="QmDot QmDot1" />
+								<Panel class="QmDot QmDot2" />
+								<Panel class="QmDot QmDot3" />
+								<Panel class="QmDot QmDot4" />
+								<Panel class="QmDot QmDot5" />
+								<Panel class="QmDot QmDot6" />
+							</Panel>
+							<Panel class="QmText" hittest="false">
+								<Panel class="Gl g67" />
+								<Panel class="Gl g82" />
+								<Panel class="Gl g84" />
+							</Panel>
+							<Panel class="QmVal" hittest="false">
+								<Panel id="qm_crt_v0" class="Gl" />
+								<Panel id="qm_crt_v1" class="Gl" />
+								<Panel id="qm_crt_v2" class="Gl" />
+							</Panel>
+						</Button>
+						<Button id="qm_opt_8bit" class="QmRow QmOptRow">
+							<Panel class="QmCursor" hittest="false">
+								<Panel class="QmDot QmDot1" />
+								<Panel class="QmDot QmDot2" />
+								<Panel class="QmDot QmDot3" />
+								<Panel class="QmDot QmDot4" />
+								<Panel class="QmDot QmDot5" />
+								<Panel class="QmDot QmDot6" />
+							</Panel>
+							<Panel class="QmText" hittest="false">
+								<Panel class="Gl g56" />
+								<Panel class="Gl g45" />
+								<Panel class="Gl g66" />
+								<Panel class="Gl g73" />
+								<Panel class="Gl g84" />
+							</Panel>
+							<Panel class="QmVal" hittest="false">
+								<Panel id="qm_8bit_v0" class="Gl" />
+								<Panel id="qm_8bit_v1" class="Gl" />
+								<Panel id="qm_8bit_v2" class="Gl" />
+							</Panel>
+						</Button>
+						<Button id="qm_opt_voice" class="QmRow QmOptRow">
+							<Panel class="QmCursor" hittest="false">
+								<Panel class="QmDot QmDot1" />
+								<Panel class="QmDot QmDot2" />
+								<Panel class="QmDot QmDot3" />
+								<Panel class="QmDot QmDot4" />
+								<Panel class="QmDot QmDot5" />
+								<Panel class="QmDot QmDot6" />
+							</Panel>
+							<Panel class="QmText" hittest="false">
+								<Panel class="Gl g80" />
+								<Panel class="Gl g76" />
+								<Panel class="Gl g65" />
+								<Panel class="Gl g89" />
+								<Panel class="Gl g69" />
+								<Panel class="Gl g82" />
+							</Panel>
+							<Panel class="QmVal" hittest="false">
+								<Panel id="qm_voice_v0" class="Gl" />
+								<Panel id="qm_voice_v1" class="Gl" />
+								<Panel id="qm_voice_v2" class="Gl" />
+								<Panel id="qm_voice_v3" class="Gl" />
+							</Panel>
+						</Button>
+						<Button id="qm_opt_vmpos" class="QmRow QmOptRow">
+							<Panel class="QmCursor" hittest="false">
+								<Panel class="QmDot QmDot1" />
+								<Panel class="QmDot QmDot2" />
+								<Panel class="QmDot QmDot3" />
+								<Panel class="QmDot QmDot4" />
+								<Panel class="QmDot QmDot5" />
+								<Panel class="QmDot QmDot6" />
+							</Panel>
+							<Panel class="QmText" hittest="false">
+								<Panel class="Gl g86" />
+								<Panel class="Gl g73" />
+								<Panel class="Gl g69" />
+								<Panel class="Gl g87" />
+								<Panel class="Gl g77" />
+								<Panel class="Gl g79" />
+								<Panel class="Gl g68" />
+								<Panel class="Gl g69" />
+								<Panel class="Gl g76" />
+							</Panel>
+							<Panel class="QmVal" hittest="false">
+								<Panel id="qm_vmpos_v0" class="Gl" />
+								<Panel id="qm_vmpos_v1" class="Gl" />
+								<Panel id="qm_vmpos_v2" class="Gl" />
+								<Panel id="qm_vmpos_v3" class="Gl" />
+								<Panel id="qm_vmpos_v4" class="Gl" />
+								<Panel id="qm_vmpos_v5" class="Gl" />
+							</Panel>
+						</Button>
+						<Button id="qm_opt_sprint" class="QmRow QmOptRow">
+							<Panel class="QmCursor" hittest="false">
+								<Panel class="QmDot QmDot1" />
+								<Panel class="QmDot QmDot2" />
+								<Panel class="QmDot QmDot3" />
+								<Panel class="QmDot QmDot4" />
+								<Panel class="QmDot QmDot5" />
+								<Panel class="QmDot QmDot6" />
+							</Panel>
+							<Panel class="QmText" hittest="false">
+								<Panel class="Gl g65" />
+								<Panel class="Gl g76" />
+								<Panel class="Gl g87" />
+								<Panel class="Gl g65" />
+								<Panel class="Gl g89" />
+								<Panel class="Gl g83" />
+								<Panel class="Gl g32" />
+								<Panel class="Gl g83" />
+								<Panel class="Gl g80" />
+								<Panel class="Gl g82" />
+								<Panel class="Gl g73" />
+								<Panel class="Gl g78" />
+								<Panel class="Gl g84" />
+							</Panel>
+							<Panel class="QmVal" hittest="false">
+								<Panel id="qm_sprint_v0" class="Gl" />
+								<Panel id="qm_sprint_v1" class="Gl" />
+								<Panel id="qm_sprint_v2" class="Gl" />
+							</Panel>
+						</Button>
+						<Button id="qm_opt_step" class="QmRow QmOptRow">
+							<Panel class="QmCursor" hittest="false">
+								<Panel class="QmDot QmDot1" />
+								<Panel class="QmDot QmDot2" />
+								<Panel class="QmDot QmDot3" />
+								<Panel class="QmDot QmDot4" />
+								<Panel class="QmDot QmDot5" />
+								<Panel class="QmDot QmDot6" />
+							</Panel>
+							<Panel class="QmText" hittest="false">
+								<Panel class="Gl g83" />
+								<Panel class="Gl g84" />
+								<Panel class="Gl g69" />
+								<Panel class="Gl g80" />
+								<Panel class="Gl g32" />
+								<Panel class="Gl g83" />
+								<Panel class="Gl g77" />
+								<Panel class="Gl g79" />
+								<Panel class="Gl g79" />
+								<Panel class="Gl g84" />
+								<Panel class="Gl g72" />
+							</Panel>
+							<Panel class="QmVal" hittest="false">
+								<Panel id="qm_step_v0" class="Gl" />
+								<Panel id="qm_step_v1" class="Gl" />
+								<Panel id="qm_step_v2" class="Gl" />
+							</Panel>
+						</Button>
+						<Panel class="QmRow QmOptRow" hittest="false">
+							<Panel class="QmCursor" hittest="false" />
+							<Panel class="QmText" hittest="false">
+								<Panel class="Gl g70" />
+								<Panel class="Gl g79" />
+								<Panel class="Gl g86" />
+							</Panel>
+							<Panel class="QmFovCtl">
+								<Button id="qm_opt_fov_dn" class="QmDiffArrow">
+									<Panel class="Gl g60" hittest="false" />
+								</Button>
+								<Panel class="QmVal" hittest="false">
+									<Panel id="qm_fov_v0" class="Gl" />
+									<Panel id="qm_fov_v1" class="Gl" />
+									<Panel id="qm_fov_v2" class="Gl" />
+								</Panel>
+								<Button id="qm_opt_fov_up" class="QmDiffArrow">
+									<Panel class="Gl g62" hittest="false" />
+								</Button>
+							</Panel>
+						</Panel>
+						<Button id="qm_cheats" class="QmRow QmOptRow">
+							<Panel class="QmCursor" hittest="false">
+								<Panel class="QmDot QmDot1" />
+								<Panel class="QmDot QmDot2" />
+								<Panel class="QmDot QmDot3" />
+								<Panel class="QmDot QmDot4" />
+								<Panel class="QmDot QmDot5" />
+								<Panel class="QmDot QmDot6" />
+							</Panel>
+							<Panel class="QmText" hittest="false">
+								<Panel class="Gl g67" />
+								<Panel class="Gl g72" />
+								<Panel class="Gl g69" />
+								<Panel class="Gl g65" />
+								<Panel class="Gl g84" />
+								<Panel class="Gl g83" />
+							</Panel>
+						</Button>
+						<Button id="qm_back" class="QmRow QmOptRow">
+							<Panel class="QmCursor" hittest="false">
+								<Panel class="QmDot QmDot1" />
+								<Panel class="QmDot QmDot2" />
+								<Panel class="QmDot QmDot3" />
+								<Panel class="QmDot QmDot4" />
+								<Panel class="QmDot QmDot5" />
+								<Panel class="QmDot QmDot6" />
+							</Panel>
+							<Panel class="QmText" hittest="false">
+								<Panel class="Gl g66" />
+								<Panel class="Gl g65" />
+								<Panel class="Gl g67" />
+								<Panel class="Gl g75" />
+							</Panel>
+						</Button>
+					</Panel>
+					<Panel id="qm_chts" class="QmScreen QmScreenHidden QmSub">
+						<Panel class="QmTitle QmTitleOpt" hittest="false" />
+						<Button id="qm_cht_hop" class="QmRow QmOptRow">
+							<Panel class="QmCursor" hittest="false">
+								<Panel class="QmDot QmDot1" />
+								<Panel class="QmDot QmDot2" />
+								<Panel class="QmDot QmDot3" />
+								<Panel class="QmDot QmDot4" />
+								<Panel class="QmDot QmDot5" />
+								<Panel class="QmDot QmDot6" />
+							</Panel>
+							<Panel class="QmText" hittest="false">
+								<Panel class="Gl g65" />
+								<Panel class="Gl g85" />
+								<Panel class="Gl g84" />
+								<Panel class="Gl g79" />
+								<Panel class="Gl g72" />
+								<Panel class="Gl g79" />
+								<Panel class="Gl g80" />
+							</Panel>
+							<Panel class="QmVal" hittest="false">
+								<Panel id="qm_hop_v0" class="Gl" />
+								<Panel id="qm_hop_v1" class="Gl" />
+								<Panel id="qm_hop_v2" class="Gl" />
+							</Panel>
+						</Button>
+						<Button id="qm_cht_all" class="QmRow QmOptRow">
+							<Panel class="QmCursor" hittest="false">
+								<Panel class="QmDot QmDot1" />
+								<Panel class="QmDot QmDot2" />
+								<Panel class="QmDot QmDot3" />
+								<Panel class="QmDot QmDot4" />
+								<Panel class="QmDot QmDot5" />
+								<Panel class="QmDot QmDot6" />
+							</Panel>
+							<Panel class="QmText" hittest="false">
+								<Panel class="Gl g71" />
+								<Panel class="Gl g73" />
+								<Panel class="Gl g86" />
+								<Panel class="Gl g69" />
+								<Panel class="Gl g32" />
+								<Panel class="Gl g65" />
+								<Panel class="Gl g76" />
+								<Panel class="Gl g76" />
+							</Panel>
+							<Panel class="QmVal" hittest="false">
+								<Panel id="qm_all_v0" class="Gl" />
+								<Panel id="qm_all_v1" class="Gl" />
+								<Panel id="qm_all_v2" class="Gl" />
+							</Panel>
+						</Button>
+						<Button id="qm_cht_god" class="QmRow QmOptRow">
+							<Panel class="QmCursor" hittest="false">
+								<Panel class="QmDot QmDot1" />
+								<Panel class="QmDot QmDot2" />
+								<Panel class="QmDot QmDot3" />
+								<Panel class="QmDot QmDot4" />
+								<Panel class="QmDot QmDot5" />
+								<Panel class="QmDot QmDot6" />
+							</Panel>
+							<Panel class="QmText" hittest="false">
+								<Panel class="Gl g71" />
+								<Panel class="Gl g79" />
+								<Panel class="Gl g68" />
+							</Panel>
+							<Panel class="QmVal" hittest="false">
+								<Panel id="qm_god_v0" class="Gl" />
+								<Panel id="qm_god_v1" class="Gl" />
+								<Panel id="qm_god_v2" class="Gl" />
+							</Panel>
+						</Button>
+						<Button id="qm_cht_ammo" class="QmRow QmOptRow">
+							<Panel class="QmCursor" hittest="false">
+								<Panel class="QmDot QmDot1" />
+								<Panel class="QmDot QmDot2" />
+								<Panel class="QmDot QmDot3" />
+								<Panel class="QmDot QmDot4" />
+								<Panel class="QmDot QmDot5" />
+								<Panel class="QmDot QmDot6" />
+							</Panel>
+							<Panel class="QmText" hittest="false">
+								<Panel class="Gl g73" />
+								<Panel class="Gl g78" />
+								<Panel class="Gl g70" />
+								<Panel class="Gl g32" />
+								<Panel class="Gl g65" />
+								<Panel class="Gl g77" />
+								<Panel class="Gl g77" />
+								<Panel class="Gl g79" />
+							</Panel>
+							<Panel class="QmVal" hittest="false">
+								<Panel id="qm_ammo_v0" class="Gl" />
+								<Panel id="qm_ammo_v1" class="Gl" />
+								<Panel id="qm_ammo_v2" class="Gl" />
+							</Panel>
+						</Button>
+						<Button id="qm_back_c" class="QmRow QmOptRow">
+							<Panel class="QmCursor" hittest="false">
+								<Panel class="QmDot QmDot1" />
+								<Panel class="QmDot QmDot2" />
+								<Panel class="QmDot QmDot3" />
+								<Panel class="QmDot QmDot4" />
+								<Panel class="QmDot QmDot5" />
+								<Panel class="QmDot QmDot6" />
+							</Panel>
+							<Panel class="QmText" hittest="false">
+								<Panel class="Gl g66" />
+								<Panel class="Gl g65" />
+								<Panel class="Gl g67" />
+								<Panel class="Gl g75" />
+							</Panel>
+						</Button>
+					</Panel>
+					<Panel id="qm_hlp" class="QmScreen QmScreenHidden QmSub">
+						<Panel class="QmHelpImg" hittest="false" />
+						<Button id="qm_hlp_back" class="QmRow QmOptRow">
+							<Panel class="QmCursor" hittest="false">
+								<Panel class="QmDot QmDot1" />
+								<Panel class="QmDot QmDot2" />
+								<Panel class="QmDot QmDot3" />
+								<Panel class="QmDot QmDot4" />
+								<Panel class="QmDot QmDot5" />
+								<Panel class="QmDot QmDot6" />
+							</Panel>
+							<Panel class="QmText" hittest="false">
+								<Panel class="Gl g66" />
+								<Panel class="Gl g65" />
+								<Panel class="Gl g67" />
+								<Panel class="Gl g75" />
+							</Panel>
+						</Button>
+					</Panel>
+					<Panel id="qm_ns" class="QmScreen QmScreenHidden QmSub">
+						<Panel class="QmRow QmHeadRow" hittest="false">
+							<Panel class="QmText" hittest="false">
+								<Panel class="Gl g78" />
+								<Panel class="Gl g69" />
+								<Panel class="Gl g87" />
+								<Panel class="Gl g32" />
+								<Panel class="Gl g71" />
+								<Panel class="Gl g65" />
+								<Panel class="Gl g77" />
+								<Panel class="Gl g69" />
+							</Panel>
+						</Panel>
+						<Button id="qm_ns0" class="QmRow QmOptRow">
+							<Panel class="QmCursor" hittest="false">
+								<Panel class="QmDot QmDot1" />
+								<Panel class="QmDot QmDot2" />
+								<Panel class="QmDot QmDot3" />
+								<Panel class="QmDot QmDot4" />
+								<Panel class="QmDot QmDot5" />
+								<Panel class="QmDot QmDot6" />
+							</Panel>
+							<Panel class="QmText" hittest="false">
+								<Panel class="Gl g83" />
+								<Panel class="Gl g76" />
+								<Panel class="Gl g79" />
+								<Panel class="Gl g84" />
+								<Panel class="Gl g32" />
+								<Panel class="Gl g49" />
+							</Panel>
+							<Panel class="QmVal" hittest="false">
+								<Panel id="qm_ns_v0_0" class="Gl" />
+								<Panel id="qm_ns_v0_1" class="Gl" />
+								<Panel id="qm_ns_v0_2" class="Gl" />
+								<Panel id="qm_ns_v0_3" class="Gl" />
+								<Panel id="qm_ns_v0_4" class="Gl" />
+								<Panel id="qm_ns_v0_5" class="Gl" />
+							</Panel>
+						</Button>
+						<Button id="qm_ns1" class="QmRow QmOptRow">
+							<Panel class="QmCursor" hittest="false">
+								<Panel class="QmDot QmDot1" />
+								<Panel class="QmDot QmDot2" />
+								<Panel class="QmDot QmDot3" />
+								<Panel class="QmDot QmDot4" />
+								<Panel class="QmDot QmDot5" />
+								<Panel class="QmDot QmDot6" />
+							</Panel>
+							<Panel class="QmText" hittest="false">
+								<Panel class="Gl g83" />
+								<Panel class="Gl g76" />
+								<Panel class="Gl g79" />
+								<Panel class="Gl g84" />
+								<Panel class="Gl g32" />
+								<Panel class="Gl g50" />
+							</Panel>
+							<Panel class="QmVal" hittest="false">
+								<Panel id="qm_ns_v1_0" class="Gl" />
+								<Panel id="qm_ns_v1_1" class="Gl" />
+								<Panel id="qm_ns_v1_2" class="Gl" />
+								<Panel id="qm_ns_v1_3" class="Gl" />
+								<Panel id="qm_ns_v1_4" class="Gl" />
+								<Panel id="qm_ns_v1_5" class="Gl" />
+							</Panel>
+						</Button>
+						<Button id="qm_ns2" class="QmRow QmOptRow">
+							<Panel class="QmCursor" hittest="false">
+								<Panel class="QmDot QmDot1" />
+								<Panel class="QmDot QmDot2" />
+								<Panel class="QmDot QmDot3" />
+								<Panel class="QmDot QmDot4" />
+								<Panel class="QmDot QmDot5" />
+								<Panel class="QmDot QmDot6" />
+							</Panel>
+							<Panel class="QmText" hittest="false">
+								<Panel class="Gl g83" />
+								<Panel class="Gl g76" />
+								<Panel class="Gl g79" />
+								<Panel class="Gl g84" />
+								<Panel class="Gl g32" />
+								<Panel class="Gl g51" />
+							</Panel>
+							<Panel class="QmVal" hittest="false">
+								<Panel id="qm_ns_v2_0" class="Gl" />
+								<Panel id="qm_ns_v2_1" class="Gl" />
+								<Panel id="qm_ns_v2_2" class="Gl" />
+								<Panel id="qm_ns_v2_3" class="Gl" />
+								<Panel id="qm_ns_v2_4" class="Gl" />
+								<Panel id="qm_ns_v2_5" class="Gl" />
+							</Panel>
+						</Button>
+						<Button id="qm_ns_back" class="QmRow QmOptRow">
+							<Panel class="QmCursor" hittest="false">
+								<Panel class="QmDot QmDot1" />
+								<Panel class="QmDot QmDot2" />
+								<Panel class="QmDot QmDot3" />
+								<Panel class="QmDot QmDot4" />
+								<Panel class="QmDot QmDot5" />
+								<Panel class="QmDot QmDot6" />
+							</Panel>
+							<Panel class="QmText" hittest="false">
+								<Panel class="Gl g66" />
+								<Panel class="Gl g65" />
+								<Panel class="Gl g67" />
+								<Panel class="Gl g75" />
+							</Panel>
+						</Button>
+					</Panel>
+					<Panel id="qm_df" class="QmScreen QmScreenHidden QmSub">
+						<Panel class="QmRow QmHeadRow" hittest="false">
+							<Panel class="QmText" hittest="false">
+								<Panel class="Gl g68" />
+								<Panel class="Gl g73" />
+								<Panel class="Gl g70" />
+								<Panel class="Gl g70" />
+								<Panel class="Gl g73" />
+								<Panel class="Gl g67" />
+								<Panel class="Gl g85" />
+								<Panel class="Gl g76" />
+								<Panel class="Gl g84" />
+								<Panel class="Gl g89" />
+							</Panel>
+						</Panel>
+						<Panel class="QmDiffRow" hittest="false">
+							<Button id="qm_df_prev" class="QmDiffArrow">
+								<Panel class="Gl g60" hittest="false" />
+							</Button>
+							<Panel id="qm_df_v" class="QmVal" hittest="false">
+								<Panel id="qm_df_v_0" class="Gl" />
+								<Panel id="qm_df_v_1" class="Gl" />
+								<Panel id="qm_df_v_2" class="Gl" />
+								<Panel id="qm_df_v_3" class="Gl" />
+								<Panel id="qm_df_v_4" class="Gl" />
+								<Panel id="qm_df_v_5" class="Gl" />
+								<Panel id="qm_df_v_6" class="Gl" />
+								<Panel id="qm_df_v_7" class="Gl" />
+								<Panel id="qm_df_v_8" class="Gl" />
+							</Panel>
+							<Button id="qm_df_next" class="QmDiffArrow">
+								<Panel class="Gl g62" hittest="false" />
+							</Button>
+						</Panel>
+						<Panel id="qm_df_hint" class="QmStRow" hittest="false">
+							<Panel id="qm_df_hint_0" class="Gl" />
+							<Panel id="qm_df_hint_1" class="Gl" />
+							<Panel id="qm_df_hint_2" class="Gl" />
+							<Panel id="qm_df_hint_3" class="Gl" />
+							<Panel id="qm_df_hint_4" class="Gl" />
+							<Panel id="qm_df_hint_5" class="Gl" />
+							<Panel id="qm_df_hint_6" class="Gl" />
+							<Panel id="qm_df_hint_7" class="Gl" />
+							<Panel id="qm_df_hint_8" class="Gl" />
+							<Panel id="qm_df_hint_9" class="Gl" />
+							<Panel id="qm_df_hint_10" class="Gl" />
+							<Panel id="qm_df_hint_11" class="Gl" />
+							<Panel id="qm_df_hint_12" class="Gl" />
+							<Panel id="qm_df_hint_13" class="Gl" />
+							<Panel id="qm_df_hint_14" class="Gl" />
+							<Panel id="qm_df_hint_15" class="Gl" />
+							<Panel id="qm_df_hint_16" class="Gl" />
+						</Panel>
+						<Button id="qm_df_start" class="QmRow QmOptRow">
+							<Panel class="QmCursor" hittest="false">
+								<Panel class="QmDot QmDot1" />
+								<Panel class="QmDot QmDot2" />
+								<Panel class="QmDot QmDot3" />
+								<Panel class="QmDot QmDot4" />
+								<Panel class="QmDot QmDot5" />
+								<Panel class="QmDot QmDot6" />
+							</Panel>
+							<Panel class="QmText" hittest="false">
+								<Panel class="Gl g83" />
+								<Panel class="Gl g84" />
+								<Panel class="Gl g65" />
+								<Panel class="Gl g82" />
+								<Panel class="Gl g84" />
+							</Panel>
+						</Button>
+						<Button id="qm_df_back" class="QmRow QmOptRow">
+							<Panel class="QmCursor" hittest="false">
+								<Panel class="QmDot QmDot1" />
+								<Panel class="QmDot QmDot2" />
+								<Panel class="QmDot QmDot3" />
+								<Panel class="QmDot QmDot4" />
+								<Panel class="QmDot QmDot5" />
+								<Panel class="QmDot QmDot6" />
+							</Panel>
+							<Panel class="QmText" hittest="false">
+								<Panel class="Gl g66" />
+								<Panel class="Gl g65" />
+								<Panel class="Gl g67" />
+								<Panel class="Gl g75" />
+							</Panel>
+						</Button>
+					</Panel>
+					<Panel id="qm_cs" class="QmScreen QmScreenHidden QmSub">
+						<Panel class="QmRow QmHeadRow" hittest="false">
+							<Panel class="QmText" hittest="false">
+								<Panel class="Gl g76" />
+								<Panel class="Gl g79" />
+								<Panel class="Gl g65" />
+								<Panel class="Gl g68" />
+								<Panel class="Gl g32" />
+								<Panel class="Gl g71" />
+								<Panel class="Gl g65" />
+								<Panel class="Gl g77" />
+								<Panel class="Gl g69" />
+							</Panel>
+						</Panel>
+						<Panel class="QmSplitRow">
+							<Button id="qm_cs0" class="QmRow QmOptRow QmSplitL">
+								<Panel class="QmCursor" hittest="false">
+									<Panel class="QmDot QmDot1" />
+									<Panel class="QmDot QmDot2" />
+									<Panel class="QmDot QmDot3" />
+									<Panel class="QmDot QmDot4" />
+									<Panel class="QmDot QmDot5" />
+									<Panel class="QmDot QmDot6" />
+								</Panel>
+								<Panel class="QmText" hittest="false">
+									<Panel class="Gl g83" />
+									<Panel class="Gl g76" />
+									<Panel class="Gl g79" />
+									<Panel class="Gl g84" />
+									<Panel class="Gl g32" />
+									<Panel class="Gl g49" />
+								</Panel>
+								<Panel class="QmVal" hittest="false">
+									<Panel id="qm_cs_v0_0" class="Gl" />
+									<Panel id="qm_cs_v0_1" class="Gl" />
+									<Panel id="qm_cs_v0_2" class="Gl" />
+									<Panel id="qm_cs_v0_3" class="Gl" />
+									<Panel id="qm_cs_v0_4" class="Gl" />
+									<Panel id="qm_cs_v0_5" class="Gl" />
+									<Panel id="qm_cs_v0_6" class="Gl" />
+									<Panel id="qm_cs_v0_7" class="Gl" />
+									<Panel id="qm_cs_v0_8" class="Gl" />
+									<Panel id="qm_cs_v0_9" class="Gl" />
+									<Panel id="qm_cs_v0_10" class="Gl" />
+									<Panel id="qm_cs_v0_11" class="Gl" />
+									<Panel id="qm_cs_v0_12" class="Gl" />
+									<Panel id="qm_cs_v0_13" class="Gl" />
+									<Panel id="qm_cs_v0_14" class="Gl" />
+									<Panel id="qm_cs_v0_15" class="Gl" />
+								</Panel>
+							</Button>
+							<Button id="qm_cs0s" class="QmRow QmOptRow QmSplitR">
+								<Panel class="QmCursor" hittest="false">
+									<Panel class="QmDot QmDot1" />
+									<Panel class="QmDot QmDot2" />
+									<Panel class="QmDot QmDot3" />
+									<Panel class="QmDot QmDot4" />
+									<Panel class="QmDot QmDot5" />
+									<Panel class="QmDot QmDot6" />
+								</Panel>
+								<Panel class="QmText" hittest="false">
+									<Panel class="Gl g83" />
+									<Panel class="Gl g84" />
+									<Panel class="Gl g65" />
+									<Panel class="Gl g84" />
+									<Panel class="Gl g83" />
+								</Panel>
+							</Button>
+						</Panel>
+						<Panel class="QmSplitRow">
+							<Button id="qm_cs1" class="QmRow QmOptRow QmSplitL">
+								<Panel class="QmCursor" hittest="false">
+									<Panel class="QmDot QmDot1" />
+									<Panel class="QmDot QmDot2" />
+									<Panel class="QmDot QmDot3" />
+									<Panel class="QmDot QmDot4" />
+									<Panel class="QmDot QmDot5" />
+									<Panel class="QmDot QmDot6" />
+								</Panel>
+								<Panel class="QmText" hittest="false">
+									<Panel class="Gl g83" />
+									<Panel class="Gl g76" />
+									<Panel class="Gl g79" />
+									<Panel class="Gl g84" />
+									<Panel class="Gl g32" />
+									<Panel class="Gl g50" />
+								</Panel>
+								<Panel class="QmVal" hittest="false">
+									<Panel id="qm_cs_v1_0" class="Gl" />
+									<Panel id="qm_cs_v1_1" class="Gl" />
+									<Panel id="qm_cs_v1_2" class="Gl" />
+									<Panel id="qm_cs_v1_3" class="Gl" />
+									<Panel id="qm_cs_v1_4" class="Gl" />
+									<Panel id="qm_cs_v1_5" class="Gl" />
+									<Panel id="qm_cs_v1_6" class="Gl" />
+									<Panel id="qm_cs_v1_7" class="Gl" />
+									<Panel id="qm_cs_v1_8" class="Gl" />
+									<Panel id="qm_cs_v1_9" class="Gl" />
+									<Panel id="qm_cs_v1_10" class="Gl" />
+									<Panel id="qm_cs_v1_11" class="Gl" />
+									<Panel id="qm_cs_v1_12" class="Gl" />
+									<Panel id="qm_cs_v1_13" class="Gl" />
+									<Panel id="qm_cs_v1_14" class="Gl" />
+									<Panel id="qm_cs_v1_15" class="Gl" />
+								</Panel>
+							</Button>
+							<Button id="qm_cs1s" class="QmRow QmOptRow QmSplitR">
+								<Panel class="QmCursor" hittest="false">
+									<Panel class="QmDot QmDot1" />
+									<Panel class="QmDot QmDot2" />
+									<Panel class="QmDot QmDot3" />
+									<Panel class="QmDot QmDot4" />
+									<Panel class="QmDot QmDot5" />
+									<Panel class="QmDot QmDot6" />
+								</Panel>
+								<Panel class="QmText" hittest="false">
+									<Panel class="Gl g83" />
+									<Panel class="Gl g84" />
+									<Panel class="Gl g65" />
+									<Panel class="Gl g84" />
+									<Panel class="Gl g83" />
+								</Panel>
+							</Button>
+						</Panel>
+						<Panel class="QmSplitRow">
+							<Button id="qm_cs2" class="QmRow QmOptRow QmSplitL">
+								<Panel class="QmCursor" hittest="false">
+									<Panel class="QmDot QmDot1" />
+									<Panel class="QmDot QmDot2" />
+									<Panel class="QmDot QmDot3" />
+									<Panel class="QmDot QmDot4" />
+									<Panel class="QmDot QmDot5" />
+									<Panel class="QmDot QmDot6" />
+								</Panel>
+								<Panel class="QmText" hittest="false">
+									<Panel class="Gl g83" />
+									<Panel class="Gl g76" />
+									<Panel class="Gl g79" />
+									<Panel class="Gl g84" />
+									<Panel class="Gl g32" />
+									<Panel class="Gl g51" />
+								</Panel>
+								<Panel class="QmVal" hittest="false">
+									<Panel id="qm_cs_v2_0" class="Gl" />
+									<Panel id="qm_cs_v2_1" class="Gl" />
+									<Panel id="qm_cs_v2_2" class="Gl" />
+									<Panel id="qm_cs_v2_3" class="Gl" />
+									<Panel id="qm_cs_v2_4" class="Gl" />
+									<Panel id="qm_cs_v2_5" class="Gl" />
+									<Panel id="qm_cs_v2_6" class="Gl" />
+									<Panel id="qm_cs_v2_7" class="Gl" />
+									<Panel id="qm_cs_v2_8" class="Gl" />
+									<Panel id="qm_cs_v2_9" class="Gl" />
+									<Panel id="qm_cs_v2_10" class="Gl" />
+									<Panel id="qm_cs_v2_11" class="Gl" />
+									<Panel id="qm_cs_v2_12" class="Gl" />
+									<Panel id="qm_cs_v2_13" class="Gl" />
+									<Panel id="qm_cs_v2_14" class="Gl" />
+									<Panel id="qm_cs_v2_15" class="Gl" />
+								</Panel>
+							</Button>
+							<Button id="qm_cs2s" class="QmRow QmOptRow QmSplitR">
+								<Panel class="QmCursor" hittest="false">
+									<Panel class="QmDot QmDot1" />
+									<Panel class="QmDot QmDot2" />
+									<Panel class="QmDot QmDot3" />
+									<Panel class="QmDot QmDot4" />
+									<Panel class="QmDot QmDot5" />
+									<Panel class="QmDot QmDot6" />
+								</Panel>
+								<Panel class="QmText" hittest="false">
+									<Panel class="Gl g83" />
+									<Panel class="Gl g84" />
+									<Panel class="Gl g65" />
+									<Panel class="Gl g84" />
+									<Panel class="Gl g83" />
+								</Panel>
+							</Button>
+						</Panel>
+						<Button id="qm_cs_back" class="QmRow QmOptRow">
+							<Panel class="QmCursor" hittest="false">
+								<Panel class="QmDot QmDot1" />
+								<Panel class="QmDot QmDot2" />
+								<Panel class="QmDot QmDot3" />
+								<Panel class="QmDot QmDot4" />
+								<Panel class="QmDot QmDot5" />
+								<Panel class="QmDot QmDot6" />
+							</Panel>
+							<Panel class="QmText" hittest="false">
+								<Panel class="Gl g66" />
+								<Panel class="Gl g65" />
+								<Panel class="Gl g67" />
+								<Panel class="Gl g75" />
+							</Panel>
+						</Button>
+					</Panel>
+					<Panel id="qm_cf" class="QmScreen QmScreenHidden QmSub">
+						<Panel class="QmRow QmHeadRow" hittest="false">
+							<Panel class="QmText" hittest="false">
+								<Panel class="Gl g79" />
+								<Panel class="Gl g86" />
+								<Panel class="Gl g69" />
+								<Panel class="Gl g82" />
+								<Panel class="Gl g87" />
+								<Panel class="Gl g82" />
+								<Panel class="Gl g73" />
+								<Panel class="Gl g84" />
+								<Panel class="Gl g69" />
+								<Panel class="Gl g32" />
+							</Panel>
+							<Panel class="QmVal" hittest="false">
+								<Panel id="qm_cf_slot_0" class="Gl" />
+								<Panel id="qm_cf_slot_1" class="Gl" />
+								<Panel id="qm_cf_slot_2" class="Gl" />
+								<Panel id="qm_cf_slot_3" class="Gl" />
+								<Panel id="qm_cf_slot_4" class="Gl" />
+								<Panel id="qm_cf_slot_5" class="Gl" />
+							</Panel>
+						</Panel>
+						<Button id="qm_cf_no" class="QmRow QmOptRow">
+							<Panel class="QmCursor" hittest="false">
+								<Panel class="QmDot QmDot1" />
+								<Panel class="QmDot QmDot2" />
+								<Panel class="QmDot QmDot3" />
+								<Panel class="QmDot QmDot4" />
+								<Panel class="QmDot QmDot5" />
+								<Panel class="QmDot QmDot6" />
+							</Panel>
+							<Panel class="QmText" hittest="false">
+								<Panel class="Gl g78" />
+								<Panel class="Gl g79" />
+							</Panel>
+						</Button>
+						<Button id="qm_cf_yes" class="QmRow QmOptRow">
+							<Panel class="QmCursor" hittest="false">
+								<Panel class="QmDot QmDot1" />
+								<Panel class="QmDot QmDot2" />
+								<Panel class="QmDot QmDot3" />
+								<Panel class="QmDot QmDot4" />
+								<Panel class="QmDot QmDot5" />
+								<Panel class="QmDot QmDot6" />
+							</Panel>
+							<Panel class="QmText" hittest="false">
+								<Panel class="Gl g89" />
+								<Panel class="Gl g69" />
+								<Panel class="Gl g83" />
+							</Panel>
+						</Button>
+					</Panel>
+					<Panel id="qm_st" class="QmScreen QmScreenHidden QmSub">
+						<Panel class="QmRow QmHeadRow" hittest="false">
+							<Panel class="QmText" hittest="false">
+								<Panel class="Gl g83" />
+								<Panel class="Gl g84" />
+								<Panel class="Gl g65" />
+								<Panel class="Gl g84" />
+								<Panel class="Gl g83" />
+								<Panel class="Gl g32" />
+							</Panel>
+							<Panel class="QmVal" hittest="false">
+								<Panel id="qm_st_slot_0" class="Gl" />
+								<Panel id="qm_st_slot_1" class="Gl" />
+								<Panel id="qm_st_slot_2" class="Gl" />
+								<Panel id="qm_st_slot_3" class="Gl" />
+								<Panel id="qm_st_slot_4" class="Gl" />
+								<Panel id="qm_st_slot_5" class="Gl" />
+							</Panel>
+						</Panel>
+						<Panel class="QmStRow QmStHdr" hittest="false">
+							<Panel id="qm_st_hdr_0" class="Gl" />
+							<Panel id="qm_st_hdr_1" class="Gl" />
+							<Panel id="qm_st_hdr_2" class="Gl" />
+							<Panel id="qm_st_hdr_3" class="Gl" />
+							<Panel id="qm_st_hdr_4" class="Gl" />
+							<Panel id="qm_st_hdr_5" class="Gl" />
+							<Panel id="qm_st_hdr_6" class="Gl" />
+							<Panel id="qm_st_hdr_7" class="Gl" />
+							<Panel id="qm_st_hdr_8" class="Gl" />
+							<Panel id="qm_st_hdr_9" class="Gl" />
+							<Panel id="qm_st_hdr_10" class="Gl" />
+							<Panel id="qm_st_hdr_11" class="Gl" />
+							<Panel id="qm_st_hdr_12" class="Gl" />
+							<Panel id="qm_st_hdr_13" class="Gl" />
+							<Panel id="qm_st_hdr_14" class="Gl" />
+							<Panel id="qm_st_hdr_15" class="Gl" />
+							<Panel id="qm_st_hdr_16" class="Gl" />
+							<Panel id="qm_st_hdr_17" class="Gl" />
+							<Panel id="qm_st_hdr_18" class="Gl" />
+							<Panel id="qm_st_hdr_19" class="Gl" />
+							<Panel id="qm_st_hdr_20" class="Gl" />
+							<Panel id="qm_st_hdr_21" class="Gl" />
+							<Panel id="qm_st_hdr_22" class="Gl" />
+							<Panel id="qm_st_hdr_23" class="Gl" />
+							<Panel id="qm_st_hdr_24" class="Gl" />
+							<Panel id="qm_st_hdr_25" class="Gl" />
+						</Panel>
+						<Panel id="qm_st0" class="QmStRow" hittest="false">
+							<Panel id="qm_st0_0" class="Gl" />
+							<Panel id="qm_st0_1" class="Gl" />
+							<Panel id="qm_st0_2" class="Gl" />
+							<Panel id="qm_st0_3" class="Gl" />
+							<Panel id="qm_st0_4" class="Gl" />
+							<Panel id="qm_st0_5" class="Gl" />
+							<Panel id="qm_st0_6" class="Gl" />
+							<Panel id="qm_st0_7" class="Gl" />
+							<Panel id="qm_st0_8" class="Gl" />
+							<Panel id="qm_st0_9" class="Gl" />
+							<Panel id="qm_st0_10" class="Gl" />
+							<Panel id="qm_st0_11" class="Gl" />
+							<Panel id="qm_st0_12" class="Gl" />
+							<Panel id="qm_st0_13" class="Gl" />
+							<Panel id="qm_st0_14" class="Gl" />
+							<Panel id="qm_st0_15" class="Gl" />
+							<Panel id="qm_st0_16" class="Gl" />
+							<Panel id="qm_st0_17" class="Gl" />
+							<Panel id="qm_st0_18" class="Gl" />
+							<Panel id="qm_st0_19" class="Gl" />
+							<Panel id="qm_st0_20" class="Gl" />
+							<Panel id="qm_st0_21" class="Gl" />
+							<Panel id="qm_st0_22" class="Gl" />
+							<Panel id="qm_st0_23" class="Gl" />
+							<Panel id="qm_st0_24" class="Gl" />
+							<Panel id="qm_st0_25" class="Gl" />
+						</Panel>
+						<Panel id="qm_st1" class="QmStRow" hittest="false">
+							<Panel id="qm_st1_0" class="Gl" />
+							<Panel id="qm_st1_1" class="Gl" />
+							<Panel id="qm_st1_2" class="Gl" />
+							<Panel id="qm_st1_3" class="Gl" />
+							<Panel id="qm_st1_4" class="Gl" />
+							<Panel id="qm_st1_5" class="Gl" />
+							<Panel id="qm_st1_6" class="Gl" />
+							<Panel id="qm_st1_7" class="Gl" />
+							<Panel id="qm_st1_8" class="Gl" />
+							<Panel id="qm_st1_9" class="Gl" />
+							<Panel id="qm_st1_10" class="Gl" />
+							<Panel id="qm_st1_11" class="Gl" />
+							<Panel id="qm_st1_12" class="Gl" />
+							<Panel id="qm_st1_13" class="Gl" />
+							<Panel id="qm_st1_14" class="Gl" />
+							<Panel id="qm_st1_15" class="Gl" />
+							<Panel id="qm_st1_16" class="Gl" />
+							<Panel id="qm_st1_17" class="Gl" />
+							<Panel id="qm_st1_18" class="Gl" />
+							<Panel id="qm_st1_19" class="Gl" />
+							<Panel id="qm_st1_20" class="Gl" />
+							<Panel id="qm_st1_21" class="Gl" />
+							<Panel id="qm_st1_22" class="Gl" />
+							<Panel id="qm_st1_23" class="Gl" />
+							<Panel id="qm_st1_24" class="Gl" />
+							<Panel id="qm_st1_25" class="Gl" />
+						</Panel>
+						<Panel id="qm_st2" class="QmStRow" hittest="false">
+							<Panel id="qm_st2_0" class="Gl" />
+							<Panel id="qm_st2_1" class="Gl" />
+							<Panel id="qm_st2_2" class="Gl" />
+							<Panel id="qm_st2_3" class="Gl" />
+							<Panel id="qm_st2_4" class="Gl" />
+							<Panel id="qm_st2_5" class="Gl" />
+							<Panel id="qm_st2_6" class="Gl" />
+							<Panel id="qm_st2_7" class="Gl" />
+							<Panel id="qm_st2_8" class="Gl" />
+							<Panel id="qm_st2_9" class="Gl" />
+							<Panel id="qm_st2_10" class="Gl" />
+							<Panel id="qm_st2_11" class="Gl" />
+							<Panel id="qm_st2_12" class="Gl" />
+							<Panel id="qm_st2_13" class="Gl" />
+							<Panel id="qm_st2_14" class="Gl" />
+							<Panel id="qm_st2_15" class="Gl" />
+							<Panel id="qm_st2_16" class="Gl" />
+							<Panel id="qm_st2_17" class="Gl" />
+							<Panel id="qm_st2_18" class="Gl" />
+							<Panel id="qm_st2_19" class="Gl" />
+							<Panel id="qm_st2_20" class="Gl" />
+							<Panel id="qm_st2_21" class="Gl" />
+							<Panel id="qm_st2_22" class="Gl" />
+							<Panel id="qm_st2_23" class="Gl" />
+							<Panel id="qm_st2_24" class="Gl" />
+							<Panel id="qm_st2_25" class="Gl" />
+						</Panel>
+						<Panel id="qm_st3" class="QmStRow" hittest="false">
+							<Panel id="qm_st3_0" class="Gl" />
+							<Panel id="qm_st3_1" class="Gl" />
+							<Panel id="qm_st3_2" class="Gl" />
+							<Panel id="qm_st3_3" class="Gl" />
+							<Panel id="qm_st3_4" class="Gl" />
+							<Panel id="qm_st3_5" class="Gl" />
+							<Panel id="qm_st3_6" class="Gl" />
+							<Panel id="qm_st3_7" class="Gl" />
+							<Panel id="qm_st3_8" class="Gl" />
+							<Panel id="qm_st3_9" class="Gl" />
+							<Panel id="qm_st3_10" class="Gl" />
+							<Panel id="qm_st3_11" class="Gl" />
+							<Panel id="qm_st3_12" class="Gl" />
+							<Panel id="qm_st3_13" class="Gl" />
+							<Panel id="qm_st3_14" class="Gl" />
+							<Panel id="qm_st3_15" class="Gl" />
+							<Panel id="qm_st3_16" class="Gl" />
+							<Panel id="qm_st3_17" class="Gl" />
+							<Panel id="qm_st3_18" class="Gl" />
+							<Panel id="qm_st3_19" class="Gl" />
+							<Panel id="qm_st3_20" class="Gl" />
+							<Panel id="qm_st3_21" class="Gl" />
+							<Panel id="qm_st3_22" class="Gl" />
+							<Panel id="qm_st3_23" class="Gl" />
+							<Panel id="qm_st3_24" class="Gl" />
+							<Panel id="qm_st3_25" class="Gl" />
+						</Panel>
+						<Panel id="qm_st4" class="QmStRow" hittest="false">
+							<Panel id="qm_st4_0" class="Gl" />
+							<Panel id="qm_st4_1" class="Gl" />
+							<Panel id="qm_st4_2" class="Gl" />
+							<Panel id="qm_st4_3" class="Gl" />
+							<Panel id="qm_st4_4" class="Gl" />
+							<Panel id="qm_st4_5" class="Gl" />
+							<Panel id="qm_st4_6" class="Gl" />
+							<Panel id="qm_st4_7" class="Gl" />
+							<Panel id="qm_st4_8" class="Gl" />
+							<Panel id="qm_st4_9" class="Gl" />
+							<Panel id="qm_st4_10" class="Gl" />
+							<Panel id="qm_st4_11" class="Gl" />
+							<Panel id="qm_st4_12" class="Gl" />
+							<Panel id="qm_st4_13" class="Gl" />
+							<Panel id="qm_st4_14" class="Gl" />
+							<Panel id="qm_st4_15" class="Gl" />
+							<Panel id="qm_st4_16" class="Gl" />
+							<Panel id="qm_st4_17" class="Gl" />
+							<Panel id="qm_st4_18" class="Gl" />
+							<Panel id="qm_st4_19" class="Gl" />
+							<Panel id="qm_st4_20" class="Gl" />
+							<Panel id="qm_st4_21" class="Gl" />
+							<Panel id="qm_st4_22" class="Gl" />
+							<Panel id="qm_st4_23" class="Gl" />
+							<Panel id="qm_st4_24" class="Gl" />
+							<Panel id="qm_st4_25" class="Gl" />
+						</Panel>
+						<Panel id="qm_st5" class="QmStRow" hittest="false">
+							<Panel id="qm_st5_0" class="Gl" />
+							<Panel id="qm_st5_1" class="Gl" />
+							<Panel id="qm_st5_2" class="Gl" />
+							<Panel id="qm_st5_3" class="Gl" />
+							<Panel id="qm_st5_4" class="Gl" />
+							<Panel id="qm_st5_5" class="Gl" />
+							<Panel id="qm_st5_6" class="Gl" />
+							<Panel id="qm_st5_7" class="Gl" />
+							<Panel id="qm_st5_8" class="Gl" />
+							<Panel id="qm_st5_9" class="Gl" />
+							<Panel id="qm_st5_10" class="Gl" />
+							<Panel id="qm_st5_11" class="Gl" />
+							<Panel id="qm_st5_12" class="Gl" />
+							<Panel id="qm_st5_13" class="Gl" />
+							<Panel id="qm_st5_14" class="Gl" />
+							<Panel id="qm_st5_15" class="Gl" />
+							<Panel id="qm_st5_16" class="Gl" />
+							<Panel id="qm_st5_17" class="Gl" />
+							<Panel id="qm_st5_18" class="Gl" />
+							<Panel id="qm_st5_19" class="Gl" />
+							<Panel id="qm_st5_20" class="Gl" />
+							<Panel id="qm_st5_21" class="Gl" />
+							<Panel id="qm_st5_22" class="Gl" />
+							<Panel id="qm_st5_23" class="Gl" />
+							<Panel id="qm_st5_24" class="Gl" />
+							<Panel id="qm_st5_25" class="Gl" />
+						</Panel>
+						<Panel id="qm_st6" class="QmStRow" hittest="false">
+							<Panel id="qm_st6_0" class="Gl" />
+							<Panel id="qm_st6_1" class="Gl" />
+							<Panel id="qm_st6_2" class="Gl" />
+							<Panel id="qm_st6_3" class="Gl" />
+							<Panel id="qm_st6_4" class="Gl" />
+							<Panel id="qm_st6_5" class="Gl" />
+							<Panel id="qm_st6_6" class="Gl" />
+							<Panel id="qm_st6_7" class="Gl" />
+							<Panel id="qm_st6_8" class="Gl" />
+							<Panel id="qm_st6_9" class="Gl" />
+							<Panel id="qm_st6_10" class="Gl" />
+							<Panel id="qm_st6_11" class="Gl" />
+							<Panel id="qm_st6_12" class="Gl" />
+							<Panel id="qm_st6_13" class="Gl" />
+							<Panel id="qm_st6_14" class="Gl" />
+							<Panel id="qm_st6_15" class="Gl" />
+							<Panel id="qm_st6_16" class="Gl" />
+							<Panel id="qm_st6_17" class="Gl" />
+							<Panel id="qm_st6_18" class="Gl" />
+							<Panel id="qm_st6_19" class="Gl" />
+							<Panel id="qm_st6_20" class="Gl" />
+							<Panel id="qm_st6_21" class="Gl" />
+							<Panel id="qm_st6_22" class="Gl" />
+							<Panel id="qm_st6_23" class="Gl" />
+							<Panel id="qm_st6_24" class="Gl" />
+							<Panel id="qm_st6_25" class="Gl" />
+						</Panel>
+						<Panel id="qm_st7" class="QmStRow" hittest="false">
+							<Panel id="qm_st7_0" class="Gl" />
+							<Panel id="qm_st7_1" class="Gl" />
+							<Panel id="qm_st7_2" class="Gl" />
+							<Panel id="qm_st7_3" class="Gl" />
+							<Panel id="qm_st7_4" class="Gl" />
+							<Panel id="qm_st7_5" class="Gl" />
+							<Panel id="qm_st7_6" class="Gl" />
+							<Panel id="qm_st7_7" class="Gl" />
+							<Panel id="qm_st7_8" class="Gl" />
+							<Panel id="qm_st7_9" class="Gl" />
+							<Panel id="qm_st7_10" class="Gl" />
+							<Panel id="qm_st7_11" class="Gl" />
+							<Panel id="qm_st7_12" class="Gl" />
+							<Panel id="qm_st7_13" class="Gl" />
+							<Panel id="qm_st7_14" class="Gl" />
+							<Panel id="qm_st7_15" class="Gl" />
+							<Panel id="qm_st7_16" class="Gl" />
+							<Panel id="qm_st7_17" class="Gl" />
+							<Panel id="qm_st7_18" class="Gl" />
+							<Panel id="qm_st7_19" class="Gl" />
+							<Panel id="qm_st7_20" class="Gl" />
+							<Panel id="qm_st7_21" class="Gl" />
+							<Panel id="qm_st7_22" class="Gl" />
+							<Panel id="qm_st7_23" class="Gl" />
+							<Panel id="qm_st7_24" class="Gl" />
+							<Panel id="qm_st7_25" class="Gl" />
+						</Panel>
+						<Panel id="qm_st8" class="QmStRow" hittest="false">
+							<Panel id="qm_st8_0" class="Gl" />
+							<Panel id="qm_st8_1" class="Gl" />
+							<Panel id="qm_st8_2" class="Gl" />
+							<Panel id="qm_st8_3" class="Gl" />
+							<Panel id="qm_st8_4" class="Gl" />
+							<Panel id="qm_st8_5" class="Gl" />
+							<Panel id="qm_st8_6" class="Gl" />
+							<Panel id="qm_st8_7" class="Gl" />
+							<Panel id="qm_st8_8" class="Gl" />
+							<Panel id="qm_st8_9" class="Gl" />
+							<Panel id="qm_st8_10" class="Gl" />
+							<Panel id="qm_st8_11" class="Gl" />
+							<Panel id="qm_st8_12" class="Gl" />
+							<Panel id="qm_st8_13" class="Gl" />
+							<Panel id="qm_st8_14" class="Gl" />
+							<Panel id="qm_st8_15" class="Gl" />
+							<Panel id="qm_st8_16" class="Gl" />
+							<Panel id="qm_st8_17" class="Gl" />
+							<Panel id="qm_st8_18" class="Gl" />
+							<Panel id="qm_st8_19" class="Gl" />
+							<Panel id="qm_st8_20" class="Gl" />
+							<Panel id="qm_st8_21" class="Gl" />
+							<Panel id="qm_st8_22" class="Gl" />
+							<Panel id="qm_st8_23" class="Gl" />
+							<Panel id="qm_st8_24" class="Gl" />
+							<Panel id="qm_st8_25" class="Gl" />
+						</Panel>
+						<Panel id="qm_st9" class="QmStRow" hittest="false">
+							<Panel id="qm_st9_0" class="Gl" />
+							<Panel id="qm_st9_1" class="Gl" />
+							<Panel id="qm_st9_2" class="Gl" />
+							<Panel id="qm_st9_3" class="Gl" />
+							<Panel id="qm_st9_4" class="Gl" />
+							<Panel id="qm_st9_5" class="Gl" />
+							<Panel id="qm_st9_6" class="Gl" />
+							<Panel id="qm_st9_7" class="Gl" />
+							<Panel id="qm_st9_8" class="Gl" />
+							<Panel id="qm_st9_9" class="Gl" />
+							<Panel id="qm_st9_10" class="Gl" />
+							<Panel id="qm_st9_11" class="Gl" />
+							<Panel id="qm_st9_12" class="Gl" />
+							<Panel id="qm_st9_13" class="Gl" />
+							<Panel id="qm_st9_14" class="Gl" />
+							<Panel id="qm_st9_15" class="Gl" />
+							<Panel id="qm_st9_16" class="Gl" />
+							<Panel id="qm_st9_17" class="Gl" />
+							<Panel id="qm_st9_18" class="Gl" />
+							<Panel id="qm_st9_19" class="Gl" />
+							<Panel id="qm_st9_20" class="Gl" />
+							<Panel id="qm_st9_21" class="Gl" />
+							<Panel id="qm_st9_22" class="Gl" />
+							<Panel id="qm_st9_23" class="Gl" />
+							<Panel id="qm_st9_24" class="Gl" />
+							<Panel id="qm_st9_25" class="Gl" />
+						</Panel>
+						<Panel id="qm_st10" class="QmStRow" hittest="false">
+							<Panel id="qm_st10_0" class="Gl" />
+							<Panel id="qm_st10_1" class="Gl" />
+							<Panel id="qm_st10_2" class="Gl" />
+							<Panel id="qm_st10_3" class="Gl" />
+							<Panel id="qm_st10_4" class="Gl" />
+							<Panel id="qm_st10_5" class="Gl" />
+							<Panel id="qm_st10_6" class="Gl" />
+							<Panel id="qm_st10_7" class="Gl" />
+							<Panel id="qm_st10_8" class="Gl" />
+							<Panel id="qm_st10_9" class="Gl" />
+							<Panel id="qm_st10_10" class="Gl" />
+							<Panel id="qm_st10_11" class="Gl" />
+							<Panel id="qm_st10_12" class="Gl" />
+							<Panel id="qm_st10_13" class="Gl" />
+							<Panel id="qm_st10_14" class="Gl" />
+							<Panel id="qm_st10_15" class="Gl" />
+							<Panel id="qm_st10_16" class="Gl" />
+							<Panel id="qm_st10_17" class="Gl" />
+							<Panel id="qm_st10_18" class="Gl" />
+							<Panel id="qm_st10_19" class="Gl" />
+							<Panel id="qm_st10_20" class="Gl" />
+							<Panel id="qm_st10_21" class="Gl" />
+							<Panel id="qm_st10_22" class="Gl" />
+							<Panel id="qm_st10_23" class="Gl" />
+							<Panel id="qm_st10_24" class="Gl" />
+							<Panel id="qm_st10_25" class="Gl" />
+						</Panel>
+						<Panel id="qm_st11" class="QmStRow" hittest="false">
+							<Panel id="qm_st11_0" class="Gl" />
+							<Panel id="qm_st11_1" class="Gl" />
+							<Panel id="qm_st11_2" class="Gl" />
+							<Panel id="qm_st11_3" class="Gl" />
+							<Panel id="qm_st11_4" class="Gl" />
+							<Panel id="qm_st11_5" class="Gl" />
+							<Panel id="qm_st11_6" class="Gl" />
+							<Panel id="qm_st11_7" class="Gl" />
+							<Panel id="qm_st11_8" class="Gl" />
+							<Panel id="qm_st11_9" class="Gl" />
+							<Panel id="qm_st11_10" class="Gl" />
+							<Panel id="qm_st11_11" class="Gl" />
+							<Panel id="qm_st11_12" class="Gl" />
+							<Panel id="qm_st11_13" class="Gl" />
+							<Panel id="qm_st11_14" class="Gl" />
+							<Panel id="qm_st11_15" class="Gl" />
+							<Panel id="qm_st11_16" class="Gl" />
+							<Panel id="qm_st11_17" class="Gl" />
+							<Panel id="qm_st11_18" class="Gl" />
+							<Panel id="qm_st11_19" class="Gl" />
+							<Panel id="qm_st11_20" class="Gl" />
+							<Panel id="qm_st11_21" class="Gl" />
+							<Panel id="qm_st11_22" class="Gl" />
+							<Panel id="qm_st11_23" class="Gl" />
+							<Panel id="qm_st11_24" class="Gl" />
+							<Panel id="qm_st11_25" class="Gl" />
+						</Panel>
+						<Button id="qm_st_back" class="QmRow QmOptRow">
+							<Panel class="QmCursor" hittest="false">
+								<Panel class="QmDot QmDot1" />
+								<Panel class="QmDot QmDot2" />
+								<Panel class="QmDot QmDot3" />
+								<Panel class="QmDot QmDot4" />
+								<Panel class="QmDot QmDot5" />
+								<Panel class="QmDot QmDot6" />
+							</Panel>
+							<Panel class="QmText" hittest="false">
+								<Panel class="Gl g66" />
+								<Panel class="Gl g65" />
+								<Panel class="Gl g67" />
+								<Panel class="Gl g75" />
+							</Panel>
+						</Button>
+					</Panel>
+				</Panel>
+			</Panel>
+		</Panel>
+	</Panel>
+</root>

@@ -1,0 +1,3476 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:modeldoc28:version{fb63b6ca-f435-4aa0-a2c7-c66ddc651dca} -->
+{
+	rootNode = 
+	{
+		_class = "RootNode"
+		children = 
+		[
+			{
+				_class = "BoneMarkupList"
+				children = [  ]
+				bone_cull_type = "None"
+			},
+			{
+				_class = "RenderMeshList"
+				children = 
+				[
+					{
+						_class = "RenderMeshFile"
+						name = "v_light"
+						filename = "models/quake/weapons/v_light_v_light.dmx"
+					},
+				]
+			},
+			{
+				_class = "AnimationList"
+				children = 
+				[
+					{
+						_class = "AnimFile"
+						name = "v_light"
+						source_filename = "models/quake/weapons/v_light_v_light.dmx"
+						fade_in_time = 0.0
+						fade_out_time = 0.0
+						looping = true
+						delta = false
+						worldSpace = false
+						hidden = false
+					},
+					{
+						_class = "AnimFile"
+						name = "v_light_rest"
+						source_filename = "models/quake/weapons/v_light_v_light_rest.dmx"
+						fade_in_time = 0.0
+						fade_out_time = 0.0
+						looping = true
+						delta = false
+						worldSpace = false
+						hidden = false
+					},
+				]
+			},
+			{
+				_class = "Skeleton"
+				children = 
+				[
+					{
+						_class = "Bone"
+						name = "v0"
+						origin = [ -7.800545, -0.55707, -9.910709 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v1"
+						origin = [ -16.812691, -0.55707, -14.960512 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v2"
+						origin = [ -18.549074, -0.55707, -18.143879 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v3"
+						origin = [ -19.996058, -0.557069, -14.092319 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v4"
+						origin = [ -14.786915, -0.55707, -13.513527 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v5"
+						origin = [ -10.156563, -0.55707, -13.513527 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v6"
+						origin = [ -8.709583, -0.55707, -13.513527 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v7"
+						origin = [ -6.932354, -0.55707, -12.515282 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v8"
+						origin = [ -7.366449, -0.55707, -11.213001 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v9"
+						origin = [ -19.272568, -0.55707, -16.118095 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v10"
+						origin = [ -17.536184, -0.880304, -14.092319 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v11"
+						origin = [ -15.018435, -1.065518, -12.84791 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v12"
+						origin = [ -9.809288, -0.880304, -11.979725 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v13"
+						origin = [ -6.022063, -2.886562, -14.922451 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v14"
+						origin = [ 7.868985, -2.886561, -14.922451 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v15"
+						origin = [ -6.022063, -3.90371, -17.378059 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v16"
+						origin = [ 7.868985, -3.903709, -17.378059 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v17"
+						origin = [ -6.022064, -6.359323, -18.395212 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v18"
+						origin = [ 7.868985, -6.359324, -18.395212 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v19"
+						origin = [ -6.022064, -8.814938, -17.378059 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v20"
+						origin = [ 7.868985, -8.814936, -17.378059 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v21"
+						origin = [ -6.022064, -9.832085, -14.922451 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v22"
+						origin = [ 7.868985, -9.832084, -14.922451 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v23"
+						origin = [ -6.022064, -8.814938, -12.466837 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v24"
+						origin = [ 7.868985, -8.814936, -12.466837 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v25"
+						origin = [ -6.022064, -6.359324, -11.449684 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v26"
+						origin = [ 7.868985, -6.359324, -11.449684 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v27"
+						origin = [ -6.022063, -3.903711, -12.466837 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v28"
+						origin = [ 7.868985, -3.903711, -12.466837 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v29"
+						origin = [ -6.019716, 2.047501, -11.716652 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v30"
+						origin = [ 2.083396, 2.047502, -11.716652 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v31"
+						origin = [ -6.019716, 1.454165, -13.149094 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v32"
+						origin = [ 2.083396, 1.454165, -13.149094 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v33"
+						origin = [ -6.019716, 0.021724, -13.74243 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v34"
+						origin = [ 2.083396, 0.021724, -13.74243 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v35"
+						origin = [ -6.019716, -1.410718, -13.149094 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v36"
+						origin = [ 2.083396, -1.410718, -13.149094 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v37"
+						origin = [ -6.019716, -2.004055, -11.716652 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v38"
+						origin = [ 2.083396, -2.004054, -11.716652 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v39"
+						origin = [ -6.838732, -1.410718, -10.28421 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v40"
+						origin = [ 2.083396, -1.410718, -10.28421 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v41"
+						origin = [ -6.838732, 0.021723, -9.69088 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v42"
+						origin = [ 2.083396, 0.021723, -9.69088 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v43"
+						origin = [ -6.838732, 1.454164, -10.28421 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v44"
+						origin = [ 2.083396, 1.454165, -10.28421 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v45"
+						origin = [ 1.736119, 1.642345, -11.716652 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v46"
+						origin = [ 9.086802, 1.642345, -11.716652 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v47"
+						origin = [ 1.736119, 1.167676, -12.862604 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v48"
+						origin = [ 9.086802, 1.167676, -12.862604 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v49"
+						origin = [ 1.736119, 0.021723, -13.337273 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v50"
+						origin = [ 9.086802, 0.021723, -13.337273 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v51"
+						origin = [ 1.736119, -1.12423, -12.862604 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v52"
+						origin = [ 9.086802, -1.12423, -12.862604 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v53"
+						origin = [ 1.736119, -1.598899, -11.716652 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v54"
+						origin = [ 9.086802, -1.598899, -11.716652 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v55"
+						origin = [ 1.736119, -1.12423, -10.570705 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v56"
+						origin = [ 9.086802, -1.12423, -10.570705 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v57"
+						origin = [ 1.736119, 0.021723, -10.096031 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v58"
+						origin = [ 9.086802, 0.021723, -10.096031 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v59"
+						origin = [ 1.736119, 1.167675, -10.570705 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v60"
+						origin = [ 9.086802, 1.167675, -10.570705 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v61"
+						origin = [ 12.559563, 2.938845, -11.716652 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v62"
+						origin = [ 12.559563, 2.084441, -13.779366 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v63"
+						origin = [ 12.559563, 0.021725, -14.633774 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v64"
+						origin = [ 12.559563, -2.040991, -13.779366 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v65"
+						origin = [ 12.559563, -2.895396, -11.716652 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v66"
+						origin = [ 12.559563, -2.040991, -9.653942 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v67"
+						origin = [ 12.559563, 0.021724, -8.79953 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v68"
+						origin = [ 12.559563, 2.08444, -9.653942 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v69"
+						origin = [ 12.443803, 1.642344, -11.716652 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v70"
+						origin = [ 20.37328, 1.642345, -11.716652 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v71"
+						origin = [ 12.443803, 1.167675, -12.862604 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v72"
+						origin = [ 20.37328, 1.167676, -12.862604 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v73"
+						origin = [ 12.443803, 0.021723, -13.337273 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v74"
+						origin = [ 20.37328, 0.021723, -13.337273 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v75"
+						origin = [ 12.443803, -1.12423, -12.862604 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v76"
+						origin = [ 20.37328, -1.12423, -12.862604 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v77"
+						origin = [ 12.443803, -1.5989, -11.716652 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v78"
+						origin = [ 20.37328, -1.5989, -11.716652 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v79"
+						origin = [ 12.443803, -1.12423, -10.570705 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v80"
+						origin = [ 20.37328, -1.12423, -10.570705 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v81"
+						origin = [ 12.443803, 0.021723, -10.096031 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v82"
+						origin = [ 20.37328, 0.021722, -10.096031 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v83"
+						origin = [ 12.443803, 1.167675, -10.570705 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v84"
+						origin = [ 20.37328, 1.167675, -10.570705 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v85"
+						origin = [ -6.261343, 2.496068, -10.052395 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v86"
+						origin = [ -5.786673, -2.568376, -11.198349 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v87"
+						origin = [ -7.407299, 2.496068, -9.577721 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v88"
+						origin = [ -6.261343, -2.568376, -12.344299 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v89"
+						origin = [ -8.553247, 2.496068, -10.052395 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v90"
+						origin = [ -7.407299, -2.568376, -12.81897 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v91"
+						origin = [ -9.027916, 2.496068, -11.198349 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v92"
+						origin = [ -8.553247, -2.568376, -12.344299 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v93"
+						origin = [ -8.553247, 2.496068, -12.344299 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v94"
+						origin = [ -9.027916, -2.568376, -11.198349 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v95"
+						origin = [ -7.407299, 2.496068, -12.81897 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v96"
+						origin = [ -8.553247, -2.568376, -10.052395 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v97"
+						origin = [ -6.261343, 2.496068, -12.344299 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v98"
+						origin = [ -7.407299, -2.568376, -9.577721 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v99"
+						origin = [ -5.786673, 2.496068, -11.198349 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v100"
+						origin = [ -6.261343, -2.568376, -10.052395 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v101"
+						origin = [ 20.685827, 2.290594, -11.716652 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v102"
+						origin = [ 17.050999, 2.290593, -11.716652 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v103"
+						origin = [ -12.28356, -0.53873, -12.413815 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v104"
+						origin = [ -12.445457, -0.53873, -13.643574 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v105"
+						origin = [ -11.690371, -0.53873, -14.627628 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v106"
+						origin = [ -10.460611, -0.53873, -14.78953 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v107"
+						origin = [ -9.476559, -0.53873, -14.034439 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v108"
+						origin = [ -9.314651, -0.53873, -12.80468 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v109"
+						origin = [ 17.050999, 1.626057, -13.320986 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v110"
+						origin = [ 20.685827, 1.626056, -13.320986 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v111"
+						origin = [ 17.050999, 0.021723, -13.985521 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v112"
+						origin = [ 20.685827, 0.021723, -13.985521 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v113"
+						origin = [ 17.050999, -1.582612, -13.320986 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v114"
+						origin = [ 20.685827, -1.582612, -13.320986 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v115"
+						origin = [ 17.050999, -2.247149, -11.716652 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v116"
+						origin = [ 20.685827, -2.247149, -11.716652 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v117"
+						origin = [ 17.050999, -1.582612, -10.112316 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v118"
+						origin = [ 20.685827, -1.582612, -10.112316 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v119"
+						origin = [ 17.050999, 0.021722, -9.447784 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v120"
+						origin = [ 20.685827, 0.021722, -9.447784 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v121"
+						origin = [ 17.050999, 1.626055, -10.112316 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v122"
+						origin = [ 20.685827, 1.626056, -10.112316 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v123"
+						origin = [ 29.227747, 0.021722, -11.716656 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v124"
+						origin = [ 21.804682, 0.882329, -19.656996 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v125"
+						origin = [ 22.189163, -0.875757, -18.728775 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v126"
+						origin = [ 20.876463, 0.882329, -20.041479 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v127"
+						origin = [ 21.804682, -0.875757, -17.800558 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v128"
+						origin = [ 19.948238, 0.882329, -19.656996 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v129"
+						origin = [ 20.876463, -0.875757, -17.416073 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v130"
+						origin = [ 19.563755, 0.882329, -18.728775 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v131"
+						origin = [ 19.948238, -0.875757, -17.800558 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v132"
+						origin = [ 19.948238, 0.882329, -17.800558 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v133"
+						origin = [ 19.563755, -0.875757, -18.728775 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v134"
+						origin = [ 20.876463, 0.882329, -17.416073 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v135"
+						origin = [ 19.948238, -0.875757, -19.656996 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v136"
+						origin = [ 21.804682, 0.882329, -17.800558 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v137"
+						origin = [ 20.876463, -0.875757, -20.041479 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v138"
+						origin = [ 22.189163, 0.882329, -18.728775 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v139"
+						origin = [ 21.804682, -0.875757, -19.656996 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v140"
+						origin = [ -7.800545, 0.734086, -9.910709 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v141"
+						origin = [ -16.812691, 0.734086, -14.960512 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v142"
+						origin = [ -18.549074, 0.734086, -18.143879 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v143"
+						origin = [ -19.996058, 0.734086, -14.092319 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v144"
+						origin = [ -14.786915, 0.734086, -13.513527 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v145"
+						origin = [ -10.156563, 0.734086, -13.513527 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v146"
+						origin = [ -8.709583, 0.734086, -13.513527 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v147"
+						origin = [ -6.932354, 0.734086, -12.515282 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v148"
+						origin = [ -7.366449, 0.734086, -11.213001 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v149"
+						origin = [ -19.272568, 0.734086, -16.118095 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v150"
+						origin = [ -17.536184, 1.05732, -14.092319 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v151"
+						origin = [ -15.018435, 1.242534, -12.84791 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v152"
+						origin = [ -9.809288, 1.05732, -11.979725 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v153"
+						origin = [ -15.076317, 0.734086, -11.921841 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v154"
+						origin = [ -15.076317, -0.55707, -11.921841 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v155"
+						origin = [ 18.639206, 0.682707, -13.306738 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v156"
+						origin = [ 20.494646, 0.682707, -17.822033 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v157"
+						origin = [ 19.173344, 0.35453, -13.112328 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v158"
+						origin = [ 21.028786, 0.35453, -17.627625 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v159"
+						origin = [ 19.173344, -0.301821, -13.112328 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v160"
+						origin = [ 21.028786, -0.301821, -17.627625 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v161"
+						origin = [ 18.639206, -0.629998, -13.306738 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v162"
+						origin = [ 20.494646, -0.629998, -17.822033 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v163"
+						origin = [ 18.105068, -0.301821, -13.50115 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v164"
+						origin = [ 19.960506, -0.301821, -18.016445 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v165"
+						origin = [ 18.105068, 0.35453, -13.50115 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v166"
+						origin = [ 19.960506, 0.35453, -18.016445 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v167"
+						origin = [ 21.279394, 0.022244, -19.685314 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v168"
+						origin = [ 22.224766, 0.022244, -20.566147 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v169"
+						origin = [ 24.756409, 0.022244, -21.034973 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v170"
+						origin = [ 26.940313, 0.022244, -20.799126 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v171"
+						origin = [ 29.190662, 0.022244, -19.158245 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v172"
+						origin = [ 29.951618, 0.017901, -15.669502 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v173"
+						origin = [ 27.927425, 0.022244, -17.776588 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v174"
+						origin = [ 25.218355, 0.022244, -19.038883 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v175"
+						origin = [ 23.068649, 0.022244, -18.925268 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v176"
+						origin = [ 21.279396, 0.022244, -18.51325 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v177"
+						origin = [ 21.279394, -0.263392, -19.099281 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v178"
+						origin = [ 22.967354, -0.544686, -19.780655 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v179"
+						origin = [ 25.763517, -0.544686, -19.873844 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v180"
+						origin = [ 28.556459, -0.263392, -18.362532 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v181"
+						origin = [ 18.339479, -0.301821, -12.563507 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v182"
+						origin = [ 29.951618, 0.026586, -15.669502 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v183"
+						origin = [ 18.339479, 0.35453, -12.563507 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v184"
+						origin = [ 18.105068, 0.35453, -13.03233 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v185"
+						origin = [ 18.105068, -0.301821, -13.03233 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v186"
+						origin = [ 21.279394, 0.30788, -19.099281 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v187"
+						origin = [ 22.967354, 0.589174, -19.780655 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v188"
+						origin = [ 25.763517, 0.589174, -19.873844 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v189"
+						origin = [ 28.556459, 0.30788, -18.362532 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v190"
+						origin = [ 21.746439, -7.068473, -7.31699 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v191"
+						origin = [ 22.130919, -5.299722, -6.409252 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v192"
+						origin = [ 20.818218, -7.383421, -7.096458 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v193"
+						origin = [ 21.746439, -4.539367, -6.941662 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v194"
+						origin = [ 19.889992, -7.068473, -7.31699 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v195"
+						origin = [ 20.818218, -4.224416, -7.162189 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v196"
+						origin = [ 19.505512, -6.308118, -7.849392 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v197"
+						origin = [ 19.889992, -4.539367, -6.941662 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v198"
+						origin = [ 19.889992, -5.547763, -8.381802 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v199"
+						origin = [ 19.505512, -5.299722, -6.409252 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v200"
+						origin = [ 20.818218, -5.232813, -8.602333 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v201"
+						origin = [ 19.889992, -6.060077, -5.876842 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v202"
+						origin = [ 21.746439, -5.547763, -8.381802 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v203"
+						origin = [ 20.818218, -6.375024, -5.656311 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v204"
+						origin = [ 22.130919, -6.308118, -7.849392 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v205"
+						origin = [ 21.746439, -6.060077, -5.876842 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v206"
+						origin = [ 18.580963, -1.752145, -10.795826 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v207"
+						origin = [ 20.436401, -5.450864, -8.205956 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v208"
+						origin = [ 19.115101, -1.40466, -10.638508 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v209"
+						origin = [ 20.970541, -5.103377, -8.048637 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v210"
+						origin = [ 19.115101, -1.028192, -10.100853 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v211"
+						origin = [ 20.970541, -4.726909, -7.510986 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v212"
+						origin = [ 18.580963, -0.999209, -9.72052 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v213"
+						origin = [ 20.436401, -4.697926, -7.130653 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v214"
+						origin = [ 18.046825, -1.346698, -9.877831 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v215"
+						origin = [ 18.046825, -1.723166, -10.415485 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v216"
+						origin = [ 19.902264, -5.421879, -7.825623 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v217"
+						origin = [ 21.221149, -6.598341, -6.596214 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v218"
+						origin = [ 22.166523, -7.319881, -6.090992 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v219"
+						origin = [ 24.698166, -7.703918, -5.822075 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v220"
+						origin = [ 26.882069, -7.510723, -5.957355 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v221"
+						origin = [ 29.13242, -6.166594, -6.898514 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v222"
+						origin = [ 29.893375, -3.306294, -8.896023 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v223"
+						origin = [ 27.869183, -5.034809, -7.691006 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v224"
+						origin = [ 25.16011, -6.068818, -6.966984 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v225"
+						origin = [ 23.010406, -5.975749, -7.03215 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v226"
+						origin = [ 21.221149, -5.638247, -7.268475 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v227"
+						origin = [ 21.221149, -5.954459, -6.698364 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v228"
+						origin = [ 22.909111, -6.351263, -6.077126 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v229"
+						origin = [ 25.705275, -6.427598, -6.023666 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v230"
+						origin = [ 28.498215, -5.350952, -7.120941 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v231"
+						origin = [ 18.281237, -0.578624, -10.415646 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v232"
+						origin = [ 29.893375, -3.311276, -8.903133 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v233"
+						origin = [ 18.281237, -0.955092, -10.9533 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v234"
+						origin = [ 18.046825, -1.339127, -10.684387 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v235"
+						origin = [ 18.046825, -0.962659, -10.146736 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v236"
+						origin = [ 21.221149, -6.282126, -7.166325 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v237"
+						origin = [ 22.909111, -7.001616, -7.005917 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v238"
+						origin = [ 25.705275, -7.077953, -6.952469 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v239"
+						origin = [ 28.498215, -5.678619, -7.588898 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v240"
+						origin = [ 21.746439, 7.103642, -7.31699 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v241"
+						origin = [ 22.130919, 5.33489, -6.409252 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v242"
+						origin = [ 20.818218, 7.418592, -7.096458 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v243"
+						origin = [ 21.746439, 4.574534, -6.941662 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v244"
+						origin = [ 19.889992, 7.103642, -7.31699 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v245"
+						origin = [ 20.818218, 4.259585, -7.162189 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v246"
+						origin = [ 19.505512, 6.343288, -7.849392 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v247"
+						origin = [ 19.889992, 4.574534, -6.941662 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v248"
+						origin = [ 19.889992, 5.582932, -8.381802 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v249"
+						origin = [ 19.505512, 5.33489, -6.409252 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v250"
+						origin = [ 20.818218, 5.267982, -8.602333 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v251"
+						origin = [ 19.889992, 6.095245, -5.876842 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v252"
+						origin = [ 21.746439, 5.582932, -8.381802 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v253"
+						origin = [ 20.818218, 6.410194, -5.656311 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v254"
+						origin = [ 22.130919, 6.343288, -7.849392 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v255"
+						origin = [ 21.746439, 6.095245, -5.876842 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v256"
+						origin = [ 18.580963, 1.787314, -10.795826 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v257"
+						origin = [ 20.436401, 5.486031, -8.205956 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v258"
+						origin = [ 19.115101, 1.439828, -10.638508 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v259"
+						origin = [ 20.970541, 5.138545, -8.048637 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v260"
+						origin = [ 19.115101, 1.06336, -10.100853 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v261"
+						origin = [ 20.970541, 4.762077, -7.510986 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v262"
+						origin = [ 18.580963, 1.034377, -9.72052 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v263"
+						origin = [ 20.436401, 4.733095, -7.130653 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v264"
+						origin = [ 18.046825, 1.381866, -9.877831 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v265"
+						origin = [ 19.902264, 5.08058, -7.287971 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v266"
+						origin = [ 18.046825, 1.758334, -10.415485 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v267"
+						origin = [ 19.902264, 5.457047, -7.825623 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v268"
+						origin = [ 21.221149, 6.633511, -6.596214 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v269"
+						origin = [ 22.166523, 7.35505, -6.090992 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v270"
+						origin = [ 24.698166, 7.739088, -5.822075 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v271"
+						origin = [ 26.882069, 7.545893, -5.957355 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v272"
+						origin = [ 29.13242, 6.201761, -6.898514 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v273"
+						origin = [ 29.893375, 3.341462, -8.896023 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v274"
+						origin = [ 27.869183, 5.069976, -7.691006 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v275"
+						origin = [ 25.16011, 6.103986, -6.966984 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v276"
+						origin = [ 23.010406, 6.010918, -7.03215 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v277"
+						origin = [ 21.221149, 5.673413, -7.268475 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v278"
+						origin = [ 21.221149, 5.989628, -6.698364 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v279"
+						origin = [ 22.909111, 6.386432, -6.077126 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v280"
+						origin = [ 25.705275, 6.462768, -6.023666 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v281"
+						origin = [ 28.498215, 5.386119, -7.120941 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v282"
+						origin = [ 18.281237, 0.613793, -10.415646 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v283"
+						origin = [ 29.893375, 3.346443, -8.903133 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v284"
+						origin = [ 18.281237, 0.99026, -10.9533 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v285"
+						origin = [ 18.046825, 1.374296, -10.684387 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v286"
+						origin = [ 18.046825, 0.997828, -10.146736 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v287"
+						origin = [ 21.221149, 6.317297, -7.166325 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v288"
+						origin = [ 22.909111, 7.036787, -7.005917 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v289"
+						origin = [ 25.705275, 7.113124, -6.952469 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v290"
+						origin = [ 28.498215, 5.713786, -7.588898 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v291"
+						origin = [ -12.28356, 0.755819, -12.413815 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v292"
+						origin = [ -12.445457, 0.755819, -13.643574 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v293"
+						origin = [ -11.690371, 0.755819, -14.627628 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v294"
+						origin = [ -10.460611, 0.755819, -14.78953 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v295"
+						origin = [ -9.476559, 0.755819, -14.034439 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v296"
+						origin = [ -9.314651, 0.755819, -12.80468 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v297"
+						origin = [ -11.166052, -0.117667, -14.477821 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v298"
+						origin = [ -11.166052, 0.334755, -14.477821 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v299"
+						origin = [ -14.759869, -0.117667, -17.326401 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v300"
+						origin = [ -14.759869, 0.334755, -17.326401 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v301"
+						origin = [ -15.581406, -0.117667, -18.547981 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v302"
+						origin = [ -15.581406, 0.334755, -18.547981 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v303"
+						origin = [ -10.587259, -0.117667, -14.477821 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v304"
+						origin = [ -10.587259, 0.334755, -14.477821 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v305"
+						origin = [ 2.659732, -2.926717, -14.939075 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v306"
+						origin = [ 2.659732, -3.943866, -12.483463 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v307"
+						origin = [ -3.84253, -2.348456, -12.315605 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v308"
+						origin = [ -3.223716, -2.580761, -12.423929 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v309"
+						origin = [ -2.967396, -3.141599, -12.685452 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v310"
+						origin = [ -3.223716, -3.702435, -12.946976 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v311"
+						origin = [ -3.84253, -3.934741, -13.055302 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v312"
+						origin = [ -4.461346, -3.702435, -12.946976 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v313"
+						origin = [ -4.717669, -3.141599, -12.685452 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v314"
+						origin = [ -4.461346, -2.580761, -12.423929 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v315"
+						origin = [ -3.84253, -3.277969, -10.322258 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v316"
+						origin = [ -3.223716, -3.510275, -10.43058 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v317"
+						origin = [ -2.967396, -4.071113, -10.692108 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v318"
+						origin = [ -3.223716, -4.631948, -10.953629 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v319"
+						origin = [ -3.84253, -4.864254, -11.061958 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v320"
+						origin = [ -4.461346, -4.631948, -10.953629 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v321"
+						origin = [ -4.717669, -4.071113, -10.692108 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v322"
+						origin = [ -4.461346, -3.510275, -10.43058 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v323"
+						origin = [ -1.064325, -2.348456, -12.315605 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v324"
+						origin = [ -0.44551, -2.580762, -12.423929 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v325"
+						origin = [ -0.189185, -3.141599, -12.685452 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v326"
+						origin = [ -0.44551, -3.702435, -12.946976 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v327"
+						origin = [ -1.064325, -3.934741, -13.055302 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v328"
+						origin = [ -1.683139, -3.702435, -12.946976 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v329"
+						origin = [ -1.939458, -3.141599, -12.685452 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v330"
+						origin = [ -1.683139, -2.580762, -12.423929 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v331"
+						origin = [ -1.064325, -3.277969, -10.322258 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v332"
+						origin = [ -0.44551, -3.510275, -10.43058 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v333"
+						origin = [ -0.189185, -4.071113, -10.692108 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v334"
+						origin = [ -0.44551, -4.631948, -10.953629 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v335"
+						origin = [ -1.064326, -4.864254, -11.061958 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v336"
+						origin = [ -1.683139, -4.631948, -10.953629 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v337"
+						origin = [ -1.939458, -4.071113, -10.692108 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v338"
+						origin = [ -1.683139, -3.510275, -10.43058 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v339"
+						origin = [ 13.694919, 0.256115, -10.579224 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v340"
+						origin = [ 14.313732, 0.023809, -10.687546 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v341"
+						origin = [ 14.570052, -0.537028, -10.949074 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v342"
+						origin = [ 14.313732, -1.097865, -11.21059 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v343"
+						origin = [ 13.694919, -1.330171, -11.318924 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v344"
+						origin = [ 13.076102, -1.097864, -11.21059 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v345"
+						origin = [ 12.81978, -0.537028, -10.949074 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v346"
+						origin = [ 13.076102, 0.023809, -10.687546 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v347"
+						origin = [ 13.694919, -0.673398, -8.58588 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v348"
+						origin = [ 14.313732, -0.905704, -8.694202 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v349"
+						origin = [ 14.570052, -1.466542, -8.955727 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v350"
+						origin = [ 14.313732, -2.027378, -9.217247 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v351"
+						origin = [ 13.694919, -2.259683, -9.325581 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v352"
+						origin = [ 13.076102, -2.027378, -9.217247 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v353"
+						origin = [ 12.81978, -1.466542, -8.955727 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v354"
+						origin = [ 13.076102, -0.905704, -8.694202 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v355"
+						origin = [ 15.894331, 0.256115, -10.579224 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v356"
+						origin = [ 16.513145, 0.023809, -10.687546 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v357"
+						origin = [ 16.76947, -0.537028, -10.949074 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v358"
+						origin = [ 16.513145, -1.097865, -11.21059 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v359"
+						origin = [ 15.894331, -1.330171, -11.318924 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v360"
+						origin = [ 15.275518, -1.097864, -11.21059 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v361"
+						origin = [ 15.019197, -0.537028, -10.949074 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v362"
+						origin = [ 15.275518, 0.023809, -10.687546 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v363"
+						origin = [ 15.894331, -0.673398, -8.58588 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v364"
+						origin = [ 16.513145, -0.905704, -8.694202 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v365"
+						origin = [ 16.76947, -1.466542, -8.955727 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v366"
+						origin = [ 16.513145, -2.027378, -9.217247 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v367"
+						origin = [ 15.894331, -2.259683, -9.325581 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v368"
+						origin = [ 15.275518, -2.027378, -9.217247 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v369"
+						origin = [ 15.019197, -1.466542, -8.955727 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v370"
+						origin = [ 15.275518, -0.905704, -8.694202 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v371"
+						origin = [ -1.249967, -3.592025, -10.62418 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v372"
+						origin = [ -0.693034, -3.661717, -10.656677 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v373"
+						origin = [ -0.539241, -3.998219, -10.813595 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v374"
+						origin = [ -0.693034, -4.33472, -10.970505 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v375"
+						origin = [ -1.249967, -4.404413, -11.003006 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v376"
+						origin = [ -1.589403, -3.998219, -10.813595 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v377"
+						origin = [ -0.534596, -4.55868, -8.227146 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v378"
+						origin = [ -0.006815, -4.622503, -8.410088 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v379"
+						origin = [ 0.105615, -4.963219, -8.591137 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v380"
+						origin = [ -0.077482, -5.307886, -8.686996 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v381"
+						origin = [ -0.619896, -5.386012, -8.561413 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v382"
+						origin = [ -0.903369, -4.976705, -8.300262 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v383"
+						origin = [ 2.988497, -6.832383, -6.428692 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v384"
+						origin = [ 3.308638, -6.669112, -6.861061 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v385"
+						origin = [ 3.399189, -6.927124, -7.155579 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v386"
+						origin = [ 3.313189, -7.312076, -7.232555 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v387"
+						origin = [ 2.993994, -7.608505, -6.877121 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v388"
+						origin = [ 2.79642, -7.36053, -6.412834 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v389"
+						origin = [ 7.643615, -7.293512, -5.144798 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v390"
+						origin = [ 7.651145, -7.062703, -5.657398 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v391"
+						origin = [ 7.743139, -7.285328, -5.979092 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v392"
+						origin = [ 7.841888, -7.670167, -6.039536 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v393"
+						origin = [ 7.873866, -8.026793, -5.60606 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v394"
+						origin = [ 7.766188, -7.839163, -5.087132 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v395"
+						origin = [ 13.100902, -1.900831, -7.808006 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v396"
+						origin = [ 13.173965, -2.246743, -8.245148 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v397"
+						origin = [ 13.52142, -2.442926, -8.293102 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v398"
+						origin = [ 13.939728, -2.374448, -7.923748 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v399"
+						origin = [ 13.866663, -2.028533, -7.486595 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v400"
+						origin = [ 13.519211, -1.832359, -7.438652 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v401"
+						origin = [ 11.729868, -4.635786, -5.563389 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v402"
+						origin = [ 12.091942, -5.02105, -5.372189 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v403"
+						origin = [ 12.216785, -5.318874, -5.611393 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v404"
+						origin = [ 12.031266, -5.354801, -6.140903 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v405"
+						origin = [ 11.669189, -4.969538, -6.332119 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v406"
+						origin = [ 11.544348, -4.67171, -6.092911 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v407"
+						origin = [ 13.224295, -1.42525, -9.341629 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v408"
+						origin = [ 13.662327, -1.730826, -9.51725 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v409"
+						origin = [ 14.037904, -1.61135, -9.438648 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v410"
+						origin = [ 14.131014, -1.136814, -9.151882 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v411"
+						origin = [ 13.692985, -0.831246, -8.976265 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v412"
+						origin = [ 13.31741, -0.950718, -9.054859 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v413"
+						origin = [ -4.044212, -3.592025, -10.62418 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v414"
+						origin = [ -3.487279, -3.661717, -10.656677 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v415"
+						origin = [ -3.333486, -3.998218, -10.813595 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v416"
+						origin = [ -3.672922, -4.404413, -11.003006 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v417"
+						origin = [ -4.229857, -4.33472, -10.970505 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v418"
+						origin = [ -4.383647, -3.998218, -10.813595 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v419"
+						origin = [ -1.660559, -5.313414, -9.036037 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v420"
+						origin = [ -1.378889, -5.356312, -9.319466 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v421"
+						origin = [ -1.336327, -5.58806, -9.645027 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v422"
+						origin = [ -1.735686, -5.958443, -9.784374 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v423"
+						origin = [ -2.195239, -6.001079, -9.463322 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v424"
+						origin = [ -2.127066, -5.626913, -9.049259 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v425"
+						origin = [ 1.666516, -7.424463, -7.967865 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v426"
+						origin = [ 1.783067, -7.271034, -8.320553 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v427"
+						origin = [ 1.75917, -7.389554, -8.703808 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v428"
+						origin = [ 1.514464, -7.878309, -8.835407 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v429"
+						origin = [ 1.303556, -8.19948, -8.424961 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v430"
+						origin = [ 1.402622, -7.920453, -7.947037 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v431"
+						origin = [ 6.718194, -8.0437, -7.333893 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v432"
+						origin = [ 6.792053, -8.114865, -7.886673 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v433"
+						origin = [ 6.9357, -8.462011, -8.029381 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v434"
+						origin = [ 7.064988, -8.881769, -7.678432 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v435"
+						origin = [ 6.991127, -8.810605, -7.125652 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v436"
+						origin = [ 6.847479, -8.463466, -6.982933 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v437"
+						origin = [ 12.117559, -5.948118, -7.260231 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v438"
+						origin = [ 12.264427, -6.256473, -7.70681 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v439"
+						origin = [ 12.490824, -6.585337, -7.661018 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v440"
+						origin = [ 12.664133, -6.742074, -7.149654 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v441"
+						origin = [ 12.517262, -6.433722, -6.703075 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v442"
+						origin = [ 12.290867, -6.104852, -6.748882 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v443"
+						origin = [ 14.731841, -2.576072, -8.264854 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v444"
+						origin = [ 15.081377, -2.841253, -8.616405 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v445"
+						origin = [ 15.438396, -2.972821, -8.487053 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v446"
+						origin = [ 15.593765, -2.893708, -7.952541 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v447"
+						origin = [ 15.24423, -2.628531, -7.60099 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v448"
+						origin = [ 14.887211, -2.496959, -7.730354 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v449"
+						origin = [ 15.406826, -1.11468, -8.919533 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v450"
+						origin = [ 15.536444, -1.601265, -9.169579 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v451"
+						origin = [ 15.920094, -1.715528, -9.205074 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v452"
+						origin = [ 16.333057, -1.390532, -9.005257 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v453"
+						origin = [ 16.203442, -0.903947, -8.755203 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v454"
+						origin = [ 15.81979, -0.789682, -8.719704 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v455"
+						origin = [ 19.902264, -5.045413, -7.287971 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v456"
+						origin = [ 21.731672, 0.681215, -11.722254 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v457"
+						origin = [ 21.731672, 0.201845, -11.831701 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v458"
+						origin = [ 21.731672, 0.46342, -12.248059 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v459"
+						origin = [ 21.731672, 0.047063, -11.986484 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v460"
+						origin = [ 21.731672, -0.062385, -12.437254 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v461"
+						origin = [ 21.731672, -0.171832, -11.986484 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v462"
+						origin = [ 21.731672, -0.58819, -12.248059 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v463"
+						origin = [ 21.731672, -0.326614, -11.831701 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v464"
+						origin = [ 21.731672, -0.805985, -11.722254 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v465"
+						origin = [ 21.731672, -0.326614, -11.612806 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v466"
+						origin = [ 21.731672, -0.58819, -11.196448 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v467"
+						origin = [ 21.731672, -0.171832, -11.458024 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v468"
+						origin = [ 21.731672, -0.062385, -11.007254 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v469"
+						origin = [ 21.731672, 0.047063, -11.458024 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v470"
+						origin = [ 21.731672, 0.46342, -11.196448 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v471"
+						origin = [ 21.731672, 0.201845, -11.612806 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v472"
+						origin = [ 22.731642, 0.376911, -11.722256 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v473"
+						origin = [ 22.731642, 0.327862, -11.883901 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v474"
+						origin = [ 22.731642, 0.248245, -12.032886 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v475"
+						origin = [ 22.731642, 0.099261, -12.112503 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v476"
+						origin = [ 22.731642, -0.062385, -12.144655 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v477"
+						origin = [ 22.731642, -0.224031, -12.112503 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v478"
+						origin = [ 22.731642, -0.373014, -12.032886 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v479"
+						origin = [ 22.731642, -0.452632, -11.883901 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v480"
+						origin = [ 22.731642, -0.501681, -11.722256 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v481"
+						origin = [ 22.731642, -0.452632, -11.560611 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v482"
+						origin = [ 22.731642, -0.373014, -11.411626 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v483"
+						origin = [ 22.731642, -0.224031, -11.332008 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v484"
+						origin = [ 22.731642, -0.062385, -11.299855 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v485"
+						origin = [ 22.731642, 0.099261, -11.332008 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v486"
+						origin = [ 22.731642, 0.248245, -11.411626 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+					{
+						_class = "Bone"
+						name = "v487"
+						origin = [ 22.731642, 0.327862, -11.560611 ]
+						angles = [ -0.0, 0.000031, 0.0 ]
+						do_not_discard = true
+					},
+				]
+			},
+		]
+	}
+}

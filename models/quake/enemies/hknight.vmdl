@@ -1,0 +1,481 @@
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:modeldoc28:version{fb63b6ca-f435-4aa0-a2c7-c66ddc651dca} -->
+{
+	rootNode = 
+	{
+		_class = "RootNode"
+		children = 
+		[
+			{
+				_class = "BoneMarkupList"
+				children = [  ]
+				bone_cull_type = "None"
+			},
+			{
+				_class = "RenderMeshList"
+				children = 
+				[
+					{
+						_class = "RenderMeshFile"
+						name = "hknight"
+						filename = "models/quake/enemies/hknight_hknight.dmx"
+					},
+				]
+			},
+			{
+				_class = "AnimationList"
+				children = 
+				[
+					{
+						_class = "AnimFile"
+						name = "hknight_stand"
+						source_filename = "models/quake/enemies/hknight_hknight_stand.dmx"
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+					},
+					{
+						_class = "AnimFile"
+						name = "hknight_walk"
+						source_filename = "models/quake/enemies/hknight_hknight_walk.dmx"
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = true
+						delta = false
+						worldSpace = false
+						hidden = false
+						children = 
+						[
+							{
+								_class = "ExtractMotion"
+								extract_tx = true
+								extract_ty = true
+								extract_tz = false
+								extract_rz = false
+								linear = false
+								quadratic = false
+								motion_type = "uniform"
+							},
+						]
+					},
+					{
+						_class = "AnimFile"
+						name = "hknight_run"
+						source_filename = "models/quake/enemies/hknight_hknight_run.dmx"
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = true
+						delta = false
+						worldSpace = false
+						hidden = false
+						children = 
+						[
+							{
+								_class = "ExtractMotion"
+								extract_tx = true
+								extract_ty = true
+								extract_tz = false
+								extract_rz = false
+								linear = false
+								quadratic = false
+								motion_type = "uniform"
+							},
+						]
+					},
+					{
+						_class = "AnimFile"
+						name = "hknight_pain"
+						source_filename = "models/quake/enemies/hknight_hknight_pain.dmx"
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+					},
+					{
+						_class = "AnimFile"
+						name = "hknight_death"
+						source_filename = "models/quake/enemies/hknight_hknight_death.dmx"
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+					},
+					{
+						_class = "AnimFile"
+						name = "hknight_deathb"
+						source_filename = "models/quake/enemies/hknight_hknight_deathb.dmx"
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+					},
+					{
+						_class = "AnimFile"
+						name = "hknight_char_a"
+						source_filename = "models/quake/enemies/hknight_hknight_char_a.dmx"
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+					},
+					{
+						_class = "AnimFile"
+						name = "hknight_magica"
+						source_filename = "models/quake/enemies/hknight_hknight_magica.dmx"
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+					},
+					{
+						_class = "AnimFile"
+						name = "hknight_magicb"
+						source_filename = "models/quake/enemies/hknight_hknight_magicb.dmx"
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+					},
+					{
+						_class = "AnimFile"
+						name = "hknight_char_b"
+						source_filename = "models/quake/enemies/hknight_hknight_char_b.dmx"
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+					},
+					{
+						_class = "AnimFile"
+						name = "hknight_slice"
+						source_filename = "models/quake/enemies/hknight_hknight_slice.dmx"
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+					},
+					{
+						_class = "AnimFile"
+						name = "hknight_smash"
+						source_filename = "models/quake/enemies/hknight_hknight_smash.dmx"
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+					},
+					{
+						_class = "AnimFile"
+						name = "hknight_w_attack"
+						source_filename = "models/quake/enemies/hknight_hknight_w_attack.dmx"
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+					},
+					{
+						_class = "AnimFile"
+						name = "hknight_magicc"
+						source_filename = "models/quake/enemies/hknight_hknight_magicc.dmx"
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = false
+						delta = false
+						worldSpace = false
+						hidden = false
+					},
+				]
+			},
+			{
+				_class = "Skeleton"
+				children = 
+				[
+					{
+						_class = "Bone"
+						name = "spine_001"
+						origin = [ 3.182866, 0.9075, 15.186665 ]
+						angles = [ 7.978054, 179.999924, 89.999939 ]
+						do_not_discard = true
+						children = 
+						[
+							{
+								_class = "Bone"
+								name = "spine_002"
+								origin = [ -0.000028, 9.251961, 0.000009 ]
+								angles = [ 7.637416, -3.7072, 0.000025 ]
+								do_not_discard = true
+								children = 
+								[
+									{
+										_class = "Bone"
+										name = "spine_004"
+										origin = [ 3.332962, 6.059189, 0.446936 ]
+										angles = [ -6.393213, -33.32114, 4.186791 ]
+										do_not_discard = true
+									},
+									{
+										_class = "Bone"
+										name = "arm_r_001"
+										origin = [ -0.000044, 4.780275, 0.000003 ]
+										angles = [ 14.53054, -169.593124, 73.586014 ]
+										do_not_discard = true
+										children = 
+										[
+											{
+												_class = "Bone"
+												name = "arm_r_002"
+												origin = [ 0.000023, 10.318172, 0.000204 ]
+												angles = [ -4.446373, 0.689514, -18.004673 ]
+												do_not_discard = true
+												children = 
+												[
+													{
+														_class = "Bone"
+														name = "arm_r_003"
+														origin = [ 0.000043, 10.229214, 0.00025 ]
+														angles = [ 3.339488, 9.296934, -3.894681 ]
+														do_not_discard = true
+														children = 
+														[
+															{
+																_class = "Bone"
+																name = "arm_r_004"
+																origin = [ 0.000034, 17.897879, 0.000288 ]
+																angles = [ -1.632524, -2.103662, 20.687664 ]
+																do_not_discard = true
+																children = 
+																[
+																	{
+																		_class = "Bone"
+																		name = "arm_r_005"
+																		origin = [ 0.000041, 4.707684, 0.000237 ]
+																		angles = [ 0.000007, 0.000012, -25.620609 ]
+																		do_not_discard = true
+																	},
+																]
+															},
+															{
+																_class = "Bone"
+																name = "arm_r_006"
+																origin = [ 0.072459, 18.922384, -1.219595 ]
+																angles = [ 11.518511, 20.865456, -17.462498 ]
+																do_not_discard = true
+																children = 
+																[
+																	{
+																		_class = "Bone"
+																		name = "arm_r_007"
+																		origin = [ 0.000058, 2.947874, 0.000393 ]
+																		angles = [ 5.938527, -59.558712, 15.675899 ]
+																		do_not_discard = true
+																	},
+																]
+															},
+															{
+																_class = "Bone"
+																name = "wep_000"
+																origin = [ -6.325619, 25.911892, -18.399616 ]
+																angles = [ -1.632584, -2.103712, 126.404785 ]
+																do_not_discard = true
+															},
+														]
+													},
+												]
+											},
+										]
+									},
+									{
+										_class = "Bone"
+										name = "arm_l_001"
+										origin = [ 0.002785, 4.780264, -0.021075 ]
+										angles = [ -7.319466, -10.189128, -107.742561 ]
+										do_not_discard = true
+										children = 
+										[
+											{
+												_class = "Bone"
+												name = "arm_l_002"
+												origin = [ -0.000085, 10.318159, 0.000172 ]
+												angles = [ 51.772171, -163.252747, -151.882095 ]
+												do_not_discard = true
+												children = 
+												[
+													{
+														_class = "Bone"
+														name = "arm_l_003"
+														origin = [ -0.000108, 10.229197, -0.000198 ]
+														angles = [ -0.667822, 5.096462, 8.880679 ]
+														do_not_discard = true
+														children = 
+														[
+															{
+																_class = "Bone"
+																name = "arm_l_004"
+																origin = [ -0.000124, 17.897852, -0.000212 ]
+																angles = [ -4.0905, 13.961038, -19.60214 ]
+																do_not_discard = true
+																children = 
+																[
+																	{
+																		_class = "Bone"
+																		name = "arm_l_005"
+																		origin = [ -0.000109, 5.176422, -0.000159 ]
+																		angles = [ 3.342886, -18.787846, 20.005693 ]
+																		do_not_discard = true
+																	},
+																]
+															},
+															{
+																_class = "Bone"
+																name = "arm_l_006"
+																origin = [ 0.755493, 18.922359, 0.960192 ]
+																angles = [ -8.43587, 8.584175, 21.84384 ]
+																do_not_discard = true
+																children = 
+																[
+																	{
+																		_class = "Bone"
+																		name = "arm_l_007"
+																		origin = [ -0.000146, 3.158407, -0.000319 ]
+																		angles = [ -11.196272, -40.232941, -39.781055 ]
+																		do_not_discard = true
+																	},
+																]
+															},
+														]
+													},
+												]
+											},
+										]
+									},
+								]
+							},
+						]
+					},
+					{
+						_class = "Bone"
+						name = "spine_000"
+						origin = [ 3.182864, 0.907499, 15.186665 ]
+						angles = [ 0.000031, 179.999924, -89.999992 ]
+						do_not_discard = true
+						children = 
+						[
+							{
+								_class = "Bone"
+								name = "leg_r_001"
+								origin = [ -0.000018, 3.905616, -4.525563 ]
+								angles = [ -0.812349, -6.593895, -4.867014 ]
+								do_not_discard = true
+								children = 
+								[
+									{
+										_class = "Bone"
+										name = "leg_r_002"
+										origin = [ -0.000013, 13.357109, -0.000034 ]
+										angles = [ -0.156662, 11.301633, 2.716594 ]
+										do_not_discard = true
+										children = 
+										[
+											{
+												_class = "Bone"
+												name = "leg_r_004"
+												origin = [ 0.239126, 20.688196, 0.097764 ]
+												angles = [ 87.784874, 90.001755, -175.319061 ]
+												do_not_discard = true
+												children = 
+												[
+													{
+														_class = "Bone"
+														name = "leg_r_005"
+														origin = [ 0.000094, 3.135202, -0.000303 ]
+														angles = [ -0.000031, -0.000013, -4.950229 ]
+														do_not_discard = true
+													},
+												]
+											},
+										]
+									},
+								]
+							},
+							{
+								_class = "Bone"
+								name = "leg_l_001"
+								origin = [ -0.000021, 3.905624, 4.546826 ]
+								angles = [ 0.740021, -6.572927, 6.946685 ]
+								do_not_discard = true
+								children = 
+								[
+									{
+										_class = "Bone"
+										name = "leg_l_002"
+										origin = [ -0.000017, 13.407369, 0.000042 ]
+										angles = [ 0.630637, 11.259466, -4.742113 ]
+										do_not_discard = true
+										children = 
+										[
+											{
+												_class = "Bone"
+												name = "leg_l_004"
+												origin = [ 0.239196, 20.688217, -0.097759 ]
+												angles = [ 87.784729, -90.031807, 4.649696 ]
+												do_not_discard = true
+												children = 
+												[
+													{
+														_class = "Bone"
+														name = "leg_l_005"
+														origin = [ -0.000087, 3.1352, -0.000332 ]
+														angles = [ 19.650869, -1.772354, -5.257205 ]
+														do_not_discard = true
+													},
+												]
+											},
+										]
+									},
+								]
+							},
+							{
+								_class = "Bone"
+								name = "loincloth_000"
+								origin = [ 4.301508, 1.405909, -0.000001 ]
+								angles = [ -0.000016, 3.660899, 0.00003 ]
+								do_not_discard = true
+								children = 
+								[
+									{
+										_class = "Bone"
+										name = "loincloth_001"
+										origin = [ 0.0, 7.030425, -0.000002 ]
+										angles = [ -0.000011, -8.668004, 0.000031 ]
+										do_not_discard = true
+									},
+								]
+							},
+						]
+					},
+				]
+			},
+		]
+	}
+}
