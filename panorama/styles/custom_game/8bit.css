@@ -1,8 +1,11 @@
+
+
 .CrtRoot {
   width: 100%;
   height: 100%;
   z-index: -10;
 }
+
 .QWater {
   width: 100%;
   height: 100%;
@@ -14,12 +17,14 @@
 .QWater.QWaterOn {
   opacity: 1;
 }
+
 .QWaterBlur {
   width: 100%;
   height: 100%;
   world-blur: mipmapgaussian(2, 2, 2);
   opacity: 0.96;
 }
+
 .QWaterFill {
   width: 100%;
   height: 100%;
@@ -34,6 +39,7 @@
   background-color: #e0490c25;
   opacity: 0.15;
 }
+
 .QBubble {
   width: 8px;
   height: 8px;
@@ -141,13 +147,16 @@
   animation-duration: 9.5s;
   animation-delay: -8.2s;
 }
+
 .QWater.QWaterLava .QBubble {
   visibility: collapse;
 }
+
 .QFlash {
   width: 100%;
   height: 100%;
 }
+
 .QFlashDmg,
 .QFlashBonus {
   width: 100%;
@@ -159,6 +168,7 @@
   height: 100%;
   opacity: 0;
 }
+
 .QFlashDmg .QFlashInk {
   background-color: #ff1a1a81;
 }
@@ -168,6 +178,7 @@
 .QFlashBonus .QFlashInk {
   background-color: #d7ba4577;
 }
+
 .QFlash.QDmgLo .QFlashDmg {
   opacity: 0.16;
 }
@@ -180,6 +191,7 @@
 .QFlashBonus {
   opacity: 0.22;
 }
+
 @keyframes 'q-cshift-a' {
   0% {
     opacity: 1;
@@ -196,6 +208,7 @@
     opacity: 0;
   }
 }
+
 .QFlash.QFlashPing .QFlashDmg .QFlashInk {
   animation-name: q-cshift-a;
   animation-duration: 0.9s;
@@ -220,6 +233,7 @@
   animation-timing-function: linear;
   animation-fill-mode: forwards;
 }
+
 .QPowerup {
   width: 100%;
   height: 100%;
@@ -249,6 +263,7 @@
   background-color: #ffff1a80;
   opacity: 0.13;
 }
+
 .Crt {
   width: 100%;
   height: 100%;
@@ -258,14 +273,17 @@
   visibility: collapse;
   opacity: 0;
 }
+
 .CrtDither {
   width: 100%;
   height: 100%;
   background-image: url("file://{resources}/../materials/quake/hud/crt-overlay.png");
+
   texture-sampling: point;
   opacity: 0.05;
   saturation: 200;
 }
+
 .CrtVignette {
   width: 100%;
   height: 100%;

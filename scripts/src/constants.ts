@@ -3,6 +3,10 @@ import { Vec3 } from "@s2ze/math";
 //swapped by rollup at build time
 export const DEBUG = (`__DEBUG__` as string) === "true";
 
+export const VERSION = "1.1";
+//rollup should also insert patchnotes here
+export const PATCHNOTES = (`__PATCHNOTES__` as string);
+
 export const SV_GRAVITY_DEFAULT = 800;
 //gravity#<N> info_target overrides this
 export let SV_GRAVITY = SV_GRAVITY_DEFAULT;
@@ -150,6 +154,9 @@ export const ACH_TOAST_SLOTS = 4;
 export const ACH_TOAST_HOLD = 5;
 export const ACH_TOAST_EXIT = 0.8;
 export const ACH_VISIBLE_ROWS = 6;
+export const SPEEDRUN_E1M1_MAX_SEC = 22;
+
+export const PATCH_LINE_SLOTS = 16;
 
 export const LEVEL_STREAM_TIMEOUT = 10;
 export const LEVEL_UNLOAD_TIMEOUT = 8;
@@ -797,6 +804,8 @@ export const BOSS_HEALTH = 2500;
 export const BOSS_HEALTH_SCALE: Record<string, number> = {
     easy: 0.5, normal: 1, hard: 1.6, nightmare: 2.2,
 };
+
+export const NIGHTMARE_PAIN_LOCKOUT = 5;
 export const BOSS_WEAPON_DAMAGE_SCALE = 0.25;//idk if this is alsprite value wise but i think letting the player do dmg via weapons is more interactive
 export const BOSS_GIB_HEALTH = -9999;   //never gibs
 export const BOSS_GIVEUP = 9999;        //never loses interest

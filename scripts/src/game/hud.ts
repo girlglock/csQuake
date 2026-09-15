@@ -249,8 +249,15 @@ export class QuakeHud {
         this.setGlyphStr("q_svt", STATS_SLOTS, `SAVE TIME`.padEnd(10) + str);
     }
 
-    setSaveTimeShown(on: boolean): void {
-        this.setToggle("q_svt_row", "QGone", !on);
+    setStatsShown(on: boolean): void {
+        this.setToggle("q_stats", "QGone", !on);
+    }
+    setSpeedShown(on: boolean): void {
+        this.setToggle("q_speed", "QGone", !on);
+    }
+
+    setCheatsShown(on: boolean): void {
+        this.setToggle("q_cheatson", "QGone", !on);
     }
 
     showMsg(text: string, now: number): void {

@@ -208,13 +208,15 @@ export class QuakeController {
     private settings: {
         viewBob: boolean; crt: boolean; eightbit: boolean; voice: "m" | "f";
         vmPos: VmPos; alwaysSprint: boolean; stepSmooth: boolean; fov: number;
-        hitmarker: boolean; showSaveTime: boolean; music: boolean;
+        hitmarker: boolean; music: boolean;
         autoHop: boolean; giveAll: boolean; god: boolean; infAmmo: boolean;
+        rRestart: boolean; showSpeedometer: boolean; showStats: boolean;
     } = {
         viewBob: true, crt: false, eightbit: true, voice: "f", vmPos: "center",
         alwaysSprint: true, stepSmooth: true, fov: C.FOV_DEFAULT,
-        hitmarker: true, showSaveTime: false, music: true,
+        hitmarker: true, music: true,
         autoHop: false, giveAll: false, god: false, infAmmo: false,
+        rRestart: false, showSpeedometer: false, showStats: false,
     };
     private lastHitMark = 0;
     private settingsLoaded = false;
@@ -442,7 +444,6 @@ export class QuakeController {
             if (typeof s.alwaysSprint === "boolean") this.settings.alwaysSprint = s.alwaysSprint;
             if (typeof s.stepSmooth === "boolean") this.settings.stepSmooth = s.stepSmooth;
             if (typeof s.hitmarker === "boolean") this.settings.hitmarker = s.hitmarker;
-            if (typeof s.showSaveTime === "boolean") this.settings.showSaveTime = s.showSaveTime;
             if (typeof s.music === "boolean") this.settings.music = s.music;
             if (typeof s.fov === "number" && Number.isFinite(s.fov)) {
                 this.settings.fov = Math.max(C.FOV_MIN, Math.min(C.FOV_MAX, Math.round(s.fov)));
@@ -451,6 +452,9 @@ export class QuakeController {
             if (typeof s.giveAll === "boolean") this.settings.giveAll = s.giveAll;
             if (typeof s.god === "boolean") this.settings.god = s.god;
             if (typeof s.infAmmo === "boolean") this.settings.infAmmo = s.infAmmo;
+            if (typeof s.rRestart === "boolean") this.settings.rRestart = s.rRestart;
+            if (typeof s.showSpeedometer === "boolean") this.settings.showSpeedometer = s.showSpeedometer;
+            if (typeof s.showStats === "boolean") this.settings.showStats = s.showStats;
         } catch {  }
         this.viewBob = this.settings.viewBob;
         this.pm.autoHop = this.settings.autoHop;
@@ -475,11 +479,13 @@ export class QuakeController {
             stepSmooth: this.settings.stepSmooth,
             fov: this.settings.fov,
             hitmarker: this.settings.hitmarker,
-            showSaveTime: this.settings.showSaveTime,
             music: this.settings.music,
             autoHop: this.settings.autoHop,
             giveAll: this.settings.giveAll, god: this.settings.god,
             infAmmo: this.settings.infAmmo,
+            rRestart: this.settings.rRestart,
+            showSpeedometer: this.settings.showSpeedometer,
+            showStats: this.settings.showStats,
         };
         try { css.SetSaveData(JSON.stringify(d)); } catch {}
     }
@@ -487,8 +493,9 @@ export class QuakeController {
     private syncMenuOptions(): void {
         const s = this.settings;
         this.menu.setOptionValues(s.viewBob, s.crt, s.eightbit, s.voice, s.vmPos,
-            s.alwaysSprint, s.stepSmooth, s.fov, s.hitmarker, s.showSaveTime, s.music,
-            s.autoHop, s.giveAll, s.god, s.infAmmo);
+            s.alwaysSprint, s.stepSmooth, s.fov, s.hitmarker, s.music,
+            s.autoHop, s.giveAll, s.god, s.infAmmo, s.rRestart,
+            s.showSpeedometer, s.showStats);
     }
 
     onPlayerSpawned(): void {
@@ -498,7 +505,10 @@ export class QuakeController {
             if (this.enabled) this.disable();
             this.menu.onEnable(this.slot);
             this.syncMenuOptions();
-            if (this.menu.show("main", this.hasAnySave())) return;
+            if (this.menu.show("main", this.hasAnySave())) {
+                if (!this.patchNotesSeen()) this.menu.showPatchNotes(C.VERSION, C.PATCHNOTES.split("\n").filter(Boolean));
+                return;
+            }
             this.levelIndex = 1;
         }
         this.pendingSpawn = true;
@@ -645,6 +655,9 @@ export class QuakeController {
         if (id === "e1m1" && this.activeDifficulty === "nightmare"
             && this.weapons.lastShotAt <= this.levelStartTime) {
             this.achievements.unlock("pacifist");
+        }
+        if (id === "e1m1" && this.gameNow() - this.levelStartTime <= C.SPEEDRUN_E1M1_MAX_SEC) {
+            this.achievements.unlock("speedrunner");
         }
     }
 
@@ -873,6 +886,22 @@ export class QuakeController {
         try { css.SetSaveData(JSON.stringify(d)); } catch {}
     }
 
+    cheatUnlockNightmare(): void {
+        this.unlockNightmare();
+    }
+
+    private patchNotesSeen(): boolean {
+        try { return (JSON.parse(css.GetSaveData() || "{}") as Record<string, unknown>).quakePatchVersion === C.VERSION; }
+        catch { return false; }
+    }
+    private markPatchNotesSeen(): void {
+        let d: Record<string, unknown> = {};
+        try { d = JSON.parse(css.GetSaveData() || "{}"); } catch { d = {}; }
+        if (d.quakePatchVersion === C.VERSION) return;
+        d.quakePatchVersion = C.VERSION;
+        try { css.SetSaveData(JSON.stringify(d)); } catch {}
+    }
+
     private writeSlotLevel(i: number, id: string, stat: LevelStat): void {
         if (i < 0) return;
         const slots = this.readSlots();
@@ -997,6 +1026,7 @@ export class QuakeController {
         if (buttonId.startsWith("q_ww_s")) { this.wheelClick(+buttonId.slice(6)); return; }
         if (buttonId === "q_death_retry" || buttonId === "q_inter_retry") { this.replayLevel(); return; }
         if (buttonId === "q_inter_continue") { this.advanceLevel(); return; }
+        if (buttonId === "q_patch_dismiss") { this.markPatchNotesSeen(); this.menu.hidePatchNotes(); return; }
         const action = this.menu.onClick(buttonId);
         if (action === "disabled") return;
 
@@ -1019,7 +1049,6 @@ export class QuakeController {
         else if (action === "quit") css.ServerCommand("disconnect");
         else if (action === "toggleBob") this.setViewBob();
         else if (action === "toggleHitmarker") this.setHitmarker();
-        else if (action === "toggleSaveTime") this.setShowSaveTime();
         else if (action === "toggleMusic") this.setMusic();
         else if (action === "toggleCrt") this.setCrt();
         else if (action === "toggle8bit") this.set8bit();
@@ -1027,6 +1056,9 @@ export class QuakeController {
         else if (action === "toggleVmPos") this.setViewmodelPos();
         else if (action === "toggleAlwaysSprint") this.setAlwaysSprint();
         else if (action === "toggleStepSmooth") this.setStepSmooth();
+        else if (action === "toggleRRestart") this.setRRestart();
+        else if (action === "toggleSpeedometer") this.setShowSpeedometer();
+        else if (action === "toggleStats") this.setShowStats();
         else if (action === "fovDown") this.setFov(-1);
         else if (action === "fovUp") this.setFov(1);
         else if (action === "toggleAutohop") this.setAutoHop();
@@ -1674,6 +1706,13 @@ export class QuakeController {
         return this.settings.autoHop;
     }
 
+    setRRestart(on?: boolean): boolean {
+        this.settings.rRestart = on === undefined ? !this.settings.rRestart : on;
+        this.saveSettings();
+        this.syncMenuOptions();
+        return this.settings.rRestart;
+    }
+
     setGiveAll(on?: boolean): boolean {
         this.settings.giveAll = on === undefined ? !this.settings.giveAll : on;
         this.saveSettings();
@@ -1706,11 +1745,18 @@ export class QuakeController {
         return this.settings.hitmarker;
     }
 
-    setShowSaveTime(on?: boolean): boolean {
-        this.settings.showSaveTime = on === undefined ? !this.settings.showSaveTime : on;
+    setShowSpeedometer(on?: boolean): boolean {
+        this.settings.showSpeedometer = on === undefined ? !this.settings.showSpeedometer : on;
         this.saveSettings();
         this.syncMenuOptions();
-        return this.settings.showSaveTime;
+        return this.settings.showSpeedometer;
+    }
+
+    setShowStats(on?: boolean): boolean {
+        this.settings.showStats = on === undefined ? !this.settings.showStats : on;
+        this.saveSettings();
+        this.syncMenuOptions();
+        return this.settings.showStats;
     }
 
     setMusic(on?: boolean): boolean {
@@ -2032,6 +2078,11 @@ export class QuakeController {
         const obs = this.pm.noclip;
         this.player.takeDamage = !obs;
 
+        if (this.settings.rRestart && pawn.WasInputJustPressed(CSInputs.RELOAD)) {
+            this.replayLevel();
+            return;
+        }
+
         const cmd = this.readInput(pawn);
         if (this.dead) {
             cmd.forwardmove = 0;
@@ -2251,8 +2302,11 @@ export class QuakeController {
         if (this.dead) { this.hud.setVisible(false); return; }
         this.hud.updateLog(this.gameNow());
         this.hud.setMapTime(this.formatTime(this.gameNow() - this.levelStartTime));
-        this.hud.setSaveTimeShown(this.settings.showSaveTime);
-        if (this.settings.showSaveTime) this.hud.setSaveTime(this.formatPlayTime(this.totalPlayTime()));
+        this.hud.setSaveTime(this.formatPlayTime(this.totalPlayTime()));
+        this.hud.setStatsShown(this.settings.showStats);
+        this.hud.setSpeedShown(this.settings.showSpeedometer);
+        this.hud.setCheatsShown(this.settings.autoHop || this.settings.giveAll
+            || this.settings.god || this.settings.infAmmo);
         const p = this.player;
         const at: 0 | 1 | 2 | 3 =
             p.armorType >= 0.75 ? 3 : p.armorType >= 0.5 ? 2 : p.armorType > 0 ? 1 : 0;

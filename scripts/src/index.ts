@@ -35,6 +35,10 @@ function registerCommands(): void {
 
     css.RegisterCheatCommand("qgiveall", () => { quake.giveAll();  });
 
+    css.RegisterCheatCommand("q_unlocknightmare", () => {
+        quake.cheatUnlockNightmare();
+    });
+
     css.RegisterCheatCommand("qtoggle_ai", (args: string) => {
     });
 

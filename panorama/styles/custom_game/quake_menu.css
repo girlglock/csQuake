@@ -1,12 +1,12 @@
+
+
 .QmRoot {
   width: 100%;
   height: 100%;
 }
-
 .QmRoot Panel {
   background-repeat: no-repeat;
 }
-
 .QmHidden {
   visibility: collapse;
 }
@@ -32,11 +32,9 @@
   width: 100%;
   height: 100%;
 }
-
 .QmMain .QmBgShow {
   visibility: visible;
 }
-
 .QmBgSlide {
   width: 100%;
   height: 100%;
@@ -48,7 +46,6 @@
   height: 100%;
   background-color: #00000080;
 }
-
 .QmBgLayer {
   width: 120%;
   height: 120%;
@@ -57,7 +54,6 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
-
 .QmBgBack {
   z-index: 1;
   blur: gaussian(3);
@@ -72,33 +68,28 @@
   margin-right: 180px;
   margin-bottom: -448px;
 }
-
 .QmBgBack0 {
   background-image: url("file://{resources}/../materials/quake/menu/bg/dog_bg.png");
 }
-
 .QmBgFront0 {
   background-image: url("file://{resources}/../materials/quake/menu/bg/dog_fg.png");
   width: 964px;
 }
-
 .QmBgBack1 {
   background-image: url("file://{resources}/../materials/quake/menu/bg/ogre_bg.png");
 }
-
 .QmBgFront1 {
   background-image: url("file://{resources}/../materials/quake/menu/bg/ogre_fg.png");
   width: 1042px;
 }
-
 .QmBgBack2 {
   background-image: url("file://{resources}/../materials/quake/menu/bg/soldier_bg.png");
 }
-
 .QmBgFront2 {
   background-image: url("file://{resources}/../materials/quake/menu/bg/soldier_fg.png");
   width: 760px;
   height: 784px;
+
   margin-bottom: -150px;
 }
 
@@ -107,188 +98,151 @@
     opacity: 0;
     transform: scale3d(1.1, 1.1, 1) translate3d(0px, 0px, 0px);
   }
-
   2% {
     opacity: 1;
   }
-
   31.33% {
     opacity: 1;
     transform: scale3d(1.1, 1.1, 1) translate3d(-70px, 0px, 0px);
   }
-
   33.33% {
     opacity: 0;
   }
-
   100% {
     opacity: 0;
   }
 }
-
 @keyframes 'qm-bg-front-0' {
   0% {
     opacity: 0;
     transform: scale3d(1, 1, 1) translate3d(0px, 0px, 0px);
   }
-
   2% {
     opacity: 1;
   }
-
   31.33% {
     opacity: 1;
     transform: scale3d(1.2, 1.2, 1) translate3d(-170px, 0px, 0px);
   }
-
   33.33% {
     opacity: 0;
   }
-
   100% {
     opacity: 0;
   }
 }
-
 @keyframes 'qm-bg-back-1' {
   0% {
     opacity: 0;
   }
-
   31.33% {
     opacity: 0;
     transform: scale3d(1.1, 1.1, 1) translate3d(0px, 0px, 0px);
   }
-
   33.33% {
     opacity: 1;
   }
-
   64.67% {
     opacity: 1;
     transform: scale3d(1.1, 1.1, 1) translate3d(70px, 0px, 0px);
   }
-
   66.67% {
     opacity: 0;
   }
-
   100% {
     opacity: 0;
   }
 }
-
 @keyframes 'qm-bg-front-1' {
   0% {
     opacity: 0;
   }
-
   31.33% {
     opacity: 0;
     transform: scale3d(1, 1, 1) translate3d(0px, 0px, 0px);
   }
-
   33.33% {
     opacity: 1;
   }
-
   64.67% {
     opacity: 1;
     transform: scale3d(1.2, 1.2, 1) translate3d(170px, 0px, 0px);
   }
-
   66.67% {
     opacity: 0;
   }
-
   100% {
     opacity: 0;
   }
 }
-
 @keyframes 'qm-bg-back-2' {
   0% {
     opacity: 0;
   }
-
   64.67% {
     opacity: 0;
     transform: scale3d(1.1, 1.1, 1) translate3d(0px, 0px, 0px);
   }
-
   66.67% {
     opacity: 1;
   }
-
   98% {
     opacity: 1;
     transform: scale3d(1.1, 1.1, 1) translate3d(-70px, 0px, 0px);
   }
-
   100% {
     opacity: 0;
   }
 }
-
 @keyframes 'qm-bg-front-2' {
   0% {
     opacity: 0;
   }
-
   64.67% {
     opacity: 0;
     transform: scale3d(1, 1, 1) translate3d(0px, 0px, 0px);
   }
-
   66.67% {
     opacity: 1;
   }
-
   98% {
     opacity: 1;
     transform: scale3d(1.2, 1.2, 1) translate3d(-170px, 0px, 0px);
   }
-
   100% {
     opacity: 0;
   }
 }
-
 .QmBgBack0 {
   animation-name: qm-bg-back-0;
   animation-duration: 72s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
-
 .QmBgFront0 {
   animation-name: qm-bg-front-0;
   animation-duration: 72s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
-
 .QmBgBack1 {
   animation-name: qm-bg-back-1;
   animation-duration: 72s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
-
 .QmBgFront1 {
   animation-name: qm-bg-front-1;
   animation-duration: 72s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
-
 .QmBgBack2 {
   animation-name: qm-bg-back-2;
   animation-duration: 72s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
-
 .QmBgFront2 {
   animation-name: qm-bg-front-2;
   animation-duration: 72s;
@@ -307,6 +261,7 @@
   flow-children: down;
   horizontal-align: center;
   vertical-align: center;
+
   overflow: noclip;
 }
 
@@ -319,7 +274,6 @@
   background-size: 100% 100%;
   texture-sampling: point;
 }
-
 .QmTitleOpt {
   width: 144px;
   background-image: url("file://{resources}/../materials/quake/menu/p_option.png");
@@ -329,7 +283,6 @@
   flow-children: down;
   overflow: noclip;
 }
-
 .QmScreenHidden {
   visibility: collapse;
 }
@@ -343,11 +296,9 @@
 .QmRow:hover {
   sound: "Quake.misc_menu1";
 }
-
 .QmRow:active {
   sound: "Quake.misc_menu2";
 }
-
 #qm_back:active,
 #qm_back_c:active,
 #qm_hlp_back:active,
@@ -366,15 +317,12 @@
 .QmMainOnly {
   visibility: collapse;
 }
-
 .QmMain .QmMainOnly {
   visibility: visible;
 }
-
 .QmPauseOnly {
   visibility: visible;
 }
-
 .QmMain .QmPauseOnly {
   visibility: collapse;
 }
@@ -390,7 +338,6 @@
   transition-property: saturation, brightness;
   transition-duration: 0.06s;
 }
-
 .QmRow:hover .Gl {
   saturation: 1;
   brightness: 1;
@@ -408,50 +355,40 @@
 .QmBracketL {
   margin-right: 3px;
 }
-
 .QmBracketR {
   margin-left: 3px;
 }
-
 .QmRow:hover .QmBracket {
   opacity: 1;
 }
-
 @keyframes 'qm-bracket-l' {
   0% {
     transform: translate3d(-7px, 0px, 0px);
   }
-
   50% {
     transform: translate3d(0px, 0px, 0px);
   }
-
   100% {
     transform: translate3d(-7px, 0px, 0px);
   }
 }
-
 @keyframes 'qm-bracket-r' {
   0% {
     transform: translate3d(7px, 0px, 0px);
   }
-
   50% {
     transform: translate3d(0px, 0px, 0px);
   }
-
   100% {
     transform: translate3d(7px, 0px, 0px);
   }
 }
-
 .QmRow:hover .QmBracketL {
   animation-name: qm-bracket-l;
   animation-duration: 1.1s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
-
 .QmRow:hover .QmBracketR {
   animation-name: qm-bracket-r;
   animation-duration: 1.1s;
@@ -461,13 +398,9 @@
 
 .QmRow .Mf {
   vertical-align: center;
-  wash-color: #ffffff;
-  transition-property: wash-color;
-  transition-duration: 0.1s;
 }
-
 .QmRow:hover .QmText .Mf {
-  wash-color: #c25b5b;
+  background-image: url("file://{resources}/../materials/quake/menu/menufont_hover.png");
 }
 
 .QmText {
@@ -476,7 +409,6 @@
   vertical-align: center;
   ui-scale: 100%;
 }
-
 .QmVal {
   flow-children: right;
   height: 8px;
@@ -488,11 +420,12 @@
 #qm_main .QmText {
   height: 16px;
 }
-
 #qm_main .QmRow {
   horizontal-align: center;
+
   padding: 0px 10px 0px 10px;
   margin-bottom: 3px;
+
   overflow: noclip;
   transform: scale3d(1, 1, 1);
   transition-property: transform;
@@ -508,7 +441,6 @@
 #qm_ns .QmOptRow {
   width: 220px;
 }
-
 #qm_opts .QmVal,
 #qm_chts .QmVal,
 #qm_ns .QmVal,
@@ -528,12 +460,35 @@
   background-color: #a8863580;
 }
 
+.QmSepLabelRow {
+  vertical-align: center;
+}
+.QmSepLine {
+  height: 1px;
+  vertical-align: center;
+  background-color: #a8863580;
+}
+.QmSepLabel {
+  margin: 0px 4px;
+}
+.QmSepLabel .Gl {
+  wash-color: #a88635;
+}
+.QmSepLine.q_sep58 {
+  width: 58px;
+}
+.QmSepLine.q_sep78 {
+  width: 78px;
+}
+.QmSepLine.q_sep86 {
+  width: 86px;
+}
+
 #qm_opts .QmFovCtl {
   flow-children: right;
   horizontal-align: right;
   vertical-align: center;
 }
-
 #qm_opts .QmFovCtl .QmVal {
   horizontal-align: center;
   margin-left: 0px;
@@ -548,7 +503,6 @@
   background-size: 100% 100%;
   texture-sampling: point;
 }
-
 #qm_hlp .QmOptRow {
   horizontal-align: center;
 }
@@ -562,11 +516,9 @@
   flow-children: right;
   margin-bottom: 1px;
 }
-
 .QmSplitL {
   width: 200px;
 }
-
 .QmSplitR {
   margin-left: 10px;
 }
@@ -576,7 +528,6 @@
   margin-bottom: 4px;
   horizontal-align: center;
 }
-
 .QmDiffArrow {
   width: 8px;
   height: 8px;
@@ -585,27 +536,22 @@
   vertical-align: center;
   opacity: 0.7;
 }
-
 .QmDiffArrow:hover {
   opacity: 1;
   brightness: 1.3;
   sound: "Quake.misc_menu1";
 }
-
 .QmDiffArrow:active {
   sound: "Quake.misc_menu2";
 }
-
 #qm_df_v.QmDisabled {
   opacity: 0.35;
 }
-
 #qm_df_hint {
   margin-bottom: 6px;
   opacity: 0.6;
   horizontal-align: center;
 }
-
 #qm_df_hint .Gl {
   vertical-align: center;
 }
@@ -615,11 +561,9 @@
   height: 8px;
   margin-bottom: 2px;
 }
-
 .QmStRow .Gl {
   vertical-align: center;
 }
-
 .QmStHdr {
   margin-bottom: 4px;
 }
@@ -631,39 +575,33 @@
   margin-bottom: 2px;
   padding: 2px 0px;
 }
-
 #qm_ach .QAchIcon {
   width: 28px;
   height: 28px;
   margin-right: 8px;
   vertical-align: center;
 }
-
 #qm_ach .QAchTextCol {
   flow-children: down;
   vertical-align: center;
   width: 260px;
 }
-
 #qm_ach .QAchListName {
   color: #d8a24a;
   font-size: 12px;
   font-weight: bold;
   white-space: normal;
 }
-
 #qm_ach .QAchListDesc {
   color: #9a9a9a;
   font-size: 10px;
   margin-top: 1px;
   white-space: normal;
 }
-
 #qm_ach .QAchRow.QAchLocked .QAchIcon {
   saturation: 0;
   opacity: 0.4;
 }
-
 #qm_ach .QAchRow.QAchLocked .QAchListName {
   color: #7a7a7a;
 }

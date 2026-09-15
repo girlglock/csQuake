@@ -252,8 +252,9 @@ export class Enemies {
             if (m.def.dropShells > 0 && this.dropSink) {
                 this.dropSink(m.origin, { shells: m.def.dropShells }, now);
             }
-        } else if (m.state === "pain") {
-            this.emit(m, m.painSound);
+        } else {
+            if (m.state === "pain") this.emit(m, m.painSound);
+            if (this.difficulty === "nightmare") m.painFinished = now + C.NIGHTMARE_PAIN_LOCKOUT;
         }
     }
 

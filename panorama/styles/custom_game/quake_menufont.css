@@ -1,189 +1,82 @@
+
+
 .Mf {
 	width: 12px;
 	height: 16px;
 	margin-right: 2px;
 	background-image: url("file://{resources}/../materials/quake/menu/menufont.png");
 	background-repeat: no-repeat;
-	background-size: 96px 96px;
+	background-size: 96px 144px;
 	texture-sampling: point;
 }
 
-.Mf.m32 {
-	background-position: -0px -0px;
-}
-
-.Mf.m45 {
-	background-position: -12px -0px;
-}
-
-.Mf.m48 {
-	background-position: -24px -0px;
-}
-
-.Mf.m49 {
-	background-position: -36px -0px;
-}
-
-.Mf.m50 {
-	background-position: -48px -0px;
-}
-
-.Mf.m51 {
-	background-position: -60px -0px;
-}
-
-.Mf.m52 {
-	background-position: -72px -0px;
-}
-
-.Mf.m53 {
-	background-position: -84px -0px;
-}
-
-.Mf.m54 {
-	background-position: -0px -16px;
-}
-
-.Mf.m55 {
-	background-position: -12px -16px;
-}
-
-.Mf.m56 {
-	background-position: -24px -16px;
-}
-
-.Mf.m57 {
-	background-position: -36px -16px;
-}
-
-.Mf.m58 {
-	background-position: -48px -16px;
-}
-
-.Mf.m60 {
-	background-position: -60px -16px;
-}
-
-.Mf.m62 {
-	background-position: -72px -16px;
-}
-
-.Mf.m65 {
-	background-position: -84px -16px;
-}
-
-.Mf.m66 {
-	background-position: -0px -32px;
-}
-
-.Mf.m67 {
-	background-position: -12px -32px;
-}
-
-.Mf.m68 {
-	background-position: -24px -32px;
-}
-
-.Mf.m69 {
-	background-position: -36px -32px;
-}
-
-.Mf.m70 {
-	background-position: -48px -32px;
-}
-
-.Mf.m71 {
-	background-position: -60px -32px;
-}
-
-.Mf.m72 {
-	background-position: -72px -32px;
-}
-
-.Mf.m73 {
-	background-position: -84px -32px;
-}
-
-.Mf.m74 {
-	background-position: -0px -48px;
-}
-
-.Mf.m75 {
-	background-position: -12px -48px;
-}
-
-.Mf.m76 {
-	background-position: -24px -48px;
-}
-
-.Mf.m77 {
-	background-position: -36px -48px;
-}
-
-.Mf.m78 {
-	background-position: -48px -48px;
-}
-
-.Mf.m79 {
-	background-position: -60px -48px;
-}
-
-.Mf.m80 {
-	background-position: -72px -48px;
-}
-
-.Mf.m81 {
-	background-position: -84px -48px;
-}
-
-.Mf.m82 {
-	background-position: -0px -64px;
-}
-
-.Mf.m83 {
-	background-position: -12px -64px;
-}
-
-.Mf.m84 {
-	background-position: -24px -64px;
-}
-
-.Mf.m85 {
-	background-position: -36px -64px;
-}
-
-.Mf.m86 {
-	background-position: -48px -64px;
-}
-
-.Mf.m87 {
-	background-position: -60px -64px;
-}
-
-.Mf.m88 {
-	background-position: -72px -64px;
-}
-
-.Mf.m89 {
-	background-position: -84px -64px;
-}
-
-.Mf.m90 {
-	background-position: -0px -80px;
-}
-
-.Mf.m91 {
-	background-position: -12px -80px;
-}
-
-.Mf.m93 {
-	background-position: -24px -80px;
-}
-
-.Mf.m94 {
-	background-position: -36px -80px;
-}
-
-.Mf.m118 {
-	background-position: -48px -80px;
-}
+.Mf.m32 { background-position: -0px -0px; }
+.Mf.m45 { background-position: -12px -0px; }
+.Mf.m48 { background-position: -24px -0px; }
+.Mf.m49 { background-position: -36px -0px; }
+.Mf.m50 { background-position: -48px -0px; }
+.Mf.m51 { background-position: -60px -0px; }
+.Mf.m52 { background-position: -72px -0px; }
+.Mf.m53 { background-position: -84px -0px; }
+.Mf.m54 { background-position: -0px -16px; }
+.Mf.m55 { background-position: -12px -16px; }
+.Mf.m56 { background-position: -24px -16px; }
+.Mf.m57 { background-position: -36px -16px; }
+.Mf.m58 { background-position: -48px -16px; }
+.Mf.m60 { background-position: -60px -16px; }
+.Mf.m62 { background-position: -72px -16px; }
+.Mf.m65 { background-position: -84px -16px; }
+.Mf.m66 { background-position: -0px -32px; }
+.Mf.m67 { background-position: -12px -32px; }
+.Mf.m68 { background-position: -24px -32px; }
+.Mf.m69 { background-position: -36px -32px; }
+.Mf.m70 { background-position: -48px -32px; }
+.Mf.m71 { background-position: -60px -32px; }
+.Mf.m72 { background-position: -72px -32px; }
+.Mf.m73 { background-position: -84px -32px; }
+.Mf.m74 { background-position: -0px -48px; }
+.Mf.m75 { background-position: -12px -48px; }
+.Mf.m76 { background-position: -24px -48px; }
+.Mf.m77 { background-position: -36px -48px; }
+.Mf.m78 { background-position: -48px -48px; }
+.Mf.m79 { background-position: -60px -48px; }
+.Mf.m80 { background-position: -72px -48px; }
+.Mf.m81 { background-position: -84px -48px; }
+.Mf.m82 { background-position: -0px -64px; }
+.Mf.m83 { background-position: -12px -64px; }
+.Mf.m84 { background-position: -24px -64px; }
+.Mf.m85 { background-position: -36px -64px; }
+.Mf.m86 { background-position: -48px -64px; }
+.Mf.m87 { background-position: -60px -64px; }
+.Mf.m88 { background-position: -72px -64px; }
+.Mf.m89 { background-position: -84px -64px; }
+.Mf.m90 { background-position: -0px -80px; }
+.Mf.m91 { background-position: -12px -80px; }
+.Mf.m93 { background-position: -24px -80px; }
+.Mf.m94 { background-position: -36px -80px; }
+.Mf.m97 { background-position: -48px -80px; }
+.Mf.m98 { background-position: -60px -80px; }
+.Mf.m99 { background-position: -72px -80px; }
+.Mf.m100 { background-position: -84px -80px; }
+.Mf.m101 { background-position: -0px -96px; }
+.Mf.m102 { background-position: -12px -96px; }
+.Mf.m103 { background-position: -24px -96px; }
+.Mf.m104 { background-position: -36px -96px; }
+.Mf.m105 { background-position: -48px -96px; }
+.Mf.m106 { background-position: -60px -96px; }
+.Mf.m107 { background-position: -72px -96px; }
+.Mf.m108 { background-position: -84px -96px; }
+.Mf.m109 { background-position: -0px -112px; }
+.Mf.m110 { background-position: -12px -112px; }
+.Mf.m111 { background-position: -24px -112px; }
+.Mf.m112 { background-position: -36px -112px; }
+.Mf.m113 { background-position: -48px -112px; }
+.Mf.m114 { background-position: -60px -112px; }
+.Mf.m115 { background-position: -72px -112px; }
+.Mf.m116 { background-position: -84px -112px; }
+.Mf.m117 { background-position: -0px -128px; }
+.Mf.m118 { background-position: -12px -128px; }
+.Mf.m119 { background-position: -24px -128px; }
+.Mf.m120 { background-position: -36px -128px; }
+.Mf.m121 { background-position: -48px -128px; }
+.Mf.m122 { background-position: -60px -128px; }

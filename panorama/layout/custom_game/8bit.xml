@@ -2,7 +2,9 @@
 	<styles>
 		<include src="file://{resources}/styles/custom_game/8bit.css" />
 	</styles>
+
 	<Panel class="CrtRoot">
+
 		<Panel id="q_water" class="QWater" hittest="false">
 			<Panel class="QWaterBlur" hittest="false" />
 			<Panel class="QWaterFill" hittest="false" />
@@ -14,6 +16,7 @@
 			<Panel class="QBubble QB6" hittest="false" />
 			<Panel class="QBubble QB7" hittest="false" />
 			<Panel class="QBubble QB8" hittest="false" /></Panel>
+
 		<Panel id="q_flash" class="QFlash" hittest="false">
 			<Panel class="QFlashDmg" hittest="false">
 				<Panel class="QFlashInk" hittest="false" /></Panel>

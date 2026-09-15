@@ -11,15 +11,11 @@ export const ACHIEVEMENTS: AchievementDef[] = [
     { id: "friendly_fire", name: "Friendly Fire", desc: "Kill a monster with another monster's attack." },
     { id: "shambler_dance", name: "The Shambler Dance", desc: "Kill a shambler before it is able to cast its lightning attack." },
     { id: "complete_e1m7", name: "Sink the Horror Electric", desc: "Complete Quake Episode 1: Dimension of the Doomed in single player." },
-    { id: "complete_e2m6", name: "Bottom of the Well", desc: "Complete Quake Episode 2: The Realm of Black Magic in single player." },
-    { id: "complete_e3m6", name: "Beneath the Blue Chambers", desc: "Complete Quake Episode 3: The Netherworld in single player." },
-    { id: "complete_e4m7", name: "The Last Unexplored Path", desc: "Complete Quake Episode 4: The Elder World in single player." },
     { id: "defeat_shub", name: "Indigestion", desc: "Defeat Shub-Niggurath in single player." },
     { id: "close_shave", name: "A Close Shave", desc: "Kill a shambler with an axe." },
-    { id: "find_dopefish", name: "The Well of Wishes", desc: "Find the Well of Wishes in the Crypt of Decay." },
     { id: "pacifist", name: "Slipgate Pacifist", desc: "Complete E1M1: The Slipgate Complex on Nightmare without firing a shot." },
     { id: "defeat_shub_nightmare", name: "Shub's Bud", desc: "Complete Quake on Nightmare in single player." },
-    { id: "painless_maze", name: "The Painless Maze", desc: "Complete E4M6: The Pain Maze on Nightmare without taking damage." },
+    { id: "speedrunner", name: "Speedrunner", desc: "Complete E1M1: The Slipgate Complex in 22 seconds or less." },
 ];
 
 const SAVE_KEY = "quakeAchievements";

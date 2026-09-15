@@ -9,8 +9,8 @@ export type MenuAction =
     "newgame" | "continue" | "resume" | "exit" | "quit"
     | "opennewslots" | "opencontslots" | "openstats" | "openAchievements"
     | "achScrollUp" | "achScrollDn"
-    | "toggleBob" | "toggleHitmarker" | "toggleSaveTime" | "toggleMusic" | "toggleCrt" | "toggle8bit" | "toggleVoice" | "toggleVmPos"
-    | "toggleAlwaysSprint" | "toggleStepSmooth" | "fovDown" | "fovUp"
+    | "toggleBob" | "toggleHitmarker" | "toggleMusic" | "toggleCrt" | "toggle8bit" | "toggleVoice" | "toggleVmPos"
+    | "toggleAlwaysSprint" | "toggleStepSmooth" | "toggleRRestart" | "toggleSpeedometer" | "toggleStats" | "fovDown" | "fovUp"
     | "toggleAutohop" | "toggleGiveAll" | "toggleGod" | "toggleInfAmmo" | "disabled";
 
 type Screen = "main" | "options" | "cheats" | "help"
@@ -141,7 +141,6 @@ export class QuakeMenu {
 
             case "qm_opt_bob": return "toggleBob";
             case "qm_opt_hit": return "toggleHitmarker";
-            case "qm_opt_svt": return "toggleSaveTime";
             case "qm_opt_music": return "toggleMusic";
             case "qm_opt_crt": return "toggleCrt";
             case "qm_opt_8bit": return "toggle8bit";
@@ -149,6 +148,9 @@ export class QuakeMenu {
             case "qm_opt_vmpos": return "toggleVmPos";
             case "qm_opt_sprint": return "toggleAlwaysSprint";
             case "qm_opt_step": return "toggleStepSmooth";
+            case "qm_opt_restart": return "toggleRRestart";
+            case "qm_opt_speedo": return "toggleSpeedometer";
+            case "qm_opt_stats": return "toggleStats";
             case "qm_opt_fov_dn": return "fovDown";
             case "qm_opt_fov_up": return "fovUp";
             case "qm_cht_hop": return "toggleAutohop";
@@ -236,6 +238,22 @@ export class QuakeMenu {
         }
     }
 
+    showPatchNotes(version: string, lines: string[]): void {
+        if (!this.layout) return;
+        this.layout.SetDialogVariableString("q_patch", "patchHdr", `Patchnotes for v${version}`);
+        for (let i = 0; i < C.PATCH_LINE_SLOTS; i++) {
+            const line = lines[i];
+            setLayoutClass(this.layout, this.slot, `q_patch_l${i}`, "QGone", !line);
+            if (line) this.layout.SetDialogVariableString("q_patch", `patchLine${i}`, line);
+        }
+        setLayoutClass(this.layout, this.slot, "q_patch", "QPopHidden", false);
+    }
+
+    hidePatchNotes(): void {
+        if (!this.layout) return;
+        setLayoutClass(this.layout, this.slot, "q_patch", "QPopHidden", true);
+    }
+
     scrollAch(delta: number): void {
         const max = Math.max(0, this.achList.length - C.ACH_VISIBLE_ROWS);
         const next = Math.min(max, Math.max(0, this.achScroll + delta));
@@ -246,11 +264,11 @@ export class QuakeMenu {
 
     setOptionValues(viewBob: boolean, crt: boolean, eightbit: boolean,
         voice: "m" | "f", vmPos: "center" | "left" | "right", alwaysSprint: boolean,
-        stepSmooth: boolean, fov: number, hitmarker: boolean, showSaveTime: boolean, music: boolean,
-        autoHop: boolean, giveAll: boolean, god: boolean, infAmmo: boolean): void {
+        stepSmooth: boolean, fov: number, hitmarker: boolean, music: boolean,
+        autoHop: boolean, giveAll: boolean, god: boolean, infAmmo: boolean, rRestart: boolean,
+        showSpeedometer: boolean, showStats: boolean): void {
         this.setGlyphs("qm_bob_v", 3, viewBob ? "ON" : "OFF");
         this.setGlyphs("qm_hit_v", 3, hitmarker ? "ON" : "OFF");
-        this.setGlyphs("qm_svt_v", 3, showSaveTime ? "ON" : "OFF");
         this.setGlyphs("qm_music_v", 3, music ? "ON" : "OFF");
         this.setGlyphs("qm_crt_v", 3, crt ? "ON" : "OFF");
         this.setGlyphs("qm_8bit_v", 3, eightbit ? "ON" : "OFF");
@@ -258,6 +276,9 @@ export class QuakeMenu {
         this.setGlyphs("qm_vmpos_v", 6, vmPos.toUpperCase());
         this.setGlyphs("qm_sprint_v", 3, alwaysSprint ? "ON" : "OFF");
         this.setGlyphs("qm_step_v", 3, stepSmooth ? "ON" : "OFF");
+        this.setGlyphs("qm_restart_v", 3, rRestart ? "ON" : "OFF");
+        this.setGlyphs("qm_speedo_v", 3, showSpeedometer ? "ON" : "OFF");
+        this.setGlyphs("qm_stats_v", 3, showStats ? "ON" : "OFF");
         this.setGlyphs("qm_fov_v", 3, String(fov));
         this.setGlyphs("qm_hop_v", 3, autoHop ? "ON" : "OFF");
         this.setGlyphs("qm_all_v", 3, giveAll ? "ON" : "OFF");
