@@ -1,7 +1,4 @@
-/* Prettified by Source 2 Viewer 19.2.0.0 - https://valveresourceformat.github.io */
-
-.Gl
-{
+.Gl {
 	width: 8px;
 	height: 8px;
 	texture-sampling: point;
@@ -9,633 +6,506 @@
 	background-size: 100% 100%;
 }
 
-.Gl.g0
-{
-	background-image: url("s2r://materials/quake/menu/font_00_png.vtex");
+.Gl.g0 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_00.png");
 }
 
-.Gl.g1
-{
-	background-image: url("s2r://materials/quake/menu/font_01_png.vtex");
+.Gl.g1 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_01.png");
 }
 
-.Gl.g2
-{
-	background-image: url("s2r://materials/quake/menu/font_02_png.vtex");
+.Gl.g2 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_02.png");
 }
 
-.Gl.g3
-{
-	background-image: url("s2r://materials/quake/menu/font_03_png.vtex");
+.Gl.g3 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_03.png");
 }
 
-.Gl.g4
-{
-	background-image: url("s2r://materials/quake/menu/font_04_png.vtex");
+.Gl.g4 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_04.png");
 }
 
-.Gl.g5
-{
-	background-image: url("s2r://materials/quake/menu/font_05_png.vtex");
+.Gl.g5 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_05.png");
 }
 
-.Gl.g6
-{
-	background-image: url("s2r://materials/quake/menu/font_06_png.vtex");
+.Gl.g6 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_06.png");
 }
 
-.Gl.g7
-{
-	background-image: url("s2r://materials/quake/menu/font_07_png.vtex");
+.Gl.g7 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_07.png");
 }
 
-.Gl.g8
-{
-	background-image: url("s2r://materials/quake/menu/font_08_png.vtex");
+.Gl.g8 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_08.png");
 }
 
-.Gl.g9
-{
-	background-image: url("s2r://materials/quake/menu/font_09_png.vtex");
+.Gl.g9 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_09.png");
 }
 
-.Gl.g11
-{
-	background-image: url("s2r://materials/quake/menu/font_0b_png.vtex");
+.Gl.g11 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_0b.png");
 }
 
-.Gl.g13
-{
-	background-image: url("s2r://materials/quake/menu/font_0d_png.vtex");
+.Gl.g13 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_0d.png");
 }
 
-.Gl.g14
-{
-	background-image: url("s2r://materials/quake/menu/font_0e_png.vtex");
+.Gl.g14 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_0e.png");
 }
 
-.Gl.g15
-{
-	background-image: url("s2r://materials/quake/menu/font_0f_png.vtex");
+.Gl.g15 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_0f.png");
 }
 
-.Gl.g16
-{
-	background-image: url("s2r://materials/quake/menu/font_10_png.vtex");
+.Gl.g16 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_10.png");
 }
 
-.Gl.g17
-{
-	background-image: url("s2r://materials/quake/menu/font_11_png.vtex");
+.Gl.g17 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_11.png");
 }
 
-.Gl.g18
-{
-	background-image: url("s2r://materials/quake/menu/font_12_png.vtex");
+.Gl.g18 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_12.png");
 }
 
-.Gl.g19
-{
-	background-image: url("s2r://materials/quake/menu/font_13_png.vtex");
+.Gl.g19 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_13.png");
 }
 
-.Gl.g20
-{
-	background-image: url("s2r://materials/quake/menu/font_14_png.vtex");
+.Gl.g20 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_14.png");
 }
 
-.Gl.g21
-{
-	background-image: url("s2r://materials/quake/menu/font_15_png.vtex");
+.Gl.g21 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_15.png");
 }
 
-.Gl.g22
-{
-	background-image: url("s2r://materials/quake/menu/font_16_png.vtex");
+.Gl.g22 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_16.png");
 }
 
-.Gl.g23
-{
-	background-image: url("s2r://materials/quake/menu/font_17_png.vtex");
+.Gl.g23 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_17.png");
 }
 
-.Gl.g24
-{
-	background-image: url("s2r://materials/quake/menu/font_18_png.vtex");
+.Gl.g24 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_18.png");
 }
 
-.Gl.g25
-{
-	background-image: url("s2r://materials/quake/menu/font_19_png.vtex");
+.Gl.g25 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_19.png");
 }
 
-.Gl.g26
-{
-	background-image: url("s2r://materials/quake/menu/font_1a_png.vtex");
+.Gl.g26 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_1a.png");
 }
 
-.Gl.g27
-{
-	background-image: url("s2r://materials/quake/menu/font_1b_png.vtex");
+.Gl.g27 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_1b.png");
 }
 
-.Gl.g28
-{
-	background-image: url("s2r://materials/quake/menu/font_1c_png.vtex");
+.Gl.g28 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_1c.png");
 }
 
-.Gl.g29
-{
-	background-image: url("s2r://materials/quake/menu/font_1d_png.vtex");
+.Gl.g29 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_1d.png");
 }
 
-.Gl.g30
-{
-	background-image: url("s2r://materials/quake/menu/font_1e_png.vtex");
+.Gl.g30 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_1e.png");
 }
 
-.Gl.g31
-{
-	background-image: url("s2r://materials/quake/menu/font_1f_png.vtex");
+.Gl.g31 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_1f.png");
 }
 
-.Gl.g32
-{
-	background-image: url("s2r://materials/quake/menu/font_20_png.vtex");
+.Gl.g32 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_20.png");
 }
 
-.Gl.g33
-{
-	background-image: url("s2r://materials/quake/menu/font_21_png.vtex");
+.Gl.g33 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_21.png");
 }
 
-.Gl.g34
-{
-	background-image: url("s2r://materials/quake/menu/font_22_png.vtex");
+.Gl.g34 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_22.png");
 }
 
-.Gl.g35
-{
-	background-image: url("s2r://materials/quake/menu/font_23_png.vtex");
+.Gl.g35 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_23.png");
 }
 
-.Gl.g36
-{
-	background-image: url("s2r://materials/quake/menu/font_24_png.vtex");
+.Gl.g36 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_24.png");
 }
 
-.Gl.g37
-{
-	background-image: url("s2r://materials/quake/menu/font_25_png.vtex");
+.Gl.g37 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_25.png");
 }
 
-.Gl.g38
-{
-	background-image: url("s2r://materials/quake/menu/font_26_png.vtex");
+.Gl.g38 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_26.png");
 }
 
-.Gl.g39
-{
-	background-image: url("s2r://materials/quake/menu/font_27_png.vtex");
+.Gl.g39 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_27.png");
 }
 
-.Gl.g40
-{
-	background-image: url("s2r://materials/quake/menu/font_28_png.vtex");
+.Gl.g40 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_28.png");
 }
 
-.Gl.g41
-{
-	background-image: url("s2r://materials/quake/menu/font_29_png.vtex");
+.Gl.g41 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_29.png");
 }
 
-.Gl.g42
-{
-	background-image: url("s2r://materials/quake/menu/font_2a_png.vtex");
+.Gl.g42 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_2a.png");
 }
 
-.Gl.g43
-{
-	background-image: url("s2r://materials/quake/menu/font_2b_png.vtex");
+.Gl.g43 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_2b.png");
 }
 
-.Gl.g44
-{
-	background-image: url("s2r://materials/quake/menu/font_2c_png.vtex");
+.Gl.g44 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_2c.png");
 }
 
-.Gl.g45
-{
-	background-image: url("s2r://materials/quake/menu/font_2d_png.vtex");
+.Gl.g45 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_2d.png");
 }
 
-.Gl.g46
-{
-	background-image: url("s2r://materials/quake/menu/font_2e_png.vtex");
+.Gl.g46 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_2e.png");
 }
 
-.Gl.g47
-{
-	background-image: url("s2r://materials/quake/menu/font_2f_png.vtex");
+.Gl.g47 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_2f.png");
 }
 
-.Gl.g48
-{
-	background-image: url("s2r://materials/quake/menu/font_30_png.vtex");
+.Gl.g48 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_30.png");
 }
 
-.Gl.g49
-{
-	background-image: url("s2r://materials/quake/menu/font_31_png.vtex");
+.Gl.g49 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_31.png");
 }
 
-.Gl.g50
-{
-	background-image: url("s2r://materials/quake/menu/font_32_png.vtex");
+.Gl.g50 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_32.png");
 }
 
-.Gl.g51
-{
-	background-image: url("s2r://materials/quake/menu/font_33_png.vtex");
+.Gl.g51 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_33.png");
 }
 
-.Gl.g52
-{
-	background-image: url("s2r://materials/quake/menu/font_34_png.vtex");
+.Gl.g52 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_34.png");
 }
 
-.Gl.g53
-{
-	background-image: url("s2r://materials/quake/menu/font_35_png.vtex");
+.Gl.g53 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_35.png");
 }
 
-.Gl.g54
-{
-	background-image: url("s2r://materials/quake/menu/font_36_png.vtex");
+.Gl.g54 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_36.png");
 }
 
-.Gl.g55
-{
-	background-image: url("s2r://materials/quake/menu/font_37_png.vtex");
+.Gl.g55 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_37.png");
 }
 
-.Gl.g56
-{
-	background-image: url("s2r://materials/quake/menu/font_38_png.vtex");
+.Gl.g56 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_38.png");
 }
 
-.Gl.g57
-{
-	background-image: url("s2r://materials/quake/menu/font_39_png.vtex");
+.Gl.g57 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_39.png");
 }
 
-.Gl.g58
-{
-	background-image: url("s2r://materials/quake/menu/font_3a_png.vtex");
+.Gl.g58 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_3a.png");
 }
 
-.Gl.g59
-{
-	background-image: url("s2r://materials/quake/menu/font_3b_png.vtex");
+.Gl.g59 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_3b.png");
 }
 
-.Gl.g60
-{
-	background-image: url("s2r://materials/quake/menu/font_3c_png.vtex");
+.Gl.g60 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_3c.png");
 }
 
-.Gl.g61
-{
-	background-image: url("s2r://materials/quake/menu/font_3d_png.vtex");
+.Gl.g61 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_3d.png");
 }
 
-.Gl.g62
-{
-	background-image: url("s2r://materials/quake/menu/font_3e_png.vtex");
+.Gl.g62 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_3e.png");
 }
 
-.Gl.g63
-{
-	background-image: url("s2r://materials/quake/menu/font_3f_png.vtex");
+.Gl.g63 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_3f.png");
 }
 
-.Gl.g64
-{
-	background-image: url("s2r://materials/quake/menu/font_40_png.vtex");
+.Gl.g64 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_40.png");
 }
 
-.Gl.g65
-{
-	background-image: url("s2r://materials/quake/menu/font_41_png.vtex");
+.Gl.g65 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_41.png");
 }
 
-.Gl.g66
-{
-	background-image: url("s2r://materials/quake/menu/font_42_png.vtex");
+.Gl.g66 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_42.png");
 }
 
-.Gl.g67
-{
-	background-image: url("s2r://materials/quake/menu/font_43_png.vtex");
+.Gl.g67 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_43.png");
 }
 
-.Gl.g68
-{
-	background-image: url("s2r://materials/quake/menu/font_44_png.vtex");
+.Gl.g68 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_44.png");
 }
 
-.Gl.g69
-{
-	background-image: url("s2r://materials/quake/menu/font_45_png.vtex");
+.Gl.g69 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_45.png");
 }
 
-.Gl.g70
-{
-	background-image: url("s2r://materials/quake/menu/font_46_png.vtex");
+.Gl.g70 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_46.png");
 }
 
-.Gl.g71
-{
-	background-image: url("s2r://materials/quake/menu/font_47_png.vtex");
+.Gl.g71 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_47.png");
 }
 
-.Gl.g72
-{
-	background-image: url("s2r://materials/quake/menu/font_48_png.vtex");
+.Gl.g72 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_48.png");
 }
 
-.Gl.g73
-{
-	background-image: url("s2r://materials/quake/menu/font_49_png.vtex");
+.Gl.g73 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_49.png");
 }
 
-.Gl.g74
-{
-	background-image: url("s2r://materials/quake/menu/font_4a_png.vtex");
+.Gl.g74 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_4a.png");
 }
 
-.Gl.g75
-{
-	background-image: url("s2r://materials/quake/menu/font_4b_png.vtex");
+.Gl.g75 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_4b.png");
 }
 
-.Gl.g76
-{
-	background-image: url("s2r://materials/quake/menu/font_4c_png.vtex");
+.Gl.g76 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_4c.png");
 }
 
-.Gl.g77
-{
-	background-image: url("s2r://materials/quake/menu/font_4d_png.vtex");
+.Gl.g77 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_4d.png");
 }
 
-.Gl.g78
-{
-	background-image: url("s2r://materials/quake/menu/font_4e_png.vtex");
+.Gl.g78 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_4e.png");
 }
 
-.Gl.g79
-{
-	background-image: url("s2r://materials/quake/menu/font_4f_png.vtex");
+.Gl.g79 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_4f.png");
 }
 
-.Gl.g80
-{
-	background-image: url("s2r://materials/quake/menu/font_50_png.vtex");
+.Gl.g80 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_50.png");
 }
 
-.Gl.g81
-{
-	background-image: url("s2r://materials/quake/menu/font_51_png.vtex");
+.Gl.g81 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_51.png");
 }
 
-.Gl.g82
-{
-	background-image: url("s2r://materials/quake/menu/font_52_png.vtex");
+.Gl.g82 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_52.png");
 }
 
-.Gl.g83
-{
-	background-image: url("s2r://materials/quake/menu/font_53_png.vtex");
+.Gl.g83 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_53.png");
 }
 
-.Gl.g84
-{
-	background-image: url("s2r://materials/quake/menu/font_54_png.vtex");
+.Gl.g84 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_54.png");
 }
 
-.Gl.g85
-{
-	background-image: url("s2r://materials/quake/menu/font_55_png.vtex");
+.Gl.g85 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_55.png");
 }
 
-.Gl.g86
-{
-	background-image: url("s2r://materials/quake/menu/font_56_png.vtex");
+.Gl.g86 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_56.png");
 }
 
-.Gl.g87
-{
-	background-image: url("s2r://materials/quake/menu/font_57_png.vtex");
+.Gl.g87 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_57.png");
 }
 
-.Gl.g88
-{
-	background-image: url("s2r://materials/quake/menu/font_58_png.vtex");
+.Gl.g88 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_58.png");
 }
 
-.Gl.g89
-{
-	background-image: url("s2r://materials/quake/menu/font_59_png.vtex");
+.Gl.g89 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_59.png");
 }
 
-.Gl.g90
-{
-	background-image: url("s2r://materials/quake/menu/font_5a_png.vtex");
+.Gl.g90 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_5a.png");
 }
 
-.Gl.g91
-{
-	background-image: url("s2r://materials/quake/menu/font_5b_png.vtex");
+.Gl.g91 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_5b.png");
 }
 
-.Gl.g92
-{
-	background-image: url("s2r://materials/quake/menu/font_5c_png.vtex");
+.Gl.g92 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_5c.png");
 }
 
-.Gl.g93
-{
-	background-image: url("s2r://materials/quake/menu/font_5d_png.vtex");
+.Gl.g93 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_5d.png");
 }
 
-.Gl.g94
-{
-	background-image: url("s2r://materials/quake/menu/font_5e_png.vtex");
+.Gl.g94 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_5e.png");
 }
 
-.Gl.g95
-{
-	background-image: url("s2r://materials/quake/menu/font_5f_png.vtex");
+.Gl.g95 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_5f.png");
 }
 
-.Gl.g96
-{
-	background-image: url("s2r://materials/quake/menu/font_60_png.vtex");
+.Gl.g96 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_60.png");
 }
 
-.Gl.g97
-{
-	background-image: url("s2r://materials/quake/menu/font_61_png.vtex");
+.Gl.g97 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_61.png");
 }
 
-.Gl.g98
-{
-	background-image: url("s2r://materials/quake/menu/font_62_png.vtex");
+.Gl.g98 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_62.png");
 }
 
-.Gl.g99
-{
-	background-image: url("s2r://materials/quake/menu/font_63_png.vtex");
+.Gl.g99 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_63.png");
 }
 
-.Gl.g100
-{
-	background-image: url("s2r://materials/quake/menu/font_64_png.vtex");
+.Gl.g100 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_64.png");
 }
 
-.Gl.g101
-{
-	background-image: url("s2r://materials/quake/menu/font_65_png.vtex");
+.Gl.g101 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_65.png");
 }
 
-.Gl.g102
-{
-	background-image: url("s2r://materials/quake/menu/font_66_png.vtex");
+.Gl.g102 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_66.png");
 }
 
-.Gl.g103
-{
-	background-image: url("s2r://materials/quake/menu/font_67_png.vtex");
+.Gl.g103 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_67.png");
 }
 
-.Gl.g104
-{
-	background-image: url("s2r://materials/quake/menu/font_68_png.vtex");
+.Gl.g104 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_68.png");
 }
 
-.Gl.g105
-{
-	background-image: url("s2r://materials/quake/menu/font_69_png.vtex");
+.Gl.g105 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_69.png");
 }
 
-.Gl.g106
-{
-	background-image: url("s2r://materials/quake/menu/font_6a_png.vtex");
+.Gl.g106 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_6a.png");
 }
 
-.Gl.g107
-{
-	background-image: url("s2r://materials/quake/menu/font_6b_png.vtex");
+.Gl.g107 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_6b.png");
 }
 
-.Gl.g108
-{
-	background-image: url("s2r://materials/quake/menu/font_6c_png.vtex");
+.Gl.g108 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_6c.png");
 }
 
-.Gl.g109
-{
-	background-image: url("s2r://materials/quake/menu/font_6d_png.vtex");
+.Gl.g109 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_6d.png");
 }
 
-.Gl.g110
-{
-	background-image: url("s2r://materials/quake/menu/font_6e_png.vtex");
+.Gl.g110 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_6e.png");
 }
 
-.Gl.g111
-{
-	background-image: url("s2r://materials/quake/menu/font_6f_png.vtex");
+.Gl.g111 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_6f.png");
 }
 
-.Gl.g112
-{
-	background-image: url("s2r://materials/quake/menu/font_70_png.vtex");
+.Gl.g112 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_70.png");
 }
 
-.Gl.g113
-{
-	background-image: url("s2r://materials/quake/menu/font_71_png.vtex");
+.Gl.g113 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_71.png");
 }
 
-.Gl.g114
-{
-	background-image: url("s2r://materials/quake/menu/font_72_png.vtex");
+.Gl.g114 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_72.png");
 }
 
-.Gl.g115
-{
-	background-image: url("s2r://materials/quake/menu/font_73_png.vtex");
+.Gl.g115 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_73.png");
 }
 
-.Gl.g116
-{
-	background-image: url("s2r://materials/quake/menu/font_74_png.vtex");
+.Gl.g116 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_74.png");
 }
 
-.Gl.g117
-{
-	background-image: url("s2r://materials/quake/menu/font_75_png.vtex");
+.Gl.g117 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_75.png");
 }
 
-.Gl.g118
-{
-	background-image: url("s2r://materials/quake/menu/font_76_png.vtex");
+.Gl.g118 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_76.png");
 }
 
-.Gl.g119
-{
-	background-image: url("s2r://materials/quake/menu/font_77_png.vtex");
+.Gl.g119 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_77.png");
 }
 
-.Gl.g120
-{
-	background-image: url("s2r://materials/quake/menu/font_78_png.vtex");
+.Gl.g120 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_78.png");
 }
 
-.Gl.g121
-{
-	background-image: url("s2r://materials/quake/menu/font_79_png.vtex");
+.Gl.g121 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_79.png");
 }
 
-.Gl.g122
-{
-	background-image: url("s2r://materials/quake/menu/font_7a_png.vtex");
+.Gl.g122 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_7a.png");
 }
 
-.Gl.g123
-{
-	background-image: url("s2r://materials/quake/menu/font_7b_png.vtex");
+.Gl.g123 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_7b.png");
 }
 
-.Gl.g124
-{
-	background-image: url("s2r://materials/quake/menu/font_7c_png.vtex");
+.Gl.g124 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_7c.png");
 }
 
-.Gl.g125
-{
-	background-image: url("s2r://materials/quake/menu/font_7d_png.vtex");
+.Gl.g125 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_7d.png");
 }
 
-.Gl.g126
-{
-	background-image: url("s2r://materials/quake/menu/font_7e_png.vtex");
+.Gl.g126 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_7e.png");
 }
 
-.Gl.g127
-{
-	background-image: url("s2r://materials/quake/menu/font_7f_png.vtex");
+.Gl.g127 {
+	background-image: url("file://{resources}/../materials/quake/menu/font_7f.png");
 }
-

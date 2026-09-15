@@ -1,229 +1,148 @@
-/* Prettified by Source 2 Viewer 19.2.0.0 - https://valveresourceformat.github.io */
-
-.Root
-{
+.Root {
 	width: 100%;
 	height: 100%;
 }
 
-.QHud
-{
+.QHud {
 	width: 100%;
 	height: 100%;
 	transition-property: opacity;
-	transition-duration: .1s;
+	transition-duration: 0.1s;
 }
 
-.QHud.QHidden
-{
+.QHud.QHidden {
 	opacity: 0;
 }
 
-.QHud Panel
-{
+.QHud Panel {
 	texture-sampling: point;
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 }
 
-.QStyle
-{
+.QStyle {
 	width: 100%;
 	height: 100%;
 }
 
-.QCluster
-{
-	width: 320px;
+.QCluster {
+	width: 96px;
 	height: 48px;
-	horizontal-align: center;
+	horizontal-align: left;
 	vertical-align: bottom;
+	margin-left: 4px;
 	margin-bottom: 4px;
 	ui-scale: 300%;
 }
 
-.QDig
-{
+.QDig {
 	width: 24px;
 	height: 24px;
-	saturation: 1.2;
-	brightness: 1.6;
 }
 
-.QSm
-{
+.QSm {
 	width: 8px;
 	height: 8px;
 }
 
-.QFace
-{
+.QFace {
 	width: 24px;
 	height: 24px;
 }
 
-.QIcon
-{
+.QIcon {
 	width: 24px;
 	height: 24px;
 }
 
-.QWpn
-{
+.QWpn {
 	width: 24px;
 	height: 16px;
 	vertical-align: bottom;
 }
 
-.QWKey
-{
+.QWKey {
 	position: 1px 8px 0px;
 	ui-scale: 72%;
-	saturation: 0.0;
+	saturation: 0;
 	brightness: 1.35;
 }
 
-.QItem
-{
+.QItem {
 	width: 16px;
 	height: 16px;
 	visibility: collapse;
 }
 
-.QSig
-{
+.QSig {
 	width: 8px;
 	height: 16px;
 	visibility: collapse;
 }
 
-.QItem.q_show,.QSig.q_show
-{
+.QItem.q_show,
+.QSig.q_show {
 	visibility: visible;
 }
 
-#q_armor_icon
-{
+#q_armor_icon {
+	position: 0px 0px 0px;
+}
+
+#q_armor_d0 {
+	position: 24px 0px 0px;
+}
+
+#q_armor_d1 {
+	position: 48px 0px 0px;
+}
+
+#q_armor_d2 {
+	position: 72px 0px 0px;
+}
+
+#q_face {
 	position: 0px 24px 0px;
 }
 
-#q_armor_d0
-{
+#q_hp_d0 {
 	position: 24px 24px 0px;
 }
 
-#q_armor_d1
-{
+#q_hp_d1 {
 	position: 48px 24px 0px;
 }
 
-#q_armor_d2
-{
+#q_hp_d2 {
 	position: 72px 24px 0px;
 }
 
-#q_face
-{
-	position: 112px 24px 0px;
-}
-
-#q_hp_d0
-{
-	position: 136px 24px 0px;
-}
-
-#q_hp_d1
-{
-	position: 160px 24px 0px;
-}
-
-#q_hp_d2
-{
-	position: 184px 24px 0px;
-}
-
-#q_ammo_icon
-{
-	position: 224px 24px 0px;
-}
-
-#q_ammo_d0
-{
-	position: 248px 24px 0px;
-}
-
-#q_ammo_d1
-{
-	position: 272px 24px 0px;
-}
-
-#q_ammo_d2
-{
-	position: 296px 24px 0px;
-}
-
-#q_key0
-{
-	position: 192px 8px 0px;
-}
-
-#q_key1
-{
-	position: 208px 8px 0px;
-}
-
-#q_pow0
-{
-	position: 224px 8px 0px;
-}
-
-#q_pow1
-{
-	position: 240px 8px 0px;
-}
-
-#q_pow2
-{
-	position: 256px 8px 0px;
-}
-
-#q_pow3
-{
-	position: 272px 8px 0px;
-}
-
-.QWRow
-{
+.QWRow {
 	flow-children: right;
 }
 
-.QWRowV
-{
+.QWRowV {
 	flow-children: down;
 }
 
-.QWSlot
-{
+.QWSlot {
 	visibility: collapse;
 	opacity: 0.25;
 	transition-property: opacity;
-	transition-duration: .1s;
+	transition-duration: 0.1s;
 }
 
-.QWSlot.q_own
-{
+.QWSlot.q_own {
 	visibility: visible;
 }
 
-.QWSlot.q_sel
-{
-	opacity: 1.0;
+.QWSlot.q_sel {
+	opacity: 1;
 }
 
-.QwInv
-{
+.QwInv {
 	width: 48px;
-	height: 200px;
+	height: 256px;
 	horizontal-align: right;
 	vertical-align: bottom;
 	margin-bottom: 4px;
@@ -231,503 +150,480 @@
 	overflow: noclip;
 }
 
-#q_wrow
-{
-	position: 24px 19px 0px;
+#q_wrow {
+	position: 24px 75px 0px;
 }
 
-.QwAmBg
-{
+#q_key0 {
+	position: -48px 190px 0px;
+}
+
+#q_key1 {
+	position: -32px 190px 0px;
+}
+
+#q_pow0 {
+	position: -16px 190px 0px;
+}
+
+#q_pow1 {
+	position: 0px 190px 0px;
+}
+
+#q_pow2 {
+	position: 16px 190px 0px;
+}
+
+#q_pow3 {
+	position: 32px 190px 0px;
+}
+
+.QAmmoBox {
+	width: 96px;
+	height: 24px;
+	position: -48px 232px 0px;
+}
+
+#q_ammo_d0 {
+	position: 0px 0px 0px;
+}
+
+#q_ammo_d1 {
+	position: 24px 0px 0px;
+}
+
+#q_ammo_d2 {
+	position: 48px 0px 0px;
+}
+
+#q_ammo_icon {
+	position: 72px 0px 0px;
+}
+
+.QwSigBg {
+	width: 32px;
+	height: 16px;
+	background-image: url("file://{resources}/../materials/quake/hud/qw_sigbg.png");
+	visibility: collapse;
+}
+
+.QwSigBg.q_show {
+	visibility: visible;
+}
+
+#qw_sigbg {
+	position: 16px 212px 0px;
+}
+
+#q_sig0 {
+	position: 16px 212px 0px;
+}
+
+#q_sig1 {
+	position: 24px 212px 0px;
+}
+
+#q_sig2 {
+	position: 32px 212px 0px;
+}
+
+#q_sig3 {
+	position: 40px 212px 0px;
+}
+
+.QAmmoRow {
+	width: 192px;
+	height: 10px;
+	horizontal-align: center;
+	vertical-align: bottom;
+	margin-bottom: 4px;
+	ui-scale: 300%;
+	background-image: url("file://{resources}/../materials/quake/hud/ibar_ammo.png");
+	background-size: 100% 100%;
+	texture-sampling: point;
+}
+
+.QAmmoDigits {
+	width: 192px;
+	height: 15px;
+	horizontal-align: center;
+	vertical-align: bottom;
+	margin-bottom: -8px;
+	ui-scale: 300%;
+	saturation: 0;
+	brightness: 1.35;
+}
+
+.QAmIcon {
 	width: 11px;
 	height: 11px;
 	background-size: 100% 100%;
 	texture-sampling: point;
 }
 
-#qw_ambg0
-{
-	position: 38px 131px 0px;
-	background-image: url("s2r://materials/quake/hud/sb_shells_png.vtex");
+.QAmmoRow .QSm {
+	saturation: 0;
+	brightness: 1.35;
 }
 
-#qw_ambg1
-{
-	position: 38px 142px 0px;
-	background-image: url("s2r://materials/quake/hud/sb_nails_png.vtex");
+#qw_ambg0 {
+	position: 35px 0px 0px;
+	background-image: url("file://{resources}/../materials/quake/hud/sb_shells.png");
 }
 
-#qw_ambg2
-{
-	position: 38px 153px 0px;
-	background-image: url("s2r://materials/quake/hud/sb_rocket_png.vtex");
+#qw_ambg1 {
+	position: 83px 0px 0px;
+	background-image: url("file://{resources}/../materials/quake/hud/sb_nails.png");
 }
 
-#qw_ambg3
-{
-	position: 38px 164px 0px;
-	background-image: url("s2r://materials/quake/hud/sb_cells_png.vtex");
+#qw_ambg2 {
+	position: 131px 0px 0px;
+	background-image: url("file://{resources}/../materials/quake/hud/sb_rocket.png");
 }
 
-#q_sm00
-{
-	position: 13px 131px 0px;
+#qw_ambg3 {
+	position: 179px 0px 0px;
+	background-image: url("file://{resources}/../materials/quake/hud/sb_cells.png");
 }
 
-#q_sm01
-{
-	position: 21px 131px 0px;
+#q_sm00 {
+	position: 8px 1px 0px;
 }
 
-#q_sm02
-{
-	position: 29px 131px 0px;
+#q_sm01 {
+	position: 16px 1px 0px;
 }
 
-#q_sm10
-{
-	position: 13px 142px 0px;
+#q_sm02 {
+	position: 24px 1px 0px;
 }
 
-#q_sm11
-{
-	position: 21px 142px 0px;
+#q_sm10 {
+	position: 56px 1px 0px;
 }
 
-#q_sm12
-{
-	position: 29px 142px 0px;
+#q_sm11 {
+	position: 64px 1px 0px;
 }
 
-#q_sm20
-{
-	position: 13px 153px 0px;
+#q_sm12 {
+	position: 72px 1px 0px;
 }
 
-#q_sm21
-{
-	position: 21px 153px 0px;
+#q_sm20 {
+	position: 104px 1px 0px;
 }
 
-#q_sm22
-{
-	position: 29px 153px 0px;
+#q_sm21 {
+	position: 112px 1px 0px;
 }
 
-#q_sm30
-{
-	position: 13px 164px 0px;
+#q_sm22 {
+	position: 120px 1px 0px;
 }
 
-#q_sm31
-{
-	position: 21px 164px 0px;
+#q_sm30 {
+	position: 152px 1px 0px;
 }
 
-#q_sm32
-{
-	position: 29px 164px 0px;
+#q_sm31 {
+	position: 160px 1px 0px;
 }
 
-.QwSigBg
-{
-	width: 32px;
-	height: 16px;
-	background-image: url("s2r://materials/quake/hud/qw_sigbg_png.vtex");
-	visibility: collapse;
+#q_sm32 {
+	position: 168px 1px 0px;
 }
 
-.QwSigBg.q_show
-{
-	visibility: visible;
+.QDig.q_d0 {
+	background-image: url("file://{resources}/../materials/quake/hud/num_0.png");
 }
 
-#qw_sigbg
-{
-	position: 16px 184px 0px;
+.QDig.q_d1 {
+	background-image: url("file://{resources}/../materials/quake/hud/num_1.png");
 }
 
-#q_sig0
-{
-	position: 16px 184px 0px;
+.QDig.q_d2 {
+	background-image: url("file://{resources}/../materials/quake/hud/num_2.png");
 }
 
-#q_sig1
-{
-	position: 24px 184px 0px;
+.QDig.q_d3 {
+	background-image: url("file://{resources}/../materials/quake/hud/num_3.png");
 }
 
-#q_sig2
-{
-	position: 32px 184px 0px;
+.QDig.q_d4 {
+	background-image: url("file://{resources}/../materials/quake/hud/num_4.png");
 }
 
-#q_sig3
-{
-	position: 40px 184px 0px;
+.QDig.q_d5 {
+	background-image: url("file://{resources}/../materials/quake/hud/num_5.png");
 }
 
-.QDig.q_d0
-{
-	background-image: url("s2r://materials/quake/hud/num_0_png.vtex");
+.QDig.q_d6 {
+	background-image: url("file://{resources}/../materials/quake/hud/num_6.png");
 }
 
-.QDig.q_d1
-{
-	background-image: url("s2r://materials/quake/hud/num_1_png.vtex");
+.QDig.q_d7 {
+	background-image: url("file://{resources}/../materials/quake/hud/num_7.png");
 }
 
-.QDig.q_d2
-{
-	background-image: url("s2r://materials/quake/hud/num_2_png.vtex");
+.QDig.q_d8 {
+	background-image: url("file://{resources}/../materials/quake/hud/num_8.png");
 }
 
-.QDig.q_d3
-{
-	background-image: url("s2r://materials/quake/hud/num_3_png.vtex");
+.QDig.q_d9 {
+	background-image: url("file://{resources}/../materials/quake/hud/num_9.png");
 }
 
-.QDig.q_d4
-{
-	background-image: url("s2r://materials/quake/hud/num_4_png.vtex");
+.QDig.q_dm {
+	background-image: url("file://{resources}/../materials/quake/hud/num_minus.png");
 }
 
-.QDig.q_d5
-{
-	background-image: url("s2r://materials/quake/hud/num_5_png.vtex");
+.QDig.q_alt.q_d0 {
+	background-image: url("file://{resources}/../materials/quake/hud/anum_0.png");
 }
 
-.QDig.q_d6
-{
-	background-image: url("s2r://materials/quake/hud/num_6_png.vtex");
+.QDig.q_alt.q_d1 {
+	background-image: url("file://{resources}/../materials/quake/hud/anum_1.png");
 }
 
-.QDig.q_d7
-{
-	background-image: url("s2r://materials/quake/hud/num_7_png.vtex");
+.QDig.q_alt.q_d2 {
+	background-image: url("file://{resources}/../materials/quake/hud/anum_2.png");
 }
 
-.QDig.q_d8
-{
-	background-image: url("s2r://materials/quake/hud/num_8_png.vtex");
+.QDig.q_alt.q_d3 {
+	background-image: url("file://{resources}/../materials/quake/hud/anum_3.png");
 }
 
-.QDig.q_d9
-{
-	background-image: url("s2r://materials/quake/hud/num_9_png.vtex");
+.QDig.q_alt.q_d4 {
+	background-image: url("file://{resources}/../materials/quake/hud/anum_4.png");
 }
 
-.QDig.q_dm
-{
-	background-image: url("s2r://materials/quake/hud/num_minus_png.vtex");
+.QDig.q_alt.q_d5 {
+	background-image: url("file://{resources}/../materials/quake/hud/anum_5.png");
 }
 
-.QDig.q_alt.q_d0
-{
-	background-image: url("s2r://materials/quake/hud/anum_0_png.vtex");
+.QDig.q_alt.q_d6 {
+	background-image: url("file://{resources}/../materials/quake/hud/anum_6.png");
 }
 
-.QDig.q_alt.q_d1
-{
-	background-image: url("s2r://materials/quake/hud/anum_1_png.vtex");
+.QDig.q_alt.q_d7 {
+	background-image: url("file://{resources}/../materials/quake/hud/anum_7.png");
 }
 
-.QDig.q_alt.q_d2
-{
-	background-image: url("s2r://materials/quake/hud/anum_2_png.vtex");
+.QDig.q_alt.q_d8 {
+	background-image: url("file://{resources}/../materials/quake/hud/anum_8.png");
 }
 
-.QDig.q_alt.q_d3
-{
-	background-image: url("s2r://materials/quake/hud/anum_3_png.vtex");
+.QDig.q_alt.q_d9 {
+	background-image: url("file://{resources}/../materials/quake/hud/anum_9.png");
 }
 
-.QDig.q_alt.q_d4
-{
-	background-image: url("s2r://materials/quake/hud/anum_4_png.vtex");
+.QDig.q_alt.q_dm {
+	background-image: url("file://{resources}/../materials/quake/hud/anum_minus.png");
 }
 
-.QDig.q_alt.q_d5
-{
-	background-image: url("s2r://materials/quake/hud/anum_5_png.vtex");
+.QSm.q_s0 {
+	background-image: url("file://{resources}/../materials/quake/hud/sm_0.png");
 }
 
-.QDig.q_alt.q_d6
-{
-	background-image: url("s2r://materials/quake/hud/anum_6_png.vtex");
+.QSm.q_s1 {
+	background-image: url("file://{resources}/../materials/quake/hud/sm_1.png");
 }
 
-.QDig.q_alt.q_d7
-{
-	background-image: url("s2r://materials/quake/hud/anum_7_png.vtex");
+.QSm.q_s2 {
+	background-image: url("file://{resources}/../materials/quake/hud/sm_2.png");
 }
 
-.QDig.q_alt.q_d8
-{
-	background-image: url("s2r://materials/quake/hud/anum_8_png.vtex");
+.QSm.q_s3 {
+	background-image: url("file://{resources}/../materials/quake/hud/sm_3.png");
 }
 
-.QDig.q_alt.q_d9
-{
-	background-image: url("s2r://materials/quake/hud/anum_9_png.vtex");
+.QSm.q_s4 {
+	background-image: url("file://{resources}/../materials/quake/hud/sm_4.png");
 }
 
-.QDig.q_alt.q_dm
-{
-	background-image: url("s2r://materials/quake/hud/anum_minus_png.vtex");
+.QSm.q_s5 {
+	background-image: url("file://{resources}/../materials/quake/hud/sm_5.png");
 }
 
-.QSm.q_s0
-{
-	background-image: url("s2r://materials/quake/hud/sm_0_png.vtex");
+.QSm.q_s6 {
+	background-image: url("file://{resources}/../materials/quake/hud/sm_6.png");
 }
 
-.QSm.q_s1
-{
-	background-image: url("s2r://materials/quake/hud/sm_1_png.vtex");
+.QSm.q_s7 {
+	background-image: url("file://{resources}/../materials/quake/hud/sm_7.png");
 }
 
-.QSm.q_s2
-{
-	background-image: url("s2r://materials/quake/hud/sm_2_png.vtex");
+.QSm.q_s8 {
+	background-image: url("file://{resources}/../materials/quake/hud/sm_8.png");
 }
 
-.QSm.q_s3
-{
-	background-image: url("s2r://materials/quake/hud/sm_3_png.vtex");
+.QSm.q_s9 {
+	background-image: url("file://{resources}/../materials/quake/hud/sm_9.png");
 }
 
-.QSm.q_s4
-{
-	background-image: url("s2r://materials/quake/hud/sm_4_png.vtex");
+.QFace.q_ff0 {
+	background-image: url("file://{resources}/../materials/quake/hud/face_1.png");
 }
 
-.QSm.q_s5
-{
-	background-image: url("s2r://materials/quake/hud/sm_5_png.vtex");
+.QFace.q_ff1 {
+	background-image: url("file://{resources}/../materials/quake/hud/face_2.png");
 }
 
-.QSm.q_s6
-{
-	background-image: url("s2r://materials/quake/hud/sm_6_png.vtex");
+.QFace.q_ff2 {
+	background-image: url("file://{resources}/../materials/quake/hud/face_3.png");
 }
 
-.QSm.q_s7
-{
-	background-image: url("s2r://materials/quake/hud/sm_7_png.vtex");
+.QFace.q_ff3 {
+	background-image: url("file://{resources}/../materials/quake/hud/face_4.png");
 }
 
-.QSm.q_s8
-{
-	background-image: url("s2r://materials/quake/hud/sm_8_png.vtex");
+.QFace.q_ff4 {
+	background-image: url("file://{resources}/../materials/quake/hud/face_5.png");
 }
 
-.QSm.q_s9
-{
-	background-image: url("s2r://materials/quake/hud/sm_9_png.vtex");
+.QFace.q_fp0 {
+	background-image: url("file://{resources}/../materials/quake/hud/face_p1.png");
 }
 
-.QFace.q_ff4
-{
-	background-image: url("s2r://materials/quake/hud/face_1_png.vtex");
+.QFace.q_fp1 {
+	background-image: url("file://{resources}/../materials/quake/hud/face_p2.png");
 }
 
-.QFace.q_ff3
-{
-	background-image: url("s2r://materials/quake/hud/face_2_png.vtex");
+.QFace.q_fp2 {
+	background-image: url("file://{resources}/../materials/quake/hud/face_p3.png");
 }
 
-.QFace.q_ff2
-{
-	background-image: url("s2r://materials/quake/hud/face_3_png.vtex");
+.QFace.q_fp3 {
+	background-image: url("file://{resources}/../materials/quake/hud/face_p4.png");
 }
 
-.QFace.q_ff1
-{
-	background-image: url("s2r://materials/quake/hud/face_4_png.vtex");
+.QFace.q_fp4 {
+	background-image: url("file://{resources}/../materials/quake/hud/face_p5.png");
 }
 
-.QFace.q_ff0
-{
-	background-image: url("s2r://materials/quake/hud/face_5_png.vtex");
+.QFace.q_fquad {
+	background-image: url("file://{resources}/../materials/quake/hud/face_quad.png");
 }
 
-.QFace.q_fp4
-{
-	background-image: url("s2r://materials/quake/hud/face_p1_png.vtex");
+.QFace.q_finvis {
+	background-image: url("file://{resources}/../materials/quake/hud/face_invis.png");
 }
 
-.QFace.q_fp3
-{
-	background-image: url("s2r://materials/quake/hud/face_p2_png.vtex");
+.QFace.q_finvuln {
+	background-image: url("file://{resources}/../materials/quake/hud/face_invuln.png");
 }
 
-.QFace.q_fp2
-{
-	background-image: url("s2r://materials/quake/hud/face_p3_png.vtex");
+.QFace.q_finvisinvuln {
+	background-image: url("file://{resources}/../materials/quake/hud/face_invisinvuln.png");
 }
 
-.QFace.q_fp1
-{
-	background-image: url("s2r://materials/quake/hud/face_p4_png.vtex");
+.QArmorIcon.q_ar1 {
+	background-image: url("file://{resources}/../materials/quake/hud/sb_armor1.png");
 }
 
-.QFace.q_fp0
-{
-	background-image: url("s2r://materials/quake/hud/face_p5_png.vtex");
+.QArmorIcon.q_ar2 {
+	background-image: url("file://{resources}/../materials/quake/hud/sb_armor2.png");
 }
 
-.QFace.q_fquad
-{
-	background-image: url("s2r://materials/quake/hud/face_quad_png.vtex");
+.QArmorIcon.q_ar3 {
+	background-image: url("file://{resources}/../materials/quake/hud/sb_armor3.png");
 }
 
-.QFace.q_finvis
-{
-	background-image: url("s2r://materials/quake/hud/face_invis_png.vtex");
+.QAmmoIcon.q_a_shells {
+	background-image: url("file://{resources}/../materials/quake/hud/sb_shells.png");
 }
 
-.QFace.q_finvuln
-{
-	background-image: url("s2r://materials/quake/hud/face_invuln_png.vtex");
+.QAmmoIcon.q_a_nails {
+	background-image: url("file://{resources}/../materials/quake/hud/sb_nails.png");
 }
 
-.QFace.q_finvisinvuln
-{
-	background-image: url("s2r://materials/quake/hud/face_invisinvuln_png.vtex");
+.QAmmoIcon.q_a_rocket {
+	background-image: url("file://{resources}/../materials/quake/hud/sb_rocket.png");
 }
 
-.QArmorIcon.q_ar1
-{
-	background-image: url("s2r://materials/quake/hud/sb_armor1_png.vtex");
+.QAmmoIcon.q_a_cells {
+	background-image: url("file://{resources}/../materials/quake/hud/sb_cells.png");
 }
 
-.QArmorIcon.q_ar2
-{
-	background-image: url("s2r://materials/quake/hud/sb_armor2_png.vtex");
+#q_wpn0 {
+	background-image: url("file://{resources}/../materials/quake/hud/ww_shotgun_off.png");
 }
 
-.QArmorIcon.q_ar3
-{
-	background-image: url("s2r://materials/quake/hud/sb_armor3_png.vtex");
+#q_wpn1 {
+	background-image: url("file://{resources}/../materials/quake/hud/ww_ssg_off.png");
 }
 
-.QAmmoIcon.q_a_shells
-{
-	background-image: url("s2r://materials/quake/hud/sb_shells_png.vtex");
+#q_wpn2 {
+	background-image: url("file://{resources}/../materials/quake/hud/ww_nailgun_off.png");
 }
 
-.QAmmoIcon.q_a_nails
-{
-	background-image: url("s2r://materials/quake/hud/sb_nails_png.vtex");
+#q_wpn3 {
+	background-image: url("file://{resources}/../materials/quake/hud/ww_snailgun_off.png");
 }
 
-.QAmmoIcon.q_a_rocket
-{
-	background-image: url("s2r://materials/quake/hud/sb_rocket_png.vtex");
+#q_wpn4 {
+	background-image: url("file://{resources}/../materials/quake/hud/ww_glauncher_off.png");
 }
 
-.QAmmoIcon.q_a_cells
-{
-	background-image: url("s2r://materials/quake/hud/sb_cells_png.vtex");
+#q_wpn5 {
+	background-image: url("file://{resources}/../materials/quake/hud/ww_rlauncher_off.png");
 }
 
-#q_wpn0
-{
-	background-image: url("s2r://materials/quake/hud/ww_shotgun_off_png.vtex");
+#q_wpn6 {
+	background-image: url("file://{resources}/../materials/quake/hud/ww_lightning_off.png");
 }
 
-#q_wpn1
-{
-	background-image: url("s2r://materials/quake/hud/ww_ssg_off_png.vtex");
+#q_key0 {
+	background-image: url("file://{resources}/../materials/quake/hud/sb_key1.png");
 }
 
-#q_wpn2
-{
-	background-image: url("s2r://materials/quake/hud/ww_nailgun_off_png.vtex");
+#q_key1 {
+	background-image: url("file://{resources}/../materials/quake/hud/sb_key2.png");
 }
 
-#q_wpn3
-{
-	background-image: url("s2r://materials/quake/hud/ww_snailgun_off_png.vtex");
+#q_pow0 {
+	background-image: url("file://{resources}/../materials/quake/hud/sb_invis.png");
 }
 
-#q_wpn4
-{
-	background-image: url("s2r://materials/quake/hud/ww_glauncher_off_png.vtex");
+#q_pow1 {
+	background-image: url("file://{resources}/../materials/quake/hud/sb_invuln.png");
 }
 
-#q_wpn5
-{
-	background-image: url("s2r://materials/quake/hud/ww_rlauncher_off_png.vtex");
+#q_pow2 {
+	background-image: url("file://{resources}/../materials/quake/hud/sb_suit.png");
 }
 
-#q_wpn6
-{
-	background-image: url("s2r://materials/quake/hud/ww_lightning_off_png.vtex");
+#q_pow3 {
+	background-image: url("file://{resources}/../materials/quake/hud/sb_quad.png");
 }
 
-#q_key0
-{
-	background-image: url("s2r://materials/quake/hud/sb_key1_png.vtex");
+#q_sig0 {
+	background-image: url("file://{resources}/../materials/quake/hud/sb_sigil1.png");
 }
 
-#q_key1
-{
-	background-image: url("s2r://materials/quake/hud/sb_key2_png.vtex");
+#q_sig1 {
+	background-image: url("file://{resources}/../materials/quake/hud/sb_sigil2.png");
 }
 
-#q_pow0
-{
-	background-image: url("s2r://materials/quake/hud/sb_invis_png.vtex");
+#q_sig2 {
+	background-image: url("file://{resources}/../materials/quake/hud/sb_sigil3.png");
 }
 
-#q_pow1
-{
-	background-image: url("s2r://materials/quake/hud/sb_invuln_png.vtex");
+#q_sig3 {
+	background-image: url("file://{resources}/../materials/quake/hud/sb_sigil4.png");
 }
 
-#q_pow2
-{
-	background-image: url("s2r://materials/quake/hud/sb_suit_png.vtex");
-}
-
-#q_pow3
-{
-	background-image: url("s2r://materials/quake/hud/sb_quad_png.vtex");
-}
-
-#q_sig0
-{
-	background-image: url("s2r://materials/quake/hud/sb_sigil1_png.vtex");
-}
-
-#q_sig1
-{
-	background-image: url("s2r://materials/quake/hud/sb_sigil2_png.vtex");
-}
-
-#q_sig2
-{
-	background-image: url("s2r://materials/quake/hud/sb_sigil3_png.vtex");
-}
-
-#q_sig3
-{
-	background-image: url("s2r://materials/quake/hud/sb_sigil4_png.vtex");
-}
-
-.QXhair
-{
+.QXhair {
 	horizontal-align: center;
 	vertical-align: center;
 	ui-scale: 300%;
 	margin-left: -0.25%;
-	saturation: 0.0;
+	saturation: 0;
 	brightness: 1.1;
 }
 
-.QSpeed
-{
+.QSpeed {
 	flow-children: right;
 	width: fit-children;
 	height: fit-children;
@@ -738,77 +634,75 @@
 	margin-left: 0.5%;
 }
 
-.QSpd
-{
+.QSpd {
 	visibility: collapse;
-	saturation: 0.0;
+	saturation: 0;
 	brightness: 1.35;
 }
 
-.QSpd.q_s0,.QSpd.q_s1,.QSpd.q_s2,.QSpd.q_s3,.QSpd.q_s4,.QSpd.q_s5,.QSpd.q_s6,.QSpd.q_s7,.QSpd.q_s8,.QSpd.q_s9
-{
+.QSpd.q_s0,
+.QSpd.q_s1,
+.QSpd.q_s2,
+.QSpd.q_s3,
+.QSpd.q_s4,
+.QSpd.q_s5,
+.QSpd.q_s6,
+.QSpd.q_s7,
+.QSpd.q_s8,
+.QSpd.q_s9 {
 	visibility: visible;
 }
 
-.GlRow
-{
+.GlRow {
 	flow-children: right;
 	horizontal-align: center;
 	height: 8px;
 }
 
-.GlGap
-{
+.GlGap {
 	width: 8px;
 	height: 8px;
 }
 
-.Gl.GlBlank
-{
+.Gl.GlBlank {
 	visibility: collapse;
 }
 
-.QGone
-{
+.QGone {
 	visibility: collapse;
 }
 
-.QPop
-{
+.QPop {
 	width: 100%;
 	height: 100%;
 	opacity: 1;
 	transition-property: opacity, visibility;
-	transition-duration: .18s, 0s;
+	transition-duration: 0.18s, 0s;
 	transition-delay: 0s, 0s;
 }
 
-.QPop.QPopHidden
-{
+.QPop.QPopHidden {
 	opacity: 0;
 	visibility: collapse;
-	transition-delay: 0s, .18s;
+	transition-delay: 0s, 0.18s;
 }
 
-.QPopCard
-{
+.QPopCard {
 	flow-children: down;
 	horizontal-align: center;
 	vertical-align: center;
 	padding: 18px 30px;
 	background-color: #0a0a0acc;
-	world-blur: mipmapgaussian( 1, 1, 1 );
+	world-blur: mipmapgaussian(1, 1, 1);
 	border: 1px solid #d8a24a80;
 	ui-scale: 260%;
 }
 
-#q_deathpop .QPopCard
-{
+#q_deathpop .QPopCard {
 	margin-top: -120px;
 }
 
-.QNoAmmoCard
-{
+.QNoAmmoCard {
 	flow-children: down;
 	horizontal-align: center;
 	vertical-align: center;
@@ -816,89 +710,187 @@
 	ui-scale: 260%;
 }
 
-#q_noammo:not(.QPopHidden)
-{
+#q_noammo:not(.QPopHidden) {
 	sound: "Quake.misc_talk";
 }
 
-.QCenterCard
-{
+.QCenterCard {
 	flow-children: down;
 	horizontal-align: center;
 	vertical-align: center;
 	margin-top: -90px;
 	ui-scale: 240%;
-	saturation: 0.0;
+	saturation: 0;
 	brightness: 1.35;
 }
 
-.QLoadingFill
-{
+.QAchToast {
+	width: 323px;
+	height: 80px;
+	background-image: url("file://{resources}/../materials/quake/hud/ach_toast_bg.png");
+	background-size: 100% 100%;
+	horizontal-align: right;
+	vertical-align: bottom;
+	margin: 0px;
+	opacity: 1;
+	transform: translate3d(0px, 0px, 0px);
+	transition-property: transform, opacity;
+	transition-duration: 0.4s, 0s;
+	transition-delay: 0s, 0s;
+	transition-timing-function: ease;
+}
+
+.QAchToast.QAchToastHidden {
+	opacity: 0;
+	transform: translate3d(0px, 80px, 0px);
+	transition-delay: 0s, 0.4s;
+}
+
+#q_ach_toast1 {
+	margin-bottom: 80px;
+}
+
+#q_ach_toast2 {
+	margin-bottom: 160px;
+}
+
+#q_ach_toast3 {
+	margin-bottom: 240px;
+}
+
+.QAchToast .QAchIcon {
+	width: 58px;
+	height: 58px;
+	position: 7px 11px 0px;
+}
+
+.QAchToast .QAchHead {
+	position: 75px 27px 0px;
+	color: #9099a0;
+	font-size: 11px;
+	letter-spacing: 1px;
+}
+
+.QAchToast .QAchName {
+	position: 75px 40px 0px;
+	width: 230px;
+	color: #ffffff;
+	font-size: 13px;
+	font-weight: bold;
+	white-space: normal;
+}
+
+.QAchIcon {
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.QAchIcon.q_ach_find_secret {
+	background-image: url("file://{resources}/../materials/quake/hud/ach_find_secret.png");
+}
+
+.QAchIcon.q_ach_friendly_fire {
+	background-image: url("file://{resources}/../materials/quake/hud/ach_friendly_fire.png");
+}
+
+.QAchIcon.q_ach_shambler_dance {
+	background-image: url("file://{resources}/../materials/quake/hud/ach_shambler_dance.png");
+}
+
+.QAchIcon.q_ach_complete_e1m7 {
+	background-image: url("file://{resources}/../materials/quake/hud/ach_complete_e1m7.png");
+}
+
+.QAchIcon.q_ach_complete_e2m6 {
+	background-image: url("file://{resources}/../materials/quake/hud/ach_complete_e2m6.png");
+}
+
+.QAchIcon.q_ach_complete_e3m6 {
+	background-image: url("file://{resources}/../materials/quake/hud/ach_complete_e3m6.png");
+}
+
+.QAchIcon.q_ach_complete_e4m7 {
+	background-image: url("file://{resources}/../materials/quake/hud/ach_complete_e4m7.png");
+}
+
+.QAchIcon.q_ach_defeat_shub {
+	background-image: url("file://{resources}/../materials/quake/hud/ach_defeat_shub.png");
+}
+
+.QAchIcon.q_ach_close_shave {
+	background-image: url("file://{resources}/../materials/quake/hud/ach_close_shave.png");
+}
+
+.QAchIcon.q_ach_find_dopefish {
+	background-image: url("file://{resources}/../materials/quake/hud/ach_find_dopefish.png");
+}
+
+.QAchIcon.q_ach_pacifist {
+	background-image: url("file://{resources}/../materials/quake/hud/ach_pacifist.png");
+}
+
+.QAchIcon.q_ach_defeat_shub_nightmare {
+	background-image: url("file://{resources}/../materials/quake/hud/ach_defeat_shub_nightmare.png");
+}
+
+.QAchIcon.q_ach_painless_maze {
+	background-image: url("file://{resources}/../materials/quake/hud/ach_painless_maze.png");
+}
+
+.QLoadingFill {
 	width: 100%;
 	height: 100%;
 	background-color: #000000ff;
 }
 
-.QLoadingCard
-{
+.QLoadingCard {
 	flow-children: down;
 	horizontal-align: center;
 	vertical-align: center;
 	ui-scale: 320%;
 }
 
-.QLoadingImg
-{
+.QLoadingImg {
 	width: 300px;
 	height: 169px;
 	horizontal-align: center;
-	background-image: url("s2r://materials/quake/menu/controls_png.vtex");
+	background-image: url("file://{resources}/../materials/quake/menu/controls.png");
 	background-size: 100% 100%;
 	texture-sampling: point;
 }
 
-.QLoadingText
-{
+.QLoadingText {
 	margin-top: 16px;
 }
 
-.QLoadingStatus
-{
+.QLoadingStatus {
 	margin-top: 7px;
 	opacity: 0.5;
 }
 
-@keyframes 'q-load-dot'
-{
-	0%
-	{
+@keyframes 'q-load-dot' {
+	0% {
 		opacity: 0;
 	}
-	
-	20%
-	{
+
+	20% {
 		opacity: 0;
 	}
-	
-	28%
-	{
+
+	28% {
 		opacity: 1;
 	}
-	
-	92%
-	{
+
+	92% {
 		opacity: 1;
 	}
-	
-	100%
-	{
+
+	100% {
 		opacity: 0;
 	}
-	
 }
 
-.QLd
-{
+.QLd {
 	opacity: 0;
 	animation-name: q-load-dot;
 	animation-duration: 1.2s;
@@ -906,132 +898,140 @@
 	animation-iteration-count: infinite;
 }
 
-.QLd1
-{
+.QLd1 {
 	animation-delay: 0s;
 }
 
-.QLd2
-{
+.QLd2 {
 	animation-delay: 0.2s;
 }
 
-.QLd3
-{
+.QLd3 {
 	animation-delay: 0.4s;
 }
 
-.QPopHint
-{
+.QPopHint {
 	horizontal-align: center;
 	margin-top: 12px;
 }
 
-.QHints
-{
+.QPopBtns {
+	flow-children: right;
+	horizontal-align: center;
+	margin-top: 12px;
+}
+
+.QPopBtn {
+	height: 14px;
+	vertical-align: center;
+	padding: 3px 8px;
+	opacity: 0.7;
+	transition-property: opacity, brightness;
+	transition-duration: 0.08s;
+}
+
+.QPopBtn:hover {
+	opacity: 1;
+	brightness: 1.5;
+	sound: "Quake.misc_menu1";
+}
+
+.QPopBtn:active {
+	sound: "Quake.misc_menu2";
+}
+
+.QHints {
 	flow-children: down;
 	horizontal-align: right;
 	vertical-align: top;
 	margin-top: 12px;
 	margin-right: 12px;
 	ui-scale: 200%;
-	saturation: 0.0;
+	saturation: 0;
 	brightness: 1.1;
 }
 
-.QHintRow
-{
+.QHintRow {
 	flow-children: right;
 	horizontal-align: right;
 	height: 8px;
 	margin-bottom: 5px;
 }
 
-.QStats
-{
+.QStats {
 	flow-children: down;
 	horizontal-align: left;
 	vertical-align: bottom;
 	margin-left: 14px;
 	margin-bottom: 168px;
 	ui-scale: 200%;
-	saturation: 0.0;
+	saturation: 0;
 	brightness: 1.1;
 }
 
-.QStatRow
-{
+.QStatRow {
 	flow-children: right;
 	horizontal-align: left;
 	height: 8px;
 	margin-bottom: 4px;
 }
 
-.QLog
-{
+.QLog {
 	horizontal-align: left;
 	vertical-align: top;
 	margin-top: 10px;
 	margin-left: 12px;
 	flow-children: right;
 	ui-scale: 200%;
-	saturation: 0.0;
+	saturation: 0;
 	brightness: 1.1;
 	opacity: 1;
 	transition-property: opacity;
 	transition-duration: 0.06s;
 }
 
-.QLog.QLogFade
-{
+.QLog.QLogFade {
 	opacity: 0;
 	transition-duration: 1.2s;
 }
 
-.QLog .Gl
-{
+.QLog .Gl {
 	vertical-align: center;
 }
 
-.QInterTitle
-{
+.QInterTitle {
 	width: 192px;
 	height: 24px;
 	horizontal-align: center;
 	margin-bottom: 14px;
-	background-image: url("s2r://materials/quake/menu/complete_png.vtex");
+	background-image: url("file://{resources}/../materials/quake/menu/complete.png");
 	background-size: 100% 100%;
 	texture-sampling: point;
 }
 
-.QInterStats
-{
+.QInterStats {
 	flow-children: down;
 }
 
-.QInterRow
-{
+.QInterRow {
 	width: 200px;
 	height: 8px;
 	margin-bottom: 7px;
 }
 
-.QInterLabel
-{
+.QInterLabel {
 	flow-children: right;
 	height: 8px;
 	horizontal-align: left;
 }
 
-.QInterVal
-{
+.QInterVal {
 	flow-children: right;
 	height: 8px;
 	horizontal-align: right;
 }
 
-.QFinaleCard
-{
+.QFinaleCard {
 	flow-children: down;
 	horizontal-align: center;
 	vertical-align: center;
@@ -1044,65 +1044,56 @@
 	ui-scale: 280%;
 }
 
-.QFinaleSigil
-{
+.QFinaleSigil {
 	width: 16px;
 	height: 24px;
 	horizontal-align: center;
 	margin-bottom: 12px;
-	background-image: url("s2r://materials/quake/menu/menudot1_png.vtex");
+	background-image: url("file://{resources}/../materials/quake/menu/menudot1.png");
 	background-size: 100% 100%;
 	texture-sampling: point;
 }
 
-.QFinaleBody
-{
+.QFinaleBody {
 	flow-children: down;
 	horizontal-align: center;
 }
 
-.QFinaleRowGap
-{
+.QFinaleRowGap {
 	margin-top: 10px;
 }
 
-#q_finale .QPopHint
-{
+#q_finale .QPopHint {
 	margin-top: 16px;
 }
 
-#q_finale .QFinaleCard
-{
+#q_finale .QFinaleCard {
 	ui-scale: 165%;
 	padding: 22px 30px 18px 30px;
 }
 
-.QFinRow
-{
+.QFinRow {
 	horizontal-align: left;
 	margin-bottom: 3px;
 }
 
-.QFinGl
-{
+.QFinGl {
 	opacity: 0;
 	transition-property: opacity;
 	transition-duration: 0.14s;
 	transition-timing-function: ease-out;
 }
 
-.QFinGl.q_on,.QFinGl.q_typed
-{
+.QFinGl.q_on,
+.QFinGl.q_typed {
 	opacity: 1;
 }
 
-.QFinGl.q_typed
-{
+.QFinGl.q_typed {
 	sound: "Quake.misc_menu1";
 }
 
-.QBoss
-{
+.QBoss {
 	flow-children: down;
 	horizontal-align: center;
 	vertical-align: top;
@@ -1113,44 +1104,38 @@
 	transition-timing-function: ease-out;
 }
 
-.QBoss.QBossOn
-{
+.QBoss.QBossOn {
 	opacity: 1;
 }
 
-.QBossName
-{
+.QBossName {
 	flow-children: right;
 	horizontal-align: center;
 	margin-bottom: 6px;
 	wash-color: #e8a0a0;
 }
 
-.QBossTrack
-{
+.QBossTrack {
 	flow-children: right;
 	horizontal-align: center;
 }
 
-#q_bossbar .QbGl
-{
+#q_bossbar .QbGl {
 	width: 15px;
 	height: 20px;
 	wash-color: #ff4a24;
-	opacity: 5.0;
+	opacity: 5;
 	transition-property: wash-color, saturation;
 	transition-duration: 0.18s;
 	transition-timing-function: ease-out;
 }
 
-#q_bossbar .QBossSeg.q_dim
-{
+#q_bossbar .QBossSeg.q_dim {
 	wash-color: #dcdcdc;
 	saturation: 0;
 }
 
-.QWheel
-{
+.QWheel {
 	width: 560px;
 	height: 560px;
 	horizontal-align: center;
@@ -1160,78 +1145,65 @@
 	z-index: 50;
 }
 
-.QWheel.QWheelHidden
-{
+.QWheel.QWheelHidden {
 	visibility: collapse;
 	opacity: 0;
 }
 
-.QWwRing
-{
+.QWwRing {
 	width: 560px;
 	height: 560px;
 	position: 0px 0px 0px;
-	background-image: url("s2r://materials/quake/hud/ww_ring_png.vtex");
+	background-image: url("file://{resources}/../materials/quake/hud/ww_ring.png");
 	background-size: 100% 100%;
 }
 
-.QWwSlot
-{
+.QWwSlot {
 	width: 560px;
 	height: 560px;
 	position: 0px 0px 0px;
 }
 
-.QWwCell
-{
+.QWwCell {
 	width: 170px;
 	height: 130px;
 	background-color: #00000000;
 	overflow: noclip;
 }
 
-.QWwC0
-{
+.QWwC0 {
 	position: 195px 40px 0px;
 }
 
-.QWwC1
-{
+.QWwC1 {
 	position: 319px 91px 0px;
 }
 
-.QWwC2
-{
+.QWwC2 {
 	position: 370px 215px 0px;
 }
 
-.QWwC3
-{
+.QWwC3 {
 	position: 319px 339px 0px;
 }
 
-.QWwC4
-{
+.QWwC4 {
 	position: 195px 390px 0px;
 }
 
-.QWwC5
-{
+.QWwC5 {
 	position: 71px 339px 0px;
 }
 
-.QWwC6
-{
+.QWwC6 {
 	position: 20px 215px 0px;
 }
 
-.QWwC7
-{
+.QWwC7 {
 	position: 71px 91px 0px;
 }
 
-.QWwIcon
-{
+.QWwIcon {
 	width: 108px;
 	height: 72px;
 	horizontal-align: center;
@@ -1240,119 +1212,98 @@
 	background-size: 100% 100%;
 	texture-sampling: point;
 	opacity: 0.42;
-	saturation: 0.0;
+	saturation: 0;
 	transform-origin: 50% 50%;
 	transition-property: transform;
 	transition-duration: 0.08s;
 }
 
-.QWwIcon.QWwHave
-{
-	opacity: 1.0;
-	saturation: 1.0;
+.QWwIcon.QWwHave {
+	opacity: 1;
+	saturation: 1;
 }
 
-.QWwIcon.QWwLow
-{
+.QWwIcon.QWwLow {
 	opacity: 0.62;
 }
 
-.QWwCell:hover .QWwIcon.QWwHave
-{
-	transform: scale3d( 1.5, 1.5, 1 );
+.QWwCell:hover .QWwIcon.QWwHave {
+	transform: scale3d(1.5, 1.5, 1);
 	sound: "Quake.misc_menu3";
 }
 
-#q_ww_i0
-{
-	background-image: url("s2r://materials/quake/hud/ww_axe_off_png.vtex");
+#q_ww_i0 {
+	background-image: url("file://{resources}/../materials/quake/hud/ww_axe_off.png");
 }
 
-#q_ww_i1
-{
-	background-image: url("s2r://materials/quake/hud/ww_shotgun_off_png.vtex");
+#q_ww_i1 {
+	background-image: url("file://{resources}/../materials/quake/hud/ww_shotgun_off.png");
 }
 
-#q_ww_i2
-{
-	background-image: url("s2r://materials/quake/hud/ww_ssg_off_png.vtex");
+#q_ww_i2 {
+	background-image: url("file://{resources}/../materials/quake/hud/ww_ssg_off.png");
 }
 
-#q_ww_i3
-{
-	background-image: url("s2r://materials/quake/hud/ww_nailgun_off_png.vtex");
+#q_ww_i3 {
+	background-image: url("file://{resources}/../materials/quake/hud/ww_nailgun_off.png");
 }
 
-#q_ww_i4
-{
-	background-image: url("s2r://materials/quake/hud/ww_snailgun_off_png.vtex");
+#q_ww_i4 {
+	background-image: url("file://{resources}/../materials/quake/hud/ww_snailgun_off.png");
 }
 
-#q_ww_i5
-{
-	background-image: url("s2r://materials/quake/hud/ww_glauncher_off_png.vtex");
+#q_ww_i5 {
+	background-image: url("file://{resources}/../materials/quake/hud/ww_glauncher_off.png");
 }
 
-#q_ww_i6
-{
-	background-image: url("s2r://materials/quake/hud/ww_rlauncher_off_png.vtex");
+#q_ww_i6 {
+	background-image: url("file://{resources}/../materials/quake/hud/ww_rlauncher_off.png");
 }
 
-#q_ww_i7
-{
-	background-image: url("s2r://materials/quake/hud/ww_lightning_off_png.vtex");
+#q_ww_i7 {
+	background-image: url("file://{resources}/../materials/quake/hud/ww_lightning_off.png");
 }
 
-#q_ww_i0.QWwCur
-{
-	background-image: url("s2r://materials/quake/hud/ww_axe_on_png.vtex");
+#q_ww_i0.QWwCur {
+	background-image: url("file://{resources}/../materials/quake/hud/ww_axe_on.png");
 }
 
-#q_ww_i1.QWwCur
-{
-	background-image: url("s2r://materials/quake/hud/ww_shotgun_on_png.vtex");
+#q_ww_i1.QWwCur {
+	background-image: url("file://{resources}/../materials/quake/hud/ww_shotgun_on.png");
 }
 
-#q_ww_i2.QWwCur
-{
-	background-image: url("s2r://materials/quake/hud/ww_ssg_on_png.vtex");
+#q_ww_i2.QWwCur {
+	background-image: url("file://{resources}/../materials/quake/hud/ww_ssg_on.png");
 }
 
-#q_ww_i3.QWwCur
-{
-	background-image: url("s2r://materials/quake/hud/ww_nailgun_on_png.vtex");
+#q_ww_i3.QWwCur {
+	background-image: url("file://{resources}/../materials/quake/hud/ww_nailgun_on.png");
 }
 
-#q_ww_i4.QWwCur
-{
-	background-image: url("s2r://materials/quake/hud/ww_snailgun_on_png.vtex");
+#q_ww_i4.QWwCur {
+	background-image: url("file://{resources}/../materials/quake/hud/ww_snailgun_on.png");
 }
 
-#q_ww_i5.QWwCur
-{
-	background-image: url("s2r://materials/quake/hud/ww_glauncher_on_png.vtex");
+#q_ww_i5.QWwCur {
+	background-image: url("file://{resources}/../materials/quake/hud/ww_glauncher_on.png");
 }
 
-#q_ww_i6.QWwCur
-{
-	background-image: url("s2r://materials/quake/hud/ww_rlauncher_on_png.vtex");
+#q_ww_i6.QWwCur {
+	background-image: url("file://{resources}/../materials/quake/hud/ww_rlauncher_on.png");
 }
 
-#q_ww_i7.QWwCur
-{
-	background-image: url("s2r://materials/quake/hud/ww_lightning_on_png.vtex");
+#q_ww_i7.QWwCur {
+	background-image: url("file://{resources}/../materials/quake/hud/ww_lightning_on.png");
 }
 
-.QWwBlur
-{
+.QWwBlur {
 	width: 8000px;
 	height: 8000px;
 	position: -3720px -3720px 0px;
 	background-color: #00000080;
 }
 
-.QWwHov
-{
+.QWwHov {
 	width: 360px;
 	height: 110px;
 	position: 100px 232px 0px;
@@ -1360,29 +1311,24 @@
 	visibility: collapse;
 }
 
-.QWwSlot:hover .QWwHov
-{
+.QWwSlot:hover .QWwHov {
 	visibility: visible;
 }
 
-.QWwSlot:hover .QWwHov.QWwOff
-{
+.QWwSlot:hover .QWwHov.QWwOff {
 	visibility: collapse;
 }
 
-.QWwName
-{
+.QWwName {
 	horizontal-align: center;
 	margin-bottom: 10px;
 }
 
-.QWwName .Gl
-{
+.QWwName .Gl {
 	ui-scale: 150%;
 }
 
-.QWwAmmoIcon
-{
+.QWwAmmoIcon {
 	width: 30px;
 	height: 30px;
 	horizontal-align: center;
@@ -1391,34 +1337,27 @@
 	texture-sampling: point;
 }
 
-.QWwAmmoIcon.QWwAi_shells
-{
-	background-image: url("s2r://materials/quake/hud/sb_shells_png.vtex");
+.QWwAmmoIcon.QWwAi_shells {
+	background-image: url("file://{resources}/../materials/quake/hud/sb_shells.png");
 }
 
-.QWwAmmoIcon.QWwAi_nails
-{
-	background-image: url("s2r://materials/quake/hud/sb_nails_png.vtex");
+.QWwAmmoIcon.QWwAi_nails {
+	background-image: url("file://{resources}/../materials/quake/hud/sb_nails.png");
 }
 
-.QWwAmmoIcon.QWwAi_rocket
-{
-	background-image: url("s2r://materials/quake/hud/sb_rocket_png.vtex");
+.QWwAmmoIcon.QWwAi_rocket {
+	background-image: url("file://{resources}/../materials/quake/hud/sb_rocket.png");
 }
 
-.QWwAmmoIcon.QWwAi_cells
-{
-	background-image: url("s2r://materials/quake/hud/sb_cells_png.vtex");
+.QWwAmmoIcon.QWwAi_cells {
+	background-image: url("file://{resources}/../materials/quake/hud/sb_cells.png");
 }
 
-.QWwAmmoNum
-{
+.QWwAmmoNum {
 	horizontal-align: center;
 	margin-top: 4px;
 }
 
-.QWwAmmoNum .Gl
-{
+.QWwAmmoNum .Gl {
 	ui-scale: 150%;
 }
-

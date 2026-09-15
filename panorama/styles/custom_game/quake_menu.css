@@ -1,467 +1,669 @@
-/* Prettified by Source 2 Viewer 19.2.0.0 - https://valveresourceformat.github.io */
+.QmRoot {
+  width: 100%;
+  height: 100%;
+}
+
+.QmRoot Panel {
+  background-repeat: no-repeat;
+}
+
+.QmHidden {
+  visibility: collapse;
+}
+
+.QmDim {
+  width: 100%;
+  height: 100%;
+  world-blur: mipmapgaussian(1, 1, 1);
+  background-color: #000000a9;
+}
+
+.QmMain .QmDim {
+  background-image: url("file://{resources}/../materials/quake/menu/conback.png");
+  background-size: 100% 100%;
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+  texture-sampling: point;
+  opacity: 1;
+}
+
+.QmBgShow {
+  visibility: collapse;
+  width: 100%;
+  height: 100%;
+}
+
+.QmMain .QmBgShow {
+  visibility: visible;
+}
+
+.QmBgSlide {
+  width: 100%;
+  height: 100%;
+}
+
+.QmBgDark {
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  background-color: #00000080;
+}
+
+.QmBgLayer {
+  width: 120%;
+  height: 120%;
+  horizontal-align: center;
+  vertical-align: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.QmBgBack {
+  z-index: 1;
+  blur: gaussian(3);
+}
+
+.QmBgFront {
+  z-index: 2;
+  horizontal-align: right;
+  vertical-align: bottom;
+  width: 1000px;
+  height: 1120px;
+  margin-right: 180px;
+  margin-bottom: -448px;
+}
+
+.QmBgBack0 {
+  background-image: url("file://{resources}/../materials/quake/menu/bg/dog_bg.png");
+}
+
+.QmBgFront0 {
+  background-image: url("file://{resources}/../materials/quake/menu/bg/dog_fg.png");
+  width: 964px;
+}
+
+.QmBgBack1 {
+  background-image: url("file://{resources}/../materials/quake/menu/bg/ogre_bg.png");
+}
+
+.QmBgFront1 {
+  background-image: url("file://{resources}/../materials/quake/menu/bg/ogre_fg.png");
+  width: 1042px;
+}
 
-.QmRoot
-{
-	width: 100%;
-	height: 100%;
+.QmBgBack2 {
+  background-image: url("file://{resources}/../materials/quake/menu/bg/soldier_bg.png");
 }
+
+.QmBgFront2 {
+  background-image: url("file://{resources}/../materials/quake/menu/bg/soldier_fg.png");
+  width: 760px;
+  height: 784px;
+  margin-bottom: -150px;
+}
 
-.QmRoot Panel
-{
-	background-repeat: no-repeat;
+@keyframes 'qm-bg-back-0' {
+  0% {
+    opacity: 0;
+    transform: scale3d(1.1, 1.1, 1) translate3d(0px, 0px, 0px);
+  }
+
+  2% {
+    opacity: 1;
+  }
+
+  31.33% {
+    opacity: 1;
+    transform: scale3d(1.1, 1.1, 1) translate3d(-70px, 0px, 0px);
+  }
+
+  33.33% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes 'qm-bg-front-0' {
+  0% {
+    opacity: 0;
+    transform: scale3d(1, 1, 1) translate3d(0px, 0px, 0px);
+  }
+
+  2% {
+    opacity: 1;
+  }
+
+  31.33% {
+    opacity: 1;
+    transform: scale3d(1.2, 1.2, 1) translate3d(-170px, 0px, 0px);
+  }
+
+  33.33% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes 'qm-bg-back-1' {
+  0% {
+    opacity: 0;
+  }
+
+  31.33% {
+    opacity: 0;
+    transform: scale3d(1.1, 1.1, 1) translate3d(0px, 0px, 0px);
+  }
+
+  33.33% {
+    opacity: 1;
+  }
+
+  64.67% {
+    opacity: 1;
+    transform: scale3d(1.1, 1.1, 1) translate3d(70px, 0px, 0px);
+  }
+
+  66.67% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
+
+@keyframes 'qm-bg-front-1' {
+  0% {
+    opacity: 0;
+  }
+
+  31.33% {
+    opacity: 0;
+    transform: scale3d(1, 1, 1) translate3d(0px, 0px, 0px);
+  }
 
-.QmHidden
-{
-	visibility: collapse;
+  33.33% {
+    opacity: 1;
+  }
+
+  64.67% {
+    opacity: 1;
+    transform: scale3d(1.2, 1.2, 1) translate3d(170px, 0px, 0px);
+  }
+
+  66.67% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
+
+@keyframes 'qm-bg-back-2' {
+  0% {
+    opacity: 0;
+  }
 
-.QmDim
-{
-	width: 100%;
-	height: 100%;
-	world-blur: mipmapgaussian( 1, 1, 1 );
-	background-color: #000000a9;
+  64.67% {
+    opacity: 0;
+    transform: scale3d(1.1, 1.1, 1) translate3d(0px, 0px, 0px);
+  }
+
+  66.67% {
+    opacity: 1;
+  }
+
+  98% {
+    opacity: 1;
+    transform: scale3d(1.1, 1.1, 1) translate3d(-70px, 0px, 0px);
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
+
+@keyframes 'qm-bg-front-2' {
+  0% {
+    opacity: 0;
+  }
 
-.QmMain .QmDim
-{
-	background-color: rgb(41, 0, 0);
-	background-image: url("s2r://materials/videos/conback.webm");
-	background-size: 110% 110%;
-	background-position: 0% 0%;
-	background-repeat: no-repeat;
-	opacity:0.1;
-	blur:gaussian( 23, 23, 22);
+  64.67% {
+    opacity: 0;
+    transform: scale3d(1, 1, 1) translate3d(0px, 0px, 0px);
+  }
+
+  66.67% {
+    opacity: 1;
+  }
+
+  98% {
+    opacity: 1;
+    transform: scale3d(1.2, 1.2, 1) translate3d(-170px, 0px, 0px);
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
 
-.QmWrap
-{
-	width: 100%;
-	height: 100%;
-	flow-children: none;
-	ui-scale: 300%;
+.QmBgBack0 {
+  animation-name: qm-bg-back-0;
+  animation-duration: 72s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
-.QmCol
-{
-	flow-children: down;
-	horizontal-align: center;
-	vertical-align: center;
+.QmBgFront0 {
+  animation-name: qm-bg-front-0;
+  animation-duration: 72s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
-.QmPlaqueSlot
-{
-	width: 304px;
-	flow-children: right;
-	horizontal-align: center;
-	vertical-align: center;
+.QmBgBack1 {
+  animation-name: qm-bg-back-1;
+  animation-duration: 72s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
-.QmPlaque
-{
-	width: 32px;
-	height: 144px;
-	vertical-align: center;
-	background-image: url("s2r://materials/quake/menu/qplaque_png.vtex");
-	background-size: 100% 100%;
-	texture-sampling: point;
-	transition-property: opacity;
-	transition-duration: .1s;
+.QmBgFront1 {
+  animation-name: qm-bg-front-1;
+  animation-duration: 72s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
-.QmPlaqueHidden
-{
-	opacity: 0;
+.QmBgBack2 {
+  animation-name: qm-bg-back-2;
+  animation-duration: 72s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
-.QmTitle
-{
-	width: 96px;
-	height: 24px;
-	horizontal-align: center;
-	margin-bottom: 10px;
-	background-image: url("s2r://materials/quake/menu/ttl_main_png.vtex");
-	background-size: 100% 100%;
-	texture-sampling: point;
+.QmBgFront2 {
+  animation-name: qm-bg-front-2;
+  animation-duration: 72s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 
-.QmTitleOpt
-{
-	width: 144px;
-	background-image: url("s2r://materials/quake/menu/p_option_png.vtex");
+.QmWrap {
+  width: 100%;
+  height: 100%;
+  flow-children: none;
+  ui-scale: 300%;
 }
 
-.QmScreen
-{
-	flow-children: down;
+.QmCol {
+  flow-children: down;
+  horizontal-align: center;
+  vertical-align: center;
+  overflow: noclip;
 }
 
-.QmScreenHidden
-{
-	visibility: collapse;
+.QmTitle {
+  width: 133px;
+  height: 24px;
+  horizontal-align: center;
+  margin-bottom: 10px;
+  background-image: url("file://{resources}/../materials/quake/menu/ttl_main.png");
+  background-size: 100% 100%;
+  texture-sampling: point;
 }
 
-.QmRow
-{
-	flow-children: right;
-	padding: 0px 12px 0px 0px;
-	margin-bottom: 1px;
+.QmTitleOpt {
+  width: 144px;
+  background-image: url("file://{resources}/../materials/quake/menu/p_option.png");
 }
 
-.QmRow:hover
-{
-	sound: "Quake.misc_menu1";
+.QmScreen {
+  flow-children: down;
+  overflow: noclip;
 }
 
-.QmRow:active
-{
-	sound: "Quake.misc_menu2";
+.QmScreenHidden {
+  visibility: collapse;
 }
 
-#qm_back:active,#qm_back_c:active,#qm_hlp_back:active,#qm_ns_back:active,#qm_cs_back:active,#qm_st_back:active,#qm_cf_no:active
-{
-	sound: "Quake.misc_menu3";
+.QmRow {
+  flow-children: right;
+  padding: 0px 12px 0px 0px;
+  margin-bottom: 1px;
 }
 
-.QmRow.QmDisabled:hover,.QmRow.QmDisabled:active
-{
-	sound: none;
+.QmRow:hover {
+  sound: "Quake.misc_menu1";
 }
 
-.QmMainOnly
-{
-	visibility: collapse;
+.QmRow:active {
+  sound: "Quake.misc_menu2";
 }
 
-.QmMain .QmMainOnly
-{
-	visibility: visible;
+#qm_back:active,
+#qm_back_c:active,
+#qm_hlp_back:active,
+#qm_ns_back:active,
+#qm_cs_back:active,
+#qm_st_back:active,
+#qm_cf_no:active {
+  sound: "Quake.misc_menu3";
 }
 
-.QmPauseOnly
-{
-	visibility: visible;
+.QmRow.QmDisabled:hover,
+.QmRow.QmDisabled:active {
+  sound: none;
 }
 
-.QmMain .QmPauseOnly
-{
-	visibility: collapse;
+.QmMainOnly {
+  visibility: collapse;
 }
 
-.QmRow.QmDisabled
-{
-	opacity: 0.3;
+.QmMain .QmMainOnly {
+  visibility: visible;
 }
 
-.QmRow.QmDisabled:hover .QmCursor
-{
-	opacity: 0;
+.QmPauseOnly {
+  visibility: visible;
 }
 
-.QmCursor
-{
-	width: 16px;
-	height: 20px;
-	margin-right: 6px;
-	vertical-align: center;
-	opacity: 0;
-	transition-property: opacity;
-	transition-duration: .06s;
+.QmMain .QmPauseOnly {
+  visibility: collapse;
 }
 
-.QmRow:hover .QmCursor
-{
-	opacity: 1;
+.QmRow.QmDisabled {
+  opacity: 0.3;
 }
 
-.Mf
-{
-	transition-property: saturation, brightness;
-	transition-duration: .06s;
+.QmRow .Gl {
+  vertical-align: center;
+  saturation: 0;
+  brightness: 1.35;
+  transition-property: saturation, brightness;
+  transition-duration: 0.06s;
 }
 
-.QmRow:hover .Mf
-{
-	saturation: 1.3;
-	brightness: 1.4;
+.QmRow:hover .Gl {
+  saturation: 1;
+  brightness: 1;
 }
 
-.QmDot
-{
-	position: 0px 0px 0px;
-	width: 16px;
-	height: 24px;
-	opacity: 0;
-	background-size: 100% 100%;
-	texture-sampling: point;
+.QmBracket {
+  width: 12px;
+  height: 16px;
+  vertical-align: center;
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 0.06s;
 }
 
-.QmDot1
-{
-	background-image: url("s2r://materials/quake/menu/menudot1_png.vtex");
-	opacity: 1;
+.QmBracketL {
+  margin-right: 3px;
 }
 
-.QmDot2
-{
-	background-image: url("s2r://materials/quake/menu/menudot2_png.vtex");
+.QmBracketR {
+  margin-left: 3px;
 }
 
-.QmDot3
-{
-	background-image: url("s2r://materials/quake/menu/menudot3_png.vtex");
+.QmRow:hover .QmBracket {
+  opacity: 1;
 }
+
+@keyframes 'qm-bracket-l' {
+  0% {
+    transform: translate3d(-7px, 0px, 0px);
+  }
 
-.QmDot4
-{
-	background-image: url("s2r://materials/quake/menu/menudot4_png.vtex");
+  50% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+
+  100% {
+    transform: translate3d(-7px, 0px, 0px);
+  }
 }
+
+@keyframes 'qm-bracket-r' {
+  0% {
+    transform: translate3d(7px, 0px, 0px);
+  }
 
-.QmDot5
-{
-	background-image: url("s2r://materials/quake/menu/menudot5_png.vtex");
+  50% {
+    transform: translate3d(0px, 0px, 0px);
+  }
+
+  100% {
+    transform: translate3d(7px, 0px, 0px);
+  }
 }
 
-.QmDot6
-{
-	background-image: url("s2r://materials/quake/menu/menudot6_png.vtex");
+.QmRow:hover .QmBracketL {
+  animation-name: qm-bracket-l;
+  animation-duration: 1.1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
 
-@keyframes 'qm-dot'
-{
-	0%
-	{
-		opacity: 1;
-	}
-	
-	16%
-	{
-		opacity: 1;
-	}
-	
-	17%
-	{
-		opacity: 0;
-	}
-	
-	100%
-	{
-		opacity: 0;
-	}
-	
+.QmRow:hover .QmBracketR {
+  animation-name: qm-bracket-r;
+  animation-duration: 1.1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
 
-.QmRow:hover .QmDot
-{
-	animation-name: qm-dot;
-	animation-duration: .66s;
-	animation-timing-function: linear;
-	animation-iteration-count: infinite;
+.QmRow .Mf {
+  vertical-align: center;
+  wash-color: #ffffff;
+  transition-property: wash-color;
+  transition-duration: 0.1s;
 }
 
-.QmRow:hover .QmDot1
-{
-	animation-delay: -0.66s;
+.QmRow:hover .QmText .Mf {
+  wash-color: #c25b5b;
 }
 
-.QmRow:hover .QmDot2
-{
-	animation-delay: -0.55s;
+.QmText {
+  flow-children: right;
+  height: 8px;
+  vertical-align: center;
+  ui-scale: 100%;
 }
 
-.QmRow:hover .QmDot3
-{
-	animation-delay: -0.44s;
+.QmVal {
+  flow-children: right;
+  height: 8px;
+  vertical-align: center;
+  margin-left: 6px;
+  ui-scale: 100%;
 }
 
-.QmRow:hover .QmDot4
-{
-	animation-delay: -0.33s;
+#qm_main .QmText {
+  height: 16px;
 }
 
-.QmRow:hover .QmDot5
-{
-	animation-delay: -0.22s;
+#qm_main .QmRow {
+  horizontal-align: center;
+  padding: 0px 10px 0px 10px;
+  margin-bottom: 3px;
+  overflow: noclip;
+  transform: scale3d(1, 1, 1);
+  transition-property: transform;
+  transition-duration: 0.08s;
 }
 
-.QmRow:hover .QmDot6
-{
-	animation-delay: -0.11s;
+#qm_main .QmRow:hover {
+  transform: scale3d(1.25, 1.25, 1);
 }
 
-.QmText
-{
-	flow-children: right;
-	height: 28px;
-	vertical-align: center;
-	ui-scale: 72%;
+#qm_opts .QmOptRow,
+#qm_chts .QmOptRow,
+#qm_ns .QmOptRow {
+  width: 220px;
 }
 
-.QmVal
-{
-	flow-children: right;
-	height: 28px;
-	vertical-align: center;
-	margin-left: 12px;
-	ui-scale: 72%;
+#qm_opts .QmVal,
+#qm_chts .QmVal,
+#qm_ns .QmVal,
+#qm_cs .QmVal {
+  horizontal-align: right;
+  margin-left: 0px;
 }
 
-.QmSub .QmText,.QmSub .QmVal
-{
-	height: 8px;
-	ui-scale: 100%;
+.QmBackRow {
+  horizontal-align: center;
 }
 
-.QmSub .QmVal
-{
-	margin-left: 6px;
+.QmSub .QmSep {
+  width: 100%;
+  height: 1px;
+  margin: 5px 0px;
+  background-color: #a8863580;
 }
 
-.QmSub .Gl
-{
-	vertical-align: center;
+#qm_opts .QmFovCtl {
+  flow-children: right;
+  horizontal-align: right;
+  vertical-align: center;
 }
 
-.QmSub .QmRow
-{
-	margin-bottom: 1px;
+#qm_opts .QmFovCtl .QmVal {
+  horizontal-align: center;
+  margin-left: 0px;
 }
 
-.QmSub .QmCursor
-{
-	width: 8px;
-	height: 8px;
-	margin-right: 3px;
+.QmHelpImg {
+  width: 340px;
+  height: 191px;
+  horizontal-align: center;
+  margin-bottom: 6px;
+  background-image: url("file://{resources}/../materials/quake/menu/controls.png");
+  background-size: 100% 100%;
+  texture-sampling: point;
 }
 
-.QmSub .QmDot
-{
-	width: 8px;
-	height: 12px;
+#qm_hlp .QmOptRow {
+  horizontal-align: center;
 }
 
-#qm_opts .QmOptRow,#qm_chts .QmOptRow
-{
-	width: 220px;
+.QmHeadRow {
+  horizontal-align: center;
+  margin-bottom: 6px;
 }
 
-#qm_opts .QmVal,#qm_chts .QmVal
-{
-	horizontal-align: right;
-	margin-left: 0px;
+.QmSplitRow {
+  flow-children: right;
+  margin-bottom: 1px;
 }
 
-#qm_opts .QmFovCtl
-{
-	flow-children: right;
-	horizontal-align: right;
-	vertical-align: center;
+.QmSplitL {
+  width: 200px;
 }
 
-#qm_opts .QmFovCtl .QmVal
-{
-	horizontal-align: center;
-	margin-left: 0px;
+.QmSplitR {
+  margin-left: 10px;
 }
 
-.QmHelpImg
-{
-	width: 340px;
-	height: 191px;
-	horizontal-align: center;
-	margin-bottom: 6px;
-	background-image: url("s2r://materials/quake/menu/controls_png.vtex");
-	background-size: 100% 100%;
-	texture-sampling: point;
+.QmDiffRow {
+  flow-children: right;
+  margin-bottom: 4px;
+  horizontal-align: center;
 }
 
-#qm_hlp .QmOptRow
-{
-	horizontal-align: center;
+.QmDiffArrow {
+  width: 8px;
+  height: 8px;
+  margin-left: 4px;
+  margin-right: 4px;
+  vertical-align: center;
+  opacity: 0.7;
 }
 
-.QmHeadRow
-{
-	margin-bottom: 6px;
+.QmDiffArrow:hover {
+  opacity: 1;
+  brightness: 1.3;
+  sound: "Quake.misc_menu1";
 }
 
-.QmSplitRow
-{
-	flow-children: right;
-	margin-bottom: 1px;
+.QmDiffArrow:active {
+  sound: "Quake.misc_menu2";
 }
 
-.QmSplitL
-{
-	width: 200px;
+#qm_df_v.QmDisabled {
+  opacity: 0.35;
 }
 
-.QmSplitR
-{
-	margin-left: 10px;
+#qm_df_hint {
+  margin-bottom: 6px;
+  opacity: 0.6;
+  horizontal-align: center;
 }
 
-.QmDiffRow
-{
-	flow-children: right;
-	margin-bottom: 4px;
-	horizontal-align: center;
+#qm_df_hint .Gl {
+  vertical-align: center;
 }
 
-.QmDiffArrow
-{
-	width: 8px;
-	height: 8px;
-	margin-left: 4px;
-	margin-right: 4px;
-	vertical-align: center;
-	opacity: 0.7;
+.QmStRow {
+  flow-children: right;
+  height: 8px;
+  margin-bottom: 2px;
 }
 
-.QmDiffArrow:hover
-{
-	opacity: 1.0;
-	brightness: 1.3;
-	sound: "Quake.misc_menu1";
+.QmStRow .Gl {
+  vertical-align: center;
 }
 
-.QmDiffArrow:active
-{
-	sound: "Quake.misc_menu2";
+.QmStHdr {
+  margin-bottom: 4px;
 }
 
-#qm_df_v.QmDisabled
-{
-	opacity: 0.35;
+#qm_ach .QAchRow {
+  ui-scale: 100%;
+  flow-children: right;
+  height: 44px;
+  margin-bottom: 2px;
+  padding: 2px 0px;
 }
 
-#qm_df_hint
-{
-	margin-bottom: 6px;
-	opacity: 0.6;
-	horizontal-align: center;
+#qm_ach .QAchIcon {
+  width: 28px;
+  height: 28px;
+  margin-right: 8px;
+  vertical-align: center;
 }
 
-#qm_df_hint .Gl
-{
-	vertical-align: center;
+#qm_ach .QAchTextCol {
+  flow-children: down;
+  vertical-align: center;
+  width: 260px;
 }
 
-.QmStRow
-{
-	flow-children: right;
-	height: 8px;
-	margin-bottom: 2px;
+#qm_ach .QAchListName {
+  color: #d8a24a;
+  font-size: 12px;
+  font-weight: bold;
+  white-space: normal;
 }
 
-.QmStRow .Gl
-{
-	vertical-align: center;
+#qm_ach .QAchListDesc {
+  color: #9a9a9a;
+  font-size: 10px;
+  margin-top: 1px;
+  white-space: normal;
 }
 
-.QmStHdr
-{
-	margin-bottom: 4px;
+#qm_ach .QAchRow.QAchLocked .QAchIcon {
+  saturation: 0;
+  opacity: 0.4;
 }
 
+#qm_ach .QAchRow.QAchLocked .QAchListName {
+  color: #7a7a7a;
+}

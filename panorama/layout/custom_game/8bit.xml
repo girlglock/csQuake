@@ -1,7 +1,6 @@
-<!-- xml reconstructed by Source 2 Viewer 19.2.0.0 - https://valveresourceformat.github.io -->
 <root>
 	<styles>
-		<include src="s2r://panorama/styles/custom_game/8bit.vcss_c" />
+		<include src="file://{resources}/styles/custom_game/8bit.css" />
 	</styles>
 	<Panel class="CrtRoot">
 		<Panel id="q_water" class="QWater" hittest="false">
@@ -14,22 +13,17 @@
 			<Panel class="QBubble QB5" hittest="false" />
 			<Panel class="QBubble QB6" hittest="false" />
 			<Panel class="QBubble QB7" hittest="false" />
-			<Panel class="QBubble QB8" hittest="false" />
-		</Panel>
+			<Panel class="QBubble QB8" hittest="false" /></Panel>
 		<Panel id="q_flash" class="QFlash" hittest="false">
 			<Panel class="QFlashDmg" hittest="false">
-				<Panel class="QFlashInk" hittest="false" />
-			</Panel>
+				<Panel class="QFlashInk" hittest="false" /></Panel>
 			<Panel class="QFlashBonus" hittest="false">
-				<Panel class="QFlashInk" hittest="false" />
-			</Panel>
+				<Panel class="QFlashInk" hittest="false" /></Panel>
 		</Panel>
 		<Panel id="q_powerup" class="QPowerup" hittest="false">
-			<Panel class="QPowerupFill" hittest="false" />
-		</Panel>
+			<Panel class="QPowerupFill" hittest="false" /></Panel>
 		<Panel id="crt_root" class="Crt">
 			<Panel class="CrtDither" hittest="false" />
-			<Panel class="CrtVignette" hittest="false" />
-		</Panel>
+			<Panel class="CrtVignette" hittest="false" /></Panel>
 	</Panel>
 </root>
