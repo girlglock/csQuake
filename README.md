@@ -6,23 +6,23 @@ TL;DR: no original Quake assets, code and maps are GPL v2 with full source on Gi
 
 ## Shareware Episode 1
 
-![e1m1](https://file.garden/aqmo3IE25FezhE7v/csQuake/e1m1.gif)
+<img src="https://file.garden/aqmo3IE25FezhE7v/csQuake/e1m1.gif" alt="e1m1">
 
 ## Retextured using LibreQuake Assets
 
-![e1m3](https://file.garden/aqmo3IE25FezhE7v/csQuake/e1m3.gif)
+<img src="https://file.garden/aqmo3IE25FezhE7v/csQuake/e1m3.gif" alt="e1m3">
 
 ## All Weapons
 
-![e1m5](https://file.garden/aqmo3IE25FezhE7v/csQuake/e1m5.gif)
+<img src="https://file.garden/aqmo3IE25FezhE7v/csQuake/e1m5.gif" alt="e1m5">
 
 ## Faithful Level Design
 
-![e1m6](https://file.garden/aqmo3IE25FezhE7v/csQuake/e1m6.gif)
+<img src="https://file.garden/aqmo3IE25FezhE7v/csQuake/e1m6.gif" alt="e1m6">
 
 ## Reworked Boss fight
 
-![e1m7](https://file.garden/aqmo3IE25FezhE7v/csQuake/e1m7.gif)
+<img src="https://file.garden/aqmo3IE25FezhE7v/csQuake/e1m7.gif" alt="e1m7">
 
 ## Q&A
 
