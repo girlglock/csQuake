@@ -4,25 +4,10 @@ This port is a singleplayer experience with a fully (to cs2) custom player contr
 
 TL;DR: no original Quake assets, code and maps are GPL v2 with full source on GitHub, art is LibreQuake (BSD 3-Clause).
 
-## Shareware Episode 1
-
-<img src="https://file.garden/aqmo3IE25FezhE7v/csQuake/e1m1.gif" alt="e1m1">
-
-## Retextured using LibreQuake Assets
-
-<img src="https://file.garden/aqmo3IE25FezhE7v/csQuake/e1m3.gif" alt="e1m3">
-
-## All Weapons
-
-<img src="https://file.garden/aqmo3IE25FezhE7v/csQuake/e1m5.gif" alt="e1m5">
-
-## Faithful Level Design
-
-<img src="https://file.garden/aqmo3IE25FezhE7v/csQuake/e1m6.gif" alt="e1m6">
-
-## Reworked Boss fight
-
-<img src="https://file.garden/aqmo3IE25FezhE7v/csQuake/e1m7.gif" alt="e1m7">
+<img width="720" height="261" alt="e1m1" src="https://github.com/user-attachments/assets/7c87d530-09c3-40b2-a8b4-7b17338e5fa9" />
+<img width="720" height="261" alt="e1m3" src="https://github.com/user-attachments/assets/089112d6-b84c-4dd3-bf00-b2597a784d86" />
+<img width="720" height="261" alt="e1m5" src="https://github.com/user-attachments/assets/0258cf9c-988e-48fe-9670-305929876158" />
+<img width="720" height="261" alt="e1m7" src="https://github.com/user-attachments/assets/83a0141a-19d1-4db2-bb87-38fdbb36dada" />
 
 ## Q&A
 
