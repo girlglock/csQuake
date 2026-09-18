@@ -3,7 +3,7 @@ import { Vec3 } from "@s2ze/math";
 //swapped by rollup at build time
 export const DEBUG = (`__DEBUG__` as string) === "true";
 
-export const VERSION = "1.1";
+export const VERSION = "1.1.1";
 //rollup should also insert patchnotes here
 export const PATCHNOTES = (`__PATCHNOTES__` as string);
 
@@ -381,7 +381,7 @@ export const SUB_FRAMETIME = 1 / EMULATED_FPS;
 export const WHEEL_ORDER = [
     "axe", "shotgun", "ssg", "nailgun", "snailgun", "glauncher", "rlauncher", "lightning",
 ] as const;
-export const WHEEL_TIME_SCALE = 0.10; //quake timescale in weap wheel
+export const WHEEL_TIME_SCALE = 0.1; //quake timescale in weap wheel
 
 export const AXE_RANGE = 64;
 export const AXE_DAMAGE = 20;

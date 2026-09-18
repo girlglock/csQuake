@@ -1,22 +1,24 @@
-"Layer0"
+
+Layer0
 {
-	"shader"	"generic.vfx"
-	"F_RENDER_BACKFACES"	"1"
-	"F_SELF_ILLUM"	"1"
-	"g_bFogEnabled"	"1"
-	"g_nTextureAddressModeU"	"0"
-	"g_nTextureAddressModeV"	"0"
-	"g_flBumpStrength"	"1"
-	"g_flSelfIllumScale"	"1"
-	"g_vColorTint"	"[1.000000 1.000000 1.000000 0.000000]"
-	"g_vSelfIllumTint"	"[1.000000 1.000000 1.000000 0.000000]"
-	"TextureSelfIllumMask"	"[0.000000 0.000000 0.000000 0.000000]"
-	"TextureColor"	"materials/quake/pickups/b_shell1_ammo_s_b2_flipv.png"
-	"TextureNormal"	"materials/default/default_normal.tga"
-	"Compiled Textures"
-	{
-		"g_tColor"	"materials/quake/pickups/b_shell1_ammo_s_b2_flipv_png_6e9cdb26.vtex"
-		"g_tNormal"	"materials/default/default_normal_tga_f93ac262.vtex"
-		"g_tSelfIllumMask"	"materials/default/default_selfillum_tga_b4de8504.vtex"
-	}
+	shader "generic.vfx"
+
+	F_RENDER_BACKFACES 1
+
+	F_SELF_ILLUM 1
+
+	g_vColorTint "[1.000000 1.000000 1.000000 0.000000]"
+	TextureColor "materials/quake/pickups/b_shell1_ammo_s_b2_flipv.png"
+
+	g_bFogEnabled "1"
+
+	g_flBumpStrength "1.000"
+	TextureNormal "materials/default/default_normal.tga"
+
+	g_flSelfIllumScale "1.000"
+	g_vSelfIllumTint "[1.000000 1.000000 1.000000 0.000000]"
+	TextureSelfIllumMask ""
+
+	g_nTextureAddressModeU "0"
+	g_nTextureAddressModeV "0"
 }

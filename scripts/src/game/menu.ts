@@ -5,6 +5,8 @@ import { AchievementDef } from "./achievements";
 
 const MENU_NAME = "quake_hud";
 
+const PATCH_VERSION_RE = /^v\.?\d+(?:\.\d+)*:?\s*$/i;
+
 export type MenuAction =
     "newgame" | "continue" | "resume" | "exit" | "quit"
     | "opennewslots" | "opencontslots" | "openstats" | "openAchievements"
@@ -238,13 +240,15 @@ export class QuakeMenu {
         }
     }
 
-    showPatchNotes(version: string, lines: string[]): void {
+    showPatchNotes(lines: string[]): void {
         if (!this.layout) return;
-        this.layout.SetDialogVariableString("q_patch", "patchHdr", `Patchnotes for v${version}`);
+        this.layout.SetDialogVariableString("q_patch", "patchHdr", "Patchnotes");
         for (let i = 0; i < C.PATCH_LINE_SLOTS; i++) {
             const line = lines[i];
             setLayoutClass(this.layout, this.slot, `q_patch_l${i}`, "QGone", !line);
-            if (line) this.layout.SetDialogVariableString("q_patch", `patchLine${i}`, line);
+            if (!line) continue;
+            this.layout.SetDialogVariableString("q_patch", `patchLine${i}`, line);
+            setLayoutClass(this.layout, this.slot, `q_patch_l${i}`, "QPatchVerHdr", PATCH_VERSION_RE.test(line));
         }
         setLayoutClass(this.layout, this.slot, "q_patch", "QPopHidden", false);
     }

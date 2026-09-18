@@ -1,0 +1,49 @@
+
+Layer0
+{
+	shader "csgo_lightmappedgeneric.vfx"
+
+	F_RENDER_BACKFACES 1
+
+	g_flModelTintAmount "1.000"
+	g_flVertexColorOpacityScale "1.000"
+	g_vColorTint "[1.000000 1.000000 1.000000 0.000000]"
+
+	g_bFogEnabled "1"
+
+	g_flMetalness "0.000"
+
+	g_vLayer1Tint "[1.000000 1.000000 1.000000 0.000000]"
+	TextureLayer1AmbientOcclusion "materials/default/default_ao.tga"
+	TextureLayer1Color "materials/quake/bsps/door05_2.png"
+	TextureLayer1Normal "materials/default/default_normal.tga"
+	TextureLayer1Roughness "materials/default/default_rough.tga"
+
+	g_nTextureAddressModeU "0"
+	g_nTextureAddressModeV "0"
+
+
+	VariableState
+	{
+		"Color"
+		{
+		}
+		"Fog"
+		{
+		}
+		"Lighting"
+		{
+			"Metalness" 0
+		}
+		"PBR 1"
+		{
+			"Albedo" 0
+			"Normal" 0
+			"Roughness" 0
+			"Ambient Occlusion" 0
+		}
+		"Texture Address Mode"
+		{
+		}
+	}
+}

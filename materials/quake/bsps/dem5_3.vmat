@@ -1,22 +1,24 @@
-"Layer0"
+
+Layer0
 {
-	"shader"	"generic.vfx"
-	"F_RENDER_BACKFACES"	"1"
-	"F_SELF_ILLUM"	"1"
-	"g_bFogEnabled"	"1"
-	"g_nTextureAddressModeU"	"0"
-	"g_nTextureAddressModeV"	"0"
-	"g_flBumpStrength"	"1"
-	"g_flSelfIllumScale"	"1"
-	"g_vColorTint"	"[1.000000 1.000000 1.000000 0.000000]"
-	"g_vSelfIllumTint"	"[1.000000 1.000000 1.000000 0.000000]"
-	"TextureColor"	"materials/quake/bsps/dem5_3.png"
-	"TextureNormal"	"materials/default/default_normal.tga"
-	"TextureSelfIllumMask"	"materials/quake/bsps/dem5_3_ilim.png"
-	"Compiled Textures"
-	{
-		"g_tColor"	"materials/quake/bsps/dem5_3_png_daf9f275.vtex"
-		"g_tNormal"	"materials/default/default_normal_tga_f93ac262.vtex"
-		"g_tSelfIllumMask"	"materials/quake/bsps/dem5_3_ilim_png_fb4eb4e3.vtex"
-	}
+	shader "generic.vfx"
+
+	F_RENDER_BACKFACES 1
+
+	F_SELF_ILLUM 1
+
+	g_vColorTint "[1.000000 1.000000 1.000000 0.000000]"
+	TextureColor "materials/quake/bsps/dem5_3.png"
+
+	g_bFogEnabled "1"
+
+	g_flBumpStrength "1.000"
+	TextureNormal "materials/default/default_normal.tga"
+
+	g_flSelfIllumScale "1.000"
+	g_vSelfIllumTint "[1.000000 1.000000 1.000000 0.000000]"
+	TextureSelfIllumMask "materials/quake/bsps/dem5_3_ilim.png"
+
+	g_nTextureAddressModeU "0"
+	g_nTextureAddressModeV "0"
 }

@@ -1,12 +1,42 @@
-"Layer0"
+
+Layer0
 {
-	"shader"	"generic.vfx"
-	"F_UNLIT"	"1"
-	"g_bFogEnabled"	"0"
-	"g_vColorTint"	"[1.000000 1.000000 1.000000 0.000000]"
-	"TextureColor"	"materials/quake/weapons/v_shot_flipv.png"
-	"Compiled Textures"
+	shader "generic.vfx"
+
+	F_UNLIT 1
+
+	g_vColorTint "[1.000000 1.000000 1.000000 0.000000]"
+	TextureColor "materials/quake/weapons/v_shot_flipv.png"
+
+	g_bFogEnabled "0"
+
+	UnusedVariables
 	{
-		"g_tColor"	"materials/quake/weapons/v_shot_flipv_png_d2e5b7ad.vtex"
+		"g_vGlossinessRange" "[0.000 1.000]"
+		"g_vMetalnessRange" "[0.000 1.000]"
+		"g_vReflectanceRange" "[0.000 1.000]"
+		"TextureGlossiness" ""
+		"TextureMetalness" ""
+		"TextureReflectance" ""
+		"g_flSelfIllumScale" "1"
+		"g_vSelfIllumTint" "[1.000000 1.000000 1.000000 0.000000]"
+		"TextureSelfIllumMask" "materials/quake/weapons/v_shot_flipv.png"
+		"g_flOpacityScale" "1"
+		"TextureTranslucency" ""
+		"g_flBumpStrength" "1"
+		"TextureNormal" "materials/default/default_normal.tga"
+		"g_nTextureAddressModeU" "0"
+		"g_nTextureAddressModeV" "0"
+	}
+
+
+	VariableState
+	{
+		"Color"
+		{
+		}
+		"Fog"
+		{
+		}
 	}
 }

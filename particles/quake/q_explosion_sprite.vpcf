@@ -5,25 +5,30 @@
 	m_nBehaviorVersion = 12
 	m_bShouldSort = false
 	m_flConstantRadius = 52.0
-	m_Emitters = 
+	m_Emitters =
 	[
 		{
 			_class = "C_OP_InstantaneousEmitter"
-			m_nParticlesToEmit = 
+			m_nParticlesToEmit =
 			{
 				m_nType = "PF_TYPE_LITERAL"
 				m_flLiteralValue = 1.0
 			}
 		},
 	]
-	m_Initializers = 
+	m_Initializers =
 	[
 		{
 			_class = "C_INIT_CreateWithinSphereTransform"
+			m_fRadiusMin = 0.0
+			m_fRadiusMax = 0.0
+			m_fSpeedMin = 0.0
+			m_fSpeedMax = 0.0
+			m_nControlPointNumber = 0
 		},
 		{
 			_class = "C_INIT_InitFloat"
-			m_InputValue = 
+			m_InputValue =
 			{
 				m_nType = "PF_TYPE_LITERAL"
 				m_flLiteralValue = 0.65

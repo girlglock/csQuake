@@ -1,0 +1,9 @@
+
+Layer0
+{
+	shader "sky.vfx"
+
+	g_flBrightnessExposureBias "0.000"
+	g_flRenderOnlyExposureBias "0.000"
+	SkyTexture "materials/quake/sky/mak_aurora1.exr"
+}

@@ -506,7 +506,7 @@ export class QuakeController {
             this.menu.onEnable(this.slot);
             this.syncMenuOptions();
             if (this.menu.show("main", this.hasAnySave())) {
-                if (!this.patchNotesSeen()) this.menu.showPatchNotes(C.VERSION, C.PATCHNOTES.split("\n").filter(Boolean));
+                if (!this.patchNotesSeen()) this.menu.showPatchNotes(C.PATCHNOTES.split("\n").filter(Boolean));
                 return;
             }
             this.levelIndex = 1;
@@ -1046,7 +1046,10 @@ export class QuakeController {
         else if (action === "continue") this.resumeSlot(this.menu.chosenSlot());
         else if (action === "resume") this.resumeGame();
         else if (action === "exit") this.exitToMenu();
-        else if (action === "quit") css.ServerCommand("disconnect");
+        else if (action === "quit") {
+            css.ServerCommand("crosshair 1");
+            css.Delay(C.TICK_INTERVAL).then(() => css.ServerCommand("disconnect"));
+        }
         else if (action === "toggleBob") this.setViewBob();
         else if (action === "toggleHitmarker") this.setHitmarker();
         else if (action === "toggleMusic") this.setMusic();

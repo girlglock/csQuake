@@ -1,4 +1,4 @@
-<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:modeldoc28:version{fb63b6ca-f435-4aa0-a2c7-c66ddc651dca} -->
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:modeldoc41:version{12fc9d44-453a-4ae4-b4d9-7e2ac0bbd4e0} -->
 {
 	rootNode = 
 	{
@@ -6,18 +6,34 @@
 		children = 
 		[
 			{
-				_class = "BoneMarkupList"
-				children = [  ]
-				bone_cull_type = "None"
-			},
-			{
 				_class = "RenderMeshList"
 				children = 
 				[
 					{
 						_class = "RenderMeshFile"
 						name = "shalrath"
-						filename = "models/quake/enemies/shalrath_shalrath.dmx"
+						children = 
+						[
+							{
+								_class = "ReplaceMeshMaterials"
+								remaps = 
+								[
+									{
+										from = "shalrath.vmat"
+										to = "materials/quake/enemies/shalrath.vmat"
+									},
+								]
+								use_single_material = false
+								single_override_material = ""
+							},
+						]
+						filename = "models/quake/enemies/shalrath_ref.smd"
+						import_scale = 1.0
+						import_filter = 
+						{
+							exclude_by_default = false
+							exception_list = [  ]
+						}
 					},
 				]
 			},
@@ -28,46 +44,81 @@
 					{
 						_class = "AnimFile"
 						name = "shalrath_attack"
-						source_filename = "models/quake/enemies/shalrath_shalrath_attack.dmx"
+						is_default_idle_anim = false
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
 						fade_in_time = 0.2
 						fade_out_time = 0.2
 						looping = false
 						delta = false
 						worldSpace = false
 						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						delete_from_compiled_model = false
+						source_filename = "models/quake/enemies/shalrath_anims/shalrath_attack.smd"
+						import_bone_scales = false
+						start_frame = -1
+						end_frame = -1
+						framerate = 10.0
+						reverse = false
+						additional_anim_files = [  ]
 					},
 					{
 						_class = "AnimFile"
 						name = "shalrath_pain"
-						source_filename = "models/quake/enemies/shalrath_shalrath_pain.dmx"
+						is_default_idle_anim = false
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
 						fade_in_time = 0.2
 						fade_out_time = 0.2
 						looping = false
 						delta = false
 						worldSpace = false
 						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						delete_from_compiled_model = false
+						source_filename = "models/quake/enemies/shalrath_anims/shalrath_pain.smd"
+						import_bone_scales = false
+						start_frame = -1
+						end_frame = -1
+						framerate = 10.0
+						reverse = false
+						additional_anim_files = [  ]
 					},
 					{
 						_class = "AnimFile"
 						name = "shalrath_death"
-						source_filename = "models/quake/enemies/shalrath_shalrath_death.dmx"
+						is_default_idle_anim = false
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
 						fade_in_time = 0.2
 						fade_out_time = 0.2
 						looping = false
 						delta = false
 						worldSpace = false
 						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						delete_from_compiled_model = false
+						source_filename = "models/quake/enemies/shalrath_anims/shalrath_death.smd"
+						import_bone_scales = false
+						start_frame = -1
+						end_frame = -1
+						framerate = 10.0
+						reverse = false
+						additional_anim_files = [  ]
 					},
 					{
 						_class = "AnimFile"
 						name = "shalrath_walk"
-						source_filename = "models/quake/enemies/shalrath_shalrath_walk.dmx"
-						fade_in_time = 0.2
-						fade_out_time = 0.2
-						looping = true
-						delta = false
-						worldSpace = false
-						hidden = false
 						children = 
 						[
 							{
@@ -78,398 +129,39 @@
 								extract_rz = false
 								linear = false
 								quadratic = false
-								motion_type = "uniform"
+								extract_initial_offset = false
+								root_bone_name = ""
+								motion_type = "Uniform"
 							},
 						]
+						is_default_idle_anim = false
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = true
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						delete_from_compiled_model = false
+						source_filename = "models/quake/enemies/shalrath_anims/shalrath_walk.smd"
+						import_bone_scales = false
+						start_frame = -1
+						end_frame = -1
+						framerate = 10.0
+						reverse = false
+						additional_anim_files = [  ]
 					},
 				]
-			},
-			{
-				_class = "Skeleton"
-				children = 
-				[
-					{
-						_class = "Bone"
-						name = "torso_001"
-						origin = [ -0.005585, -0.138493, 24.119658 ]
-						angles = [ 0.000045, 179.999985, 90.002144 ]
-						do_not_discard = true
-						children = 
-						[
-							{
-								_class = "Bone"
-								name = "torso_002"
-								origin = [ -0.000003, 6.325058, -0.000001 ]
-								angles = [ 0.000048, 179.999954, 167.685867 ]
-								do_not_discard = true
-								children = 
-								[
-									{
-										_class = "Bone"
-										name = "torso_003"
-										origin = [ 0.000003, 4.305229, -0.000008 ]
-										angles = [ -0.000049, -179.999954, 179.846924 ]
-										do_not_discard = true
-										children = 
-										[
-											{
-												_class = "Bone"
-												name = "torso_010"
-												origin = [ -0.000003, 2.333603, 0.000007 ]
-												angles = [ -0.0, -0.000009, -3.780831 ]
-												do_not_discard = true
-												children = 
-												[
-													{
-														_class = "Bone"
-														name = "torso_011"
-														origin = [ -0.000003, 3.386837, 0.000006 ]
-														angles = [ 0.0, -0.000009, -8.380251 ]
-														do_not_discard = true
-														children = 
-														[
-															{
-																_class = "Bone"
-																name = "headtail_000"
-																origin = [ -0.000004, 5.951248, 3.445921 ]
-																angles = [ 0.000046, 179.999878, 109.72023 ]
-																do_not_discard = true
-																children = 
-																[
-																	{
-																		_class = "Bone"
-																		name = "headtail_001"
-																		origin = [ 0.000003, 6.018915, -0.000095 ]
-																		angles = [ 0.000107, 0.000005, -19.720226 ]
-																		do_not_discard = true
-																		children = 
-																		[
-																			{
-																				_class = "Bone"
-																				name = "headtail_002"
-																				origin = [ 0.000002, 5.184106, -0.00013 ]
-																				angles = [ -0.000009, 0.000002, -22.880606 ]
-																				do_not_discard = true
-																				children = 
-																				[
-																					{
-																						_class = "Bone"
-																						name = "headtail_003"
-																						origin = [ 0.000001, 7.215645, -0.000153 ]
-																						angles = [ -0.000009, -0.000002, -9.335887 ]
-																						do_not_discard = true
-																						children = 
-																						[
-																							{
-																								_class = "Bone"
-																								name = "headtail_004"
-																								origin = [ 0.000001, 5.262478, -0.000168 ]
-																								angles = [ -0.000007, -0.000062, 52.127117 ]
-																								do_not_discard = true
-																								children = 
-																								[
-																									{
-																										_class = "Bone"
-																										name = "headtail_005"
-																										origin = [ 0.000002, 4.118927, -0.000107 ]
-																										angles = [ 0.00005, 0.000003, 36.735363 ]
-																										do_not_discard = true
-																										children = 
-																										[
-																											{
-																												_class = "Bone"
-																												name = "headtail_006"
-																												origin = [ 0.000002, 2.883945, 0.000002 ]
-																												angles = [ -0.0001, -179.999908, 140.499298 ]
-																												do_not_discard = true
-																												children = 
-																												[
-																													{
-																														_class = "Bone"
-																														name = "headtail_007"
-																														origin = [ -0.000003, 2.392193, -0.000141 ]
-																														angles = [ -0.000113, -0.000008, -29.988785 ]
-																														do_not_discard = true
-																														children = 
-																														[
-																															{
-																																_class = "Bone"
-																																name = "headtail_008"
-																																origin = [ -0.000004, 2.854464, -0.000229 ]
-																																angles = [ 0.000006, -0.000006, -13.263391 ]
-																																do_not_discard = true
-																															},
-																														]
-																													},
-																												]
-																											},
-																										]
-																									},
-																								]
-																							},
-																						]
-																					},
-																				]
-																			},
-																		]
-																	},
-																]
-															},
-														]
-													},
-												]
-											},
-											{
-												_class = "Bone"
-												name = "arm_l_000"
-												origin = [ -0.000001, 2.333599, 0.000005 ]
-												angles = [ 76.269714, -111.884232, 151.784088 ]
-												do_not_discard = true
-												children = 
-												[
-													{
-														_class = "Bone"
-														name = "arm_l_001"
-														origin = [ 0.00001, 6.907802, -0.00008 ]
-														angles = [ 1.272485, -1.56332, -19.253025 ]
-														do_not_discard = true
-														children = 
-														[
-															{
-																_class = "Bone"
-																name = "arm_l_002"
-																origin = [ 0.000012, 16.025146, -0.000084 ]
-																angles = [ -2.130019, -29.743435, -4.020208 ]
-																do_not_discard = true
-																children = 
-																[
-																	{
-																		_class = "Bone"
-																		name = "hand_l_000"
-																		origin = [ 0.000014, 8.302313, -0.000103 ]
-																		angles = [ -1.043583, 15.64914, -6.329345 ]
-																		do_not_discard = true
-																		children = 
-																		[
-																			{
-																				_class = "Bone"
-																				name = "hand_l_001"
-																				origin = [ -0.999576, 3.67765, 0.00399 ]
-																				angles = [ 0.290778, 12.914348, -6.772647 ]
-																				do_not_discard = true
-																				children = 
-																				[
-																					{
-																						_class = "Bone"
-																						name = "hand_l_002"
-																						origin = [ 0.000003, 2.205481, -0.000137 ]
-																						angles = [ 1.332932, 2.581915, -14.758646 ]
-																						do_not_discard = true
-																					},
-																				]
-																			},
-																			{
-																				_class = "Bone"
-																				name = "hand_l_003"
-																				origin = [ -0.03075, 3.687264, 0.123856 ]
-																				angles = [ -1.423394, -1.675556, -0.248772 ]
-																				do_not_discard = true
-																				children = 
-																				[
-																					{
-																						_class = "Bone"
-																						name = "hand_l_004"
-																						origin = [ 0.000004, 2.174168, -0.00013 ]
-																						angles = [ 1.347486, 3.439294, -17.127419 ]
-																						do_not_discard = true
-																					},
-																				]
-																			},
-																			{
-																				_class = "Bone"
-																				name = "hand_l_005"
-																				origin = [ 0.880921, 3.85569, 0.123856 ]
-																				angles = [ -1.359909, -18.511633, -0.799274 ]
-																				do_not_discard = true
-																				children = 
-																				[
-																					{
-																						_class = "Bone"
-																						name = "hand_l_006"
-																						origin = [ 0.00001, 2.236371, -0.000137 ]
-																						angles = [ -1.568815, 10.548326, -16.819401 ]
-																						do_not_discard = true
-																					},
-																				]
-																			},
-																		]
-																	},
-																]
-															},
-														]
-													},
-												]
-											},
-											{
-												_class = "Bone"
-												name = "arm_r_000"
-												origin = [ 0.000001, 2.333599, 0.00001 ]
-												angles = [ -76.269707, 111.884224, 151.784073 ]
-												do_not_discard = true
-												children = 
-												[
-													{
-														_class = "Bone"
-														name = "arm_r_001"
-														origin = [ -0.000001, 6.907807, -0.000072 ]
-														angles = [ -1.27248, 1.563311, -19.253048 ]
-														do_not_discard = true
-														children = 
-														[
-															{
-																_class = "Bone"
-																name = "hand_r_000"
-																origin = [ -4.12758, 23.205257, -0.581711 ]
-																angles = [ 2.008299, 14.050595, -10.776263 ]
-																do_not_discard = true
-																children = 
-																[
-																	{
-																		_class = "Bone"
-																		name = "hand_r_001"
-																		origin = [ 0.999588, 3.677672, 0.004044 ]
-																		angles = [ -0.290771, -12.914351, -6.772645 ]
-																		do_not_discard = true
-																		children = 
-																		[
-																			{
-																				_class = "Bone"
-																				name = "hand_r_002"
-																				origin = [ 0.000004, 2.205507, -0.000065 ]
-																				angles = [ -1.332925, -2.581924, -14.758648 ]
-																				do_not_discard = true
-																			},
-																		]
-																	},
-																	{
-																		_class = "Bone"
-																		name = "hand_r_003"
-																		origin = [ 0.030759, 3.687285, 0.123917 ]
-																		angles = [ 1.423402, 1.675564, -0.248774 ]
-																		do_not_discard = true
-																		children = 
-																		[
-																			{
-																				_class = "Bone"
-																				name = "hand_r_004"
-																				origin = [ 0.000005, 2.17419, -0.000069 ]
-																				angles = [ -1.347477, -3.439289, -17.127419 ]
-																				do_not_discard = true
-																			},
-																		]
-																	},
-																	{
-																		_class = "Bone"
-																		name = "hand_r_005"
-																		origin = [ -0.880914, 3.855715, 0.123909 ]
-																		angles = [ 1.359918, 18.51165, -0.799272 ]
-																		do_not_discard = true
-																		children = 
-																		[
-																			{
-																				_class = "Bone"
-																				name = "hand_r_006"
-																				origin = [ 0.000003, 2.236397, -0.000084 ]
-																				angles = [ 1.568823, -10.548316, -16.819405 ]
-																				do_not_discard = true
-																			},
-																		]
-																	},
-																]
-															},
-														]
-													},
-												]
-											},
-										]
-									},
-								]
-							},
-						]
-					},
-					{
-						_class = "Bone"
-						name = "torso_004"
-						origin = [ -0.005581, -0.138747, 17.320074 ]
-						angles = [ 0.000037, 179.999985, -89.997787 ]
-						do_not_discard = true
-						children = 
-						[
-							{
-								_class = "Bone"
-								name = "torso_005"
-								origin = [ 0.000002, 12.591392, -0.000001 ]
-								angles = [ -0.000002, 0.000009, 0.000002 ]
-								do_not_discard = true
-								children = 
-								[
-									{
-										_class = "Bone"
-										name = "torso_006"
-										origin = [ 0.000005, 13.829231, 0.000001 ]
-										angles = [ -0.000002, 0.000009, 0.000002 ]
-										do_not_discard = true
-										children = 
-										[
-											{
-												_class = "Bone"
-												name = "torso_007"
-												origin = [ 0.000005, 11.130862, 0.000001 ]
-												angles = [ -0.000002, 0.000009, 0.000002 ]
-												do_not_discard = true
-												children = 
-												[
-													{
-														_class = "Bone"
-														name = "torso_008"
-														origin = [ 0.000007, 12.676788, 0.0 ]
-														angles = [ -0.000002, 0.000009, 0.000002 ]
-														do_not_discard = true
-														children = 
-														[
-															{
-																_class = "Bone"
-																name = "torso_009"
-																origin = [ 0.000007, 12.882889, 0.0 ]
-																angles = [ -0.000002, 0.748406, 0.000002 ]
-																do_not_discard = true
-															},
-														]
-													},
-												]
-											},
-										]
-									},
-								]
-							},
-						]
-					},
-					{
-						_class = "Bone"
-						name = "handik_r_000"
-						origin = [ -27.623314, -0.705986, 25.255856 ]
-						angles = [ -0.000017, -0.000039, -0.001874 ]
-						do_not_discard = true
-					},
-					{
-						_class = "Bone"
-						name = "tailspline_002"
-						origin = [ -0.005554, 33.206116, -8.977696 ]
-						angles = [ 0.000029, 179.999985, 0.002175 ]
-						do_not_discard = true
-					},
-				]
+				default_root_bone_name = ""
 			},
 		]
+		model_archetype = ""
+		primary_associated_entity = ""
+		document_sub_type = "ModelDocSubType_None"
 	}
 }

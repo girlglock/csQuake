@@ -1,4 +1,4 @@
-<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:modeldoc28:version{fb63b6ca-f435-4aa0-a2c7-c66ddc651dca} -->
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:modeldoc41:version{12fc9d44-453a-4ae4-b4d9-7e2ac0bbd4e0} -->
 {
 	rootNode = 
 	{
@@ -6,18 +6,34 @@
 		children = 
 		[
 			{
-				_class = "BoneMarkupList"
-				children = [  ]
-				bone_cull_type = "None"
-			},
-			{
 				_class = "RenderMeshList"
 				children = 
 				[
 					{
 						_class = "RenderMeshFile"
 						name = "dog"
-						filename = "models/quake/enemies/dog_dog.dmx"
+						children = 
+						[
+							{
+								_class = "ReplaceMeshMaterials"
+								remaps = 
+								[
+									{
+										from = "dog.vmat"
+										to = "materials/quake/enemies/dog.vmat"
+									},
+								]
+								use_single_material = false
+								single_override_material = ""
+							},
+						]
+						filename = "models/quake/enemies/dog_ref.smd"
+						import_scale = 1.0
+						import_filter = 
+						{
+							exclude_by_default = false
+							exception_list = [  ]
+						}
 					},
 				]
 			},
@@ -28,68 +44,131 @@
 					{
 						_class = "AnimFile"
 						name = "dog_attack"
-						source_filename = "models/quake/enemies/dog_dog_attack.dmx"
+						is_default_idle_anim = false
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
 						fade_in_time = 0.2
 						fade_out_time = 0.2
 						looping = false
 						delta = false
 						worldSpace = false
 						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						delete_from_compiled_model = false
+						source_filename = "models/quake/enemies/dog_anims/dog_attack.smd"
+						import_bone_scales = false
+						start_frame = -1
+						end_frame = -1
+						framerate = 10.0
+						reverse = false
+						additional_anim_files = [  ]
 					},
 					{
 						_class = "AnimFile"
 						name = "dog_death"
-						source_filename = "models/quake/enemies/dog_dog_death.dmx"
+						is_default_idle_anim = false
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
 						fade_in_time = 0.2
 						fade_out_time = 0.2
 						looping = false
 						delta = false
 						worldSpace = false
 						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						delete_from_compiled_model = false
+						source_filename = "models/quake/enemies/dog_anims/dog_death.smd"
+						import_bone_scales = false
+						start_frame = -1
+						end_frame = -1
+						framerate = 10.0
+						reverse = false
+						additional_anim_files = [  ]
 					},
 					{
 						_class = "AnimFile"
 						name = "dog_deathb"
-						source_filename = "models/quake/enemies/dog_dog_deathb.dmx"
+						is_default_idle_anim = false
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
 						fade_in_time = 0.2
 						fade_out_time = 0.2
 						looping = false
 						delta = false
 						worldSpace = false
 						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						delete_from_compiled_model = false
+						source_filename = "models/quake/enemies/dog_anims/dog_deathb.smd"
+						import_bone_scales = false
+						start_frame = -1
+						end_frame = -1
+						framerate = 10.0
+						reverse = false
+						additional_anim_files = [  ]
 					},
 					{
 						_class = "AnimFile"
 						name = "dog_pain"
-						source_filename = "models/quake/enemies/dog_dog_pain.dmx"
+						is_default_idle_anim = false
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
 						fade_in_time = 0.2
 						fade_out_time = 0.2
 						looping = false
 						delta = false
 						worldSpace = false
 						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						delete_from_compiled_model = false
+						source_filename = "models/quake/enemies/dog_anims/dog_pain.smd"
+						import_bone_scales = false
+						start_frame = -1
+						end_frame = -1
+						framerate = 10.0
+						reverse = false
+						additional_anim_files = [  ]
 					},
 					{
 						_class = "AnimFile"
 						name = "dog_painb"
-						source_filename = "models/quake/enemies/dog_dog_painb.dmx"
+						is_default_idle_anim = false
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
 						fade_in_time = 0.2
 						fade_out_time = 0.2
 						looping = false
 						delta = false
 						worldSpace = false
 						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						delete_from_compiled_model = false
+						source_filename = "models/quake/enemies/dog_anims/dog_painb.smd"
+						import_bone_scales = false
+						start_frame = -1
+						end_frame = -1
+						framerate = 10.0
+						reverse = false
+						additional_anim_files = [  ]
 					},
 					{
 						_class = "AnimFile"
 						name = "dog_run"
-						source_filename = "models/quake/enemies/dog_dog_run.dmx"
-						fade_in_time = 0.2
-						fade_out_time = 0.2
-						looping = true
-						delta = false
-						worldSpace = false
-						hidden = false
 						children = 
 						[
 							{
@@ -100,42 +179,86 @@
 								extract_rz = false
 								linear = false
 								quadratic = false
-								motion_type = "uniform"
+								extract_initial_offset = false
+								root_bone_name = ""
+								motion_type = "Uniform"
 							},
 						]
+						is_default_idle_anim = false
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = true
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						delete_from_compiled_model = false
+						source_filename = "models/quake/enemies/dog_anims/dog_run.smd"
+						import_bone_scales = false
+						start_frame = -1
+						end_frame = -1
+						framerate = 10.0
+						reverse = false
+						additional_anim_files = [  ]
 					},
 					{
 						_class = "AnimFile"
 						name = "dog_leap"
-						source_filename = "models/quake/enemies/dog_dog_leap.dmx"
+						is_default_idle_anim = false
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
 						fade_in_time = 0.2
 						fade_out_time = 0.2
 						looping = false
 						delta = false
 						worldSpace = false
 						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						delete_from_compiled_model = false
+						source_filename = "models/quake/enemies/dog_anims/dog_leap.smd"
+						import_bone_scales = false
+						start_frame = -1
+						end_frame = -1
+						framerate = 10.0
+						reverse = false
+						additional_anim_files = [  ]
 					},
 					{
 						_class = "AnimFile"
 						name = "dog_stand"
-						source_filename = "models/quake/enemies/dog_dog_stand.dmx"
+						is_default_idle_anim = false
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
 						fade_in_time = 0.2
 						fade_out_time = 0.2
 						looping = false
 						delta = false
 						worldSpace = false
 						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						delete_from_compiled_model = false
+						source_filename = "models/quake/enemies/dog_anims/dog_stand.smd"
+						import_bone_scales = false
+						start_frame = -1
+						end_frame = -1
+						framerate = 10.0
+						reverse = false
+						additional_anim_files = [  ]
 					},
 					{
 						_class = "AnimFile"
 						name = "dog_walk"
-						source_filename = "models/quake/enemies/dog_dog_walk.dmx"
-						fade_in_time = 0.2
-						fade_out_time = 0.2
-						looping = true
-						delta = false
-						worldSpace = false
-						hidden = false
 						children = 
 						[
 							{
@@ -146,315 +269,39 @@
 								extract_rz = false
 								linear = false
 								quadratic = false
-								motion_type = "uniform"
+								extract_initial_offset = false
+								root_bone_name = ""
+								motion_type = "Uniform"
 							},
 						]
+						is_default_idle_anim = false
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
+						fade_in_time = 0.2
+						fade_out_time = 0.2
+						looping = true
+						delta = false
+						worldSpace = false
+						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						delete_from_compiled_model = false
+						source_filename = "models/quake/enemies/dog_anims/dog_walk.smd"
+						import_bone_scales = false
+						start_frame = -1
+						end_frame = -1
+						framerate = 10.0
+						reverse = false
+						additional_anim_files = [  ]
 					},
 				]
-			},
-			{
-				_class = "Skeleton"
-				children = 
-				[
-					{
-						_class = "Bone"
-						name = "bone"
-						origin = [ 0.398523, 0.298907, 1.41971 ]
-						angles = [ 89.900917, -90.007896, -90.007896 ]
-						do_not_discard = true
-						children = 
-						[
-							{
-								_class = "Bone"
-								name = "bone_002"
-								origin = [ -0.242695, 11.391293, 0.0 ]
-								angles = [ -89.999977, 36.879868, 0.0 ]
-								do_not_discard = true
-								children = 
-								[
-									{
-										_class = "Bone"
-										name = "bone_003"
-										origin = [ -0.0, 4.271048, 0.000006 ]
-										angles = [ -0.000001, 0.000005, -10.08783 ]
-										do_not_discard = true
-										children = 
-										[
-											{
-												_class = "Bone"
-												name = "bone_004"
-												origin = [ -0.0, 4.620863, 0.000005 ]
-												angles = [ -0.000001, 0.000004, -6.232458 ]
-												do_not_discard = true
-												children = 
-												[
-													{
-														_class = "Bone"
-														name = "bone_006"
-														origin = [ 0.000001, 4.309605, 2.031429 ]
-														angles = [ -7.158423, 3.280244, -24.699114 ]
-														do_not_discard = true
-													},
-													{
-														_class = "Bone"
-														name = "bone_009"
-														origin = [ -0.000001, 3.347437, -1.402544 ]
-														angles = [ 1.770322, -0.688691, -21.261364 ]
-														do_not_discard = true
-													},
-												]
-											},
-										]
-									},
-								]
-							},
-							{
-								_class = "Bone"
-								name = "leg_l_001"
-								origin = [ -0.242698, 11.391289, 0.000001 ]
-								angles = [ 25.988577, -102.923141, 109.518959 ]
-								do_not_discard = true
-								children = 
-								[
-									{
-										_class = "Bone"
-										name = "leg_l_002"
-										origin = [ 0.000014, 2.871582, -0.000004 ]
-										angles = [ 17.907112, 20.844709, -97.760239 ]
-										do_not_discard = true
-										children = 
-										[
-											{
-												_class = "Bone"
-												name = "leg_l_003"
-												origin = [ 0.000017, 5.892732, -0.000005 ]
-												angles = [ -0.566258, 7.744677, 2.194136 ]
-												do_not_discard = true
-												children = 
-												[
-													{
-														_class = "Bone"
-														name = "leg_l_004"
-														origin = [ 0.000028, 10.675758, -0.000011 ]
-														angles = [ -87.065491, 20.472363, -14.388438 ]
-														do_not_discard = true
-														children = 
-														[
-															{
-																_class = "Bone"
-																name = "leg_l_006"
-																origin = [ -0.405969, 10.292027, -0.097823 ]
-																angles = [ 0.193147, 13.232394, 80.638161 ]
-																do_not_discard = true
-															},
-														]
-													},
-												]
-											},
-										]
-									},
-								]
-							},
-							{
-								_class = "Bone"
-								name = "leg_r_001"
-								origin = [ -0.242638, 11.356418, -0.030737 ]
-								angles = [ -25.578926, -107.837807, -107.876205 ]
-								do_not_discard = true
-								children = 
-								[
-									{
-										_class = "Bone"
-										name = "leg_r_002"
-										origin = [ 0.000003, 2.871583, 0.0 ]
-										angles = [ -22.268536, 19.239534, 96.726456 ]
-										do_not_discard = true
-										children = 
-										[
-											{
-												_class = "Bone"
-												name = "leg_r_003"
-												origin = [ 0.0, 5.892736, 0.000005 ]
-												angles = [ 0.526103, 7.823458, -1.908636 ]
-												do_not_discard = true
-												children = 
-												[
-													{
-														_class = "Bone"
-														name = "leg_r_004"
-														origin = [ 0.000003, 10.675783, 0.000008 ]
-														angles = [ 86.966728, 24.39114, 18.344141 ]
-														do_not_discard = true
-														children = 
-														[
-															{
-																_class = "Bone"
-																name = "leg_r_006"
-																origin = [ -0.33395, 10.013584, 0.308053 ]
-																angles = [ -0.134666, 12.908916, -80.195412 ]
-																do_not_discard = true
-															},
-														]
-													},
-												]
-											},
-										]
-									},
-								]
-							},
-						]
-					},
-					{
-						_class = "Bone"
-						name = "bone_011"
-						origin = [ 0.398524, 0.298907, 1.41971 ]
-						angles = [ 0.255067, -174.43782, -3.297451 ]
-						do_not_discard = true
-						children = 
-						[
-							{
-								_class = "Bone"
-								name = "bone_012"
-								origin = [ 0.000003, 6.351502, -0.0 ]
-								angles = [ 0.066003, -5.567591, 11.835927 ]
-								do_not_discard = true
-								children = 
-								[
-									{
-										_class = "Bone"
-										name = "bleg_l_002"
-										origin = [ -1.857079, 5.496421, 1.049204 ]
-										angles = [ 6.831372, 92.181091, -73.433517 ]
-										do_not_discard = true
-										children = 
-										[
-											{
-												_class = "Bone"
-												name = "bleg_l_004"
-												origin = [ 0.00001, 13.772766, 0.000005 ]
-												angles = [ 75.827103, -91.653564, -52.124271 ]
-												do_not_discard = true
-												children = 
-												[
-													{
-														_class = "Bone"
-														name = "bleg_l_005"
-														origin = [ -0.000005, 7.24652, 0.000007 ]
-														angles = [ 0.00005, -2.770593, -36.283974 ]
-														do_not_discard = true
-														children = 
-														[
-															{
-																_class = "Bone"
-																name = "bleg_l_007"
-																origin = [ 0.045465, 7.648453, -0.051054 ]
-																angles = [ -3.217897, 179.92894, -88.734238 ]
-																do_not_discard = true
-															},
-														]
-													},
-												]
-											},
-										]
-									},
-									{
-										_class = "Bone"
-										name = "bone_013"
-										origin = [ 0.000004, 5.339062, -0.000002 ]
-										angles = [ -0.470684, 2.356474, 11.290008 ]
-										do_not_discard = true
-										children = 
-										[
-											{
-												_class = "Bone"
-												name = "bone_014"
-												origin = [ 0.000003, 5.50086, -0.000004 ]
-												angles = [ 0.338049, -0.727357, -11.402959 ]
-												do_not_discard = true
-												children = 
-												[
-													{
-														_class = "Bone"
-														name = "bone_015"
-														origin = [ 0.000004, 6.958839, -0.000002 ]
-														angles = [ 0.000001, -1.70935, -4.002576 ]
-														do_not_discard = true
-													},
-												]
-											},
-										]
-									},
-									{
-										_class = "Bone"
-										name = "bleg_r_002"
-										origin = [ 1.885078, 5.428184, 1.059433 ]
-										angles = [ 8.52619, 91.697441, -104.973572 ]
-										do_not_discard = true
-										children = 
-										[
-											{
-												_class = "Bone"
-												name = "bleg_r_004"
-												origin = [ 0.000009, 13.698032, -0.000003 ]
-												angles = [ -78.152252, -72.762627, 32.296009 ]
-												do_not_discard = true
-												children = 
-												[
-													{
-														_class = "Bone"
-														name = "bleg_r_005"
-														origin = [ -0.000011, 7.246515, -0.000005 ]
-														angles = [ 1.653093, -4.800305, 36.091503 ]
-														do_not_discard = true
-														children = 
-														[
-															{
-																_class = "Bone"
-																name = "bleg_r_007"
-																origin = [ 0.034051, 7.649824, 0.049387 ]
-																angles = [ 0.297611, 148.697906, 88.31871 ]
-																do_not_discard = true
-															},
-														]
-													},
-												]
-											},
-										]
-									},
-								]
-							},
-						]
-					},
-					{
-						_class = "Bone"
-						name = "bleg_ik_l_001"
-						origin = [ 7.086495, -16.878151, -22.626158 ]
-						angles = [ 0.0, 172.270004, -2.667977 ]
-						do_not_discard = true
-					},
-					{
-						_class = "Bone"
-						name = "bleg_ik_r_001"
-						origin = [ -4.888488, -16.653883, -22.626163 ]
-						angles = [ 42.220734, 8.091219, -176.396271 ]
-						do_not_discard = true
-					},
-					{
-						_class = "Bone"
-						name = "leg_ik_l_001"
-						origin = [ 8.098417, 12.949792, -21.347776 ]
-						angles = [ -14.657686, -0.000028, 179.999985 ]
-						do_not_discard = true
-					},
-					{
-						_class = "Bone"
-						name = "leg_ik_r_001"
-						origin = [ -7.281774, 13.191158, -21.347775 ]
-						angles = [ -14.353909, 179.999939, 0.0 ]
-						do_not_discard = true
-					},
-				]
+				default_root_bone_name = ""
 			},
 		]
+		model_archetype = ""
+		primary_associated_entity = ""
+		document_sub_type = "ModelDocSubType_None"
 	}
 }

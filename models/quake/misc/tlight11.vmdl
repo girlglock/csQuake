@@ -1,4 +1,4 @@
-<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:modeldoc28:version{fb63b6ca-f435-4aa0-a2c7-c66ddc651dca} -->
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:modeldoc41:version{12fc9d44-453a-4ae4-b4d9-7e2ac0bbd4e0} -->
 {
 	rootNode = 
 	{
@@ -6,18 +6,18 @@
 		children = 
 		[
 			{
-				_class = "BoneMarkupList"
-				children = [  ]
-				bone_cull_type = "None"
-			},
-			{
 				_class = "RenderMeshList"
 				children = 
 				[
 					{
 						_class = "RenderMeshFile"
-						name = "unnamed_1"
-						filename = "models/quake/misc/tlight11_unnamed_1.dmx"
+						filename = "models\\quake\\misc\\fbx\\mesh\\tlight11.fbx"
+						import_scale = 1.0
+						import_filter = 
+						{
+							exclude_by_default = false
+							exception_list = [  ]
+						}
 					},
 				]
 			},
@@ -26,14 +26,15 @@
 				children = 
 				[
 					{
-						_class = "DefaultMaterialGroup"
-						name = "default"
-						remaps = [  ]
-					},
-					{
 						_class = "MaterialGroup"
 						name = "1"
-						remaps = [  ]
+						remaps = 
+						[
+							{
+								from = "materials/quake/bsps/tlight11.vmat"
+								to = "materials/quake/bsps/tlight11.vmat"
+							},
+						]
 					},
 					{
 						_class = "MaterialGroup"
@@ -41,7 +42,6 @@
 						remaps = 
 						[
 							{
-								_class = "BaseMaterialRemap"
 								from = "materials/quake/bsps/tlight11.vmat"
 								to = "materials/quake/bsps/tlight11_unlit.vmat"
 							},
@@ -54,15 +54,23 @@
 				children = 
 				[
 					{
-						_class = "PhysicsHullFile"
-						filename = "models/quake/misc/tlight11_hull.dmx"
+						_class = "PhysicsHullFromRender"
 						parent_bone = ""
 						surface_prop = "default"
-						collision_tags = ""
-						name = ""
+						collision_prop = "default"
+						tool_material = ""
+						renderMeshList = [  ]
+						faceMergeAngle = 20.0
+						maxHullVertices = 32
+						optimization_algorithm = "IFR"
 					},
 				]
+				leave_body_collision_unmodified = false
+				body_order = "bone_depth"
 			},
 		]
+		model_archetype = ""
+		primary_associated_entity = ""
+		document_sub_type = "ModelDocSubType_None"
 	}
 }

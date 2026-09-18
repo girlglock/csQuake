@@ -1,4 +1,4 @@
-<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:modeldoc28:version{fb63b6ca-f435-4aa0-a2c7-c66ddc651dca} -->
+<!-- kv3 encoding:text:version{e21c7f3c-8a33-41c5-9977-a76d3a32aa0d} format:modeldoc41:version{12fc9d44-453a-4ae4-b4d9-7e2ac0bbd4e0} -->
 {
 	rootNode = 
 	{
@@ -6,18 +6,34 @@
 		children = 
 		[
 			{
-				_class = "BoneMarkupList"
-				children = [  ]
-				bone_cull_type = "None"
-			},
-			{
 				_class = "RenderMeshList"
 				children = 
 				[
 					{
 						_class = "RenderMeshFile"
 						name = "g_light"
-						filename = "models/quake/pickups/g_light_g_light.dmx"
+						children = 
+						[
+							{
+								_class = "ReplaceMeshMaterials"
+								remaps = 
+								[
+									{
+										from = "g_light.vmat"
+										to = "materials/quake/pickups/g_light.vmat"
+									},
+								]
+								use_single_material = false
+								single_override_material = ""
+							},
+						]
+						filename = "models/quake/pickups/g_light_ref.smd"
+						import_scale = 1.0
+						import_filter = 
+						{
+							exclude_by_default = false
+							exception_list = [  ]
+						}
 					},
 				]
 			},
@@ -28,29 +44,34 @@
 					{
 						_class = "AnimFile"
 						name = "pickup_idle"
-						source_filename = "models/quake/pickups/g_light_pickup_idle.dmx"
+						is_default_idle_anim = true
+						activity_name = ""
+						activity_weight = 1
+						weight_list_name = ""
 						fade_in_time = 0.0
 						fade_out_time = 0.0
 						looping = true
 						delta = false
 						worldSpace = false
 						hidden = false
+						anim_markup_ordered = false
+						disable_compression = false
+						animgraph_additive = false
+						delete_from_compiled_model = false
+						source_filename = "models/quake/pickups/pickup_idle.smd"
+						import_bone_scales = false
+						start_frame = -1
+						end_frame = -1
+						framerate = 20.0
+						reverse = false
+						additional_anim_files = [  ]
 					},
 				]
-			},
-			{
-				_class = "Skeleton"
-				children = 
-				[
-					{
-						_class = "Bone"
-						name = "root"
-						origin = [ -0.0, 0.0, 0.0 ]
-						angles = [ -0.0, 89.999977, 0.0 ]
-						do_not_discard = true
-					},
-				]
+				default_root_bone_name = ""
 			},
 		]
+		model_archetype = ""
+		primary_associated_entity = ""
+		document_sub_type = "ModelDocSubType_None"
 	}
 }

@@ -603,6 +603,13 @@
   white-space: normal;
   margin-top: 5px;
 }
+
+.QPatchLine.QPatchVerHdr {
+  color: #d8a24a;
+  font-weight: bold;
+  font-size: 13px;
+  margin-top: 12px;
+}
 #q_patch .QPopBtns {
   margin-top: 18px;
 }

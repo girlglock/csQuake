@@ -1,46 +1,77 @@
-"Layer0"
+
+Layer0
 {
-	"shader"	"csgo_vertexlitgeneric.vfx"
-	"F_RENDER_BACKFACES"	"1"
-	"F_SELF_ILLUM"	"1"
-	"g_bFogEnabled"	"1"
-	"g_nScaleTexCoordUByModelScaleAxis"	"0"
-	"g_nScaleTexCoordVByModelScaleAxis"	"0"
-	"g_nTextureAddressModeU"	"0"
-	"g_nTextureAddressModeV"	"0"
-	"g_flAmbientOcclusionScale"	"0"
-	"g_flModelTintAmount"	"1"
-	"g_flNormalTexCoordRotation"	"0"
-	"g_flSelfIllumAlbedoFactor"	"1"
-	"g_flSelfIllumBrightness"	"0"
-	"g_flSelfIllumScale"	"1"
-	"g_flTexCoordRotation"	"0"
-	"g_vColorTint"	"[1.000000 1.000000 1.000000 0.000000]"
-	"g_vNormalTexCoordCenter"	"[0.500000 0.500000 0.000000 0.000000]"
-	"g_vNormalTexCoordOffset"	"[0.000000 0.000000 0.000000 0.000000]"
-	"g_vNormalTexCoordScale"	"[1.000000 1.000000 0.000000 0.000000]"
-	"g_vSelfIllumScrollSpeed"	"[0.000000 0.000000 0.000000 0.000000]"
-	"g_vSelfIllumTint"	"[1.000000 1.000000 1.000000 0.000000]"
-	"g_vTexCoordCenter"	"[0.500000 0.500000 0.000000 0.000000]"
-	"g_vTexCoordOffset"	"[0.000000 0.000000 0.000000 0.000000]"
-	"g_vTexCoordScale"	"[1.000000 1.000000 0.000000 0.000000]"
-	"g_vTexCoordScrollSpeed"	"[0.000000 0.000000 0.000000 0.000000]"
-	"TextureAmbientOcclusion"	"[0.000000 0.000000 0.000000 0.000000]"
-	"TextureMetalness"	"[0.000000 0.000000 0.000000 0.000000]"
-	"TextureRoughness"	"[0.000000 0.000000 0.000000 0.000000]"
-	"TextureColor"	"materials/quake/bsps/tlight07.png"
-	"TextureNormal"	"materials/default/default_normal.tga"
-	"TextureSelfIllumMask"	"materials/quake/bsps/tlight07_ilim.png"
-	"Compiled Textures"
+	shader "csgo_vertexlitgeneric.vfx"
+
+	F_RENDER_BACKFACES 1
+
+	F_SELF_ILLUM 1
+
+	g_flAmbientOcclusionScale "0.000"
+	TextureAmbientOcclusion ""
+
+	g_flModelTintAmount "1.000"
+	g_flTexCoordRotation "0.000"
+	g_nScaleTexCoordUByModelScaleAxis "0"
+	g_nScaleTexCoordVByModelScaleAxis "0"
+	g_vColorTint "[1.000000 1.000000 1.000000 0.000000]"
+	g_vTexCoordCenter "[0.500 0.500]"
+	g_vTexCoordOffset "[0.000 0.000]"
+	g_vTexCoordScale "[1.000 1.000]"
+	g_vTexCoordScrollSpeed "[0.000 0.000]"
+	TextureColor "materials/quake/bsps/tlight07.png"
+
+	g_bFogEnabled "1"
+
+	TextureMetalness ""
+	TextureRoughness ""
+
+	g_flNormalTexCoordRotation "0.000"
+	g_vNormalTexCoordCenter "[0.500 0.500]"
+	g_vNormalTexCoordOffset "[0.000 0.000]"
+	g_vNormalTexCoordScale "[1.000 1.000]"
+	TextureNormal "materials/default/default_normal.tga"
+
+	g_flSelfIllumAlbedoFactor "1.000"
+	g_flSelfIllumBrightness "0.000"
+	g_flSelfIllumScale "1.000"
+	g_vSelfIllumScrollSpeed "[0.000 0.000]"
+	g_vSelfIllumTint "[1.000000 1.000000 1.000000 0.000000]"
+	TextureSelfIllumMask "materials/quake/bsps/tlight07_ilim.png"
+
+	g_nTextureAddressModeU "0"
+	g_nTextureAddressModeV "0"
+
+	DynamicParams
 	{
-		"g_tAmbientOcclusion"	"materials/default/default_ao_tga_559f1ac6.vtex"
-		"g_tColor"	"materials/quake/bsps/tlight07_png_1fecd182.vtex"
-		"g_tMetalness"	"materials/default/default_metal_tga_af1d7118.vtex"
-		"g_tNormal"	"materials/default/default_normal_tga_7be61377.vtex"
-		"g_tSelfIllumMask"	"materials/quake/bsps/tlight07_ilim_png_71eb3776.vtex"
+		g_flSelfIllumScale "return 5"
 	}
-	"DynamicParams"
+
+
+	VariableState
 	{
-		"g_flSelfIllumScale"	"return 5;"
+		"Ambient Occlusion"
+		{
+		}
+		"Color"
+		{
+		}
+		"Fog"
+		{
+		}
+		"Lighting"
+		{
+			"Roughness" 0
+			"Metalness" 0
+		}
+		"Normal Map"
+		{
+		}
+		"Self Illum"
+		{
+		}
+		"Texture Address Mode"
+		{
+		}
 	}
 }

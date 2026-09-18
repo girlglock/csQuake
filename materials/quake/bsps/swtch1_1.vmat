@@ -1,23 +1,49 @@
-"Layer0"
+
+Layer0
 {
-	"shader"	"csgo_lightmappedgeneric.vfx"
-	"F_RENDER_BACKFACES"	"1"
-	"g_bFogEnabled"	"1"
-	"g_nTextureAddressModeU"	"0"
-	"g_nTextureAddressModeV"	"0"
-	"g_flMetalness"	"0"
-	"g_flModelTintAmount"	"1"
-	"g_flVertexColorOpacityScale"	"1"
-	"g_vColorTint"	"[1.000000 1.000000 1.000000 0.000000]"
-	"g_vLayer1Tint"	"[1.000000 1.000000 1.000000 0.000000]"
-	"TextureLayer1Color"	"materials/quake/bsps/swtch1_1.png"
-	"TextureLayer1AmbientOcclusion"	"materials/default/default_ao.tga"
-	"TextureLayer1Normal"	"materials/default/default_normal.tga"
-	"TextureLayer1Roughness"	"materials/default/default_7be61377_rough.png"
-	"Compiled Textures"
+	shader "csgo_lightmappedgeneric.vfx"
+
+	F_RENDER_BACKFACES 1
+
+	g_flModelTintAmount "1.000"
+	g_flVertexColorOpacityScale "1.000"
+	g_vColorTint "[1.000000 1.000000 1.000000 0.000000]"
+
+	g_bFogEnabled "1"
+
+	g_flMetalness "0.000"
+
+	g_vLayer1Tint "[1.000000 1.000000 1.000000 0.000000]"
+	TextureLayer1AmbientOcclusion "materials/default/default_ao.tga"
+	TextureLayer1Color "materials/quake/bsps/swtch1_1.png"
+	TextureLayer1Normal "materials/default/default_normal.tga"
+	TextureLayer1Roughness "materials/default/default_rough.tga"
+
+	g_nTextureAddressModeU "0"
+	g_nTextureAddressModeV "0"
+
+
+	VariableState
 	{
-		"g_tColor"	"materials/quake/bsps/swtch1_1_png_d3b8db79.vtex"
-		"g_tLayer1AmbientOcclusion"	"materials/default/default_ao_tga_559f1ac6.vtex"
-		"g_tLayer1NormalRoughness"	"materials/default/default_normal_tga_7be61377.vtex"
+		"Color"
+		{
+		}
+		"Fog"
+		{
+		}
+		"Lighting"
+		{
+			"Metalness" 0
+		}
+		"PBR 1"
+		{
+			"Albedo" 0
+			"Normal" 0
+			"Roughness" 0
+			"Ambient Occlusion" 0
+		}
+		"Texture Address Mode"
+		{
+		}
 	}
 }
