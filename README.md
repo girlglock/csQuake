@@ -1,19 +1,64 @@
+# Quake 1 Singleplayer fully playable inside CS2
+
+This port is a singleplayer experience with a fully (to cs2) custom player controller, movement, physics and enemy ai. Thanks to the new scripting system i was able to port big chunks of Quake 1 GPL2 code to run inside cs_script.
+
+TL;DR: no original Quake assets, code and maps are GPL v2 with full source on GitHub, art is LibreQuake (BSD 3-Clause).
+
+## Shareware Episode 1
+
+![e1m1](https://file.garden/aqmo3IE25FezhE7v/csQuake/e1m1.gif)
+
+## Retextured using LibreQuake Assets
+
+![e1m3](https://file.garden/aqmo3IE25FezhE7v/csQuake/e1m3.gif)
+
+## All Weapons
+
+![e1m5](https://file.garden/aqmo3IE25FezhE7v/csQuake/e1m5.gif)
+
+## Faithful Level Design
+
+![e1m6](https://file.garden/aqmo3IE25FezhE7v/csQuake/e1m6.gif)
+
+## Reworked Boss fight
+
+![e1m7](https://file.garden/aqmo3IE25FezhE7v/csQuake/e1m7.gif)
+
+## Q&A
+
+```
+Q: Would Multiplayer work?
+A: No. This addon is entirely server-sided, thus even a tiny amount of latency will make all your inputs feel very delayed since your client isn't simulating any of the custom movement or physics on its end.
+```
+
+## README
+
+```
 csQuake is a fan made reimplementation of id
 Software's Quake as a Counter Strike 2 workshop
 addon. It is free, non-commercial, and not
 affiliated with or endorsed by id Software, ZeniMax,
 Bethesda, or Valve.
 
+csQuake does NOT use any original Quake 1 assets.
+
 It is built from parts under different licenses,
 listed below.
 
+TL;DR: no original Quake assets, code and maps are
+GPL v2 with full source on GitHub, art is LibreQuake
+(BSD 3-Clause).
 
-Code
-----
 
-The cs_script code is licensed under the GNU General
-Public License, version 2. The full text is in the
-file LICENSE.
+Code & Maps
+-----------
+
+The cs_script code and the Source 2 map files
+(.vmap) are licensed under the GNU General Public
+License, version 2. The full text is in the file
+LICENSE, and also available at:
+
+  https://www.gnu.org/licenses/old-licenses/gpl-2.0.txt
 
 Parts of the game logic are translated from the
 original Quake source code:
@@ -25,10 +70,29 @@ Translating a program to another language is a
 modification under the GPL, so this code is a
 derivative work of it.
 
+The .vmap files were built by hand in the Source 2
+Hammer editor, rebuilding each level's layout and
+Entity IO logic from "The Original Quake Map
+Sources":
+
+  Copyright (C) 1996 id Software
+  Released by John Romero in October 2006 under the
+  GNU GPL, version 2.
+  http://rome.ro/resources/
+
+The id .map files are a different format, and are
+not part of this project or used at runtime. The
+.vmap files were handmade from scratch while reading
+the original .map files, so they carry the same
+license.
+
+That .map release bundles the plain GPL v2 text with
+no "or later" grant, so the work here is GPL v2.
+
 The workshop addon is distributed as compiled files.
-The complete corresponding source (the TypeScript &
-panorama sources) is
-published at:
+The complete corresponding source for the entire
+addon, including both the scripts and the .vmap map
+sources, is published at:
 
   https://github.com/girlglock/csQuake
 
@@ -40,30 +104,6 @@ the author will, for at least three years from the
 date you received your copy, send you the complete
 corresponding source for no more than the cost of
 delivery. Contact: girlglock@girlglock.com
-
-
-Maps
-----
-
-The Source 2 map files (.vmap) are also licensed
-under the GNU General Public License, version 2.
-
-They were built by hand in the Source 2 Hammer editor,
-rebuilding each level's layout and Entity IO logic from "The Original
-Quake Map Sources":
-
-  Copyright (C) 1996 id Software
-  Released by John Romero in October 2006 under the
-  GNU GPL, version 2.
-  http://rome.ro/resources/
-
-The id .map files are a different format,
-and are not part of this project or used at runtime.
-The .vmap files were handmade from scratch while reading
-the original .map files, so they carry the same license.
-
-That .map release bundles the plain GPL v2 text with
-no "or later" grant, so the work here is GPL v2.
 
 
 Assets
@@ -84,7 +124,7 @@ from LibreQuake:
   The LibreQuake project is BSD 3-Clause licensed,
   reproduced here as that license requires:
 
-  Copyright (c) 2019-2023
+  Copyright (c) 2019-2025
   Contributors to the LibreQuake project.
   All rights reserved.
 
@@ -140,21 +180,6 @@ LibreQuake has not painted yet fall back to
   2048x2048 with nearest-neighbor. Some carry a
   LibreQuake glow mask wired as self-illum.
 
-The UI: the
-menu plaques, and the some cherry picked HUD elements are taken from the
-Quake Revitalization Project (QRP):
-
-  http://qrp.quakeone.com
-
-  The QRP textures are copyright their
-  respective authors and, collectively, the
-  Quake Revitalization Project. They are free
-  to use in any project, commercial or
-  non-commercial, on the condition that the
-  work or derivative product credits the Quake
-  Revitalization Project by name and the URL
-  above. This file is that credit.
-
 
 Trademarks and warranty
 -----------------------
@@ -167,3 +192,4 @@ endorsement.
 This project is provided "as is", with no warranty
 of any kind, to the extent permitted by law. See
 LICENSE, sections 11 and 12.
+```
