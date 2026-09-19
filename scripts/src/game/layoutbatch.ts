@@ -1,7 +1,7 @@
 import { Instance as css, CustomHudLayout } from "cs_script/point_script";
 import * as C from "../constants";
 
-const CHANGES_PER_TICK = 100;
+const CHANGES_PER_TICK = 50;
 
 interface Op {
     layout: CustomHudLayout;

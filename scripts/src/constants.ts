@@ -3,7 +3,7 @@ import { Vec3 } from "@s2ze/math";
 //swapped by rollup at build time
 export const DEBUG = (`__DEBUG__` as string) === "true";
 
-export const VERSION = "1.1.1";
+export const VERSION = "1.1.3";
 //rollup should also insert patchnotes here
 export const PATCHNOTES = (`__PATCHNOTES__` as string);
 
@@ -196,6 +196,9 @@ export const VM_SIDE_OFFSET = 8;
 export type StrafeRollTarget = "viewmodel" | "pawn" | "off";
 export const STRAFE_ROLL_TARGET: StrafeRollTarget = "pawn";
 export const STRAFE_ROLL_SCALE: number = 1.0;
+
+//proxy for setting angles on the cs player pawn, for some reason the very first frame of any csinput will lock the clients custom camera when the pawn is being adjusted. using a proxy fixes this isse
+export const KICK_PROP_NAME = "camera_kick";
 
 export const PUNCH_RETURN = 10;
 export const VIEWKICK_ON_PAWN = true;

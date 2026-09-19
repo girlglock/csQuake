@@ -173,6 +173,9 @@ export class QuakeController {
     private viewBob = true;
     private pawnAngleForced = false;
     private injectedPitch = 0;
+    private kickProp: Entity | undefined;
+    private kickBroken = false;
+    private kickLast = { p: 0, r: 0 };
 
     private liquid: "none" | "water" | "poison" | "lava" = "none";
     private airFinished = 0;
@@ -1089,6 +1092,7 @@ export class QuakeController {
         const body = css.FindEntityByName(BODY_NAME);
         this.body = body ?? undefined;
         this.touchBody = css.FindEntityByName(C.TOUCH_BODY_NAME) ?? undefined;
+        this.kickProp = css.FindEntityByName(C.KICK_PROP_NAME) ?? undefined;
         this.muzzLight = css.FindEntityByName(MUZZ_LIGHT_NAME) ?? undefined;
         if (this.muzzLight) {
             css.EntFireAtTarget({ target: this.muzzLight, input: MUZZ_LIGHT_OFF });
@@ -1154,6 +1158,7 @@ export class QuakeController {
         this.pendingComplete = undefined;
         this.pendingLoadId = "";
         this.pendingUnloadId = "";
+        this.detachKick(pawn);
         if (pawn && pawn.IsValid()) pawn.SetMoveType(CSMoveType.WALK);
         this.weapons.onDisable(pawn);
         this.projectiles.onDisable();
@@ -1182,6 +1187,7 @@ export class QuakeController {
         this.pm.noclip = false;
         this.mapTriggers.reset();
         this.body = undefined;
+        this.kickProp = undefined;
         this.touchBody?.Teleport({ position: TOUCH_PARKED });
         this.touchBody = undefined;
         if (this.muzzLight) css.EntFireAtTarget({ target: this.muzzLight, input: MUZZ_LIGHT_OFF });
@@ -1344,12 +1350,62 @@ export class QuakeController {
     private refreshTraceIgnore(): void {
         const pawn = this.pawn();
         setTraceIgnore([
-            pawn, this.body, pawn?.GetCustomCamera(), this.touchBody,
+            pawn, this.body, pawn?.GetCustomCamera(), this.touchBody, this.kickProp,
             ...this.enemies.allProps(), ...this.levelExit.props(),
             ...this.gibs.props(), ...this.projectiles.props(),
             ...this.items.props(), ...this.backpacks.props(),
             ...this.particles.props(),
         ]);
+    }
+
+    private pawnOnKickProp(pawn: CSPlayerPawn): boolean {
+        const par = pawn.GetParent();
+        return !!par && par.IsValid() && par.GetEntityName() === C.KICK_PROP_NAME;
+    }
+
+    private detachKick(pawn: CSPlayerPawn | undefined): void {
+        if (!pawn || !pawn.IsValid() || !this.pawnOnKickProp(pawn)) return;
+        pawn.SetParent(undefined);
+        this.kickProp?.Teleport({ angles: { pitch: 0, yaw: 0, roll: 0 } });
+        this.kickLast = { p: 0, r: 0 };
+    }
+
+    private syncKickProp(pawn: CSPlayerPawn): boolean {
+        const kp = this.kickProp;
+        const want = !!kp && kp.IsValid() && !this.kickBroken;
+        const parented = this.pawnOnKickProp(pawn);
+        if (!want || !kp) {
+            if (parented) this.detachKick(pawn);
+            return false;
+        }
+        if (parented) return true;
+        try {
+            const at = new Vec3(pawn.GetAbsOrigin());
+            kp.Teleport({ position: at, angles: { pitch: 0, yaw: 0, roll: 0 } });
+            pawn.SetParent(kp);
+            const p = pawn.GetAbsOrigin();
+            if (Math.abs(p.x - at.x) + Math.abs(p.y - at.y) + Math.abs(p.z - at.z) > 1) {
+                pawn.Teleport({ position: at });
+            }
+            this.kickLast = { p: 0, r: 0 };
+            return true;
+        } catch (e) {
+            this.kickBroken = true;
+            css.Msg(`[quake] camera_kick: parenting the pawn failed (${e}); kick/lean stay on the pawn angles`);
+            return false;
+        }
+    }
+
+    private driveKickProp(kick: number, roll: number, aimYaw: number): void {
+        const kp = this.kickProp;
+        if (!kp || !kp.IsValid()) return;
+        const r = aimYaw * Math.PI / 180;
+        const c = Math.cos(r), s = Math.sin(r);
+        const p = kick * c + roll * s;
+        const w = -kick * s + roll * c;
+        if (Math.abs(p - this.kickLast.p) < 0.001 && Math.abs(w - this.kickLast.r) < 0.001) return;
+        this.kickLast = { p, r: w };
+        kp.Move({ angles: { pitch: p, yaw: 0, roll: w } });
     }
 
     private replayLevel(): void {
@@ -1583,6 +1639,7 @@ export class QuakeController {
         if (!pawn || !pawn.IsValid()) return "no player pawn";
         const camera = pawn.GetCustomCamera();
 
+        this.detachKick(pawn);
         const pawnPos = new Vec3(pawn.GetAbsOrigin());
         const bodyPos = new Vec3(this.pm.origin);
         pawn.Teleport({ position: bodyPos });
@@ -2190,10 +2247,17 @@ export class QuakeController {
             }
         } else {
             this.applyPlayCam(body, camera, bob + stepOfs);
-            if (!this.wheelOpen) {
-                const roll = (this.viewBob && C.STRAFE_ROLL_TARGET === "pawn")
-                    ? this.pm.strafeRoll * C.STRAFE_ROLL_SCALE : 0;
-                const kick = C.VIEWKICK_ON_PAWN ? this.weapons.viewPunchPitch : 0;
+            const roll = (this.viewBob && C.STRAFE_ROLL_TARGET === "pawn")
+                ? this.pm.strafeRoll * C.STRAFE_ROLL_SCALE : 0;
+            const kick = C.VIEWKICK_ON_PAWN ? this.weapons.viewPunchPitch : 0;
+            if (this.syncKickProp(pawn)) {
+                this.driveKickProp(kick, roll, cmd.viewYaw);
+                if (this.pawnAngleForced) {
+                    pawn.Teleport({ angles: { pitch: cmd.viewPitch, yaw: cmd.viewYaw, roll: 0 } });
+                    this.pawnAngleForced = false;
+                    this.injectedPitch = 0;
+                }
+            } else if (!this.wheelOpen) {
                 const forced = Math.abs(roll) > 0.02 || Math.abs(kick) > 0.02;
                 if (forced || this.pawnAngleForced) {
                     const pk = forced ? kick : 0;
