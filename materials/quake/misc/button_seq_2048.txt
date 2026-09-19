@@ -1,6 +1,0 @@
-"settings"
-{
-	"mip_filter_strength"		"1.000000"
-	"minimum_encode_quality"		"4"
-	"maxres"		"512"
-}
